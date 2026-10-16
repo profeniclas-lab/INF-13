@@ -1,515 +1,269 @@
 /* ============================================================
-   MÓDULOS — Direito Constitucional
-   Áreas:
-     CF = Constituição Federal (DC-01 a DC-20)
-     CE = Constituição Estadual (DC-RN)
-   Prioridades (conforme currículo):
-     alta       = DC-02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, DC-RN
-     media      = DC-10, 14, 15, 16, 17, 18
-     baixa      = DC-01, 19, 20   (complementar)
+   MÓDULOS — Informática para Concursos
+   Blocos:
+     FUND = Fundamentos e Hardware
+     SO   = Sistemas Operacionais
+     ESCR = Ferramentas de Escritório
+     REDE = Internet, Redes e Comunicação
+     SEG  = Segurança e Dados
+     APLI = Aplicação Prática
+   Prioridades: muito_alta, alta, media, condicional
    ============================================================ */
 
 window.MODULES = [
 
-  /* ============ PRIORIDADE COMPLEMENTAR ============ */
+  /* ============ BLOCO FUND — FUNDAMENTOS E HARDWARE ============ */
   {
-    id: 'DC-01',
-    area: 'CF',
-    titulo: 'Teoria da Constituição',
-    prioridade: 'baixa',
+    id: 'INF-01',
+    area: 'FUND',
+    titulo: 'Fundamentos da Informática e Hardware',
+    prioridade: 'alta',
     subtopicos: [
-      'Conceito de Constituição',
-      'Finalidade',
-      'Constitucionalismo',
-      'Constituição Federal de 1988',
-      'Classificações',
-      'Escrita e não escrita',
-      'Promulgada e outorgada',
-      'Rígida, flexível e semirrígida',
-      'Formal e material',
-      'Supremacia constitucional',
-      'Poder constituinte',
-      'Poder constituinte originário',
-      'Poder constituinte derivado',
-      'Poder constituinte reformador',
-      'Poder constituinte decorrente',
-      'Limitações ao poder de reforma',
-      'Cláusulas pétreas',
-      'Emendas constitucionais',
-      'Recepção',
-      'Eficácia e aplicabilidade das normas constitucionais'
+      'Conceitos de informática, dados, informação e processamento',
+      'Hardware, software, firmware e peopleware',
+      'Processador, memória RAM, armazenamento e placa-mãe',
+      'HD, SSD, pendrive, cartões de memória e armazenamento óptico',
+      'Periféricos de entrada, saída e entrada/saída',
+      'Unidades de informação: bit, byte, KB, MB, GB e TB',
+      'Memória volátil e não volátil'
+    ]
+  },
+  {
+    id: 'INF-14',
+    area: 'FUND',
+    titulo: 'Software, Aplicativos e Ferramentas de Produtividade',
+    prioridade: 'media',
+    subtopicos: [
+      'Software de sistema, aplicativo e utilitário',
+      'Instalação, atualização, configuração e desinstalação',
+      'Compatibilidade, formatos de arquivos e aplicativos padrão',
+      'Compactação e descompactação de arquivos',
+      'Captura de tela, impressão e compartilhamento',
+      'Ferramentas de colaboração e produtividade',
+      'Recursos de acessibilidade e produtividade'
     ]
   },
 
-  /* ============ PRIORIDADE ALTA ============ */
+  /* ============ BLOCO SO — SISTEMAS OPERACIONAIS ============ */
   {
-    id: 'DC-02',
-    area: 'CF',
-    titulo: 'Princípios Fundamentais',
-    prioridade: 'alta',
+    id: 'INF-02',
+    area: 'SO',
+    titulo: 'Sistemas Operacionais: Windows',
+    prioridade: 'muito_alta',
     subtopicos: [
-      'República',
-      'Federação',
-      'Estado Democrático de Direito',
-      'Soberania',
-      'Cidadania',
-      'Dignidade da pessoa humana',
-      'Valores sociais do trabalho',
-      'Livre iniciativa',
-      'Pluralismo político',
-      'Separação dos Poderes',
-      'Objetivos fundamentais',
-      'Princípios das relações internacionais',
-      'Independência nacional',
-      'Prevalência dos direitos humanos',
-      'Autodeterminação',
-      'Não intervenção',
-      'Defesa da paz',
-      'Solução pacífica dos conflitos',
-      'Repúdio ao terrorismo e ao racismo',
-      'Cooperação entre os povos',
-      'Asilo político'
+      'Funções de um sistema operacional',
+      'Área de trabalho, menu Iniciar, barra de tarefas, janelas e configurações',
+      'Explorador de Arquivos, unidades, diretórios e pastas',
+      'Copiar, mover, renomear, excluir, restaurar e pesquisar arquivos',
+      'Extensões, tipos de arquivo, atalhos e lixeira',
+      'Contas de usuário, permissões e noções de gerenciamento',
+      'Configurações, ferramentas administrativas e recursos básicos',
+      'Atalhos de teclado e diferenças relevantes entre versões'
     ]
   },
   {
-    id: 'DC-03',
-    area: 'CF',
-    titulo: 'Direitos e Deveres Individuais e Coletivos',
-    prioridade: 'alta',
+    id: 'INF-15',
+    area: 'SO',
+    titulo: 'Linux e Outros Ambientes',
+    prioridade: 'condicional',
     subtopicos: [
-      'Direito à vida',
-      'Liberdade',
-      'Igualdade',
-      'Segurança',
-      'Propriedade',
-      'Princípio da legalidade',
-      'Liberdade de manifestação',
-      'Liberdade de expressão',
-      'Liberdade de consciência',
-      'Liberdade de crença',
-      'Inviolabilidade da intimidade',
-      'Vida privada',
-      'Honra',
-      'Imagem',
-      'Domicílio',
-      'Sigilo das comunicações',
-      'Liberdade profissional',
-      'Liberdade de reunião',
-      'Liberdade de associação',
-      'Propriedade e função social',
-      'Direito de informação',
-      'Direito de petição',
-      'Certidões',
-      'Acesso à Justiça',
-      'Devido processo legal',
-      'Contraditório',
-      'Ampla defesa',
-      'Juiz natural',
-      'Tribunal do Júri',
-      'Provas ilícitas',
-      'Presunção de inocência',
-      'Prisão',
-      'Direitos do preso',
-      'Extradição',
-      'Racismo',
-      'Tortura',
-      'Crimes hediondos',
-      'Assistência jurídica',
-      'Gratuidade',
-      'Duração razoável do processo'
-    ]
-  },
-  {
-    id: 'DC-04',
-    area: 'CF',
-    titulo: 'Direitos Sociais',
-    prioridade: 'alta',
-    subtopicos: [
-      'Educação',
-      'Saúde',
-      'Alimentação',
-      'Trabalho',
-      'Moradia',
-      'Transporte',
-      'Lazer',
-      'Segurança',
-      'Previdência social',
-      'Proteção à maternidade',
-      'Proteção à infância',
-      'Assistência aos desamparados',
-      'Direitos dos trabalhadores',
-      'Salário',
-      'Jornada',
-      'Repouso',
-      'Férias',
-      'Greve',
-      'Sindicalização'
-    ]
-  },
-  {
-    id: 'DC-05',
-    area: 'CF',
-    titulo: 'Nacionalidade',
-    prioridade: 'alta',
-    subtopicos: [
-      'Brasileiro nato',
-      'Brasileiro naturalizado',
-      'Aquisição da nacionalidade',
-      'Critérios de nacionalidade',
-      'Cargos privativos de brasileiro nato',
-      'Perda da nacionalidade',
-      'Extradição',
-      'Diferenças entre nato e naturalizado'
-    ]
-  },
-  {
-    id: 'DC-06',
-    area: 'CF',
-    titulo: 'Direitos Políticos e Partidos Políticos',
-    prioridade: 'alta',
-    subtopicos: [
-      'Soberania popular',
-      'Sufrágio',
-      'Voto',
-      'Plebiscito',
-      'Referendo',
-      'Iniciativa popular',
-      'Alistamento eleitoral',
-      'Voto obrigatório',
-      'Voto facultativo',
-      'Condições de elegibilidade',
-      'Inelegibilidades',
-      'Perda dos direitos políticos',
-      'Suspensão dos direitos políticos',
-      'Partidos políticos',
-      'Autonomia partidária',
-      'Regras constitucionais sobre partidos'
-    ]
-  },
-  {
-    id: 'DC-07',
-    area: 'CF',
-    titulo: 'Remédios Constitucionais',
-    prioridade: 'alta',
-    subtopicos: [
-      'Habeas corpus',
-      'Habeas data',
-      'Mandado de segurança',
-      'Mandado de segurança coletivo',
-      'Mandado de injunção',
-      'Ação popular',
-      'Finalidade',
-      'Cabimento',
-      'Legitimidade',
-      'Características',
-      'Diferenças entre os instrumentos'
-    ]
-  },
-  {
-    id: 'DC-08',
-    area: 'CF',
-    titulo: 'Organização Político-Administrativa',
-    prioridade: 'alta',
-    subtopicos: [
-      'Federação',
-      'União',
-      'Estados',
-      'Distrito Federal',
-      'Municípios',
-      'Territórios',
-      'Autonomia',
-      'Soberania',
-      'Criação de Estados',
-      'Criação de Municípios',
-      'Regiões metropolitanas',
-      'Organização político-administrativa',
-      'Competências constitucionais'
-    ]
-  },
-  {
-    id: 'DC-09',
-    area: 'CF',
-    titulo: 'Repartição de Competências',
-    prioridade: 'alta',
-    subtopicos: [
-      'Competência material',
-      'Competência legislativa',
-      'Competência exclusiva',
-      'Competência privativa',
-      'Competência comum',
-      'Competência concorrente',
-      'Competência suplementar',
-      'Competências da União',
-      'Competências dos Estados',
-      'Competências dos Municípios',
-      'Competências do Distrito Federal',
-      'Interesse local',
-      'Regras de competência legislativa'
-    ]
-  },
-  {
-    id: 'DC-11',
-    area: 'CF',
-    titulo: 'Administração Pública na Constituição',
-    prioridade: 'alta',
-    subtopicos: [
-      'Art. 37',
-      'Legalidade',
-      'Impessoalidade',
-      'Moralidade',
-      'Publicidade',
-      'Eficiência',
-      'Concurso público',
-      'Cargos',
-      'Empregos',
-      'Funções públicas',
-      'Cargos em comissão',
-      'Funções de confiança',
-      'Acumulação',
-      'Remuneração',
-      'Teto constitucional',
-      'Servidores',
-      'Empregados públicos',
-      'Contratação temporária',
-      'Administração Direta',
-      'Administração Indireta',
-      'Autarquias',
-      'Empresas públicas',
-      'Sociedades de economia mista',
-      'Fundações públicas',
-      'Licitação',
-      'Serviços públicos',
-      'Responsabilidade civil do Estado',
-      'Improbidade'
-    ]
-  },
-  {
-    id: 'DC-12',
-    area: 'CF',
-    titulo: 'Poder Legislativo',
-    prioridade: 'alta',
-    subtopicos: [
-      'Congresso Nacional',
-      'Câmara dos Deputados',
-      'Senado Federal',
-      'Deputados',
-      'Senadores',
-      'Legislatura',
-      'Sessões',
-      'Comissões',
-      'Competências',
-      'Imunidades parlamentares',
-      'Fiscalização',
-      'Tribunal de Contas',
-      'Fiscalização contábil',
-      'Financeira',
-      'Orçamentária',
-      'Patrimonial'
-    ]
-  },
-  {
-    id: 'DC-13',
-    area: 'CF',
-    titulo: 'Processo Legislativo',
-    prioridade: 'alta',
-    subtopicos: [
-      'Emenda constitucional',
-      'Lei complementar',
-      'Lei ordinária',
-      'Lei delegada',
-      'Medida provisória',
-      'Decreto legislativo',
-      'Resolução',
-      'Iniciativa',
-      'Discussão',
-      'Votação',
-      'Aprovação',
-      'Sanção',
-      'Veto',
-      'Promulgação',
-      'Publicação',
-      'Maioria simples',
-      'Maioria absoluta',
-      'Maioria qualificada',
-      'Quóruns'
+      'Conceitos de software livre e código aberto',
+      'Distribuições e ambientes gráficos Linux',
+      'Arquivos, diretórios, permissões e usuários',
+      'Noções de terminal e comandos básicos',
+      'Diferenças conceituais entre Windows e Linux'
     ]
   },
 
-  /* ============ PRIORIDADE MÉDIA ============ */
+  /* ============ BLOCO ESCR — FERRAMENTAS DE ESCRITÓRIO ============ */
   {
-    id: 'DC-10',
-    area: 'CF',
-    titulo: 'Intervenção',
-    prioridade: 'media',
+    id: 'INF-03',
+    area: 'ESCR',
+    titulo: 'Microsoft Word e Processadores de Texto',
+    prioridade: 'muito_alta',
     subtopicos: [
-      'Intervenção federal',
-      'Intervenção estadual',
-      'Intervenção nos Municípios',
-      'Hipóteses',
-      'Finalidade',
-      'Procedimento',
-      'Decreto',
-      'Controle pelo Congresso',
-      'Relação com autonomia federativa'
+      'Criação, edição, salvamento e impressão de documentos',
+      'Formatação de fontes, parágrafos, alinhamentos, margens e espaçamento',
+      'Listas, tabelas, imagens, cabeçalhos, rodapés e numeração de páginas',
+      'Quebras de página e de seção',
+      'Localizar, substituir, corretor ortográfico e revisão',
+      'Estilos, sumário automático, comentários e controle de alterações',
+      'Exportação para PDF: diferenças entre salvar e exportar',
+      'Atalhos de teclado e reconhecimento de comandos'
     ]
   },
   {
-    id: 'DC-14',
-    area: 'CF',
-    titulo: 'Poder Executivo',
-    prioridade: 'media',
+    id: 'INF-04',
+    area: 'ESCR',
+    titulo: 'Microsoft Excel e Planilhas Eletrônicas',
+    prioridade: 'muito_alta',
     subtopicos: [
-      'Presidente',
-      'Vice-Presidente',
-      'Eleição',
-      'Mandato',
-      'Requisitos',
-      'Impedimentos',
-      'Sucessão',
-      'Substituição',
-      'Competências',
-      'Ministros',
-      'Responsabilidade',
-      'Crimes de responsabilidade'
+      'Pastas de trabalho, planilhas, linhas, colunas, células e intervalos',
+      'Tipos de dados, referências relativas, absolutas e mistas',
+      'Fórmulas, operadores e ordem de cálculo',
+      'Funções básicas: SOMA, MÉDIA, MÁXIMO, MÍNIMO, CONT.NÚM',
+      'Funções condicionais e de contagem: SE e CONT.SE',
+      'Ordenação, filtros, formatação condicional e validação de dados',
+      'Gráficos, tabelas e tabelas dinâmicas',
+      'Erros em fórmulas, leitura de resultados e atalhos',
+      'Diferenças entre Excel e outros programas de planilha'
     ]
   },
   {
-    id: 'DC-15',
-    area: 'CF',
-    titulo: 'Poder Judiciário',
-    prioridade: 'media',
-    subtopicos: [
-      'Órgãos do Judiciário',
-      'STF',
-      'STJ',
-      'Justiça Federal',
-      'Justiça Estadual',
-      'Justiça do Trabalho',
-      'Justiça Eleitoral',
-      'Justiça Militar',
-      'CNJ',
-      'Competências básicas',
-      'Garantias dos magistrados',
-      'Organização'
-    ]
-  },
-  {
-    id: 'DC-16',
-    area: 'CF',
-    titulo: 'Funções Essenciais à Justiça',
-    prioridade: 'media',
-    subtopicos: [
-      'Ministério Público',
-      'Advocacia Pública',
-      'Advocacia',
-      'Defensoria Pública',
-      'Funções',
-      'Atribuições',
-      'Princípios',
-      'Autonomia',
-      'Organização constitucional'
-    ]
-  },
-  {
-    id: 'DC-17',
-    area: 'CF',
-    titulo: 'Defesa do Estado e Instituições Democráticas',
-    prioridade: 'media',
-    subtopicos: [
-      'Estado de Defesa',
-      'Estado de Sítio',
-      'Forças Armadas',
-      'Segurança pública',
-      'Órgãos de segurança pública',
-      'Diferenças entre Estado de Defesa e Estado de Sítio'
-    ]
-  },
-  {
-    id: 'DC-18',
-    area: 'CF',
-    titulo: 'Controle de Constitucionalidade',
-    prioridade: 'media',
-    subtopicos: [
-      'Constitucionalidade',
-      'Inconstitucionalidade',
-      'Controle preventivo',
-      'Controle repressivo',
-      'Controle difuso',
-      'Controle concentrado',
-      'Controle político',
-      'Controle judicial',
-      'STF',
-      'ADI',
-      'ADC',
-      'ADPF',
-      'ADO',
-      'Efeitos das decisões',
-      'Conceitos fundamentais'
-    ]
-  },
-
-  /* ============ PRIORIDADE COMPLEMENTAR ============ */
-  {
-    id: 'DC-19',
-    area: 'CF',
-    titulo: 'Ordem Econômica e Social',
-    prioridade: 'baixa',
-    subtopicos: [
-      'Ordem econômica — princípios',
-      'Livre iniciativa',
-      'Valorização do trabalho',
-      'Função social',
-      'Atuação do Estado',
-      'Seguridade',
-      'Saúde',
-      'Previdência',
-      'Assistência',
-      'Educação',
-      'Cultura',
-      'Desporto',
-      'Ciência e tecnologia',
-      'Meio ambiente',
-      'Família',
-      'Criança',
-      'Adolescente',
-      'Jovem',
-      'Idoso',
-      'Indígenas'
-    ]
-  },
-  {
-    id: 'DC-20',
-    area: 'CF',
-    titulo: 'ADCT e Atualizações Constitucionais',
-    prioridade: 'baixa',
-    subtopicos: [
-      'ADCT',
-      'Dispositivos relevantes',
-      'Emendas constitucionais',
-      'Alterações recentes',
-      'Assuntos constitucionais atualizados'
-    ]
-  },
-
-  /* ============ CONSTITUIÇÃO ESTADUAL ============ */
-  {
-    id: 'DC-RN',
-    area: 'CE',
-    titulo: 'Constituição do Estado do Rio Grande do Norte',
+    id: 'INF-05',
+    area: 'ESCR',
+    titulo: 'PowerPoint e Apresentações',
     prioridade: 'alta',
     subtopicos: [
-      'Princípios fundamentais',
-      'Organização estadual',
-      'Municípios',
-      'Poder Legislativo',
-      'Poder Executivo',
-      'Poder Judiciário',
-      'Ministério Público',
-      'Defensoria Pública',
-      'Tribunal de Contas',
-      'Administração Pública',
-      'Servidores públicos',
-      'Competências estaduais'
+      'Slides, temas, layouts e modelos',
+      'Inserção e formatação de textos, imagens, formas, tabelas e gráficos',
+      'Transições entre slides e animações de objetos',
+      'Modo de apresentação, notas do apresentador e impressão',
+      'Exportação e formatos de arquivo',
+      'Diferença entre transição e animação',
+      'Recursos correspondentes do LibreOffice Impress'
+    ]
+  },
+  {
+    id: 'INF-06',
+    area: 'ESCR',
+    titulo: 'LibreOffice e Compatibilidade entre Suítes',
+    prioridade: 'condicional',
+    subtopicos: [
+      'Writer, Calc e Impress',
+      'Edição de textos, planilhas e apresentações',
+      'Formatos ODT, ODS, ODP e compatibilidade com Microsoft Office',
+      'Diferenças de interface, nomes de comandos e atalhos',
+      'Importação, exportação e conversão de arquivos',
+      'Comparação com Word, Excel e PowerPoint'
+    ]
+  },
+
+  /* ============ BLOCO REDE — INTERNET, REDES E COMUNICAÇÃO ============ */
+  {
+    id: 'INF-07',
+    area: 'REDE',
+    titulo: 'Internet, Web e Navegadores',
+    prioridade: 'muito_alta',
+    subtopicos: [
+      'Diferença entre internet, Web, intranet e extranet',
+      'Navegadores: Edge, Chrome, Firefox e outros previstos',
+      'Abas, favoritos, histórico, downloads, cache e cookies',
+      'Endereços URL, links, navegação privada e configurações',
+      'Mecanismos de busca e técnicas básicas de pesquisa',
+      'HTTPS, certificados e indicadores de conexão segura',
+      'Upload, download, formulários e navegação em sites',
+      'Sincronização e gerenciamento de perfis'
+    ]
+  },
+  {
+    id: 'INF-08',
+    area: 'REDE',
+    titulo: 'Correio Eletrônico e Comunicação Digital',
+    prioridade: 'alta',
+    subtopicos: [
+      'Remetente, destinatário, assunto, corpo e anexos',
+      'Campos Para, Cc e Cco',
+      'Responder, responder a todos, encaminhar, arquivar e excluir',
+      'Spam, phishing e cuidados com anexos e links',
+      'Webmail, Outlook e Thunderbird',
+      'Protocolos SMTP, POP3 e IMAP',
+      'Agenda, contatos, reuniões e videoconferências'
+    ]
+  },
+  {
+    id: 'INF-09',
+    area: 'REDE',
+    titulo: 'Redes de Computadores',
+    prioridade: 'media',
+    subtopicos: [
+      'Conceitos de rede, cliente, servidor e compartilhamento',
+      'LAN, MAN, WAN e redes sem fio',
+      'Wi-Fi, Ethernet, modem, roteador, switch e ponto de acesso',
+      'Endereços IP e noções de IPv4 e IPv6',
+      'DNS, DHCP e conceitos básicos de protocolos',
+      'Velocidade, largura de banda, latência e conectividade',
+      'Modelo TCP/IP e modelo OSI (nível introdutório)',
+      'Compartilhamento de arquivos, impressoras e recursos de rede'
+    ]
+  },
+  {
+    id: 'INF-10',
+    area: 'REDE',
+    titulo: 'Computação em Nuvem e Colaboração',
+    prioridade: 'alta',
+    subtopicos: [
+      'Conceito de computação em nuvem e armazenamento remoto',
+      'Serviços de armazenamento e sincronização de arquivos',
+      'Compartilhamento, permissões e colaboração simultânea',
+      'Arquivo local, sincronizado e disponível somente on-line',
+      'Noções de SaaS, PaaS e IaaS',
+      'Microsoft 365, OneDrive, Google Drive e ferramentas similares',
+      'Cuidados com links compartilhados e acesso a documentos'
+    ]
+  },
+
+  /* ============ BLOCO SEG — SEGURANÇA E DADOS ============ */
+  {
+    id: 'INF-11',
+    area: 'SEG',
+    titulo: 'Segurança da Informação',
+    prioridade: 'muito_alta',
+    subtopicos: [
+      'Confidencialidade, integridade, disponibilidade e autenticidade',
+      'Ameaças, vulnerabilidades, riscos e medidas de proteção',
+      'Vírus, worms, cavalos de Troia, ransomware e spyware',
+      'Antivírus, firewall, atualizações e proteção de dispositivos',
+      'Phishing, engenharia social e mensagens fraudulentas',
+      'Senhas fortes, gerenciadores de senhas e autenticação multifator',
+      'Criptografia, certificados digitais e assinatura digital',
+      'Privacidade, controle de acesso e boas práticas no trabalho'
+    ]
+  },
+  {
+    id: 'INF-12',
+    area: 'SEG',
+    titulo: 'Backup, Recuperação e Gerenciamento de Dados',
+    prioridade: 'alta',
+    subtopicos: [
+      'Finalidade e importância do backup',
+      'Cópias completas, incrementais e diferenciais',
+      'Mídias locais, armazenamento externo e nuvem',
+      'Restauração e recuperação de arquivos',
+      'Sincronização versus backup',
+      'Organização, nomenclatura, extensões e versionamento de arquivos',
+      'Lixeira, exclusão e cuidados com perda de dados'
+    ]
+  },
+  {
+    id: 'INF-13',
+    area: 'SEG',
+    titulo: 'PDF, Digitalização e Documentos Digitais',
+    prioridade: 'media',
+    subtopicos: [
+      'Diferenças entre documentos editáveis e PDF',
+      'Criação, conversão, impressão e organização de PDFs',
+      'Digitalização, OCR e reconhecimento de texto',
+      'Assinatura eletrônica e assinatura digital',
+      'Noções de certificados digitais e autenticação em serviços oficiais',
+      'Cuidados com documentos sensíveis e compartilhamento'
+    ]
+  },
+
+  /* ============ BLOCO APLI — APLICAÇÃO PRÁTICA ============ */
+  {
+    id: 'INF-16',
+    area: 'APLI',
+    titulo: 'Informática Aplicada ao Trabalho Administrativo',
+    prioridade: 'media',
+    subtopicos: [
+      'Produção e formatação de documentos',
+      'Planilhas para controles, cadastros e cálculos',
+      'Organização de arquivos e pastas de um setor',
+      'Envio seguro de documentos por e-mail',
+      'Compartilhamento de arquivos e permissões',
+      'Escolha da ferramenta adequada para cada tarefa',
+      'Questões integradas que simulam situações comuns de escritório'
     ]
   }
 
