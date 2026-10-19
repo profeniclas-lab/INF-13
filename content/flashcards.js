@@ -1,749 +1,730 @@
 /* ============================================================
-   FLASHCARDS — Direito Constitucional
-   Lote 1: DC-02, DC-03, DC-04
+   FLASHCARDS — Informática para Concursos
+   Cobertura: INF-01 a INF-16
+   Total: 69 cartões (mínimo 4 por módulo)
    ============================================================ */
 
 window.FLASHCARDS = [
 
   /* ============================================================
-     DC-02 — Princípios Fundamentais
+     INF-01 — Fundamentos e Hardware (5)
   ============================================================ */
   {
-    id: 'F-DC-02-0001',
-    moduloId: 'DC-02',
-    topicoId: 'DC-02',
-    frente: 'Quais são os fundamentos da República Federativa do Brasil (art. 1º, CF/88)?',
-    verso: 'Soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa, pluralismo político. Mnemônico: SOCIDIVAPLU.',
+    id: 'F-INF-01-0001',
+    moduloId: 'INF-01',
+    topicoId: 'INF-01',
+    frente: 'Qual a diferença entre memória RAM e HD/SSD?',
+    verso: 'RAM: memória PRINCIPAL, VOLÁTIL (perde conteúdo ao desligar), muito rápida — armazena programas em execução. HD/SSD: armazenamento SECUNDÁRIO, NÃO VOLÁTIL (mantém os dados), mais lento — armazena arquivos permanentemente. Ao abrir um programa, ele é carregado do HD/SSD para a RAM.',
+    dificuldade: 2,
+    tags: ['RAM', 'HD', 'SSD']
+  },
+  {
+    id: 'F-INF-01-0002',
+    moduloId: 'INF-01',
+    topicoId: 'INF-01',
+    frente: 'O que significa memória volátil e não volátil? Dê exemplos.',
+    verso: 'VOLÁTIL: perde o conteúdo ao desligar. Ex.: RAM. NÃO VOLÁTIL: mantém o conteúdo desligada. Ex.: HD, SSD, ROM, pendrive, cartão de memória. Regra prática: se guarda arquivos permanentemente, é não volátil.',
     dificuldade: 1,
-    tags: ['fundamentos', 'art. 1º']
+    tags: ['volátil', 'memória']
   },
   {
-    id: 'F-DC-02-0002',
-    moduloId: 'DC-02',
-    topicoId: 'DC-02',
-    frente: 'Quais são os objetivos fundamentais da República (art. 3º, CF/88)?',
-    verso: 'I - construir uma sociedade livre, justa e solidária; II - garantir o desenvolvimento nacional; III - erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais; IV - promover o bem de todos, sem preconceitos de origem, raça, sexo, cor, idade e quaisquer outras formas de discriminação. Mnemônico: CONGA-ERRA-PRO.',
+    id: 'F-INF-01-0003',
+    moduloId: 'INF-01',
+    topicoId: 'INF-01',
+    frente: 'Qual a diferença entre HD e SSD?',
+    verso: 'HD (Disco Rígido): magnético, com PARTES MÓVEIS (pratos e cabeça de leitura), mais lento, mais barato por GB, maior capacidade, mais suscetível a impacto. SSD (Solid State Drive): memória FLASH, SEM partes móveis, MUITO mais rápido, mais caro por GB, resistente a impacto, silencioso, menor consumo.',
     dificuldade: 2,
-    tags: ['objetivos', 'art. 3º']
+    tags: ['HD', 'SSD']
   },
   {
-    id: 'F-DC-02-0003',
-    moduloId: 'DC-02',
-    topicoId: 'DC-02',
-    frente: 'Qual a diferença entre soberania e autonomia?',
-    verso: 'SOBERANIA: poder supremo na ordem interna e independência na ordem externa — pertence APENAS à República Federativa do Brasil (o todo). AUTONOMIA: capacidade de auto-organização política, administrativa e financeira — pertence a cada ente (União, Estados, DF, Municípios).',
+    id: 'F-INF-01-0004',
+    moduloId: 'INF-01',
+    topicoId: 'INF-01',
+    frente: 'Como classificar periféricos em entrada, saída e entrada/saída?',
+    verso: 'ENTRADA (enviam dados para o PC): teclado, mouse, scanner, webcam, microfone. SAÍDA (recebem dados do PC): monitor, impressora, caixa de som, projetor. ENTRADA/SAÍDA (fazem os dois): touchscreen, modem, headset (fone + microfone), multifuncional (scanner + impressora).',
     dificuldade: 2,
-    tags: ['soberania', 'autonomia']
-  },
-
-  /* ============================================================
-     DC-03 — Direitos e Deveres Individuais e Coletivos
-  ============================================================ */
-  {
-    id: 'F-DC-03-0001',
-    moduloId: 'DC-03',
-    topicoId: 'DC-03',
-    frente: 'Quais são os crimes INAFIANÇÁVEIS e IMPRESCRITÍVEIS do art. 5º?',
-    verso: 'INAFIANÇÁVEIS e IMPRESCRITÍVEIS: RACISMO (XLII) e AÇÃO DE GRUPOS ARMADOS, civis ou militares, contra a ordem constitucional e o Estado Democrático (XLIV). INAFIANÇÁVEIS (mas não imprescritíveis): tortura, tráfico ilícito de drogas, terrorismo e crimes hediondos (XLIII).',
-    dificuldade: 3,
-    tags: ['racismo', 'crimes', 'art. 5º']
+    tags: ['periféricos']
   },
   {
-    id: 'F-DC-03-0002',
-    moduloId: 'DC-03',
-    topicoId: 'DC-03',
-    frente: 'Quais são as 4 exceções à inviolabilidade do domicílio (art. 5º, XI)?',
-    verso: '1) Flagrante delito; 2) Desastre; 3) Prestar socorro; 4) Durante o dia, por determinação judicial. Fora dessas hipóteses, o consentimento do morador é obrigatório. Ordem judicial só pode ser cumprida DURANTE O DIA.',
-    dificuldade: 2,
-    tags: ['domicílio', 'art. 5º']
-  },
-  {
-    id: 'F-DC-03-0003',
-    moduloId: 'DC-03',
-    topicoId: 'DC-03',
-    frente: 'Quando cabe cada remédio constitucional (HC, HD, MS, MI, AP)?',
-    verso: 'HC: liberdade de locomoção (ir, vir, ficar) — gratuito. HD: acesso ou retificação de dados pessoais em banco público — não é gratuito. MS: direito líquido e certo não amparado por HC ou HD. MI: falta de norma regulamentadora de direito constitucional. AP: anular ato lesivo ao patrimônio público, moralidade, meio ambiente ou patrimônio histórico — qualquer CIDADÃO.',
-    dificuldade: 3,
-    tags: ['remédios', 'HC', 'HD', 'MS', 'AP']
-  },
-  {
-    id: 'F-DC-03-0004',
-    moduloId: 'DC-03',
-    topicoId: 'DC-03',
-    frente: 'Quem pode impetrar mandado de segurança coletivo (art. 5º, LXX)?',
-    verso: 'Partido político com representação no Congresso Nacional; organização sindical; entidade de classe; associação legalmente constituída e em funcionamento há pelo menos 1 ano — em defesa dos interesses de seus membros ou associados. NÃO cabe a qualquer cidadão (isso é a AÇÃO POPULAR).',
-    dificuldade: 3,
-    tags: ['MS coletivo', 'legitimidade']
-  },
-
-  /* ============================================================
-     DC-04 — Direitos Sociais
-  ============================================================ */
-  {
-    id: 'F-DC-04-0001',
-    moduloId: 'DC-04',
-    topicoId: 'DC-04',
-    frente: 'Quais são os direitos sociais do art. 6º da CF/88 (versão vigente)?',
-    verso: 'Educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância, assistência aos desamparados. Mnemônico: EDUSA-TRAMOLASE-PRE-PRO-ASS. Moradia (EC 26/2000) e transporte (EC 90/2015) foram incluídos posteriormente.',
-    dificuldade: 2,
-    tags: ['direitos sociais', 'art. 6º']
-  },
-  {
-    id: 'F-DC-04-0002',
-    moduloId: 'DC-04',
-    topicoId: 'DC-04',
-    frente: 'O que é a seguridade social e qual sua composição (art. 194, CF/88)?',
-    verso: 'SEGURIDADE SOCIAL: gênero que abrange SAÚDE (universal e gratuita), PREVIDÊNCIA SOCIAL (contributiva — só quem contribui recebe) e ASSISTÊNCIA SOCIAL (para quem dela necessitar, sem exigência de contribuição). Art. 194: "a seguridade social compreende um conjunto integrado de ações de iniciativa dos Poderes Públicos e da sociedade, destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social".',
-    dificuldade: 3,
-    tags: ['seguridade', 'art. 194']
-  },
-  {
-    id: 'F-DC-04-0003',
-    moduloId: 'DC-04',
-    topicoId: 'DC-04',
-    frente: 'Os trabalhadores domésticos têm direito a todos os incisos do art. 7º?',
-    verso: 'NÃO. Após a EC 72/2013, o parágrafo único do art. 7º garante aos domésticos uma LISTA TAXATIVA de incisos — não todos. Urbanos e rurais é que têm todos os incisos.',
-    dificuldade: 2,
-    tags: ['domésticos', 'art. 7º']
-  }  ,
-
-  /* ============================================================
-     DC-05 — Nacionalidade
-  ============================================================ */
-  {
-    id: 'F-DC-05-0001',
-    moduloId: 'DC-05',
-    topicoId: 'DC-05',
-    frente: 'Quais são as 3 hipóteses de brasileiro NATO (art. 12, I)?',
-    verso: 'a) Nascido no Brasil, filho de estrangeiros, desde que os pais NÃO estejam a serviço do país de origem deles. b) Nascido no exterior, filho de pai OU mãe brasileira, desde que qualquer deles esteja A SERVIÇO DO BRASIL. c) Nascido no exterior, filho de pai OU mãe brasileira, registrado em repartição brasileira competente, OU residente no Brasil que opte, a qualquer tempo após a maioridade, pela nacionalidade brasileira.',
-    dificuldade: 3,
-    tags: ['nacionalidade', 'nato']
-  },
-  {
-    id: 'F-DC-05-0002',
-    moduloId: 'DC-05',
-    topicoId: 'DC-05',
-    frente: 'Quais são as hipóteses de extradição de brasileiro NATURALIZADO?',
-    verso: '1) Crime comum cometido ANTES da naturalização. 2) Tráfico ilícito de drogas, a QUALQUER tempo (antes ou depois da naturalização). O brasileiro NATO nunca pode ser extraditado.',
-    dificuldade: 3,
-    tags: ['extradição', 'naturalizado']
-  },
-  {
-    id: 'F-DC-05-0003',
-    moduloId: 'DC-05',
-    topicoId: 'DC-05',
-    frente: 'Quais são os 8 cargos privativos de brasileiro NATO (art. 12, §3º)?',
-    verso: '1) Presidente da República. 2) Vice-Presidente. 3) Presidente da Câmara dos Deputados. 4) Presidente do Senado Federal. 5) Ministro do STF. 6) Carreira diplomática. 7) Oficial das Forças Armadas. 8) Ministro de Estado da Defesa.',
-    dificuldade: 2,
-    tags: ['nato', 'cargos privativos']
-  },
-  {
-    id: 'F-DC-05-0004',
-    moduloId: 'DC-05',
-    topicoId: 'DC-05',
-    frente: 'O que é a quase-nacionalidade (art. 12, §2º)?',
-    verso: 'Português com residência permanente no Brasil, se houver reciprocidade em Portugal, tem os DIREITOS INERENTES AO BRASILEIRO NATURALIZADO. Não é nacionalidade brasileira plena — não dá acesso a cargos privativos de nato.',
-    dificuldade: 3,
-    tags: ['quase-nacionalidade', 'português']
-  },
-
-  /* ============================================================
-     DC-06 — Direitos Políticos e Partidos Políticos
-  ============================================================ */
-  {
-    id: 'F-DC-06-0001',
-    moduloId: 'DC-06',
-    topicoId: 'DC-06',
-    frente: 'Quem tem voto OBRIGATÓRIO e quem tem voto FACULTATIVO no Brasil?',
-    verso: 'OBRIGATÓRIO: maiores de 18 anos, alfabetizados. FACULTATIVO: analfabetos; maiores de 70 anos; maiores de 16 e menores de 18 anos. Não há voto proibido a nenhuma dessas categorias — apenas facultativo.',
-    dificuldade: 2,
-    tags: ['voto', 'alistamento']
-  },
-  {
-    id: 'F-DC-06-0002',
-    moduloId: 'DC-06',
-    topicoId: 'DC-06',
-    frente: 'Quais são as idades mínimas para cargos eletivos (art. 14, §3º, VI)?',
-    verso: '35 anos: Presidente, Vice-Presidente, Senador. 30 anos: Governador, Vice-Governador. 21 anos: Deputado Federal, Estadual e Distrital; Prefeito; Vice-Prefeito; Juiz de Paz. 18 anos: Vereador.',
-    dificuldade: 2,
-    tags: ['elegibilidade', 'idades']
-  },
-  {
-    id: 'F-DC-06-0003',
-    moduloId: 'DC-06',
-    topicoId: 'DC-06',
-    frente: 'Qual a diferença entre PERDA e SUSPENSÃO dos direitos políticos (art. 15)?',
-    verso: 'PERDA (definitiva): cancelamento da naturalização por ato voluntário; recusa de cumprir obrigação a todos imposta. SUSPENSÃO (temporária): incapacidade civil absoluta; condenação criminal transitada em julgado; improbidade administrativa.',
-    dificuldade: 3,
-    tags: ['perda', 'suspensão']
-  },
-  {
-    id: 'F-DC-06-0004',
-    moduloId: 'DC-06',
-    topicoId: 'DC-06',
-    frente: 'O que é a inelegibilidade reflexa (art. 14, §7º)?',
-    verso: 'O cônjuge e os parentes consanguíneos ou afins até o 2º grau (ou por adoção) do Presidente, Governador, Prefeito, ou de quem os substitua, são INELEGÍVEIS no TERRITÓRIO de jurisdição do titular. Irmão é parente de 2º grau — está abrangido.',
-    dificuldade: 3,
-    tags: ['inelegibilidade reflexa']
-  },
-
-  /* ============================================================
-     DC-07 — Remédios Constitucionais
-  ============================================================ */
-  {
-    id: 'F-DC-07-0001',
-    moduloId: 'DC-07',
-    topicoId: 'DC-07',
-    frente: 'Para que serve cada remédio constitucional?',
-    verso: 'HC: liberdade de locomoção (ir, vir, ficar) — GRATUITO. HD: acesso ou retificação de dados pessoais em banco público — não é gratuito. MS: direito líquido e certo não amparado por HC ou HD. MI: falta de norma regulamentadora. AP: ato lesivo ao patrimônio público, moralidade, meio ambiente ou patrimônio histórico-cultural.',
-    dificuldade: 2,
-    tags: ['remédios', 'cabimento']
-  },
-  {
-    id: 'F-DC-07-0002',
-    moduloId: 'DC-07',
-    topicoId: 'DC-07',
-    frente: 'Quem pode impetrar MANDADO DE SEGURANÇA COLETIVO (art. 5º, LXX)?',
-    verso: 'Partido político com representação no Congresso Nacional; organização sindical; entidade de classe; associação legalmente constituída e em funcionamento há pelo menos 1 ANO — em defesa dos interesses de seus membros ou associados.',
-    dificuldade: 3,
-    tags: ['MS coletivo']
-  },
-  {
-    id: 'F-DC-07-0003',
-    moduloId: 'DC-07',
-    topicoId: 'DC-07',
-    frente: 'Quem pode propor AÇÃO POPULAR e o que ela visa anular?',
-    verso: 'Qualquer CIDADÃO (eleitor, no gozo dos direitos políticos) para anular ato lesivo ao PATRIMÔNIO PÚBLICO ou de entidade de que o Estado participe, à MORALIDADE ADMINISTRATIVA, ao MEIO AMBIENTE ou ao PATRIMÔNIO HISTÓRICO-CULTURAL. Salvo comprovada má-fé, o autor é isento de custas e do ônus da sucumbência.',
-    dificuldade: 2,
-    tags: ['ação popular']
-  },
-  {
-    id: 'F-DC-07-0004',
-    moduloId: 'DC-07',
-    topicoId: 'DC-07',
-    frente: 'Qual a diferença entre mandado de injunção (MI) e ação direta de inconstitucionalidade por omissão (ADO)?',
-    verso: 'MI: instrumento individual ou coletivo, cabível quando a falta de norma regulamentadora inviabiliza direitos constitucionais — concretiza o direito NO CASO CONCRETO. ADO: ação de competência do STF que declara a omissão legislativa e dá ciência ao Poder competente, com efeitos mais amplos. Ambos tratam de omissão, mas com efeitos diferentes.',
-    dificuldade: 3,
-    tags: ['MI', 'ADO']
-  }  ,
-
-  /* ============================================================
-     DC-08 — Organização Político-Administrativa
-  ============================================================ */
-  {
-    id: 'F-DC-08-0001',
-    moduloId: 'DC-08',
-    topicoId: 'DC-08',
-    frente: 'Como se criam Estados e Municípios no Brasil?',
-    verso: 'ESTADOS (art. 18, §3º): lei COMPLEMENTAR federal + plebiscito + oitiva das Assembleias Legislativas dos Estados envolvidos. MUNICÍPIOS (art. 18, §4º): lei ESTADUAL + plebiscito + estudo de viabilidade municipal. O instrumento muda: LC federal x lei estadual.',
-    dificuldade: 3,
-    tags: ['criação', 'art. 18']
-  },
-  {
-    id: 'F-DC-08-0002',
-    moduloId: 'DC-08',
-    topicoId: 'DC-08',
-    frente: 'O que caracteriza o Distrito Federal (art. 32, CF/88)?',
-    verso: 'Regido por LEI ORGÂNICA (não Constituição); acumula competências estaduais e municipais; NÃO pode ser dividido em Municípios; tem autonomia PARCIAL (não soberania).',
-    dificuldade: 2,
-    tags: ['DF', 'art. 32']
-  },
-  {
-    id: 'F-DC-08-0003',
-    moduloId: 'DC-08',
-    topicoId: 'DC-08',
-    frente: 'Quais são as vedações federativas do art. 19 da CF/88?',
-    verso: 'É vedado à União, aos Estados, ao DF e aos Municípios: I) estabelecer cultos religiosos ou igrejas, subvencioná-los, embaraçar-lhes o funcionamento ou manter com eles relação de dependência ou aliança — ressalvada a colaboração de interesse público; II) recusar fé aos documentos públicos; III) criar distinções entre brasileiros ou preferências entre si.',
-    dificuldade: 2,
-    tags: ['vedações', 'art. 19']
-  },
-  {
-    id: 'F-DC-08-0004',
-    moduloId: 'DC-08',
-    topicoId: 'DC-08',
-    frente: 'O que são Territórios Federais (art. 18, §2º)?',
-    verso: 'Integram a UNIÃO, sem autonomia política plena. Sua criação, transformação em Estado ou reintegração ao Estado de origem dependem de LEI COMPLEMENTAR. Não têm Constituição nem os mesmos poderes dos Estados.',
-    dificuldade: 3,
-    tags: ['territórios']
-  },
-
-  /* ============================================================
-     DC-09 — Repartição de Competências
-  ============================================================ */
-  {
-    id: 'F-DC-09-0001',
-    moduloId: 'DC-09',
-    topicoId: 'DC-09',
-    frente: 'Qual a diferença entre competência EXCLUSIVA e PRIVATIVA da União?',
-    verso: 'EXCLUSIVA (art. 21): MATERIAL (administrativa), INDELegável. PRIVATIVA (art. 22): LEGISLATIVA, DELEGÁVEL aos Estados por LEI COMPLEMENTAR para questões específicas (art. 22, parágrafo único). Mnemônico: EXclusiva = EXclui delegação.',
-    dificuldade: 3,
-    tags: ['exclusiva', 'privativa']
-  },
-  {
-    id: 'F-DC-09-0002',
-    moduloId: 'DC-09',
-    topicoId: 'DC-09',
-    frente: 'Qual a diferença entre competência COMUM e CONCORRENTE?',
-    verso: 'COMUM (art. 23): MATERIAL — todos os entes (União, Estados, DF, Municípios) atuam juntos (ex.: saúde, meio ambiente). CONCORRENTE (art. 24): LEGISLATIVA — União edita normas GERAIS; Estados e DF editam normas ESPECÍFICAS.',
-    dificuldade: 3,
-    tags: ['comum', 'concorrente']
-  },
-  {
-    id: 'F-DC-09-0003',
-    moduloId: 'DC-09',
-    topicoId: 'DC-09',
-    frente: 'O que acontece quando a União edita lei geral sobre matéria concorrente já regulada por lei estadual?',
-    verso: 'A superveniência de lei federal geral SUSPENDE a eficácia da lei estadual NO QUE LHE FOR CONTRÁRIO (art. 24, §4º). Não revoga — apenas suspende parcialmente. Se a lei estadual for compatível, continua valendo.',
-    dificuldade: 3,
-    tags: ['concorrente', 'superveniência']
-  },
-  {
-    id: 'F-DC-09-0004',
-    moduloId: 'DC-09',
-    topicoId: 'DC-09',
-    frente: 'Quais são as competências dos Estados e dos Municípios?',
-    verso: 'ESTADOS: competência RESIDUAL (art. 25, §1º) — tudo que não é da União nem dos Municípios. MUNICÍPIOS: interesse local (art. 30, I) + suplementar a legislação federal/estadual no que couber (art. 30, II). Distrito Federal: acumula competências estaduais e municipais (art. 32, §1º).',
-    dificuldade: 3,
-    tags: ['residual', 'interesse local']
-  },
-
-  /* ============================================================
-     DC-11 — Administração Pública na Constituição
-  ============================================================ */
-  {
-    id: 'F-DC-11-0001',
-    moduloId: 'DC-11',
-    topicoId: 'DC-11',
-    frente: 'O que significa LIMPE?',
-    verso: 'Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência — princípios expressos no caput do art. 37 da CF/88. A eficiência foi inserida pela EC 19/1998 (Reforma Gerencial).',
+    id: 'F-INF-01-0005',
+    moduloId: 'INF-01',
+    topicoId: 'INF-01',
+    frente: 'Qual a relação entre bit e byte? E a escala KB → MB → GB → TB?',
+    verso: '1 byte = 8 bits. BIT: menor unidade (0 ou 1). BYTE: 8 bits — representa um caractere. Escala: 1 KB ≈ 1024 bytes; 1 MB ≈ 1024 KB; 1 GB ≈ 1024 MB; 1 TB ≈ 1024 GB. Atenção: Mbps (megabits por segundo) ≠ MB (megabytes) — 1 MB ≈ 8 Mbps.',
     dificuldade: 1,
-    tags: ['LIMPE', 'art. 37']
-  },
-  {
-    id: 'F-DC-11-0002',
-    moduloId: 'DC-11',
-    topicoId: 'DC-11',
-    frente: 'Quais são as hipóteses de acumulação remunerada de cargos públicos (art. 37, XVI)?',
-    verso: 'a) DOIS cargos de PROFESSOR; b) UM cargo de professor + UM cargo TÉCNICO ou CIENTÍFICO; c) DOIS cargos privativos de PROFISSIONAIS DE SAÚDE. Todas exigem compatibilidade de horários e respeito ao teto. Mnemônico: PROF-PROF; PROF-TEC; SAÚDE-SAÚDE.',
-    dificuldade: 3,
-    tags: ['acumulação', 'art. 37']
-  },
-  {
-    id: 'F-DC-11-0003',
-    moduloId: 'DC-11',
-    topicoId: 'DC-11',
-    frente: 'Qual a diferença entre cargo em comissão e função de confiança?',
-    verso: 'CARGO EM COMISSÃO: livre nomeação e exoneração; destinado a funções de DIREÇÃO, CHEFIA e ASSESSORAMENTO; pode ser ocupado por pessoa de fora da carreira. FUNÇÃO DE CONFIANÇA: privativa de SERVIDOR DE CARREIRA (ocupante de cargo efetivo).',
-    dificuldade: 3,
-    tags: ['cargo em comissão', 'função de confiança']
-  },
-  {
-    id: 'F-DC-11-0004',
-    moduloId: 'DC-11',
-    topicoId: 'DC-11',
-    frente: 'Como funciona a responsabilidade civil do Estado e a ação regressiva?',
-    verso: 'ESTADO → TERCEIRO: responsabilidade OBJETIVA (art. 37, §6º) — basta dano + nexo causal + conduta, independe de culpa. AGENTE → ESTADO (ação regressiva): exige DOLO ou CULPA do agente. São duas etapas distintas.',
-    dificuldade: 3,
-    tags: ['responsabilidade', 'art. 37']
-  }  ,
-
-  /* ============================================================
-     DC-12 — Poder Legislativo
-  ============================================================ */
-  {
-    id: 'F-DC-12-0001',
-    moduloId: 'DC-12',
-    topicoId: 'DC-12',
-    frente: 'Como se compõe o Congresso Nacional?',
-    verso: 'BICAMERAL: Câmara dos Deputados (representantes do povo) + Senado Federal (representantes dos Estados e do DF). Câmara: mín. 8 e máx. 70 deputados por Estado, mandato 4 anos, sistema proporcional. Senado: 3 senadores por Estado e DF, mandato 8 anos, eleição majoritária, renovação 1/3 e 2/3.',
-    dificuldade: 2,
-    tags: ['congresso', 'art. 44']
-  },
-  {
-    id: 'F-DC-12-0002',
-    moduloId: 'DC-12',
-    topicoId: 'DC-12',
-    frente: 'Qual a diferença entre imunidade MATERIAL e FORMAL do parlamentar?',
-    verso: 'MATERIAL (art. 53, caput): inviolabilidade civil e penal por OPINIÕES, PALAVRAS e VOTOS, no exercício do mandato — em qualquer lugar. FORMAL (art. 53, §§): relativa a prisão (só em flagrante de crime inafiançável) e a processo (sem licença prévia após EC 35/2001, com possibilidade de sustação pela Casa).',
-    dificuldade: 3,
-    tags: ['imunidade', 'art. 53']
-  },
-  {
-    id: 'F-DC-12-0003',
-    moduloId: 'DC-12',
-    topicoId: 'DC-12',
-    frente: 'Quais são os poderes e limites da CPI?',
-    verso: 'PODE: quebrar sigilo bancário, fiscal e de dados telefônicos; convocar; ouvir testemunhas; requisitar documentos. NÃO PODE: decretar prisão (salvo flagrante), determinar busca domiciliar, determinar interceptação telefônica (escuta).',
-    dificuldade: 3,
-    tags: ['CPI', 'art. 58']
-  },
-  {
-    id: 'F-DC-12-0004',
-    moduloId: 'DC-12',
-    topicoId: 'DC-12',
-    frente: 'Qual a natureza jurídica do Tribunal de Contas da União?',
-    verso: 'Órgão AUXILIAR do Poder LEGISLATIVO, com autonomia e funções próprias. NÃO integra o Poder Judiciário, NÃO é subordinado ao Legislativo nem ao Executivo. Exerce controle externo contábil, financeiro, orçamentário, operacional e patrimonial.',
-    dificuldade: 2,
-    tags: ['TCU', 'art. 70']
+    tags: ['bit', 'byte', 'unidades']
   },
 
   /* ============================================================
-     DC-13 — Processo Legislativo
+     INF-02 — Windows (5)
   ============================================================ */
   {
-    id: 'F-DC-13-0001',
-    moduloId: 'DC-13',
-    topicoId: 'DC-13',
-    frente: 'Quais são os quóruns de emenda, lei complementar e lei ordinária?',
-    verso: 'EMENDA CONSTITUCIONAL (art. 60, §2º): 3/5 em DOIS turnos em cada Casa. LEI COMPLEMENTAR (art. 69): maioria ABSOLUTA. LEI ORDINÁRIA (art. 47): maioria SIMPLES (relativa). Não há hierarquia entre LC e LO — a diferença é material e de quórum.',
-    dificuldade: 3,
-    tags: ['quórum', 'processo legislativo']
-  },
-  {
-    id: 'F-DC-13-0002',
-    moduloId: 'DC-13',
-    topicoId: 'DC-13',
-    frente: 'Quais são os prazos da Medida Provisória (art. 62)?',
-    verso: 'Vigência: 60 dias, prorrogável UMA única vez por mais 60. Se não for apreciada em 45 dias contados da publicação, entra em REGIME DE URGÊNCIA e tranca a pauta da Casa onde estiver. Se não for apreciada em 120 dias, perde eficácia desde a edição.',
-    dificuldade: 3,
-    tags: ['MP', 'art. 62']
-  },
-  {
-    id: 'F-DC-13-0003',
-    moduloId: 'DC-13',
-    topicoId: 'DC-13',
-    frente: 'Quais são as 7 espécies normativas do art. 59 da CF/88?',
-    verso: 'Emendas à Constituição, Leis Complementares, Leis Ordinárias, Leis Delegadas, Medidas Provisórias, Decretos Legislativos e Resoluções. Mnemônico: E-LC-LO-LD-MP-DL-R.',
+    id: 'F-INF-02-0001',
+    moduloId: 'INF-02',
+    topicoId: 'INF-02',
+    frente: 'Qual a diferença entre COPIAR (Ctrl+C) e MOVER (Ctrl+X)?',
+    verso: 'COPIAR: duplica — o original PERMANECE na origem e uma cópia vai para o destino. MOVER: transfere — o arquivo SAI da origem e vai para o destino. Atenção ao arrastar: dentro da MESMA unidade, arrastar = mover; entre unidades DIFERENTES (C: → pendrive), arrastar = copiar. Ctrl força cópia; Shift força mover.',
     dificuldade: 2,
-    tags: ['espécies normativas', 'art. 59']
+    tags: ['copiar', 'mover']
   },
   {
-    id: 'F-DC-13-0004',
-    moduloId: 'DC-13',
-    topicoId: 'DC-13',
-    frente: 'O que é veto parcial e qual sua restrição?',
-    verso: 'O veto pode ser total ou parcial. O veto PARCIAL deve recair sobre PARTE do texto com sentido próprio — NÃO pode atingir palavra ou artigo isolado sem relação com o conjunto. O veto é apreciado em sessão conjunta do Congresso, com derrubada por MAIORIA ABSOLUTA.',
+    id: 'F-INF-02-0002',
+    moduloId: 'INF-02',
+    topicoId: 'INF-02',
+    frente: 'Qual a diferença entre Delete e Shift+Delete?',
+    verso: 'DELETE (simples): envia o arquivo para a LIXEIRA — pode ser restaurado. SHIFT+DELETE: exclui DEFINITIVAMENTE — não passa pela Lixeira e não há como restaurar pelo Windows. Atenção: arquivos de pendrives e de unidades de rede geralmente NÃO vão para a Lixeira, mesmo com Delete simples.',
     dificuldade: 2,
-    tags: ['veto', 'art. 66']
+    tags: ['Lixeira', 'exclusão']
+  },
+  {
+    id: 'F-INF-02-0003',
+    moduloId: 'INF-02',
+    topicoId: 'INF-02',
+    frente: 'Qual a diferença entre ARQUIVO e ATALHO?',
+    verso: 'ARQUIVO: contém dados reais (documento, imagem, planilha). ATALHO: pequeno arquivo (.lnk) que APONTA para outro — ícone com seta. Apagar o atalho NÃO apaga o arquivo original; apagar o original deixa o atalho inválido ("quebrado").',
+    dificuldade: 1,
+    tags: ['atalho', 'arquivo']
+  },
+  {
+    id: 'F-INF-02-0004',
+    moduloId: 'INF-02',
+    topicoId: 'INF-02',
+    frente: 'Qual a diferença entre conta de Administrador e conta Padrão no Windows?',
+    verso: 'ADMINISTRADOR: controle total — instala programas, altera configurações do sistema, acessa todos os arquivos, cria/gerencia contas. PADRÃO: uso normal — usa programas e altera arquivos pessoais, mas não instala programas que afetem o sistema nem altera configurações críticas sem senha de administrador.',
+    dificuldade: 2,
+    tags: ['contas', 'permissões']
+  },
+  {
+    id: 'F-INF-02-0005',
+    moduloId: 'INF-02',
+    topicoId: 'INF-02',
+    frente: 'Quais são os atalhos essenciais do Windows?',
+    verso: 'Ctrl+C (copiar), Ctrl+X (recortar/mover), Ctrl+V (colar), Ctrl+Z (desfazer), Ctrl+Y (refazer), Ctrl+A/T (selecionar tudo), Ctrl+Shift+N (nova pasta), F2 (renomear), Delete (Lixeira), Shift+Delete (exclusão definitiva), Win+E (Explorador), Win+L (bloquear sessão), Win+D (área de trabalho), Alt+Tab (alternar janelas), Alt+F4 (fechar), Print Screen (captura tela toda), Win+Shift+S (recorte), Ctrl+Alt+Del (tela de segurança), Ctrl+Shift+Esc (Gerenciador de Tarefas).',
+    dificuldade: 2,
+    tags: ['atalhos', 'Windows']
   },
 
   /* ============================================================
-     DC-RN — Constituição do Estado do Rio Grande do Norte
+     INF-03 — Word (5)
   ============================================================ */
   {
-    id: 'F-DC-RN-0001',
-    moduloId: 'DC-RN',
-    topicoId: 'DC-RN',
-    frente: 'Como está organizado o Poder Legislativo do Estado do RN?',
-    verso: 'A Assembleia Legislativa do RN é UNICAMERAL (uma Casa), composta por DEPUTADOS ESTADUAIS eleitos para mandato de 4 anos. Não existem "senadores estaduais" — senadores são federais (Congresso Nacional).',
+    id: 'F-INF-03-0001',
+    moduloId: 'INF-03',
+    topicoId: 'INF-03',
+    frente: 'Qual a diferença entre SALVAR, SALVAR COMO e EXPORTAR no Word?',
+    verso: 'SALVAR (Ctrl+B em PT): grava no MESMO local/formato — sobrescreve o original. SALVAR COMO (F12): escolhe NOVO nome, local ou formato — o original é preservado. EXPORTAR: gera uma CÓPIA em outro formato (ex.: PDF) — o arquivo .docx permanece intacto e editável.',
     dificuldade: 2,
-    tags: ['RN', 'Assembleia']
+    tags: ['salvar', 'exportar']
   },
   {
-    id: 'F-DC-RN-0002',
-    moduloId: 'DC-RN',
-    topicoId: 'DC-RN',
-    frente: 'Qual é o papel do TCE/RN?',
-    verso: 'O Tribunal de Contas do Estado do RN é órgão AUXILIAR da Assembleia Legislativa e fiscaliza as contas do ESTADO e também dos MUNICÍPIOS do RN — pois não há Tribunal de Contas dos Municípios separado no RN. O TCE acumula as duas funções.',
-    dificuldade: 2,
-    tags: ['RN', 'TCE']
-  },
-  {
-    id: 'F-DC-RN-0003',
-    moduloId: 'DC-RN',
-    topicoId: 'DC-RN',
-    frente: 'Como se relacionam a CE/RN/1989 e a CF/88?',
-    verso: 'A CE/RN está SUBORDINADA à CF/88 — prevalece o princípio da supremacia constitucional federal. A CE/RN não pode contrariar a CF nem criar hipóteses não previstas nela. Municípios do RN seguem a Lei Orgânica municipal + CE/RN + CF/88.',
+    id: 'F-INF-03-0002',
+    moduloId: 'INF-03',
+    topicoId: 'INF-03',
+    frente: 'Qual a diferença entre QUEBRA DE PÁGINA e QUEBRA DE SEÇÃO?',
+    verso: 'QUEBRA DE PÁGINA (Ctrl+Enter): apenas inicia nova página — a formatação continua igual (mesmo cabeçalho, mesmas margens). QUEBRA DE SEÇÃO: divide o documento em BLOCOS independentes — permite cabeçalhos, margens e até orientações diferentes (retrato/paisagem) em cada seção. Use seção quando precisar de formatações distintas no mesmo arquivo.',
     dificuldade: 3,
-    tags: ['RN', 'supremacia']
+    tags: ['quebra de página', 'quebra de seção']
   },
   {
-    id: 'F-DC-RN-0004',
-    moduloId: 'DC-RN',
-    topicoId: 'DC-RN',
-    frente: 'Qual o regime dos servidores públicos estaduais do RN?',
-    verso: 'Regime JURÍDICO ÚNICO (estatutário), estabelecido por LEI COMPLEMENTAR estadual. Não é regime celetista (CLT). O provimento em cargos efetivos depende de concurso público.',
+    id: 'F-INF-03-0003',
+    moduloId: 'INF-03',
+    topicoId: 'INF-03',
+    frente: 'Quais os atalhos do Word em PORTUGUÊS que costumam confundir?',
+    verso: 'Em PT-BR: Ctrl+B = SALVAR (não negrito!). Ctrl+S = SUBLINHADO (não salvar!). Ctrl+N = NEGRITO. Ctrl+I = ITÁLICO. Ctrl+E = centralizar. Ctrl+J = justificar. Ctrl+Q = alinhar à esquerda. Ctrl+G = alinhar à direita. Ctrl+U = Localizar e Substituir. Em inglês é diferente: Ctrl+B = bold e Ctrl+S = save.',
+    dificuldade: 3,
+    tags: ['atalhos', 'Word PT-BR']
+  },
+  {
+    id: 'F-INF-03-0004',
+    moduloId: 'INF-03',
+    topicoId: 'INF-03',
+    frente: 'Como funciona o SUMÁRIO AUTOMÁTICO no Word?',
+    verso: 'O sumário automático é gerado a partir dos ESTILOS aplicados (Título 1, Título 2, Normal). Sem estilos, o sumário não é gerado. Para criar: aplique os estilos aos títulos e use Referências → Sumário. Se o documento for editado, basta atualizar o sumário para refletir as alterações.',
     dificuldade: 2,
-    tags: ['RN', 'servidores']
+    tags: ['sumário', 'estilos']
+  },
+  {
+    id: 'F-INF-03-0005',
+    moduloId: 'INF-03',
+    topicoId: 'INF-03',
+    frente: 'O que é cabeçalho e rodapé no Word?',
+    verso: 'CABEÇALHO: área fixa no TOPO das páginas. RODAPÉ: área fixa na BASE das páginas. Servem para inserir conteúdo repetido — título do documento, nome do autor, número de página, data. Aparecem em TODAS as páginas por padrão (ou por seção, se configurado diferente). Numeração automática: Inserir → Número de Página.',
+    dificuldade: 1,
+    tags: ['cabeçalho', 'rodapé']
   },
 
   /* ============================================================
-     DC-10 — Intervenção
+     INF-04 — Excel (6)
   ============================================================ */
   {
-    id: 'F-DC-10-0001',
-    moduloId: 'DC-10',
-    topicoId: 'DC-10',
-    frente: 'Quais são as hipóteses de intervenção FEDERAL nos Estados (art. 34)?',
-    verso: 'I) manter a integridade nacional; II) repelir invasão estrangeira ou de uma unidade da Federação em outra; III) pôr termo a grave comprometimento da ordem pública; IV) garantir o livre exercício de qualquer dos Poderes; V) reorganizar as finanças (dívida fundada não paga por mais de 2 anos); VI) prover execução de lei federal, ordem ou decisão judicial; VII) assegurar a observância dos princípios constitucionais sensíveis.',
+    id: 'F-INF-04-0001',
+    moduloId: 'INF-04',
+    topicoId: 'INF-04',
+    frente: 'Qual a diferença entre referência RELATIVA, ABSOLUTA e MISTA no Excel?',
+    verso: 'RELATIVA (A1): muda ao copiar a fórmula. ABSOLUTA ($A$1): o "$" trava — NÃO muda ao copiar. MISTA ($A1 ou A$1): trava apenas a coluna OU a linha. Tecla F4 alterna entre A1 → $A$1 → A$1 → $A1. Use absoluta para fixar células específicas (ex.: taxa de juros).',
     dificuldade: 3,
-    tags: ['intervenção', 'art. 34']
+    tags: ['referências', 'Excel']
   },
   {
-    id: 'F-DC-10-0002',
-    moduloId: 'DC-10',
-    topicoId: 'DC-10',
-    frente: 'Quais são as hipóteses de intervenção ESTADUAL nos Municípios (art. 35)?',
-    verso: 'I) deixar de ser paga, sem motivo, por 2 anos, a dívida fundada; II) não forem prestadas contas devidas; III) não tiver sido aplicado o mínimo exigido na educação e na saúde; IV) o Tribunal de Justiça der provimento a representação para assegurar a observância de princípios da Constituição Estadual ou prover a execução de lei, ordem ou decisão judicial.',
-    dificuldade: 3,
-    tags: ['intervenção', 'art. 35']
+    id: 'F-INF-04-0002',
+    moduloId: 'INF-04',
+    topicoId: 'INF-04',
+    frente: 'Qual a diferença entre FÓRMULA e FUNÇÃO?',
+    verso: 'FÓRMULA: expressão matemática escrita pelo usuário. Ex.: =A1+B1. FUNÇÃO: fórmula PRONTA com nome específico. Ex.: =SOMA(A1:A10). Toda função é uma fórmula (começa com =), mas nem toda fórmula é função. Funções evitam cálculos longos e têm sintaxe própria.',
+    dificuldade: 2,
+    tags: ['fórmula', 'função']
   },
   {
-    id: 'F-DC-10-0003',
-    moduloId: 'DC-10',
-    topicoId: 'DC-10',
-    frente: 'Como funciona o procedimento da intervenção federal?',
-    verso: 'DECRETO: Presidente da República. OUVIDORIA: Conselho da República e Conselho de Defesa Nacional. CONTROLE: Congresso Nacional aprova o decreto em 24h (convocação extraordinária em 5 dias se em recesso). O decreto especifica amplitude, prazo e condições. Cessada a causa, retornam as autoridades afastadas (salvo impedimento legal).',
+    id: 'F-INF-04-0003',
+    moduloId: 'INF-04',
+    topicoId: 'INF-04',
+    frente: 'Qual a ordem de cálculo no Excel?',
+    verso: '1º PARÊNTESES; 2º POTÊNCIA (^); 3º MULTIPLICAÇÃO e DIVISÃO (esquerda para direita); 4º SOMA e SUBTRAÇÃO. Ex.: =2+3*4 = 14 (não 20); =(2+3)*4 = 20. A banca cobra muito essa diferença.',
+    dificuldade: 2,
+    tags: ['ordem de cálculo']
+  },
+  {
+    id: 'F-INF-04-0004',
+    moduloId: 'INF-04',
+    topicoId: 'INF-04',
+    frente: 'Qual a diferença entre CONT.NÚM e CONT.VALORES?',
+    verso: 'CONT.NÚM(intervalo): conta apenas células com NÚMEROS — ignora texto e vazias. CONT.VALORES(intervalo): conta células NÃO VAZIAS — inclui números, textos e datas. Se o intervalo tiver 6 números e 2 textos: CONT.NÚM = 6; CONT.VALORES = 8.',
     dificuldade: 3,
-    tags: ['intervenção', 'procedimento']
+    tags: ['CONT.NÚM', 'CONT.VALORES']
+  },
+  {
+    id: 'F-INF-04-0005',
+    moduloId: 'INF-04',
+    topicoId: 'INF-04',
+    frente: 'Qual a diferença entre SE e CONT.SE?',
+    verso: 'SE(teste; valor_se_verdadeiro; valor_se_falso): RETORNA um valor conforme o teste. Ex.: =SE(A1>=7;"Aprovado";"Reprovado"). CONT.SE(intervalo; critério): CONTA quantas células atendem ao critério. Ex.: =CONT.SE(A1:A10;">7") conta quantas células são maiores que 7.',
+    dificuldade: 2,
+    tags: ['SE', 'CONT.SE']
+  },
+  {
+    id: 'F-INF-04-0006',
+    moduloId: 'INF-04',
+    topicoId: 'INF-04',
+    frente: 'O que significam as mensagens de erro #DIV/0!, #VALOR!, #REF! e #N/A?',
+    verso: '#DIV/0!: divisão por zero ou por célula vazia. #VALOR!: operação com tipo errado (ex.: somar texto com número). #REF!: referência inválida (célula foi excluída). #N/A: valor não disponível (ex.: PROCV sem correspondência). #NOME?: nome de função digitado errado. A banca cobra a interpretação de cada uma.',
+    dificuldade: 3,
+    tags: ['erros Excel']
   },
 
   /* ============================================================
-     DC-14 — Poder Executivo
+     INF-05 — PowerPoint (4)
   ============================================================ */
   {
-    id: 'F-DC-14-0001',
-    moduloId: 'DC-14',
-    topicoId: 'DC-14',
-    frente: 'Qual é a linha sucessória do Presidente da República (art. 80)?',
-    verso: 'Em caso de impedimento do Presidente e do Vice, ou vacância dos cargos, assumem sucessivamente: 1) Presidente da Câmara dos Deputados; 2) Presidente do Senado Federal; 3) Presidente do STF.',
+    id: 'F-INF-05-0001',
+    moduloId: 'INF-05',
+    topicoId: 'INF-05',
+    frente: 'Qual a diferença entre TRANSIÇÃO e ANIMAÇÃO no PowerPoint?',
+    verso: 'TRANSIÇÃO: efeito aplicado à PASSAGEM entre um slide e outro — acontece UMA vez por slide. Ex.: slide surge dissolvendo, deslizando. ANIMAÇÃO: efeito aplicado a OBJETOS dentro do slide (texto, imagem, forma). Ex.: título aparece letra por letra; imagem gira. Regra: TRANSIÇÃO = entre slides; ANIMAÇÃO = dentro do slide.',
     dificuldade: 2,
-    tags: ['sucessão', 'art. 80']
+    tags: ['transição', 'animação']
   },
   {
-    id: 'F-DC-14-0002',
-    moduloId: 'DC-14',
-    topicoId: 'DC-14',
-    frente: 'Como é a eleição em caso de vacância do cargo de Presidente (art. 81)?',
-    verso: 'VACÂNCIA NOS 2 PRIMEIROS ANOS: eleição DIRETA em 90 dias. VACÂNCIA NOS 2 ÚLTIMOS ANOS: eleição INDIRETA pelo Congresso em 30 dias. Em ambos os casos, os eleitos completam o período restante.',
-    dificuldade: 3,
-    tags: ['vacância', 'art. 81']
+    id: 'F-INF-05-0002',
+    moduloId: 'INF-05',
+    topicoId: 'INF-05',
+    frente: 'Qual a diferença entre TEMA e LAYOUT no PowerPoint?',
+    verso: 'TEMA: conjunto de cores, fontes e efeitos aplicado a TODA a apresentação — mantém identidade visual. LAYOUT: disposição dos elementos em UM slide específico (título + conteúdo, duas colunas, apenas título etc.). Você pode trocar o layout de um slide sem mudar o tema da apresentação.',
+    dificuldade: 2,
+    tags: ['tema', 'layout']
   },
   {
-    id: 'F-DC-14-0003',
-    moduloId: 'DC-14',
-    topicoId: 'DC-14',
-    frente: 'Quem processa e julga o Presidente em crime COMUM e em crime DE RESPONSABILIDADE?',
-    verso: 'CRIME COMUM: Câmara autoriza (2/3) → STF processa e julga. CRIME DE RESPONSABILIDADE: Câmara autoriza (2/3) → SENADO FEDERAL processa e julga. A Câmara apenas AUTORIZA; o órgão julgador varia conforme a natureza do crime.',
-    dificuldade: 3,
-    tags: ['crime de responsabilidade', 'impeachment']
+    id: 'F-INF-05-0003',
+    moduloId: 'INF-05',
+    topicoId: 'INF-05',
+    frente: 'Qual a diferença entre F5 e Shift+F5 no PowerPoint?',
+    verso: 'F5: inicia a apresentação a partir do PRIMEIRO slide. Shift+F5: inicia a partir do SLIDE ATUAL (onde o cursor está). Durante a apresentação: Esc (sair), B (tela preta), W (tela branca). Outros: Ctrl+M (novo slide), Ctrl+D (duplicar slide).',
+    dificuldade: 2,
+    tags: ['F5', 'apresentação']
+  },
+  {
+    id: 'F-INF-05-0004',
+    moduloId: 'INF-05',
+    topicoId: 'INF-05',
+    frente: 'Qual a diferença entre .pptx e .ppsx no PowerPoint?',
+    verso: '.PPTX: formato padrão de apresentação — abre em modo de EDIÇÃO. .PPSX: formato de "apresentação de slides" — abre DIRETO em modo de apresentação (tela cheia). Útil para enviar a alguém que só vai assistir, não editar. Outros formatos de exportação: PDF (distribuição), vídeo (.mp4), imagens.',
+    dificuldade: 2,
+    tags: ['formatos', 'pptx', 'ppsx']
   },
 
   /* ============================================================
-     DC-15 — Poder Judiciário
+     INF-06 — LibreOffice (4)
   ============================================================ */
   {
-    id: 'F-DC-15-0001',
-    moduloId: 'DC-15',
-    topicoId: 'DC-15',
-    frente: 'Quais são as garantias constitucionais dos magistrados (art. 95)?',
-    verso: 'VITALICIEDADE: o juiz não perde o cargo (após 2 anos no 1º grau; imediata nos tribunais superiores), salvo por sentença judicial transitada em julgado. INAMOVIBILIDADE: o juiz não pode ser removido de sua comarca sem sua vontade, salvo por interesse público (voto de 2/3 do tribunal). IRREDUTIBILIDADE DE SUBSÍDIO: não pode ser reduzido.',
-    dificuldade: 2,
-    tags: ['garantias', 'magistratura']
+    id: 'F-INF-06-0001',
+    moduloId: 'INF-06',
+    topicoId: 'INF-06',
+    frente: 'Qual a correspondência entre os aplicativos do LibreOffice e do Microsoft Office?',
+    verso: 'LIBREOFFICE → OFFICE: Writer → Word (texto). Calc → Excel (planilha). Impress → PowerPoint (apresentação). Base → Access (banco de dados). Draw → não tem correspondente direto (desenho vetorial). Math → fórmulas matemáticas.',
+    dificuldade: 1,
+    tags: ['LibreOffice', 'correspondência']
   },
   {
-    id: 'F-DC-15-0002',
-    moduloId: 'DC-15',
-    topicoId: 'DC-15',
-    frente: 'Qual a diferença entre STF e STJ (composição e função)?',
-    verso: 'STF: guarda da CONSTITUIÇÃO; 11 ministros; julga ADI, ADC, ADPF, ADO, extradição, HC de autoridades específicas. STJ: guarda da LEI FEDERAL; 33 ministros; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade é desembargador.',
+    id: 'F-INF-06-0002',
+    moduloId: 'INF-06',
+    topicoId: 'INF-06',
+    frente: 'Quais os formatos NATIVOS do LibreOffice Writer, Calc e Impress?',
+    verso: 'Writer: .odt (OpenDocument Text). Calc: .ods (OpenDocument Spreadsheet). Impress: .odp (OpenDocument Presentation). Todos são do padrão ODF (OpenDocument Format, ISO/IEC 26300) — aberto. Os formatos .docx, .xlsx e .pptx são do Microsoft Office — o LibreOffice os abre e salva, mas não são nativos.',
     dificuldade: 2,
-    tags: ['STF', 'STJ']
+    tags: ['ODF', 'formatos']
   },
   {
-    id: 'F-DC-15-0003',
-    moduloId: 'DC-15',
-    topicoId: 'DC-15',
-    frente: 'Qual é a função do CNJ?',
-    verso: 'Conselho Nacional de Justiça: órgão de CONTROLE administrativo, financeiro e disciplinar do Judiciário, criado pela EC 45/2004. Composição: 15 membros, presidido pelo Presidente do STF. NÃO julga causas.',
+    id: 'F-INF-06-0003',
+    moduloId: 'INF-06',
+    topicoId: 'INF-06',
+    frente: 'O LibreOffice é 100% compatível com o Microsoft Office?',
+    verso: 'NÃO. LibreOffice abre e salva em .docx, .xlsx e .pptx, mas a compatibilidade não é total: formatações complexas (SmartArt, tabelas elaboradas), macros VBA e fontes exclusivas podem sofrer alterações. O padrão de salvamento do LibreOffice é ODF; para Office, use "Salvar como" e escolha o formato desejado.',
     dificuldade: 2,
-    tags: ['CNJ', 'EC 45/2004']
+    tags: ['compatibilidade']
+  },
+  {
+    id: 'F-INF-06-0004',
+    moduloId: 'INF-06',
+    topicoId: 'INF-06',
+    frente: 'Qual o separador de argumentos nas funções do LibreOffice Calc em português?',
+    verso: 'Em versões em PORTUGUÊS do Brasil do Calc, o separador de argumentos é PONTO E VÍRGULA: =SOMA(A1;A10); =SE(A1>=7;"Aprovado";"Reprovado"). No Excel em INGLÊS, o separador é a VÍRGULA. Em versões do Excel em português, também pode ser ponto e vírgula. Sempre leia o enunciado para ver o padrão usado.',
+    dificuldade: 3,
+    tags: ['Calc', 'separador']
   },
 
   /* ============================================================
-     DC-16 — Funções Essenciais à Justiça
+     INF-07 — Internet e Navegadores (5)
   ============================================================ */
   {
-    id: 'F-DC-16-0001',
-    moduloId: 'DC-16',
-    topicoId: 'DC-16',
-    frente: 'Quais são os princípios institucionais do Ministério Público?',
-    verso: 'UNIDADE: o MP é uno (cada membro atua em nome da instituição). INDIVISIBILIDADE: os membros podem se substituir. INDEPENDÊNCIA FUNCIONAL: cada membro atua conforme sua consciência e a lei, sem subordinação a outro membro (art. 127, §1º).',
-    dificuldade: 3,
-    tags: ['MP', 'princípios']
-  },
-  {
-    id: 'F-DC-16-0002',
-    moduloId: 'DC-16',
-    topicoId: 'DC-16',
-    frente: 'Qual é a função da Defensoria Pública (art. 134)?',
-    verso: 'Instituição permanente e essencial à função jurisdicional do Estado, incumbindo-lhe a orientação jurídica, a promoção dos direitos humanos e a defesa, em todos os graus, judicial e extrajudicial, dos direitos individuais e coletivos, de forma INTEGRAL e GRATUITA, aos NECESSITADOS. Tem autonomia funcional e administrativa (EC 80/2014).',
+    id: 'F-INF-07-0001',
+    moduloId: 'INF-07',
+    topicoId: 'INF-07',
+    frente: 'Qual a diferença entre INTERNET e WEB?',
+    verso: 'INTERNET: infraestrutura mundial de redes — conecta bilhões de dispositivos. É o "encanamento". WEB (WWW): um dos SERVIÇOS que rodam sobre a Internet — conjunto de páginas acessadas por navegador. É "a água que passa pelo encanamento". Outros serviços: e-mail, FTP, VoIP, streaming. A Internet é maior que a Web.',
     dificuldade: 2,
-    tags: ['Defensoria Pública']
+    tags: ['internet', 'Web']
   },
   {
-    id: 'F-DC-16-0003',
-    moduloId: 'DC-16',
-    topicoId: 'DC-16',
-    frente: 'Qual é a função da AGU, das PGEs e das PGMs?',
-    verso: 'AGU (art. 131): representa a UNIÃO, judicial e extrajudicialmente, e presta consultoria ao Executivo federal. PGEs (art. 132): representam os ESTADOS e o DF. PGMs: representam os MUNICÍPIOS. Todas são formas de ADVOCACIA PÚBLICA — defendem o ESTADO, não o cidadão.',
+    id: 'F-INF-07-0002',
+    moduloId: 'INF-07',
+    topicoId: 'INF-07',
+    frente: 'Qual a diferença entre INTRANET e EXTRANET?',
+    verso: 'INTRANET: rede interna privada de uma organização — restrita a funcionários. EXTRANET: extensão da intranet — permite acesso a parceiros externos AUTORIZADOS (fornecedores, clientes, filiais). Ambas usam tecnologia Web; a diferença está em QUEM pode acessar.',
+    dificuldade: 2,
+    tags: ['intranet', 'extranet']
+  },
+  {
+    id: 'F-INF-07-0003',
+    moduloId: 'INF-07',
+    topicoId: 'INF-07',
+    frente: 'Qual a diferença entre HTTP e HTTPS?',
+    verso: 'HTTP: protocolo SEM criptografia — dados trafegam em texto claro. HTTPS: HTTP + criptografia (SSL/TLS) — dados trafegam protegidos. Sites com HTTPS mostram um CADEADO na barra de endereços. Atenção: o cadeado garante criptografia, mas NÃO garante que o site é honesto.',
+    dificuldade: 2,
+    tags: ['HTTP', 'HTTPS']
+  },
+  {
+    id: 'F-INF-07-0004',
+    moduloId: 'INF-07',
+    topicoId: 'INF-07',
+    frente: 'Qual a diferença entre CACHE e COOKIES?',
+    verso: 'CACHE: cópias locais de imagens e páginas — aceleram o carregamento em visitas futuras. COOKIES: pequenos arquivos com dados de sessão, preferências e login — identificam o usuário ao site. Limpar cache libera espaço; limpar cookies desloga e apaga preferências.',
+    dificuldade: 2,
+    tags: ['cache', 'cookies']
+  },
+  {
+    id: 'F-INF-07-0005',
+    moduloId: 'INF-07',
+    topicoId: 'INF-07',
+    frente: 'A navegação privada (anônima) garante anonimato total?',
+    verso: 'NÃO. A navegação privada NÃO salva histórico, cookies e formulários no DISPOSITIVO local — útil em computadores compartilhados. Mas o PROVEDOR, a REDE CORPORATIVA e os SITES ainda veem sua atividade. Para anonimato real seria necessário VPN ou Tor. Atalhos: Ctrl+Shift+N (Chrome/Edge); Ctrl+Shift+P (Firefox).',
     dificuldade: 3,
-    tags: ['AGU', 'advocacia pública']
+    tags: ['navegação privada']
   },
 
   /* ============================================================
-     DC-17 — Defesa do Estado e Instituições Democráticas
+     INF-08 — Correio Eletrônico (5)
   ============================================================ */
   {
-    id: 'F-DC-17-0001',
-    moduloId: 'DC-17',
-    topicoId: 'DC-17',
-    frente: 'Qual a diferença entre Estado de Defesa e Estado de Sítio?',
-    verso: 'DEFESA (art. 136): instabilidade institucional grave e iminente OU calamidades naturais de grandes proporções em LOCAIS RESTRITOS; prazo de 30 dias, prorrogável UMA VEZ. SÍTIO (art. 137): comoção nacional, ineficácia do Estado de Defesa ou guerra/agressão estrangeira; prazo de 30 dias, prorrogável por iguais períodos.',
+    id: 'F-INF-08-0001',
+    moduloId: 'INF-08',
+    topicoId: 'INF-08',
+    frente: 'Qual a diferença entre Cc e Cco?',
+    verso: 'CC (Com Cópia): destinatários VISÍVEIS a todos. CCO (Com Cópia Oculta): destinatários OCULTOS — apenas o remetente sabe que eles receberam. Use Cco em listas grandes para preservar a privacidade dos e-mails. "Responder a todos" NÃO inclui quem está em Cco.',
+    dificuldade: 2,
+    tags: ['Cc', 'Cco']
+  },
+  {
+    id: 'F-INF-08-0002',
+    moduloId: 'INF-08',
+    topicoId: 'INF-08',
+    frente: 'Qual a diferença entre RESPONDER, RESPONDER A TODOS e ENCAMINHAR?',
+    verso: 'RESPONDER: envia resposta APENAS ao remetente original. RESPONDER A TODOS: envia ao remetente + destinatários em Para e Cc (NÃO inclui Cco). ENCAMINHAR: envia a mensagem recebida para NOVAS pessoas — não é uma resposta, é um repasse. Cuidado com "responder a todos" desnecessário — gera spam e exposição.',
+    dificuldade: 2,
+    tags: ['responder', 'encaminhar']
+  },
+  {
+    id: 'F-INF-08-0003',
+    moduloId: 'INF-08',
+    topicoId: 'INF-08',
+    frente: 'Qual a diferença entre SMTP, POP3 e IMAP?',
+    verso: 'SMTP (Simple Mail Transfer Protocol): ENVIO de e-mail. POP3: RECEBIMENTO — baixa as mensagens e geralmente as REMOVE do servidor (dificulta sincronização). IMAP: RECEBIMENTO — mantém no SERVIDOR e SINCRONIZA entre dispositivos (ideal para celular + computador). Hoje o IMAP é o mais recomendado.',
     dificuldade: 3,
-    tags: ['Estado de Defesa', 'Estado de Sítio']
+    tags: ['SMTP', 'POP3', 'IMAP']
   },
   {
-    id: 'F-DC-17-0002',
-    moduloId: 'DC-17',
-    topicoId: 'DC-17',
-    frente: 'Quais são as três Forças Armadas e sua missão (art. 142)?',
-    verso: 'Marinha, Exército e Aeronáutica. Missão: defesa da Pátria, garantia dos Poderes constituídos e da lei e da ordem. São instituições NACIONAIS permanentes e regulares, organizadas com base na hierarquia e disciplina, sob autoridade suprema do Presidente da República.',
+    id: 'F-INF-08-0004',
+    moduloId: 'INF-08',
+    topicoId: 'INF-08',
+    frente: 'Qual a diferença entre SPAM e PHISHING?',
+    verso: 'SPAM: mensagem NÃO SOLICITADA, geralmente publicitária — incômodo, mas não necessariamente malicioso. PHISHING: mensagem FRAUDULENTA que imita instituições legítimas (banco, governo) para ROUBAR DADOS (senhas, CPF, cartão). Toda phishing é uma ameaça séria. A banca explora a confusão entre os dois.',
     dificuldade: 2,
-    tags: ['Forças Armadas']
+    tags: ['spam', 'phishing']
   },
   {
-    id: 'F-DC-17-0003',
-    moduloId: 'DC-17',
-    topicoId: 'DC-17',
-    frente: 'Quais são os órgãos de segurança pública (art. 144)?',
-    verso: 'I) Polícia Federal; II) Polícia Rodoviária Federal; III) Polícia Ferroviária Federal; IV) Polícias Civis; V) Polícias Militares e Corpos de Bombeiros Militares. Os Municípios PODEM constituir guardas municipais para proteção de bens, serviços e instalações.',
-    dificuldade: 2,
-    tags: ['segurança pública', 'art. 144']
+    id: 'F-INF-08-0005',
+    moduloId: 'INF-08',
+    topicoId: 'INF-08',
+    frente: 'Como identificar um e-mail de phishing?',
+    verso: 'Sinais: (1) remetente suspeito (verifique o endereço real, não apenas o nome exibido); (2) erros de português; (3) urgência exagerada ("sua conta será bloqueada em 24h"); (4) pedido de senha, CPF ou dados bancários; (5) links duvidosos (passe o mouse para ver o destino); (6) anexos inesperados (.exe, .scr, .zip). Boa prática: NÃO clicar; acessar o site oficial digitando o endereço no navegador; denunciar.',
+    dificuldade: 3,
+    tags: ['phishing', 'segurança']
   },
 
   /* ============================================================
-     DC-18 — Controle de Constitucionalidade
+     INF-09 — Redes (5)
   ============================================================ */
   {
-    id: 'F-DC-18-0001',
-    moduloId: 'DC-18',
-    topicoId: 'DC-18',
-    frente: 'Qual a diferença entre controle difuso e concentrado?',
-    verso: 'DIFUSO (incidental): qualquer juiz ou tribunal, ao julgar caso concreto; efeitos INTER PARTES. CONCENTRADO (abstrato): STF, em ação própria (ADI, ADC, ADPF, ADO); efeitos ERGA OMNES e VINCULANTE.',
-    dificuldade: 3,
-    tags: ['difuso', 'concentrado']
+    id: 'F-INF-09-0001',
+    moduloId: 'INF-09',
+    topicoId: 'INF-09',
+    frente: 'Qual a diferença entre LAN, MAN e WAN?',
+    verso: 'LAN (Local Area Network): rede LOCAL de curta distância — casa, escritório, escola. MAN (Metropolitan Area Network): abrange uma CIDADE. WAN (Wide Area Network): rede AMPLA — países e continentes. A Internet é a maior WAN. PAN: rede pessoal (Bluetooth). Classificação pela ABRANGÊNCIA.',
+    dificuldade: 2,
+    tags: ['LAN', 'MAN', 'WAN']
   },
   {
-    id: 'F-DC-18-0002',
-    moduloId: 'DC-18',
-    topicoId: 'DC-18',
-    frente: 'Qual o cabimento de cada ação do controle concentrado (ADI, ADC, ADPF, ADO)?',
-    verso: 'ADI: lei ou ato normativo FEDERAL ou ESTADUAL (inconstitucionalidade). ADC: lei ou ato normativo FEDERAL (constitucionalidade). ADPF: preceito fundamental — residual, quando não houver outro meio eficaz. ADO: omissão legislativa (falta de lei que regulamente norma constitucional).',
+    id: 'F-INF-09-0002',
+    moduloId: 'INF-09',
+    topicoId: 'INF-09',
+    frente: 'Qual a diferença entre MODEM, ROTEADOR e SWITCH?',
+    verso: 'MODEM: modula/demodula o sinal da operadora — converte o sinal da fibra/cabo em digital. ROTEADOR: conecta redes DIFERENTES e distribui a Internet entre os dispositivos da casa (Wi-Fi + cabo); atribui IPs e faz NAT. SWITCH: conecta dispositivos dentro da MESMA rede (LAN) — encaminha por endereço MAC. PONTO DE ACESSO: fornece Wi-Fi.',
     dificuldade: 3,
-    tags: ['ADI', 'ADC', 'ADPF', 'ADO']
+    tags: ['modem', 'roteador', 'switch']
   },
   {
-    id: 'F-DC-18-0003',
-    moduloId: 'DC-18',
-    topicoId: 'DC-18',
-    frente: 'Quem são os legitimados para propor ADI e ADC (art. 103)?',
-    verso: 'Presidente da República; Mesa do Senado Federal; Mesa da Câmara dos Deputados; Mesa de Assembleia Legislativa ou da Câmara Legislativa do DF; Governador de Estado ou do DF; Procurador-Geral da República; Conselho Federal da OAB; partido político com representação no Congresso Nacional; confederação sindical ou entidade de classe de âmbito nacional.',
+    id: 'F-INF-09-0003',
+    moduloId: 'INF-09',
+    topicoId: 'INF-09',
+    frente: 'Qual a diferença entre IPv4 e IPv6?',
+    verso: 'IPv4: 32 bits — formato 192.168.0.1 — cerca de 4,3 bilhões de endereços (esgotados). IPv6: 128 bits — formato 2001:db8::1 — praticamente ilimitado (3,4 × 10³⁸ endereços). O IPv6 foi criado para resolver o esgotamento do IPv4.',
+    dificuldade: 2,
+    tags: ['IPv4', 'IPv6']
+  },
+  {
+    id: 'F-INF-09-0004',
+    moduloId: 'INF-09',
+    topicoId: 'INF-09',
+    frente: 'Qual a diferença entre DNS e DHCP?',
+    verso: 'DNS (Domain Name System): TRADUZ nomes em IPs — "www.google.com" → "142.250.79.46". É a "agenda telefônica" da Internet. DHCP (Dynamic Host Configuration Protocol): DISTRIBUI IPs automaticamente aos dispositivos que se conectam à rede. É o "balcão de cadastro". Um resolve nomes; o outro atribui endereços.',
+    dificuldade: 2,
+    tags: ['DNS', 'DHCP']
+  },
+  {
+    id: 'F-INF-09-0005',
+    moduloId: 'INF-09',
+    topicoId: 'INF-09',
+    frente: 'Qual a diferença entre LARGURA DE BANDA e LATÊNCIA?',
+    verso: 'LARGURA DE BANDA: capacidade MÁXIMA de transmissão — quanto dado cabe por segundo (Mbps). É a "largura da estrada". LATÊNCIA: TEMPO DE RESPOSTA — quanto tempo o dado leva para ir e voltar (ms). É o "tempo de viagem". Banda alta + latência alta = navegação travada. Precisa das duas coisas.',
     dificuldade: 3,
-    tags: ['ADI', 'legitimados']
+    tags: ['banda', 'latência']
   },
 
   /* ============================================================
-     DC-01 — Teoria da Constituição
+     INF-10 — Nuvem (4)
   ============================================================ */
   {
-    id: 'F-DC-01-0001',
-    moduloId: 'DC-01',
-    topicoId: 'DC-01',
-    frente: 'Como se classifica a Constituição Federal de 1988?',
-    verso: 'ESCRITA (documento formal), PROMULGADA (Assembleia Constituinte), RÍGIDA (3/5 em dois turnos para alteração), FORMAL (normas solenes), ANALÍTICA (extensa, 250 artigos + ADCT), DIRIGENTE (com programas e metas).',
+    id: 'F-INF-10-0001',
+    moduloId: 'INF-10',
+    topicoId: 'INF-10',
+    frente: 'Qual a diferença entre SINCRONIZAÇÃO e BACKUP?',
+    verso: 'SINCRONIZAÇÃO: mantém arquivos IGUAIS em todos os dispositivos e na nuvem — se você apagar localmente, apaga na nuvem também. BACKUP: cópia de SEGURANÇA SEPARADA — alterações e exclusões NÃO afetam o backup. Se um ransomware criptografar arquivos sincronizados, a nuvem também é afetada. Backup protege; sincronização apenas mantém versões iguais.',
+    dificuldade: 3,
+    tags: ['sincronização', 'backup']
+  },
+  {
+    id: 'F-INF-10-0002',
+    moduloId: 'INF-10',
+    topicoId: 'INF-10',
+    frente: 'Qual a diferença entre SaaS, PaaS e IaaS?',
+    verso: 'SAAS (Software as a Service): software PRONTO para o usuário final. Ex.: Gmail, Microsoft 365, Google Docs. PAAS (Platform as a Service): PLATAFORMA para desenvolvedores criarem e hospedarem aplicações. Ex.: Google App Engine, Azure App Service. IAAS (Infrastructure as a Service): INFRAESTRUTURA alugada — máquinas virtuais, redes, armazenamento. Ex.: AWS EC2, Azure VM. SaaS é para usar; PaaS para desenvolver; IaaS para controlar.',
+    dificuldade: 3,
+    tags: ['SaaS', 'PaaS', 'IaaS']
+  },
+  {
+    id: 'F-INF-10-0003',
+    moduloId: 'INF-10',
+    topicoId: 'INF-10',
+    frente: 'Qual a diferença entre LINK PÚBLICO e LINK RESTRITO no compartilhamento em nuvem?',
+    verso: 'LINK PÚBLICO: qualquer pessoa com o link acessa — risco de vazamento. LINK RESTRITO: só convidados explicitamente autorizados acessam — mais seguro. Boas práticas: prefira RESTRITO para dados sensíveis; revise periodicamente os compartilhamentos ativos; remova acessos de quem não precisa mais.',
     dificuldade: 2,
-    tags: ['classificação', 'CF/88']
+    tags: ['compartilhamento', 'nuvem']
   },
   {
-    id: 'F-DC-01-0002',
-    moduloId: 'DC-01',
-    topicoId: 'DC-01',
-    frente: 'Quais são as características do poder constituinte ORIGINÁRIO?',
-    verso: 'INICIAL (cria a ordem jurídica), AUTÔNOMO (só depende de si), ILIMITADO (não se submete a limites jurídicos preexistentes), INCONDICIONADO e SOBERANO. Cria a Constituição. Diferente do DERIVADO, que é limitado e condicionado.',
-    dificuldade: 3,
-    tags: ['poder constituinte', 'originário']
-  },
-  {
-    id: 'F-DC-01-0003',
-    moduloId: 'DC-01',
-    topicoId: 'DC-01',
-    frente: 'Quais são as cláusulas pétreas da CF/88 (art. 60, §4º)?',
-    verso: 'I) forma federativa de Estado; II) voto direto, secreto, universal e periódico; III) separação dos Poderes; IV) direitos e garantias individuais. Não podem ser objeto de emenda tendente a aboli-las. Mnemônico: FOR-VO-SE-DI.',
-    dificuldade: 3,
-    tags: ['cláusulas pétreas', 'art. 60']
+    id: 'F-INF-10-0004',
+    moduloId: 'INF-10',
+    topicoId: 'INF-10',
+    frente: 'Quais são os três estados de um arquivo em nuvem?',
+    verso: 'LOCAL: só no seu dispositivo — acessível sem Internet; se o dispositivo quebrar, perde. SINCRONIZADO: disponível localmente e na nuvem — ocupa espaço e reflete alterações. SOMENTE ON-LINE: só na nuvem — ocupa espaço mínimo no dispositivo; exige Internet para abrir. Útil em dispositivos com pouco espaço.',
+    dificuldade: 2,
+    tags: ['nuvem', 'estados']
   },
 
   /* ============================================================
-     DC-19 — Ordem Econômica e Social
+     INF-11 — Segurança da Informação (6)
   ============================================================ */
   {
-    id: 'F-DC-19-0001',
-    moduloId: 'DC-19',
-    topicoId: 'DC-19',
-    frente: 'Quais são os princípios da ordem econômica (art. 170, CF/88)?',
-    verso: 'Soberania nacional; propriedade privada; função social da propriedade; livre concorrência; defesa do consumidor; defesa do meio ambiente; redução das desigualdades regionais e sociais; busca do pleno emprego; tratamento favorecido para empresas de pequeno porte.',
+    id: 'F-INF-11-0001',
+    moduloId: 'INF-11',
+    topicoId: 'INF-11',
+    frente: 'Quais são os 4 princípios fundamentais da segurança da informação (CIDA)?',
+    verso: 'CONFIDENCIALIDADE: só quem tem autorização acessa. INTEGRIDADE: dados não são alterados indevidamente. DISPONIBILIDADE: dados e sistemas disponíveis quando necessário. AUTENTICIDADE: garantia de que quem acessa é quem diz ser. Alguns autores incluem LEGALIDADE e IRRETRATABILIDADE.',
     dificuldade: 2,
-    tags: ['ordem econômica', 'art. 170']
+    tags: ['CIDA', 'princípios']
   },
   {
-    id: 'F-DC-19-0002',
-    moduloId: 'DC-19',
-    topicoId: 'DC-19',
-    frente: 'Como funciona a seguridade social (art. 194)?',
-    verso: 'SEGURIDADE = SAÚDE + PREVIDÊNCIA + ASSISTÊNCIA. SAÚDE (art. 196): universal e gratuita. PREVIDÊNCIA (art. 201): CONTRIBUTIVA — só quem contribui recebe. ASSISTÊNCIA (art. 203): para quem dela necessitar, independente de contribuição.',
+    id: 'F-INF-11-0002',
+    moduloId: 'INF-11',
+    topicoId: 'INF-11',
+    frente: 'Qual a diferença entre VÍRUS e WORM?',
+    verso: 'VÍRUS: precisa de um arquivo HOSPEDEIRO e da AÇÃO do usuário (executar o arquivo) para se espalhar. WORM (verme): se AUTORREPLICA e se espalha pela REDE automaticamente, SEM ação do usuário. O worm é mais perigoso em redes porque se propaga sozinho. Pegadinha clássica.',
     dificuldade: 2,
-    tags: ['seguridade social', 'art. 194']
+    tags: ['vírus', 'worm']
   },
   {
-    id: 'F-DC-19-0003',
-    moduloId: 'DC-19',
-    topicoId: 'DC-19',
-    frente: 'O que diz o art. 227 sobre a criança e o adolescente?',
-    verso: 'É dever da FAMÍLIA, da SOCIEDADE e do ESTADO assegurar à criança, ao adolescente e ao jovem, com ABSOLUTA PRIORIDADE, o direito à vida, à saúde, à alimentação, à educação, ao lazer, à profissionalização, à cultura, à dignidade, ao respeito, à liberdade e à convivência familiar e comunitária.',
+    id: 'F-INF-11-0003',
+    moduloId: 'INF-11',
+    topicoId: 'INF-11',
+    frente: 'Qual a diferença entre VÍRUS e TROJAN (cavalo de Troia)?',
+    verso: 'VÍRUS: se REPLICA e infecta arquivos. TROJAN: NÃO se replica — DISFARÇA-SE de programa legítimo (jogo, utilitário) para enganar o usuário e abrir portas para invasores. O Trojan depende da ENGANAÇÃO; o vírus, da REPLICAÇÃO. Trojan não é vírus nem worm.',
     dificuldade: 2,
-    tags: ['criança', 'adolescente', 'art. 227']
+    tags: ['trojan', 'vírus']
+  },
+  {
+    id: 'F-INF-11-0004',
+    moduloId: 'INF-11',
+    topicoId: 'INF-11',
+    frente: 'Qual a diferença entre RANSOMWARE e SPYWARE?',
+    verso: 'RANSOMWARE: CRIPTOGRAFA os dados da vítima e exige RESGATE para liberar — ataca a DISPONIBILIDADE. SPYWARE: ESPIONA o usuário em silêncio — captura senhas, hábitos, dados bancários — ataca a CONFIDENCIALIDADE. Ransomware sequestra; spyware espiona.',
+    dificuldade: 2,
+    tags: ['ransomware', 'spyware']
+  },
+  {
+    id: 'F-INF-11-0005',
+    moduloId: 'INF-11',
+    topicoId: 'INF-11',
+    frente: 'Qual a diferença entre PHISHING e PHARMING?',
+    verso: 'PHISHING: mensagem FRAUDULENTA (geralmente e-mail) que imita instituição legítima para o usuário entregar dados — o usuário "morde a isca". PHARMING: REDIRECIONA o usuário para site falso SEM que ele perceba — o DNS é comprometido. No phishing há engajamento; no pharming, redirecionamento automático.',
+    dificuldade: 3,
+    tags: ['phishing', 'pharming']
+  },
+  {
+    id: 'F-INF-11-0006',
+    moduloId: 'INF-11',
+    topicoId: 'INF-11',
+    frente: 'Qual a diferença entre criptografia SIMÉTRICA e ASSIMÉTRICA?',
+    verso: 'SIMÉTRICA: usa a MESMA chave para cifrar e decifrar — mais RÁPIDA, mas exige compartilhar a chave com segurança. Ex.: AES. ASSIMÉTRICA: usa PAR de chaves — PÚBLICA cifra, PRIVADA decifra — mais LENTA, mas resolve o compartilhamento. Ex.: RSA. HTTPS, assinatura digital e certificados usam criptografia assimétrica.',
+    dificuldade: 3,
+    tags: ['criptografia']
   },
 
   /* ============================================================
-     DC-20 — ADCT e Atualizações Constitucionais
+     INF-12 — Backup (4)
   ============================================================ */
   {
-    id: 'F-DC-20-0001',
-    moduloId: 'DC-20',
-    topicoId: 'DC-20',
-    frente: 'Qual é a natureza jurídica do ADCT?',
-    verso: 'O ADCT integra a CF/88 e tem a MESMA FORÇA NORMATIVA da Constituição (é norma constitucional). Sua natureza é TRANSITÓRIA (regras que se esgotam com o tempo). É alterado por EMENDA CONSTITUCIONAL (3/5 em dois turnos em cada Casa).',
+    id: 'F-INF-12-0001',
+    moduloId: 'INF-12',
+    topicoId: 'INF-12',
+    frente: 'Qual a diferença entre backup COMPLETO, INCREMENTAL e DIFERENCIAL?',
+    verso: 'COMPLETO: copia TODOS os arquivos selecionados — base dos demais. INCREMENTAL: copia o que mudou desde o ÚLTIMO backup (de qualquer tipo) — cada backup é pequeno; restaurar exige completo + TODOS os incrementais. DIFERENCIAL: copia tudo que mudou desde o ÚLTIMO COMPLETO — cada backup cresce; restaurar exige completo + último diferencial. Incremental = rápido de fazer, lento de restaurar; diferencial = o contrário.',
     dificuldade: 3,
-    tags: ['ADCT']
+    tags: ['backup', 'tipos']
   },
   {
-    id: 'F-DC-20-0002',
-    moduloId: 'DC-20',
-    topicoId: 'DC-20',
-    frente: 'Qual a diferença entre emenda constitucional e revisão constitucional?',
-    verso: 'EMENDA (art. 60): alteração PERMANENTE, 3/5 em dois turnos em cada Casa, pode ser feita quantas vezes forem necessárias. REVISÃO (art. 3º do ADCT): revisão ÚNICA, em 1993, por MAIORIA ABSOLUTA — já ESGOTADA. Não pode ser repetida.',
-    dificuldade: 3,
-    tags: ['emenda', 'revisão']
+    id: 'F-INF-12-0002',
+    moduloId: 'INF-12',
+    topicoId: 'INF-12',
+    frente: 'O que é a estratégia 3-2-1 de backup?',
+    verso: '3 CÓPIAS dos dados, em 2 MÍDIAS DIFERENTES, sendo 1 FORA DO LOCAL. Ex.: original no PC + backup em HD externo + backup na nuvem (ou em outro escritório). Protege contra falha de hardware, roubo, incêndio e ransomware. É a recomendação clássica para garantir recuperação.',
+    dificuldade: 2,
+    tags: ['backup', '3-2-1']
   },
   {
-    id: 'F-DC-20-0003',
-    moduloId: 'DC-20',
-    topicoId: 'DC-20',
-    frente: 'Quais são as ECs mais cobradas e o que cada uma alterou?',
-    verso: 'EC 19/1998: eficiência no art. 37 (Reforma Gerencial). EC 20/1998: previdência. EC 29/2000: mínimo de saúde. EC 45/2004: Reforma do Judiciário (CNJ, súmula vinculante, repercussão geral). EC 53/2006: Fundeb. EC 64/2010: alimentação no art. 6º. EC 72/2013: domésticos. EC 80/2014: Defensoria Pública. EC 90/2015: transporte no art. 6º. EC 95/2016: teto de gastos. EC 97/2017: coligações. EC 103/2019: previdência. EC 131/2023: perda de nacionalidade. EC 129 a 133/2023: reforma tributária.',
+    id: 'F-INF-12-0003',
+    moduloId: 'INF-12',
+    topicoId: 'INF-12',
+    frente: 'Qual a diferença entre BACKUP e SINCRONIZAÇÃO?',
+    verso: 'BACKUP: cópia de SEGURANÇA em mídia separada — alterações e exclusões no original NÃO afetam o backup. SINCRONIZAÇÃO: mantém arquivos IGUAIS entre dispositivos e nuvem — se apagar localmente, a nuvem reflete. Se um ransomware criptografar a pasta sincronizada, a nuvem também é afetada. Backup é proteção; sincronização é conveniência.',
     dificuldade: 3,
-    tags: ['emendas', 'atualizações']
+    tags: ['backup', 'sincronização']
+  },
+  {
+    id: 'F-INF-12-0004',
+    moduloId: 'INF-12',
+    topicoId: 'INF-12',
+    frente: 'A Lixeira do Windows é um tipo de backup?',
+    verso: 'NÃO. A Lixeira é apenas armazenamento TEMPORÁRIO de arquivos excluídos recentemente. Se o HD falhar, se o arquivo for removido com Shift+Delete ou se a Lixeira for esvaziada, o arquivo se perde. Backup é uma cópia em MÍDIA SEPARADA — protege contra falhas do dispositivo principal.',
+    dificuldade: 2,
+    tags: ['Lixeira', 'backup']
+  },
+
+  /* ============================================================
+     INF-13 — PDF e Documentos Digitais (4)
+  ============================================================ */
+  {
+    id: 'F-INF-13-0001',
+    moduloId: 'INF-13',
+    topicoId: 'INF-13',
+    frente: 'Qual a diferença entre documento EDITÁVEL (.docx) e PDF?',
+    verso: '.DOCX: EDITÁVEL no Word — o layout pode variar entre dispositivos/fontes. PDF: layout FIXO — preservado em qualquer dispositivo. Difícil de editar (embora existam ferramentas). Ideal para distribuição, impressão e documentos formais. Ao enviar um documento que precisa manter o visual original, use PDF.',
+    dificuldade: 1,
+    tags: ['PDF', 'docx']
+  },
+  {
+    id: 'F-INF-13-0002',
+    moduloId: 'INF-13',
+    topicoId: 'INF-13',
+    frente: 'Qual a diferença entre DIGITALIZAÇÃO e OCR?',
+    verso: 'DIGITALIZAÇÃO: transforma o documento físico em IMAGEM digital (scanner ou celular) — NÃO é texto editável. OCR (Reconhecimento Óptico de Caracteres): converte a IMAGEM em TEXTO editável e pesquisável. Sem OCR, o PDF digitalizado é apenas imagem; com OCR, você pode selecionar, copiar e buscar o texto.',
+    dificuldade: 2,
+    tags: ['digitalização', 'OCR']
+  },
+  {
+    id: 'F-INF-13-0003',
+    moduloId: 'INF-13',
+    topicoId: 'INF-13',
+    frente: 'Qual a diferença entre ASSINATURA ELETRÔNICA e ASSINATURA DIGITAL?',
+    verso: 'ELETRÔNICA: qualquer forma eletrônica de manifestar concordância — desde "clique aqui" ou aceite on-line até assinatura digitalizada. NÃO exige criptografia. DIGITAL: tipo específico de assinatura eletrônica que usa CRIPTOGRAFIA ASSIMÉTRICA + CERTIFICADO DIGITAL. Garante autenticidade, integridade e não repúdio. Toda digital é eletrônica, mas nem toda eletrônica é digital.',
+    dificuldade: 3,
+    tags: ['assinatura']
+  },
+  {
+    id: 'F-INF-13-0004',
+    moduloId: 'INF-13',
+    topicoId: 'INF-13',
+    frente: 'O que é PDF/A?',
+    verso: 'PDF/A é a versão do PDF para ARQUIVAMENTO de LONGO PRAZO — inclui todas as informações necessárias para reproduzir o documento no futuro (fontes embutidas, sem dependência externa). Usado em arquivos públicos e documentos que precisam durar décadas. Não confundir com o PDF comum.',
+    dificuldade: 3,
+    tags: ['PDF/A', 'arquivamento']
+  },
+
+  /* ============================================================
+     INF-14 — Software e Ferramentas (4)
+  ============================================================ */
+  {
+    id: 'F-INF-14-0001',
+    moduloId: 'INF-14',
+    topicoId: 'INF-14',
+    frente: 'Qual a diferença entre software de SISTEMA, APLICATIVO e UTILITÁRIO?',
+    verso: 'SISTEMA: gerencia hardware e serve de base (Windows, Linux, drivers). APLICATIVO: realiza tarefas do usuário (Word, Excel, navegador). UTILITÁRIO: ferramentas de manutenção (antivírus, compactadores, backup). O sistema é a "fundação"; o aplicativo é o "morador"; o utilitário é a "caixa de ferramentas".',
+    dificuldade: 2,
+    tags: ['software', 'classificação']
+  },
+  {
+    id: 'F-INF-14-0002',
+    moduloId: 'INF-14',
+    topicoId: 'INF-14',
+    frente: 'Qual a diferença entre ATUALIZAÇÃO (update) e UPGRADE?',
+    verso: 'ATUALIZAÇÃO (update): corrige bugs e VULNERABILIDADES da versão atual — mantém a mesma versão, geralmente gratuita e recomendada por segurança. UPGRADE: muda para uma VERSÃO SUPERIOR — pode trazer recursos novos e pode ser paga. Ex.: Windows 10 → 11 é upgrade. Correção de segurança do Windows 11 é atualização.',
+    dificuldade: 2,
+    tags: ['update', 'upgrade']
+  },
+  {
+    id: 'F-INF-14-0003',
+    moduloId: 'INF-14',
+    topicoId: 'INF-14',
+    frente: 'Qual a diferença entre ZIP, RAR e 7z?',
+    verso: 'ZIP: formato UNIVERSAL, nativo do Windows e Mac — abre sem instalar nada. RAR: formato do WinRAR — compacta mais, mas exige programa para extrair (ou ferramentas compatíveis). 7z: formato do 7-Zip — CÓDIGO ABERTO, alta compressão. Todos reduzem o tamanho. Compactar NÃO criptografa por si só — alguns formatos permitem senha.',
+    dificuldade: 2,
+    tags: ['compactação', 'ZIP', 'RAR', '7z']
+  },
+  {
+    id: 'F-INF-14-0004',
+    moduloId: 'INF-14',
+    topicoId: 'INF-14',
+    frente: 'Qual a diferença entre Print Screen, Alt+Print Screen e Win+Shift+S?',
+    verso: 'PRINT SCREEN: captura a TELA TODA para a área de transferência. ALT+PRINT SCREEN: captura apenas a JANELA ATIVA. WIN+SHIFT+S (Windows 10/11): abre a ferramenta de RECORTE — permite selecionar uma área específica. Todos copiam para a área de transferência; depois você cola (Ctrl+V) onde quiser.',
+    dificuldade: 2,
+    tags: ['captura de tela']
+  },
+
+  /* ============================================================
+     INF-15 — Linux (4)
+  ============================================================ */
+  {
+    id: 'F-INF-15-0001',
+    moduloId: 'INF-15',
+    topicoId: 'INF-15',
+    frente: 'Quais são as 4 liberdades do software livre?',
+    verso: '(1) EXECUTAR o programa para qualquer propósito; (2) ESTUDAR e MODIFICAR o código; (3) REDISTRIBUIR cópias; (4) DISTRIBUIR versões modificadas. "Livre" é sobre LIBERDADE, não preço — pode ser vendido, desde que as liberdades sejam mantidas. Movimento fundado por Richard Stallman.',
+    dificuldade: 3,
+    tags: ['software livre']
+  },
+  {
+    id: 'F-INF-15-0002',
+    moduloId: 'INF-15',
+    topicoId: 'INF-15',
+    frente: 'Quais as principais diferenças entre Windows e Linux?',
+    verso: 'WINDOWS: raiz em C:\\, letras de unidade (C:, D:), separador "\\", CASE-INSENSITIVE (arquivo.txt = ARQUIVO.TXT), sistema proprietário. LINUX: raiz única "/", SEM letras de unidade, separador "/", CASE-SENSITIVE (arquivo.txt ≠ Arquivo.TXT), livre, várias distribuições e ambientes gráficos.',
+    dificuldade: 2,
+    tags: ['Windows', 'Linux']
+  },
+  {
+    id: 'F-INF-15-0003',
+    moduloId: 'INF-15',
+    topicoId: 'INF-15',
+    frente: 'Qual a diferença entre KERNEL e DISTRIBUIÇÃO Linux?',
+    verso: 'KERNEL: o NÚCLEO do sistema — gerencia hardware, processos, memória e arquivos. Linux é o kernel (criado por Linus Torvalds). DISTRIBUIÇÃO: pacote completo — kernel + software GNU + gerenciador de pacotes + ambiente gráfico + aplicativos. Exemplos: Ubuntu, Debian, Fedora, Linux Mint. O kernel é o "coração"; a distro é o "sistema completo".',
+    dificuldade: 3,
+    tags: ['kernel', 'distribuição']
+  },
+  {
+    id: 'F-INF-15-0004',
+    moduloId: 'INF-15',
+    topicoId: 'INF-15',
+    frente: 'Qual a diferença entre chmod e chown no Linux?',
+    verso: 'CHMOD (change mode): altera as PERMISSÕES de um arquivo ou diretório. Ex.: chmod 755 arquivo (dono rwx, grupo r-x, outros r-x). CHOWN (change owner): altera o DONO do arquivo. Ex.: chown usuario arquivo. Permissões: r (leitura, 4), w (escrita, 2), x (execução, 1) — dono, grupo, outros.',
+    dificuldade: 3,
+    tags: ['chmod', 'chown']
+  },
+
+  /* ============================================================
+     INF-16 — Aplicada (3)
+  ============================================================ */
+  {
+    id: 'F-INF-16-0001',
+    moduloId: 'INF-16',
+    topicoId: 'INF-16',
+    frente: 'Como escolher a ferramenta certa para cada tarefa no trabalho administrativo?',
+    verso: 'Texto (relatório, ofício, carta) → WORD. Cálculos, controles, tabelas → EXCEL. Apresentação → POWERPOINT. Envio formal de documento → E-MAIL com PDF. Colaboração simultânea → GOOGLE DOCS / MICROSOFT 365. Armazenamento/backup → NUVEM + HD externo. Regra: se envolve texto → Word; se envolve números/cálculo → Excel; se envolve apresentação → PowerPoint.',
+    dificuldade: 2,
+    tags: ['aplicada', 'ferramenta']
+  },
+  {
+    id: 'F-INF-16-0002',
+    moduloId: 'INF-16',
+    topicoId: 'INF-16',
+    frente: 'Qual o procedimento correto para enviar um documento sensível por e-mail?',
+    verso: '(1) Exportar para PDF (preserva o layout); (2) se contiver dados sensíveis, PROTEGER com senha; (3) verificar o destinatário correto; (4) usar CCO em listas grandes; (5) assunto claro; (6) NÃO anexar versão editável (.docx); (7) guardar cópia no backup; (8) se for documento oficial com validade, usar ASSINATURA DIGITAL (ICP-Brasil).',
+    dificuldade: 3,
+    tags: ['aplicada', 'envio seguro']
+  },
+  {
+    id: 'F-INF-16-0003',
+    moduloId: 'INF-16',
+    topicoId: 'INF-16',
+    frente: 'Compartilhar uma planilha na nuvem com a equipe substitui o backup?',
+    verso: 'NÃO. Compartilhamento é CONVENIÊNCIA — não é backup. Se um membro da equipe apagar o arquivo (ou se um ransomware criptografar a pasta sincronizada), a nuvem também é afetada. BACKUP é cópia SEPARADA em outra mídia (HD externo, outra nuvem) — protege contra exclusão acidental, ransomware e falhas. Estratégia 3-2-1: 3 cópias, 2 mídias, 1 fora do local.',
+    dificuldade: 3,
+    tags: ['aplicada', 'backup', 'compartilhamento']
   }
 
-];   
+];
