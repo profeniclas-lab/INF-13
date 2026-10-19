@@ -1,348 +1,235 @@
 /* ============================================================
    DIAGNÓSTICOS — Módulos de prioridade MÉDIA
-   Preenchidos: DC-10, DC-14, DC-15, DC-16, DC-17, DC-18
+   Preenchidos: INF-09, INF-13, INF-14, INF-16
+   Próximo lote: INF-06, INF-15 (condicional)
    ============================================================ */
 
 window.DIAGNOSTICS_MEDIA = {
 
   /* ============================================================
-     DC-10 — Intervenção
+     INF-09 — Redes de Computadores
   ============================================================ */
-  'DC-10': {
-    id: 'D-DC-10',
-    moduloId: 'DC-10',
+  'INF-09': {
+    id: 'D-INF-09',
+    moduloId: 'INF-09',
     itens: [
       {
-        id: 'D-DC-10-01',
+        id: 'D-INF-09-01',
         tipo: 'multipla_escolha',
-        subtopico: 'Hipóteses de intervenção federal',
-        pergunta: 'NÃO é hipótese de intervenção FEDERAL nos Estados (art. 34, CF/88):',
+        subtopico: 'LAN x MAN x WAN',
+        pergunta: 'Uma rede que interliga computadores de uma mesma casa ou escritório é classificada como:',
         alternativas: [
-          { id: 'A', texto: 'Manter a integridade nacional.' },
-          { id: 'B', texto: 'Repelir invasão estrangeira ou de uma unidade da Federação em outra.' },
-          { id: 'C', texto: 'Deixar de aplicar o mínimo exigido da receita municipal na saúde e na educação.' },
-          { id: 'D', texto: 'Reorganizar as finanças da unidade da Federação que suspender o pagamento da dívida fundada por mais de 2 anos.' }
+          { id: 'A', texto: 'LAN (Local Area Network).' },
+          { id: 'B', texto: 'MAN (Metropolitan Area Network).' },
+          { id: 'C', texto: 'WAN (Wide Area Network).' },
+          { id: 'D', texto: 'PAN (Personal Area Network).' }
+        ],
+        gabarito: 'A',
+        explicacao: 'LAN: rede LOCAL de curta distância — casa, escritório, escola. MAN: rede metropolitana — abrange uma cidade. WAN: rede ampla — países e continentes (a Internet é a maior WAN). PAN: rede pessoal — Bluetooth, por exemplo. A banca cobra a classificação pela abrangência.'
+      },
+      {
+        id: 'D-INF-09-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Modem x roteador x switch',
+        pergunta: 'Em uma rede doméstica, qual equipamento é responsável por DISTRIBUIR a conexão de Internet entre os dispositivos (Wi-Fi e cabo)?',
+        alternativas: [
+          { id: 'A', texto: 'Modem.' },
+          { id: 'B', texto: 'Roteador.' },
+          { id: 'C', texto: 'Switch.' },
+          { id: 'D', texto: 'Ponto de acesso (Access Point).' }
+        ],
+        gabarito: 'B',
+        explicacao: 'ROTEADOR: conecta redes diferentes — distribui a Internet entre os dispositivos (Wi-Fi + cabo), atribui IPs, faz NAT. MODEM: converte o sinal da operadora em sinal digital — sozinho não distribui. SWITCH: conecta dispositivos dentro da MESMA rede (LAN), não distribui Internet entre redes. ACCESS POINT: apenas fornece Wi-Fi, sem distribuir entre redes. A banca confunde modem × roteador — atenção!'
+      },
+      {
+        id: 'D-INF-09-03',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'DNS x DHCP',
+        pergunta: 'DNS é o protocolo responsável por distribuir endereços IP automaticamente aos dispositivos que entram na rede.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. Quem DISTRIBUI IPs automaticamente é o DHCP (Dynamic Host Configuration Protocol). O DNS (Domain Name System) TRADUZ nomes em IPs — "www.google.com" → "142.250.79.46". DNS é a "agenda telefônica"; DHCP é o "balcão de cadastro". A banca adora trocar as funções dos dois.'
+      },
+      {
+        id: 'D-INF-09-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Regras gerais',
+        pergunta: 'Você domina: LAN × MAN × WAN, modem × roteador × switch, IPv4 × IPv6, DNS × DHCP, largura de banda × latência, TCP × UDP?',
+        resposta: 'LAN (local), MAN (metropolitana), WAN (ampla). MODEM: converte sinal. ROTEADOR: distribui e conecta redes. SWITCH: conecta dispositivos na mesma rede. IPv4 (32 bits, 192.168.0.1) × IPv6 (128 bits, 2001:db8::1). DNS: nome → IP. DHCP: IP automático. LARGURA DE BANDA: capacidade (Mbps). LATÊNCIA: tempo (ms). TCP: confiável, orientado a conexão. UDP: rápido, sem garantia.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     INF-13 — PDF, Digitalização e Documentos Digitais
+  ============================================================ */
+  'INF-13': {
+    id: 'D-INF-13',
+    moduloId: 'INF-13',
+    itens: [
+      {
+        id: 'D-INF-13-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Digitalização x OCR',
+        pergunta: 'Após digitalizar um documento em papel e salvá-lo em PDF, o usuário tenta selecionar e copiar o texto, mas não consegue — só consegue ver a imagem. O que faltou aplicar?',
+        alternativas: [
+          { id: 'A', texto: 'Crase.' },
+          { id: 'B', texto: 'OCR (Reconhecimento Óptico de Caracteres).' },
+          { id: 'C', texto: 'Backup.' },
+          { id: 'D', texto: 'Criptografia.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'OCR (Optical Character Recognition): converte a IMAGEM digitalizada em TEXTO editável e pesquisável. Sem OCR, o PDF digitalizado é apenas uma imagem — você vê, mas não seleciona nem copia. A DIGITALIZAÇÃO em si apenas gera a imagem; o OCR é a etapa seguinte que reconhece os caracteres.'
+      },
+      {
+        id: 'D-INF-13-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Assinatura eletrônica x digital',
+        pergunta: 'Sobre a diferença entre assinatura eletrônica e assinatura digital, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'São sinônimos — ambas usam criptografia.' },
+          { id: 'B', texto: 'Assinatura digital é um TIPO de assinatura eletrônica que usa criptografia assimétrica e certificado digital; assinatura eletrônica é qualquer forma eletrônica de manifestar concordância.' },
+          { id: 'C', texto: 'Assinatura eletrônica é mais segura que a digital.' },
+          { id: 'D', texto: 'Assinatura eletrônica exige certificado ICP-Brasil.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'ASSINATURA ELETRÔNICA: qualquer forma eletrônica de manifestar concordância — inclui "clique aqui", aceite on-line, assinatura digitalizada. NÃO exige criptografia. ASSINATURA DIGITAL: tipo específico de assinatura eletrônica que usa CRIPTOGRAFIA ASSIMÉTRICA + CERTIFICADO DIGITAL. Garante autenticidade, integridade e não repúdio. Toda digital é eletrônica, mas nem toda eletrônica é digital.'
+      },
+      {
+        id: 'D-INF-13-03',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'PDF x editável',
+        pergunta: 'PDF é um formato editável como o .docx: pode ser modificado livremente no Word sem perder o layout original.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. O PDF foi criado justamente para TRAVAR o layout — o documento aparece igual em qualquer dispositivo. Editá-lo exige ferramentas específicas e costuma alterar formatação. O .docx é o formato EDITÁVEL por natureza. Ao enviar um documento formal (contrato, ofício), use PDF para preservar o layout.'
+      },
+      {
+        id: 'D-INF-13-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Regras gerais',
+        pergunta: 'Você domina: diferença editável × PDF, digitalização × OCR, assinatura eletrônica × digital, certificado digital, PDF/A, cuidados com documentos sensíveis?',
+        resposta: 'EDITÁVEL (.docx) × PDF: .docx é modificável; PDF preserva o layout. DIGITALIZAÇÃO: papel → imagem. OCR: imagem → texto editável. ASSINATURA ELETRÔNICA: qualquer forma eletrônica. ASSINATURA DIGITAL: usa criptografia + certificado — mais segura. CERTIFICADO DIGITAL: e-CPF, e-CNPJ (ICP-Brasil). PDF/A: arquivamento de longo prazo. CUIDADOS: senha em PDFs sensíveis, verificar destinatário, não enviar por canais inseguros, usar assinatura digital para documentos formais.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     INF-14 — Software, Aplicativos e Ferramentas
+  ============================================================ */
+  'INF-14': {
+    id: 'D-INF-14',
+    moduloId: 'INF-14',
+    itens: [
+      {
+        id: 'D-INF-14-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Classificação de software',
+        pergunta: 'O Windows 11, o antivírus e o Word são, respectivamente, exemplos de:',
+        alternativas: [
+          { id: 'A', texto: 'Software aplicativo, software utilitário e software de sistema.' },
+          { id: 'B', texto: 'Software de sistema, software utilitário e software aplicativo.' },
+          { id: 'C', texto: 'Software utilitário, software de sistema e software aplicativo.' },
+          { id: 'D', texto: 'Software aplicativo, software de sistema e software utilitário.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'WINDOWS: SOFTWARE DE SISTEMA — gerencia hardware e serve de base para os demais. ANTIVÍRUS: SOFTWARE UTILITÁRIO — ferramenta de manutenção e proteção. WORD: SOFTWARE APLICATIVO — realiza tarefas do usuário. A banca costuma classificar errado — cuidado com a ordem.'
+      },
+      {
+        id: 'D-INF-14-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Atualização x upgrade',
+        pergunta: 'Sobre a diferença entre atualização (update) e upgrade, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'São sinônimos.' },
+          { id: 'B', texto: 'Atualização corrige bugs e vulnerabilidades da versão atual; upgrade muda para uma versão superior, geralmente com novos recursos.' },
+          { id: 'C', texto: 'Upgrade corrige bugs; atualização adiciona recursos.' },
+          { id: 'D', texto: 'Ambos se referem apenas a hardware.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'ATUALIZAÇÃO (update): corrige falhas e vulnerabilidades da versão atual — mantém a mesma versão, geralmente gratuita e recomendada por segurança. UPGRADE: muda para uma VERSÃO SUPERIOR — pode trazer recursos novos e pode ser paga. Ex.: Windows 10 → 11 é upgrade. Correção de segurança do Windows 11 é atualização.'
+      },
+      {
+        id: 'D-INF-14-03',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Compactação',
+        pergunta: 'Os formatos ZIP, RAR e 7z são todos utilizados para compactar arquivos, reduzindo seu tamanho para armazenamento ou envio.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. ZIP: formato universal, nativo do Windows e Mac. RAR: formato do WinRAR — geralmente compacta mais, mas exige programa específico. 7z: formato do 7-Zip — código aberto, alta compressão. Todos reduzem o tamanho. Compactar NÃO criptografa — proteção extra exige senha (que alguns formatos permitem).'
+      },
+      {
+        id: 'D-INF-14-04',
+        tipo: 'autoavaliacao',
+        subtopico: 'Regras gerais',
+        pergunta: 'Você domina: software de sistema × aplicativo × utilitário, instalar × atualizar × upgrade × desinstalar, formatos ZIP/RAR/7z, atalhos de captura (Print Screen, Alt+Print Screen, Win+Shift+S)?',
+        resposta: 'SISTEMA: gerencia hardware (Windows, Linux). APLICATIVO: tarefas do usuário (Word, Chrome). UTILITÁRIO: manutenção (antivírus, compactador). INSTALAR: setup.exe/.msi. ATUALIZAR: corrige bugs. UPGRADE: nova versão. DESINSTALAR: via Painel de Controle (não apagar pasta). COMPACTAÇÃO: .zip (nativo), .rar (WinRAR), .7z (7-Zip). CAPTURA: Print Screen (tela toda), Alt+Print Screen (janela ativa), Win+Shift+S (recorte).'
+      }
+    ]
+  },
+
+  /* ============================================================
+     INF-16 — Informática Aplicada ao Trabalho Administrativo
+  ============================================================ */
+  'INF-16': {
+    id: 'D-INF-16',
+    moduloId: 'INF-16',
+    itens: [
+      {
+        id: 'D-INF-16-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Escolha da ferramenta',
+        pergunta: 'Um servidor precisa criar uma planilha de controle de despesas mensais, com cálculo de totais e subtotais por categoria. Qual ferramenta é a MAIS ADEQUADA?',
+        alternativas: [
+          { id: 'A', texto: 'Word.' },
+          { id: 'B', texto: 'Excel.' },
+          { id: 'C', texto: 'PowerPoint.' },
+          { id: 'D', texto: 'Bloco de Notas.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'EXCEL: ideal para cálculos, tabelas, controles e listas. Funções como SOMA, CONT.SE e tabelas dinâmicas resolvem exatamente esse cenário. WORD: para textos. POWERPOINT: para apresentações. BLOCO DE NOTAS: apenas texto puro. Regra: se envolve NÚMEROS e CÁLCULO → Excel.'
+      },
+      {
+        id: 'D-INF-16-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Envio seguro',
+        pergunta: 'Um servidor precisa enviar um contrato em PDF para 50 fornecedores, preservando a privacidade dos e-mails. Qual campo deve usar?',
+        alternativas: [
+          { id: 'A', texto: 'Para (destinatário principal), listando todos os e-mails.' },
+          { id: 'B', texto: 'Cc (com cópia), listando todos os e-mails.' },
+          { id: 'C', texto: 'Cco (com cópia oculta), listando todos os e-mails.' },
+          { id: 'D', texto: 'Assunto, com os e-mails no corpo da mensagem.' }
         ],
         gabarito: 'C',
-        explicacao: 'A não aplicação do mínimo em saúde e educação é hipótese de intervenção ESTADUAL em MUNICÍPIO (art. 35, III). As demais são hipóteses do art. 34 (intervenção federal).'
+        explicacao: 'CCO (Com Cópia Oculta): os destinatários NÃO se veem entre si. Ideal para listas grandes — preserva a privacidade dos endereços. "Para" e "Cc" expõem os e-mails de todos. Boas práticas: PDF em vez de .docx (preserva layout), Cco para listas, assunto claro, verificar destinatários.'
       },
       {
-        id: 'D-DC-10-02',
+        id: 'D-INF-16-03',
         tipo: 'verdadeiro_falso',
-        subtopico: 'Procedimento',
-        pergunta: 'O decreto de intervenção federal é expedido pelo Presidente da República e, em seguida, submetido ao Congresso Nacional em 24 horas; se em recesso, há convocação extraordinária em 5 dias.',
+        subtopico: 'Backup x compartilhamento',
+        pergunta: 'Compartilhar uma planilha na nuvem com a equipe já é suficiente como backup — não é necessário manter cópia de segurança separada.',
         alternativas: [
           { id: 'V', texto: 'Verdadeiro' },
           { id: 'F', texto: 'Falso' }
         ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. Art. 36, §1º: decreto do Presidente, ouvidoria prévia dos Conselhos da República e de Defesa, submissão ao Congresso em 24h e convocação extraordinária em 5 dias se em recesso.'
+        gabarito: 'F',
+        explicacao: 'Falso. COMPARTILHAMENTO na nuvem é conveniência — não é backup. Se um membro da equipe apagar o arquivo (ou se um ransomware criptografar), a nuvem também é afetada. BACKUP é uma cópia SEPARADA em outra mídia (HD externo, outra nuvem). Estratégia 3-2-1: 3 cópias, 2 mídias, 1 fora do local. A banca explora essa confusão.'
       },
       {
-        id: 'D-DC-10-03',
-        tipo: 'situacao',
-        subtopico: 'Intervenção x Estado de Defesa',
-        pergunta: 'Uma calamidade natural de grandes proporções atinge um Estado, gerando grave instabilidade institucional em locais restritos. A medida adequada é:',
-        alternativas: [
-          { id: 'A', texto: 'Intervenção federal.' },
-          { id: 'B', texto: 'Estado de Defesa (art. 136), restrito a locais e prazo determinados.' },
-          { id: 'C', texto: 'Estado de Sítio.' },
-          { id: 'D', texto: 'Ação direta de inconstitucionalidade.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Calamidade natural de grandes proporções em locais restritos é hipótese de ESTADO DE DEFESA (art. 136). Intervenção é para restabelecer a ordem federativa; Estado de Sítio exige comoção nacional, ineficácia do Estado de Defesa ou guerra.'
-      },
-      {
-        id: 'D-DC-10-04',
+        id: 'D-INF-16-04',
         tipo: 'autoavaliacao',
-        subtopico: 'Procedimento',
-        pergunta: 'Você consegue, sem consultar, explicar o procedimento completo da intervenção federal (quem decreta, quem ouve, quem aprova e em qual prazo)?',
-        resposta: 'DECRETO: Presidente da República. OUVIDORIA PRÉVIA: Conselho da República e Conselho de Defesa Nacional. CONTROLE: Congresso Nacional aprova o decreto em 24h (convocação extraordinária em 5 dias se em recesso). O decreto especifica amplitude, prazo e condições. §1º: nomeação de interventor. §2º: cessada a causa, retornam as autoridades afastadas.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-14 — Poder Executivo
-  ============================================================ */
-  'DC-14': {
-    id: 'D-DC-14',
-    moduloId: 'DC-14',
-    itens: [
-      {
-        id: 'D-DC-14-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Requisitos e eleição',
-        pergunta: 'São requisitos para ser Presidente da República (art. 14, §3º, VI, "a"), EXCETO:',
-        alternativas: [
-          { id: 'A', texto: 'Ser brasileiro nato.' },
-          { id: 'B', texto: 'Ter no mínimo 35 anos de idade.' },
-          { id: 'C', texto: 'Estar no pleno exercício dos direitos políticos e ter domicílio eleitoral no Brasil.' },
-          { id: 'D', texto: 'Ter no mínimo 30 anos de idade.' }
-        ],
-        gabarito: 'D',
-        explicacao: 'A idade mínima para Presidente é 35 anos, não 30 (que é para Governador). As demais alternativas estão corretas: brasileiro nato, pleno exercício dos direitos políticos, alistamento, domicílio eleitoral e filiação partidária.'
-      },
-      {
-        id: 'D-DC-14-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Sucessão e substituição',
-        pergunta: 'Em caso de IMPEDIMENTO do Presidente e do Vice, ou vacância dos cargos, assumem sucessivamente o Presidente da Câmara dos Deputados, o Presidente do Senado Federal e o Presidente do STF.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. Art. 80: a linha sucessória é Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.'
-      },
-      {
-        id: 'D-DC-14-03',
-        tipo: 'situacao',
-        subtopico: 'Vacância do cargo',
-        pergunta: 'O Presidente da República renuncia no segundo ano de mandato. O que acontece?',
-        alternativas: [
-          { id: 'A', texto: 'Assume definitivamente o Vice, sem nova eleição.' },
-          { id: 'B', texto: 'Há eleição DIRETA em 90 dias (vacância nos 2 primeiros anos).' },
-          { id: 'C', texto: 'Há eleição INDIRETA pelo Congresso em 30 dias.' },
-          { id: 'D', texto: 'O STF assume até o fim do mandato.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Art. 81: vacância nos 2 primeiros anos → eleição DIRETA em 90 dias. Se ocorresse nos 2 últimos anos, seria eleição INDIRETA pelo Congresso em 30 dias. O Vice sucede apenas se o cargo vagar antes (mas o enunciado pressupõe vacância nos 2 primeiros anos e nova eleição direta).'
-      },
-      {
-        id: 'D-DC-14-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Crimes de responsabilidade',
-        pergunta: 'Você consegue, sem consultar, explicar o procedimento nos casos de crime COMUM e de crime DE RESPONSABILIDADE praticados pelo Presidente da República?',
-        resposta: 'CRIME COMUM: a Câmara dos Deputados AUTORIZA por 2/3; o SUPREMO TRIBUNAL FEDERAL processa e julga. CRIME DE RESPONSABILIDADE: a Câmara AUTORIZA por 2/3; o SENADO FEDERAL processa e julga. Em ambos, a Câmara autoriza; o órgão julgador muda conforme a natureza do crime.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-15 — Poder Judiciário
-  ============================================================ */
-  'DC-15': {
-    id: 'D-DC-15',
-    moduloId: 'DC-15',
-    itens: [
-      {
-        id: 'D-DC-15-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'STF x STJ',
-        pergunta: 'Sobre o STF e o STJ, é correto afirmar que:',
-        alternativas: [
-          { id: 'A', texto: 'O STF é a guarda da LEI FEDERAL; o STJ é a guarda da CONSTITUIÇÃO.' },
-          { id: 'B', texto: 'O STF é a guarda da CONSTITUIÇÃO; o STJ é a guarda da LEI FEDERAL. O STF tem 11 ministros e o STJ tem 33.' },
-          { id: 'C', texto: 'Ambos têm 11 ministros.' },
-          { id: 'D', texto: 'O STJ julga ADI e ADPF.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'STF = guarda da CF, 11 ministros. STJ = guarda da lei federal, 33 ministros. A ADI e a ADPF são competência do STF.'
-      },
-      {
-        id: 'D-DC-15-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Garantias dos magistrados',
-        pergunta: 'A vitaliciedade, a inamovibilidade e a irredutibilidade de subsídio são garantias constitucionais dos magistrados (art. 95, CF/88).',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. São as três garantias do art. 95: vitaliciedade (não perde o cargo), inamovibilidade (não é removido) e irredutibilidade de subsídio.'
-      },
-      {
-        id: 'D-DC-15-03',
-        tipo: 'situacao',
-        subtopico: 'Competências',
-        pergunta: 'Uma causa em que a União é ré será processada e julgada pela:',
-        alternativas: [
-          { id: 'A', texto: 'Justiça Estadual.' },
-          { id: 'B', texto: 'Justiça Federal.' },
-          { id: 'C', texto: 'Justiça do Trabalho.' },
-          { id: 'D', texto: 'Justiça Eleitoral.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Art. 109, I: compete à Justiça Federal processar e julgar as causas em que a União, autarquia federal ou empresa pública federal forem partes.'
-      },
-      {
-        id: 'D-DC-15-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'CNJ',
-        pergunta: 'Você sabe qual é a função do Conselho Nacional de Justiça (CNJ) e sua composição?',
-        resposta: 'O CNJ é órgão de CONTROLE administrativo, financeiro e disciplinar do Judiciário brasileiro, criado pela EC 45/2004. Composição: 15 membros, presidido pelo Presidente do STF. NÃO julga causas — apenas exerce controle sobre a atuação administrativa e disciplinar dos magistrados.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-16 — Funções Essenciais à Justiça
-  ============================================================ */
-  'DC-16': {
-    id: 'D-DC-16',
-    moduloId: 'DC-16',
-    itens: [
-      {
-        id: 'D-DC-16-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Ministério Público',
-        pergunta: 'Sobre o Ministério Público (art. 127, CF/88), é correto afirmar que:',
-        alternativas: [
-          { id: 'A', texto: 'Integra o Poder Judiciário.' },
-          { id: 'B', texto: 'É instituição permanente, essencial à função jurisdicional, com princípios de unidade, indivisibilidade e independência funcional.' },
-          { id: 'C', texto: 'É subordinado ao Poder Executivo.' },
-          { id: 'D', texto: 'Não tem garantias próprias.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'MP: instituição permanente e essencial à função jurisdicional (art. 127), com princípios de unidade, indivisibilidade e independência funcional. NÃO integra nenhum dos três Poderes. Tem garantias (vitaliciedade, inamovibilidade, irredutibilidade).'
-      },
-      {
-        id: 'D-DC-16-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Defensoria Pública',
-        pergunta: 'A Defensoria Pública é instituição permanente e essencial à função jurisdicional do Estado, incumbindo-lhe a orientação jurídica, a promoção dos direitos humanos e a defesa dos direitos individuais e coletivos aos necessitados, de forma integral e gratuita.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro — é a literalidade do art. 134, com redação da EC 80/2014. A Defensoria é expressão e instrumento do regime democrático.'
-      },
-      {
-        id: 'D-DC-16-03',
-        tipo: 'situacao',
-        subtopico: 'Advocacia Pública',
-        pergunta: 'A União é ré em uma ação trabalhista. Quem a representa judicialmente?',
-        alternativas: [
-          { id: 'A', texto: 'O Ministério Público Federal.' },
-          { id: 'B', texto: 'A Advocacia-Geral da União (AGU).' },
-          { id: 'C', texto: 'A Defensoria Pública da União.' },
-          { id: 'D', texto: 'A Ordem dos Advogados do Brasil.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Art. 131: a AGU representa a União, judicial e extrajudicialmente, e presta consultoria e assessoramento ao Poder Executivo federal. MP não representa a União (fiscaliza a lei); Defensoria atende necessitados; OAB é entidade de classe.'
-      },
-      {
-        id: 'D-DC-16-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Funções essenciais',
-        pergunta: 'Você consegue, sem consultar, diferenciar as funções do MP, da AGU/PGE/PGM, da advocacia privada e da Defensoria Pública?',
-        resposta: 'MP: fiscal da lei (defende ordem jurídica, regime democrático e interesses indisponíveis). AGU/PGE/PGM: representa o Estado (União, Estados, Municípios). Advocacia privada: representa o cidadão; indispensável à administração da justiça (art. 133). Defensoria Pública: orienta e defende os NECESSITADOS, integral e gratuitamente (art. 134), com autonomia funcional e administrativa.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-17 — Defesa do Estado e Instituições Democráticas
-  ============================================================ */
-  'DC-17': {
-    id: 'D-DC-17',
-    moduloId: 'DC-17',
-    itens: [
-      {
-        id: 'D-DC-17-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Estado de Defesa x Estado de Sítio',
-        pergunta: 'Sobre o Estado de Defesa e o Estado de Sítio (arts. 136 e 137, CF/88), é correto afirmar que:',
-        alternativas: [
-          { id: 'A', texto: 'Ambos têm prazo de 30 dias, prorrogável indefinidamente.' },
-          { id: 'B', texto: 'Estado de Defesa: 30 dias prorrogável uma única vez. Estado de Sítio: 30 dias prorrogável por iguais períodos.' },
-          { id: 'C', texto: 'O Estado de Sítio é mais brando que o Estado de Defesa.' },
-          { id: 'D', texto: 'O Estado de Defesa pode ser decretado sem ouvir os Conselhos.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'DEFESA: 30 dias prorrogável uma vez. SÍTIO: 30 dias prorrogável por iguais períodos (sem limite). O Sítio é mais grave. Em ambos, os Conselhos da República e de Defesa Nacional devem ser ouvidos.'
-      },
-      {
-        id: 'D-DC-17-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Estado de Sítio',
-        pergunta: 'Durante o Estado de Sítio, o Congresso Nacional NÃO pode ser dissolvido.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. Art. 138: o Congresso Nacional não pode ser dissolvido durante o Estado de Sítio. É garantia do Estado Democrático de Direito.'
-      },
-      {
-        id: 'D-DC-17-03',
-        tipo: 'situacao',
-        subtopico: 'Segurança Pública',
-        pergunta: 'Sobre os órgãos de segurança pública (art. 144, CF/88), é correto afirmar que a Polícia Federal:',
-        alternativas: [
-          { id: 'A', texto: 'Faz policiamento ostensivo nas ruas.' },
-          { id: 'B', texto: 'Apura crimes contra a ordem política e social, faz polícia marítima, aeroportuária e de fronteiras, e exerce com exclusividade a polícia judiciária da União.' },
-          { id: 'C', texto: 'É subordinada aos Estados.' },
-          { id: 'D', texto: 'Cuida apenas do trânsito.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Art. 144, §1º: PF — apura crimes contra a ordem política e social, faz polícia marítima, aeroportuária e de fronteiras, exerce com exclusividade a polícia judiciária da União. Policiamento ostensivo é da Polícia Militar.'
-      },
-      {
-        id: 'D-DC-17-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Forças Armadas',
-        pergunta: 'Você consegue, sem consultar, citar as três Forças Armadas e sua missão constitucional (art. 142)?',
-        resposta: 'Marinha, Exército e Aeronáutica. Missão: defesa da Pátria, garantia dos Poderes constituídos e garantia da lei e da ordem. São instituições nacionais permanentes e regulares, organizadas com base na hierarquia e na disciplina, sob a autoridade suprema do Presidente da República.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-18 — Controle de Constitucionalidade
-  ============================================================ */
-  'DC-18': {
-    id: 'D-DC-18',
-    moduloId: 'DC-18',
-    itens: [
-      {
-        id: 'D-DC-18-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Controle difuso x concentrado',
-        pergunta: 'Sobre o controle difuso e o concentrado de constitucionalidade, é correto afirmar que:',
-        alternativas: [
-          { id: 'A', texto: 'O difuso é exercido apenas pelo STF; o concentrado, por qualquer juiz.' },
-          { id: 'B', texto: 'O difuso é exercido por qualquer juiz no caso concreto (efeitos inter partes); o concentrado é exercido pelo STF em ação própria (efeitos erga omnes e vinculante).' },
-          { id: 'C', texto: 'Ambos têm os mesmos efeitos.' },
-          { id: 'D', texto: 'O concentrado só cabe contra lei municipal.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'DIFUSO: qualquer juiz, incidental, efeitos inter partes. CONCENTRADO: STF, ação própria (ADI, ADC, ADPF, ADO), efeitos erga omnes e vinculante.'
-      },
-      {
-        id: 'D-DC-18-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'ADI x ADC',
-        pergunta: 'A ADI cabe contra lei ou ato normativo federal ou estadual; a ADC cabe apenas contra lei ou ato normativo FEDERAL.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. ADI (art. 102, I, "a"): lei ou ato normativo federal OU estadual. ADC (art. 102, I, "a", parte final): apenas lei ou ato normativo FEDERAL.'
-      },
-      {
-        id: 'D-DC-18-03',
-        tipo: 'situacao',
-        subtopico: 'ADPF e ADO',
-        pergunta: 'Não há lei regulamentando um direito constitucional, inviabilizando seu exercício. O instrumento adequado é:',
-        alternativas: [
-          { id: 'A', texto: 'ADI, por inconstitucionalidade.' },
-          { id: 'B', texto: 'ADC, por constitucionalidade.' },
-          { id: 'C', texto: 'ADO (ação direta de inconstitucionalidade por omissão), para tornar efetiva a norma constitucional.' },
-          { id: 'D', texto: 'ADPF, por descumprimento de preceito fundamental.' }
-        ],
-        gabarito: 'C',
-        explicacao: 'ADO (art. 103, §2º): cabe quando a omissão legislativa inviabiliza o exercício de direito constitucional. A ADPF é residual — só cabe quando não houver outro meio eficaz. A ADI cabe contra ato comissivo; a ADC, para declarar constitucionalidade.'
-      },
-      {
-        id: 'D-DC-18-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Legitimados e efeitos',
-        pergunta: 'Você consegue, sem consultar, citar os legitimados do art. 103 para propor ADI e ADC, e os efeitos das decisões?',
-        resposta: 'LEGITIMADOS (art. 103): Presidente da República; Mesa do Senado Federal; Mesa da Câmara dos Deputados; Mesa de Assembleia Legislativa ou da Câmara Legislativa do DF; Governador de Estado ou do DF; Procurador-Geral da República; Conselho Federal da OAB; partido político com representação no Congresso Nacional; confederação sindical ou entidade de classe de âmbito nacional. EFEITOS: em regra, erga omnes e vinculante; a modulação de efeitos é possível (art. 27 da Lei 9.868/1999).'
+        subtopico: 'Regras gerais',
+        pergunta: 'Você consegue aplicar, em cenários reais de trabalho administrativo: escolha da ferramenta certa, envio seguro de documentos (PDF, Cco, senha), compartilhamento com permissões, organização de arquivos, backup 3-2-1?',
+        resposta: 'FERRAMENTA: texto → Word; cálculo → Excel; apresentação → PowerPoint; colaboração → nuvem. ENVIO: PDF para leitura (preserva layout); .docx para edição; Cco para listas grandes; senha em documentos sensíveis; verificar destinatários. COMPARTILHAMENTO: prefira link RESTRITO; revise permissões (visualizador, comentarista, editor). ORGANIZAÇÃO: estrutura lógica (ano/mês/assunto), nomenclatura padronizada, versionamento. BACKUP: 3-2-1 — separado do compartilhamento.'
       }
     ]
   }
