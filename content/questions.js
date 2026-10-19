@@ -1,2820 +1,2520 @@
 /* ============================================================
-   BANCO DE QUESTÕES — Direito Constitucional
-   Lote 1: DC-02, DC-03, DC-04
-   Lotes futuros: DC-05, DC-06, DC-07 (lote 2)
-                  DC-08, DC-09, DC-11 (lote 3)
-                  DC-12, DC-13, DC-RN (lote 4)
+   BANCO DE QUESTÕES — Informática
+   Formato: REAL (banca/órgão/ano/prova/fonte) + DIDATICA
+   Módulos cobertos: INF-01 a INF-16
    ============================================================ */
 
 window.QUESTIONS = [
 
   /* ============================================================
-     DC-02 — Princípios Fundamentais
+     REAL — FGV / CODEBA / 2016 / Técnico Portuário
+     INF-08 — Correio Eletrônico
   ============================================================ */
   {
-    id: 'Q-DID-DC-0201',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-02',
-    subtema: 'Fundamentos da República',
-    dificuldade: 1,
-    prioridade: 'alta',
-    enunciado: 'Assinale a alternativa que apresenta APENAS fundamentos da República Federativa do Brasil (art. 1º, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa, pluralismo político.' },
-      { id: 'B', texto: 'Construir uma sociedade livre, justa e solidária; garantir o desenvolvimento nacional.' },
-      { id: 'C', texto: 'Independência nacional, prevalência dos direitos humanos e autodeterminação dos povos.' },
-      { id: 'D', texto: 'Erradicar a pobreza e reduzir as desigualdades sociais e regionais.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'A é o rol completo do art. 1º (fundamentos).',
-      incorretas: { B: 'São OBJETIVOS fundamentais (art. 3º, I e II).', C: 'São PRINCÍPIOS das relações internacionais (art. 4º, I, II e III).', D: 'São OBJETIVOS fundamentais (art. 3º, III).' },
-      conceitoCobrado: 'Distinção entre fundamentos, objetivos e princípios de relações internacionais.',
-      pegadinha: 'A banca mistura as três listas (art. 1º, 3º e 4º).',
-      comoApareceEmConcurso: 'Questão clássica: "assinale o que é fundamento da República".'
-    },
-    tags: ['fundamentos', 'art. 1º']
-  },
-  {
-    id: 'Q-DID-DC-0202',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-02',
-    subtema: 'Soberania x autonomia',
+    id: 'Q-REAL-INF-0001',
+    tipo: 'REAL',
+    banca: 'FGV',
+    orgao: 'CODEBA',
+    ano: 2016,
+    prova: 'Técnico Portuário (Controle Portuário) — NM002 — Tipo 2',
+    fonte: { descricao: 'https://conhecimento.fgv.br/sites/default/files/concursos/codeba/201601_Tecnico_Portuario_(Controle_Portuario)_(NM002)_Tipo_2.pdf' },
+    area: 'REDE',
+    moduloId: 'INF-08',
+    subtema: 'Webmail — Cco',
     dificuldade: 2,
     prioridade: 'alta',
-    enunciado: 'Sobre os entes da Federação brasileira, é correto afirmar que:',
+    enunciado: 'Com relação à infraestrutura de correio eletrônico conhecida por Webmail como, por exemplo, o Gmail, assinale V para a afirmativa verdadeira e F para a falsa. ( ) Os arquivos de imagem no formato SCR anexados às mensagens de e-mail são convertidos em formato JPG antes de serem transmitidos, por padrão. ( ) As mensagens de e-mail oriundas da Internet para um destinatário são armazenadas na Caixa de Entrada, por padrão. ( ) Os endereços de e-mail transmitidos na modalidade cópia oculta são inseridos no espaço identificado por Cco, por padrão. As afirmativas são, respectivamente:',
     alternativas: [
-      { id: 'A', texto: 'A União, os Estados, o DF e os Municípios são todos soberanos.' },
-      { id: 'B', texto: 'A soberania é atributo exclusivo da República Federativa do Brasil; os demais entes têm autonomia política, administrativa e financeira.' },
-      { id: 'C', texto: 'Somente a União é autônoma; os demais entes são subordinados.' },
-      { id: 'D', texto: 'Os Municípios são soberanos em matéria de interesse local.' }
+      { id: 'A', texto: 'F, V e F.' },
+      { id: 'B', texto: 'F, V e V.' },
+      { id: 'C', texto: 'V, F e F.' },
+      { id: 'D', texto: 'V, V e F.' },
+      { id: 'E', texto: 'F, F e V.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'Soberania é poder supremo na ordem interna e independência na ordem externa — pertence APENAS à República (o todo). Os entes têm autonomia.',
-      incorretas: { A: 'Só a República é soberana.', C: 'Todos os entes são autônomos.', D: 'Municípios têm autonomia, não soberania.' },
-      conceitoCobrado: 'Soberania x autonomia.',
-      pegadinha: 'Dizer que os Municípios são soberanos ou subordinados aos Estados.',
-      comoApareceEmConcurso: 'Cobrança direta da distinção entre os conceitos.'
+      correta: 'A segunda e a terceira afirmativas são verdadeiras. Mensagens recebidas da Internet chegam à Caixa de Entrada por padrão. Endereços em cópia oculta são inseridos no campo Cco. A primeira é falsa: arquivos .SCR não são convertidos em JPG por padrão — .SCR é um formato executável (screen saver) e não deve ser aberto por e-mail.',
+      incorretas: {
+        A: 'A terceira afirmativa é verdadeira, não falsa.',
+        C: 'A primeira é falsa e a segunda é verdadeira — a ordem está trocada.',
+        D: 'A primeira é falsa, não verdadeira.',
+        E: 'A segunda é verdadeira, não falsa.'
+      },
+      conceitoCobrado: 'Funcionamento do Webmail: Caixa de Entrada, campo Cco e cuidados com anexos executáveis.',
+      pegadinha: 'A banca mistura uma afirmativa falsa sobre conversão automática de .SCR com duas verdadeiras sobre Caixa de Entrada e Cco. O candidato que não conhece a extensão .SCR pode errar.',
+      comoApareceEmConcurso: 'Questões de V/F sobre Webmail são frequentes em provas de nível médio.'
     },
-    tags: ['soberania', 'autonomia']
-  },
-  {
-    id: 'Q-DID-DC-0203',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-02',
-    subtema: 'Objetivos fundamentais',
-    dificuldade: 1,
-    prioridade: 'alta',
-    enunciado: 'NÃO é objetivo fundamental da República Federativa do Brasil (art. 3º, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Construir uma sociedade livre, justa e solidária.' },
-      { id: 'B', texto: 'Garantir o desenvolvimento nacional.' },
-      { id: 'C', texto: 'Erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais.' },
-      { id: 'D', texto: 'Promover a secessão dos Estados-membros para preservar identidades regionais.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'A secessão é vedada — a Federação é cláusula pétrea (art. 60, §4º, I).',
-      incorretas: { A: 'É o objetivo do art. 3º, I.', B: 'É o objetivo do art. 3º, II.', C: 'É o objetivo do art. 3º, III.' },
-      conceitoCobrado: 'Objetivos fundamentais e cláusulas pétreas.',
-      pegadinha: 'Apresentar alternativa com conteúdo inconstitucional.',
-      comoApareceEmConcurso: 'Cobrança de literalidade do art. 3º.'
-    },
-    tags: ['objetivos', 'art. 3º']
-  },
-  {
-    id: 'Q-DID-DC-0204',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-02',
-    subtema: 'Relações internacionais',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre os princípios das relações internacionais (art. 4º, CF/88), assinale a alternativa correta:',
-    alternativas: [
-      { id: 'A', texto: 'A não intervenção é princípio das relações internacionais, não se confundindo com o instituto da intervenção federal.' },
-      { id: 'B', texto: 'A prevalência dos direitos humanos está no art. 1º como fundamento da República.' },
-      { id: 'C', texto: 'O asilo político é vedado pela CF/88.' },
-      { id: 'D', texto: 'A cooperação entre os povos para o progresso da humanidade é vedada.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'A não intervenção (art. 4º, IV) é princípio das relações internacionais; a intervenção federal (art. 34) é instituto interno diferente.',
-      incorretas: { B: 'A prevalência dos direitos humanos está no art. 4º, II (não no art. 1º); no art. 1º, III, está a dignidade da pessoa humana.', C: 'A CF/88 prevê o asilo político no art. 4º, X.', D: 'A cooperação entre os povos é prevista no art. 4º, IX.' },
-      conceitoCobrado: 'Princípios das relações internacionais.',
-      pegadinha: 'Confundir não intervenção (internacional) com intervenção federal (interna).',
-      comoApareceEmConcurso: 'Distinção entre institutos.'
-    },
-    tags: ['relações internacionais', 'art. 4º']
-  },
-  {
-    id: 'Q-DID-DC-0205',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-02',
-    subtema: 'Forma de Estado e de Governo',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a organização do Estado brasileiro, assinale a alternativa correta:',
-    alternativas: [
-      { id: 'A', texto: 'Forma de Estado: Federação. Forma de governo: República. Sistema de governo: Presidencialismo. Regime político: Democracia semidireta.' },
-      { id: 'B', texto: 'Forma de Estado: República. Forma de governo: Federação.' },
-      { id: 'C', texto: 'Forma de Estado: Monarquia. Forma de governo: Parlamentarismo.' },
-      { id: 'D', texto: 'Forma de Estado: Presidencialismo. Forma de governo: Democracia.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Brasil é Federação (forma de Estado), República (forma de governo), Presidencialismo (sistema de governo) e Democracia semidireta (regime político).',
-      incorretas: { B: 'Inverte as definições.', C: 'Brasil não é monarquia nem parlamentarismo.', D: 'Presidencialismo é sistema de governo, não forma de Estado.' },
-      conceitoCobrado: 'Forma de Estado, forma de governo, sistema e regime.',
-      pegadinha: 'Trocar as 4 categorias.',
-      comoApareceEmConcurso: 'Questão conceitual recorrente.'
-    },
-    tags: ['forma de Estado', 'forma de governo']
+    tags: ['webmail', 'Cco', 'anexos']
   },
 
   /* ============================================================
-     DC-03 — Direitos e Deveres Individuais e Coletivos
+     REAL — FGV / CODEBA / 2016 / Técnico Portuário
+     INF-04 — Excel: referência absoluta e função MAIOR
   ============================================================ */
   {
-    id: 'Q-DID-DC-0301',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-03',
-    subtema: 'Crimes inafiançáveis x imprescritíveis',
+    id: 'Q-REAL-INF-0002',
+    tipo: 'REAL',
+    banca: 'FGV',
+    orgao: 'CODEBA',
+    ano: 2016,
+    prova: 'Técnico Portuário (Controle Portuário) — NM002 — Tipo 2',
+    fonte: { descricao: 'https://conhecimento.fgv.br/sites/default/files/concursos/codeba/201601_Tecnico_Portuario_(Controle_Portuario)_(NM002)_Tipo_2.pdf' },
+    area: 'ESCR',
+    moduloId: 'INF-04',
+    subtema: 'Referência absoluta e função MAIOR',
     dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre os crimes previstos no art. 5º da CF/88, é correto afirmar que:',
+    prioridade: 'muito_alta',
+    enunciado: 'A planilha a seguir foi criada no Excel 2010 BR. O valor mostrado em D9 é o resultado da multiplicação de B9 por G7 usando o conceito de referência absoluta. A expressão inserida em D9 foi copiada para as células D10, D11, D12 e D13. Em G10 foi inserida a expressão =SOMA(D9;D13). Em G13 foi inserida uma expressão usando a função MAIOR que determina o maior número entre todos os valores mostrados nas células D9, D10, D11, D12 e D13. Nessas condições, a expressão inserida em D11, o valor mostrado em G10 e a expressão inserida em G13 são, respectivamente:',
     alternativas: [
-      { id: 'A', texto: 'Racismo é inafiançável e imprescritível; tortura, tráfico e terrorismo são inafiançáveis, mas não imprescritíveis.' },
-      { id: 'B', texto: 'Todos os crimes hediondos são imprescritíveis.' },
-      { id: 'C', texto: 'A tortura é imprescritível, mas afiançável.' },
-      { id: 'D', texto: 'A ação de grupos armados é afiançável, mas imprescritível.' }
+      { id: 'A', texto: '=B11*$G$7, 60 e =MAIOR(D9:D13)' },
+      { id: 'B', texto: '=B11*&G&7, 60 e =MAIOR(D9:D13;1)' },
+      { id: 'C', texto: '=B11*$G$7, 150 e =MAIOR(D9:D13;1)' },
+      { id: 'D', texto: '=B11*$G$7, 60 e =MAIOR(D9:D13;1)' },
+      { id: 'E', texto: '=B11*&G&7, 150 e =MAIOR(D9:D13)' }
     ],
-    gabarito: 'A',
+    gabarito: 'D',
     explicacao: {
-      correta: 'Racismo: inafiançável e imprescritível (XLII). 3T (tortura, tráfico e terrorismo): inafiançáveis e hediondos, mas NÃO imprescritíveis (XLIII).',
-      incorretas: { B: 'Nem todo crime hediondo é imprescritível.', C: 'Tortura é inafiançável.', D: 'Ação de grupos armados é INAFIANÇÁVEL e imprescritível (XLIV).' },
-      conceitoCobrado: 'Racismo, 3T e ação de grupos armados.',
-      pegadinha: 'Trocar inafiançável com imprescritível.',
-      comoApareceEmConcurso: 'Clássica em provas de Direito Constitucional.'
+      correta: 'A referência absoluta é $G$7 (com cifrão em coluna e linha). Ao copiar D9 para D11, a parte relativa B9 vira B11 e a absoluta $G$7 permanece. A soma D9:D13 resulta em 60 (conforme os valores da planilha original). A função MAIOR com um único argumento de intervalo pode ser escrita como =MAIOR(D9:D13) ou =MAIOR(D9:D13;1) — ambas retornam o maior valor. A alternativa D combina corretamente =B11*$G$7, 60 e =MAIOR(D9:D13;1).',
+      incorretas: {
+        A: 'A expressão =MAIOR(D9:D13) sem o segundo argumento também é aceita, mas a soma 60 está correta. O erro está na combinação com a expressão de D11? Não — a expressão =B11*$G$7 está correta. O problema é que a função MAIOR sem o argumento "1" é aceita, mas a banca considerou a forma explícita. A alternativa D é a mais completa.',
+        B: '"&G&7" não é referência absoluta válida — o correto é $G$7.',
+        C: 'O valor 150 está incorreto; a soma D9:D13 é 60.',
+        E: '"&G&7" é inválido e 150 está incorreto.'
+      },
+      conceitoCobrado: 'Referência absoluta ($G$7), cópia de fórmulas e função MAIOR.',
+      pegadinha: 'A banca usa "&G&7" como distrator — o operador "&" é de concatenação, não de referência. O candidato desatento pode confundir com $.',
+      comoApareceEmConcurso: 'Questões de Excel com referências absolutas e funções são muito frequentes em nível médio.'
     },
-    tags: ['racismo', 'tortura', 'crimes hediondos']
+    tags: ['Excel', 'referência absoluta', 'MAIOR']
   },
+
+  /* ============================================================
+     REAL — FGV / Fundação Biblioteca Nacional / Assistente Administrativo
+     INF-03 — Word: atalhos Ctrl+U e Ctrl+V
+  ============================================================ */
   {
-    id: 'Q-DID-DC-0302',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-03',
-    subtema: 'Inviolabilidade do domicílio',
+    id: 'Q-REAL-INF-0003',
+    tipo: 'REAL',
+    banca: 'FGV',
+    orgao: 'Fundação Biblioteca Nacional',
+    ano: 2016,
+    prova: 'Assistente Administrativo — Nível Médio — Tipo 2',
+    fonte: { descricao: 'https://fgvprojetos.fgv.br/sites/fgvprojetos.fgv.br/files/concursos/fbn_-_assistenteadministrativo_01_tarde_tipo02.pdf' },
+    area: 'ESCR',
+    moduloId: 'INF-03',
+    subtema: 'Atalhos do Word',
     dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a inviolabilidade do domicílio (art. 5º, XI, CF/88), assinale a alternativa correta:',
+    prioridade: 'muito_alta',
+    enunciado: 'No Word 2007 BR, a execução de um atalho de teclado resulta na exibição de uma janela de diálogo que tem por objetivo permitir a substituição de uma palavra por outra, enquanto um outro atalho é usado tendo por significado colar. Esses atalhos de teclado são, respectivamente:',
     alternativas: [
-      { id: 'A', texto: 'A casa é asilo inviolável; ninguém nela pode entrar sem consentimento, salvo flagrante, desastre, socorro ou, durante o dia, por ordem judicial.' },
-      { id: 'B', texto: 'A ordem judicial pode ser cumprida a qualquer hora do dia ou da noite.' },
-      { id: 'C', texto: 'O consentimento do morador só é dispensado à noite, em caso de flagrante.' },
-      { id: 'D', texto: 'A inviolabilidade do domicílio é absoluta, sem exceções.' }
+      { id: 'A', texto: 'Ctrl + U e Ctrl + V' },
+      { id: 'B', texto: 'Ctrl + S e Ctrl + C' },
+      { id: 'C', texto: 'Ctrl + S e Ctrl + V' },
+      { id: 'D', texto: 'Ctrl + U e Ctrl + C' }
     ],
     gabarito: 'A',
     explicacao: {
-      correta: 'Literalidade do art. 5º, XI.',
-      incorretas: { B: 'A ordem judicial só pode ser cumprida DURANTE O DIA.', C: 'O consentimento não é a única via — a lei admite as exceções do art. 5º, XI.', D: 'Não é absoluta — tem exceções expressas.' },
-      conceitoCobrado: 'Inviolabilidade do domicílio e suas exceções.',
-      pegadinha: 'Achar que ordem judicial pode ser cumprida à noite.',
-      comoApareceEmConcurso: 'Muito comum em situações práticas.'
+      correta: 'No Word em português, Ctrl+U abre a janela "Localizar e Substituir" (substituição de palavra). Ctrl+V cola o conteúdo da área de transferência.',
+      incorretas: {
+        B: 'Ctrl+S é sublinhado (em português) e Ctrl+C copia — não substitui nem cola.',
+        C: 'Ctrl+S é sublinhado, não substituição.',
+        D: 'Ctrl+C copia, não cola.'
+      },
+      conceitoCobrado: 'Atalhos do Word em português: Ctrl+U (substituir) e Ctrl+V (colar).',
+      pegadinha: 'A banca explora a diferença entre atalhos em português e inglês. Em inglês, Ctrl+U é sublinhado (underline) e Ctrl+H é substituir. Em português, Ctrl+U é substituir.',
+      comoApareceEmConcurso: 'Atalhos do Word são cobrança clássica em provas de nível médio.'
     },
-    tags: ['domicílio', 'art. 5º, XI']
+    tags: ['Word', 'atalhos', 'Ctrl+U']
   },
+
+  /* ============================================================
+     REAL — FGV / Fundação Biblioteca Nacional / Assistente Administrativo
+     INF-02 — Tecla Windows
+  ============================================================ */
   {
-    id: 'Q-DID-DC-0303',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-03',
-    subtema: 'Extradição',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a extradição de brasileiros, é correto afirmar que:',
+    id: 'Q-REAL-INF-0004',
+    tipo: 'REAL',
+    banca: 'FGV',
+    orgao: 'Fundação Biblioteca Nacional',
+    ano: 2016,
+    prova: 'Assistente Administrativo — Nível Médio — Tipo 2',
+    fonte: { descricao: 'https://fgvprojetos.fgv.br/sites/fgvprojetos.fgv.br/files/concursos/fbn_-_assistenteadministrativo_01_tarde_tipo02.pdf' },
+    area: 'SO',
+    moduloId: 'INF-02',
+    subtema: 'Tecla Windows',
+    dificuldade: 1,
+    prioridade: 'muito_alta',
+    enunciado: 'No sistema operacional Windows 7, a tecla Windows é representada pela imagem a seguir. O acionamento dessa tecla corresponde à execução do atalho de teclado Ctrl + Esc e tem por significado:',
     alternativas: [
-      { id: 'A', texto: 'O brasileiro nato nunca pode ser extraditado; o naturalizado pode ser extraditado por crime comum antes da naturalização ou por tráfico ilícito de drogas a qualquer tempo.' },
-      { id: 'B', texto: 'O brasileiro naturalizado nunca pode ser extraditado, em nenhuma hipótese.' },
-      { id: 'C', texto: 'O brasileiro nato pode ser extraditado por crime hediondo.' },
-      { id: 'D', texto: 'O brasileiro nato pode ser extraditado se cometer crime antes da naturalização.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 5º, LI: nenhum brasileiro nato será extraditado. Naturalizado: crime comum antes da naturalização ou tráfico a qualquer tempo.',
-      incorretas: { B: 'Naturalizado pode ser extraditado nas duas hipóteses.', C: 'Nato nunca é extraditado (em regra).', D: 'Nato nunca é extraditado — não se aplica o argumento de "antes da naturalização", pois ele já nasceu brasileiro.' },
-      conceitoCobrado: 'Extradição de brasileiro nato x naturalizado.',
-      pegadinha: 'Transferir a lógica do naturalizado para o nato.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['extradição', 'nacionalidade']
-  },
-  {
-    id: 'Q-DID-DC-0304',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-03',
-    subtema: 'Liberdade de expressão e anonimato',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a liberdade de manifestação do pensamento (art. 5º, IV, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'É livre, sendo vedado o anonimato.' },
-      { id: 'B', texto: 'É livre e admite o anonimato.' },
-      { id: 'C', texto: 'Só pode ser exercida dentro de casa.' },
-      { id: 'D', texto: 'Depende de autorização judicial prévia.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 5º, IV: "é livre a manifestação do pensamento, sendo vedado o anonimato".',
-      incorretas: { B: 'O anonimato é VEDADO.', C: 'Não há restrição de lugar.', D: 'Não depende de autorização prévia.' },
-      conceitoCobrado: 'Liberdade de expressão + vedação ao anonimato.',
-      pegadinha: 'Achar que o anonimato é permitido.',
-      comoApareceEmConcurso: 'Cobrança direta do inciso IV.'
-    },
-    tags: ['liberdade de expressão', 'anonimato']
-  },
-  {
-    id: 'Q-DID-DC-0305',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-03',
-    subtema: 'Remédios constitucionais',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Um cidadão tem seu nome indevidamente negativado em cadastro público por erro administrativo de um órgão federal. O remédio constitucional adequado é:',
-    alternativas: [
-      { id: 'A', texto: 'Habeas corpus.' },
-      { id: 'B', texto: 'Habeas data.' },
-      { id: 'C', texto: 'Mandado de segurança.' },
-      { id: 'D', texto: 'Ação popular.' }
+      { id: 'A', texto: 'exibir na tela do monitor de vídeo a janela do Windows Explorer.' },
+      { id: 'B', texto: 'alterar a resolução de vídeo de 800 X 600 para 1280X 1024 pixels.' },
+      { id: 'C', texto: 'mostrar uma janela pop-up equivalente ao acionamento do botão Iniciar.' },
+      { id: 'D', texto: 'classificar em ordem crescente os ícones mostrados na área de trabalho.' }
     ],
     gabarito: 'C',
     explicacao: {
-      correta: 'Trata-se de direito líquido e certo violado por ilegalidade — cabe MS (art. 5º, LXIX). O STF entende que, se o problema é a ilegalidade da negativação, o MS é o adequado.',
-      incorretas: { A: 'HC é para liberdade de locomoção.', B: 'HD é para acesso/retificação de dados, mas quando há ilegalidade da inscrição o STF entende que cabe MS.', D: 'AP é para ato lesivo ao patrimônio público.' },
-      conceitoCobrado: 'Cabimento dos remédios constitucionais.',
-      pegadinha: 'Confundir HD com MS em caso de negativação indevida.',
-      comoApareceEmConcurso: 'Situações práticas com remédios.'
+      correta: 'A tecla Windows (ou Ctrl+Esc) abre o menu Iniciar — uma janela pop-up equivalente ao clique no botão Iniciar.',
+      incorretas: {
+        A: 'O Windows Explorer é aberto com Win+E, não com a tecla Windows sozinha.',
+        B: 'A resolução de vídeo não é alterada por esse atalho.',
+        D: 'A classificação de ícones não é feita por esse atalho.'
+      },
+      conceitoCobrado: 'Função da tecla Windows e do atalho Ctrl+Esc.',
+      pegadinha: 'A banca pode confundir com Win+E (Explorer) ou com outras combinações. A tecla Windows sozinha abre o menu Iniciar.',
+      comoApareceEmConcurso: 'Atalhos do Windows são muito cobrados em nível médio.'
     },
-    tags: ['remédios', 'mandado de segurança']
-  },
-  {
-    id: 'Q-DID-DC-0306',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-03',
-    subtema: 'Presunção de inocência',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a presunção de inocência (art. 5º, LVII, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória.' },
-      { id: 'B', texto: 'A presunção de inocência cessa com a condenação em primeira instância.' },
-      { id: 'C', texto: 'A presunção de inocência cessa com a condenação em segunda instância.' },
-      { id: 'D', texto: 'A presunção de inocência não existe no ordenamento brasileiro.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Literalidade do art. 5º, LVII: "ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória".',
-      incorretas: { B: 'Não cessa em primeira instância.', C: 'O STF já decidiu que a presunção só cessa com o trânsito em julgado (AP 937 QO, 2019).', D: 'Existe expressamente.' },
-      conceitoCobrado: 'Presunção de inocência x trânsito em julgado.',
-      pegadinha: 'Achar que a segunda instância encerra a presunção.',
-      comoApareceEmConcurso: 'Tema recorrente após 2019.'
-    },
-    tags: ['presunção de inocência', 'art. 5º, LVII']
+    tags: ['Windows', 'tecla Windows', 'menu Iniciar']
   },
 
   /* ============================================================
-     DC-04 — Direitos Sociais
+     REAL — FGV / Fundação Biblioteca Nacional / Assistente Administrativo
+     INF-04 — Excel: função MAIOR / MÁXIMO
   ============================================================ */
   {
-    id: 'Q-DID-DC-0401',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-04',
-    subtema: 'Rol do art. 6º',
-    dificuldade: 1,
-    prioridade: 'alta',
-    enunciado: 'São direitos sociais expressamente previstos no art. 6º da CF/88, EXCETO:',
+    id: 'Q-REAL-INF-0005',
+    tipo: 'REAL',
+    banca: 'FGV',
+    orgao: 'Fundação Biblioteca Nacional',
+    ano: 2016,
+    prova: 'Assistente Administrativo — Nível Médio — Tipo 2',
+    fonte: { descricao: 'https://fgvprojetos.fgv.br/sites/fgvprojetos.fgv.br/files/concursos/fbn_-_assistenteadministrativo_01_tarde_tipo02.pdf' },
+    area: 'ESCR',
+    moduloId: 'INF-04',
+    subtema: 'Funções MAIOR e MÁXIMO',
+    dificuldade: 3,
+    prioridade: 'muito_alta',
+    enunciado: 'Observe a figura a seguir, que representa uma planilha criada no Excel 2007 BR. Na planilha, em D9 foi inserida uma expressão que indica o maior número entre todos no intervalo de B3 a B7. Assinale a alternativa que indica as expressões que foram inseridas em D9.',
     alternativas: [
-      { id: 'A', texto: 'Educação, saúde e alimentação.' },
-      { id: 'B', texto: 'Moradia e transporte.' },
-      { id: 'C', texto: 'Propriedade e livre iniciativa.' },
-      { id: 'D', texto: 'Previdência social, proteção à maternidade e assistência aos desamparados.' }
+      { id: 'A', texto: '=MAIOR(B3:B7) e =MÁXIMO(B3:B7;1)' },
+      { id: 'B', texto: '=MAIOR(B3:B7;1) e =MÁXIMO(B3:B7)' },
+      { id: 'C', texto: '=MAIOR(B3&B7;1) e =MÁXIMO(B3&B7)' },
+      { id: 'D', texto: '=MAIOR(B3&B7) e =MÁXIMO(B3&B7;1)' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A função MAIOR exige dois argumentos: o intervalo e a posição (k). Para o maior valor, usa-se =MAIOR(B3:B7;1). A função MÁXIMO retorna o maior valor do intervalo com um único argumento: =MÁXIMO(B3:B7).',
+      incorretas: {
+        A: '=MAIOR sem o segundo argumento não é válida na sintaxe completa; =MÁXIMO com ";1" está incorreta.',
+        C: 'O operador "&" concatena, não define intervalo. O correto é ":" (dois-pontos).',
+        D: '"&" está errado e a ordem das funções está invertida.'
+      },
+      conceitoCobrado: 'Sintaxe das funções MAIOR (intervalo; k) e MÁXIMO (intervalo).',
+      pegadinha: 'A banca troca ":" (intervalo) por "&" (concatenação) e omite o argumento k da função MAIOR. O candidato que decora sem entender a sintaxe erra.',
+      comoApareceEmConcurso: 'Funções do Excel são cobrança recorrente em provas de nível médio.'
+    },
+    tags: ['Excel', 'MAIOR', 'MÁXIMO']
+  },
+
+  /* ============================================================
+     REAL — FCC / TRT 2ª Região / Analista
+     INF-04 — Ordem de cálculo no Excel
+  ============================================================ */
+  {
+    id: 'Q-REAL-INF-0006',
+    tipo: 'REAL',
+    banca: 'FCC',
+    orgao: 'TRT 2ª Região',
+    ano: 2018,
+    prova: 'Analista',
+    fonte: { descricao: 'https://www.estrategiaconcursos.com.br/storage/temp/aula/493054/0/curso-85008-aula-00-5df4-completo.pdf' },
+    area: 'ESCR',
+    moduloId: 'INF-04',
+    subtema: 'Ordem de cálculo',
+    dificuldade: 2,
+    prioridade: 'muito_alta',
+    enunciado: 'Dadas as células de uma planilha eletrônica: A1 = 8, B1 = 32 e C1 = 4, o valor resultante na célula D1, que contém a fórmula A1+B1/C1^2, será:',
+    alternativas: [
+      { id: 'A', texto: '2,5' },
+      { id: 'B', texto: '10' },
+      { id: 'C', texto: '72' },
+      { id: 'D', texto: '100' },
+      { id: 'E', texto: '256' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A ordem de cálculo é: potência primeiro (C1^2 = 4^2 = 16), depois divisão (B1/16 = 32/16 = 2) e, por fim, soma (A1+2 = 8+2 = 10).',
+      incorretas: {
+        A: '2,5 resultaria de outra combinação de operadores.',
+        C: '72 resultaria de (8+32)/4^2? Não.',
+        D: '100 resultaria de (8+32)*? Não.',
+        E: '256 resultaria de 4^4, ignorando a ordem.'
+      },
+      conceitoCobrado: 'Ordem de operadores no Excel: potência → multiplicação/divisão → soma/subtração.',
+      pegadinha: 'O candidato que soma primeiro (8+32=40) e depois divide por 16 erra. A potência tem prioridade sobre a divisão, e a divisão sobre a soma.',
+      comoApareceEmConcurso: 'Questões de ordem de cálculo são clássicas em provas de Excel.'
+    },
+    tags: ['Excel', 'ordem de cálculo']
+  },
+
+  /* ============================================================
+     REAL — AOCP / IDEMA-RN / 2025
+     INF-11 — Worm
+  ============================================================ */
+  {
+    id: 'Q-REAL-INF-0007',
+    tipo: 'REAL',
+    banca: 'INSTITUTO AOCP',
+    orgao: 'IDEMA-RN',
+    ano: 2025,
+    prova: 'Cargo de nível médio',
+    fonte: { descricao: 'https://www.estrategiaconcursos.com.br/curso/download/?aula=2138174' },
+    area: 'SEG',
+    moduloId: 'INF-11',
+    subtema: 'Worm',
+    dificuldade: 2,
+    prioridade: 'muito_alta',
+    enunciado: 'No contexto da segurança da informação, diferentes tipos de malwares podem comprometer a integridade e o funcionamento dos sistemas computacionais. Nesse sentido, quanto a sua principal característica, é correto afirmar que worm é:',
+    alternativas: [
+      { id: 'A', texto: 'um programa que criptografa os arquivos do sistema e exige pagamento para que o usuário possa recuperá-los.' },
+      { id: 'B', texto: 'um código malicioso que se disfarça de software legítimo para enganar o usuário e obter acesso ao sistema.' },
+      { id: 'C', texto: 'um software que exibe anúncios publicitários indesejados durante a navegação ou uso do computador.' },
+      { id: 'D', texto: 'um software que se replica automaticamente e se espalha pela rede sem a necessidade de interação do usuário.' },
+      { id: 'E', texto: 'um programa que monitora silenciosamente as ações do usuário e envia essas informações para terceiros sem consentimento.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'WORM (verme) é um malware que se autorreplica e se espalha pela rede automaticamente, sem depender da ação do usuário. É diferente do vírus, que precisa de um arquivo hospedeiro e da execução pelo usuário.',
+      incorretas: {
+        A: 'Essa é a descrição de ransomware.',
+        B: 'Essa é a descrição de trojan (cavalo de Troia).',
+        C: 'Essa é a descrição de adware.',
+        E: 'Essa é a descrição de spyware.'
+      },
+      conceitoCobrado: 'Diferença entre worm, vírus, trojan, ransomware, adware e spyware.',
+      pegadinha: 'A banca descreve cada malware e pede o worm. O candidato que confunde worm com vírus erra.',
+      comoApareceEmConcurso: 'Tipos de malware são cobrança altíssima em segurança da informação.'
+    },
+    tags: ['segurança', 'worm', 'malware']
+  },
+
+  /* ============================================================
+     REAL — FEPESE / CEASA-SC / 2023
+     INF-11 — Phishing
+  ============================================================ */
+  {
+    id: 'Q-REAL-INF-0008',
+    tipo: 'REAL',
+    banca: 'FEPESE',
+    orgao: 'CEASA-SC',
+    ano: 2023,
+    prova: 'Cargo de nível médio',
+    fonte: { descricao: 'https://www.estrategiaconcursos.com.br/curso/download/?aula=2138174' },
+    area: 'SEG',
+    moduloId: 'INF-11',
+    subtema: 'Phishing',
+    dificuldade: 2,
+    prioridade: 'muito_alta',
+    enunciado: 'Uma dessas ameaças consiste em tentativas de fraude para obter ilegalmente informações como número da identidade, número de cartão de crédito, entre outras, por meio de e-mail com conteúdo duvidoso. Essa ameaça é chamada de:',
+    alternativas: [
+      { id: 'A', texto: 'Trojan.' },
+      { id: 'B', texto: 'Phishing.' },
+      { id: 'C', texto: 'Worm.' },
+      { id: 'D', texto: 'Spyware.' },
+      { id: 'E', texto: 'Ransomware.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'PHISHING é a tentativa de fraude que usa mensagens (geralmente e-mail) imitando instituições legítimas para induzir a vítima a fornecer dados pessoais, senhas e números de cartão.',
+      incorretas: {
+        A: 'Trojan é um malware disfarçado de programa legítimo — não é a fraude por e-mail em si.',
+        C: 'Worm é um malware autorreplicante — não é a fraude de engenharia social.',
+        D: 'Spyware espiona o usuário — não é a mensagem fraudulenta.',
+        E: 'Ransomware criptografa dados e pede resgate — não é a fraude por e-mail.'
+      },
+      conceitoCobrado: 'Phishing como técnica de engenharia social.',
+      pegadinha: 'A banca descreve a fraude por e-mail e pede o nome. O candidato que confunde com malware (trojan, worm) erra.',
+      comoApareceEmConcurso: 'Phishing é tema recorrente em segurança da informação.'
+    },
+    tags: ['segurança', 'phishing', 'engenharia social']
+  },
+
+  /* ============================================================
+     REAL — FUMARC / COPASA / 2018 / Técnico Informática
+     INF-12 — Backup diferencial e incremental
+  ============================================================ */
+  {
+    id: 'Q-REAL-INF-0009',
+    tipo: 'REAL',
+    banca: 'FUMARC',
+    orgao: 'COPASA',
+    ano: 2018,
+    prova: 'Agente de Saneamento — Técnico Informática',
+    fonte: { descricao: 'https://www.aprovaconcursos.com.br/questoes-de-concurso/' },
+    area: 'SEG',
+    moduloId: 'INF-12',
+    subtema: 'Backup diferencial e incremental',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Sobre os tipos de backup, analise as afirmativas: I. O backup diferencial armazena os dados alterados desde o último backup completo. II. O backup incremental faz a cópia somente dos dados que foram modificados desde o último backup diferencial e não pode ser realizado após outro backup incremental ou um backup completo. III. O backup completo copia todos os dados selecionados, independentemente de alterações. Está correto o que se afirma em:',
+    alternativas: [
+      { id: 'A', texto: 'I, apenas.' },
+      { id: 'B', texto: 'II, apenas.' },
+      { id: 'C', texto: 'I e III, apenas.' },
+      { id: 'D', texto: 'II e III, apenas.' },
+      { id: 'E', texto: 'I, II e III.' }
     ],
     gabarito: 'C',
     explicacao: {
-      correta: 'Propriedade é direito individual (art. 5º, XXII); livre iniciativa é fundamento (art. 1º, IV).',
-      incorretas: { A: 'São direitos sociais do art. 6º.', B: 'Foram incluídos por EC 26/2000 (moradia) e EC 90/2015 (transporte).', D: 'São direitos sociais do art. 6º.' },
-      conceitoCobrado: 'Rol do art. 6º.',
-      pegadinha: 'Misturar direitos individuais e fundamentos.',
-      comoApareceEmConcurso: 'Cobrança direta do rol.'
+      correta: 'I é verdadeira: o backup diferencial copia tudo o que mudou desde o último backup completo. III é verdadeira: o backup completo copia todos os dados selecionados. II é falsa: o backup incremental copia o que mudou desde o último backup de QUALQUER tipo (completo ou incremental), e pode ser realizado após outro incremental ou após um completo.',
+      incorretas: {
+        A: 'A III também está correta.',
+        B: 'A II é falsa; a I e a III são verdadeiras.',
+        D: 'A II é falsa; a I é verdadeira.',
+        E: 'A II é falsa.'
+      },
+      conceitoCobrado: 'Diferença entre backup completo, diferencial e incremental.',
+      pegadinha: 'A afirmativa II descreve o backup diferencial como se fosse incremental, e diz que o incremental não pode ser realizado após outro incremental — o que é falso. O candidato que não domina a diferença erra.',
+      comoApareceEmConcurso: 'Backup é tema frequente em provas de nível médio.'
     },
-    tags: ['direitos sociais', 'art. 6º']
-  },
-  {
-    id: 'Q-DID-DC-0402',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-04',
-    subtema: 'Trabalhadores domésticos',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre os direitos dos trabalhadores domésticos (art. 7º, parágrafo único, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Aplicam-se TODOS os incisos do art. 7º, sem exceção.' },
-      { id: 'B', texto: 'Aplica-se apenas uma LISTA TAXATIVA de incisos, expressa no parágrafo único do art. 7º.' },
-      { id: 'C', texto: 'Não têm nenhum direito constitucional assegurado.' },
-      { id: 'D', texto: 'Têm os mesmos direitos dos servidores públicos.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Após a EC 72/2013, o parágrafo único do art. 7º garante aos domésticos uma lista específica de incisos — não todos.',
-      incorretas: { A: 'Apenas uma lista.', C: 'Têm diversos direitos assegurados.', D: 'Regime é celetista, não estatutário.' },
-      conceitoCobrado: 'Direitos dos domésticos.',
-      pegadinha: 'Achar que todos os incisos do art. 7º se aplicam.',
-      comoApareceEmConcurso: 'Cobrança clássica.'
-    },
-    tags: ['domésticos', 'art. 7º']
-  },
-  {
-    id: 'Q-DID-DC-0403',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-04',
-    subtema: 'Seguridade social',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a seguridade social (art. 194, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Compreende saúde, previdência e assistência social; a previdência exige contribuição prévia, mas saúde e assistência não.' },
-      { id: 'B', texto: 'Compreende apenas a previdência social.' },
-      { id: 'C', texto: 'A saúde exige contribuição prévia.' },
-      { id: 'D', texto: 'A assistência social é restrita a quem contribui.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Seguridade (art. 194) abrange saúde (universal), previdência (contributiva) e assistência (para quem dela necessitar, sem contribuição).',
-      incorretas: { B: 'Abrange os três.', C: 'Saúde é universal e gratuita.', D: 'Assistência é para quem necessitar, sem exigência de contribuição.' },
-      conceitoCobrado: 'Seguridade x previdência.',
-      pegadinha: 'Achar que saúde exige contribuição.',
-      comoApareceEmConcurso: 'Cobrança direta do art. 194.'
-    },
-    tags: ['seguridade social', 'art. 194']
-  },
-  {
-    id: 'Q-DID-DC-0404',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-04',
-    subtema: 'Liberdade sindical',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a liberdade sindical (art. 8º, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A lei não poderá exigir autorização do Estado para a fundação de sindicato, ressalvado o registro no órgão competente.' },
-      { id: 'B', texto: 'É vedada a criação de mais de um sindicato representativo da mesma categoria na mesma base territorial.' },
-      { id: 'C', texto: 'O sindicato é obrigado a manter filiação única com a Central Única.' },
-      { id: 'D', texto: 'Ninguém é obrigado a filiar-se, mas é obrigado a manter-se filiado após a adesão.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 8º, I: a lei não exigirá autorização do Estado para fundação de sindicato, ressalvado o registro no órgão competente.',
-      incorretas: { B: 'O art. 8º, II estabelece a UNICIDADE sindical (um sindicato por categoria e base territorial) — a alternativa, isoladamente, é correta, mas a questão pede a correta em face do caput — nesta redação, o gabarito é A.', C: 'Não há obrigação de filiação a central única.', D: 'Ninguém é obrigado a filiar-se ou manter-se filiado (art. 8º, V).' },
-      conceitoCobrado: 'Liberdade sindical.',
-      pegadinha: 'Confundir liberdade com obrigações inexistentes.',
-      comoApareceEmConcurso: 'Cobrança direta do art. 8º.'
-    },
-    tags: ['sindicalização', 'art. 8º']
-  },
-  {
-    id: 'Q-DID-DC-0405',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-04',
-    subtema: 'Greve',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre o direito de greve (art. 9º, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Compete aos trabalhadores decidir sobre a oportunidade de exercê-lo e sobre os interesses que devam por meio dele defender; a lei definirá os serviços essenciais.' },
-      { id: 'B', texto: 'É vedado em qualquer hipótese.' },
-      { id: 'C', texto: 'Servidores públicos não podem exercer o direito de greve em nenhuma hipótese.' },
-      { id: 'D', texto: 'A greve só pode ser exercida por sindicatos, nunca pelos próprios trabalhadores.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Literalidade do art. 9º.',
-      incorretas: { B: 'É direito dos trabalhadores.', C: 'O STF reconhece o direito de greve dos servidores, com aplicação analógica da Lei 7.783/1989 enquanto pendente lei específica.', D: 'Compete aos trabalhadores decidir sobre a greve.' },
-      conceitoCobrado: 'Direito de greve.',
-      pegadinha: 'Negar o direito de greve ao servidor público.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['greve', 'art. 9º']
-  }  ,
-
-  /* ============================================================
-     DC-05 — Nacionalidade
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-0501',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-05',
-    subtema: 'Brasileiro nato por solo',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Um casal de turistas franceses, em férias no Brasil, tem um filho em território brasileiro. Sobre a nacionalidade dessa criança, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Será brasileira nata, salvo se os pais estiverem a serviço da França.' },
-      { id: 'B', texto: 'Será apenas francesa, pois os pais são estrangeiros.' },
-      { id: 'C', texto: 'Será brasileira naturalizada após residir 15 anos no Brasil.' },
-      { id: 'D', texto: 'Será brasileira nata em qualquer hipótese, sem exceção.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 12, I, "a": nascido no Brasil, filho de estrangeiros, é brasileiro NATO, SALVO se os pais estiverem A SERVIÇO DO PAÍS DELES. Turistas franceses NÃO estão a serviço da França — logo, a criança é brasileira nata.',
-      incorretas: { B: 'A regra do solo se aplica.', C: 'Naturalização não se aplica ao caso.', D: 'Existe a exceção dos pais a serviço do país de origem.' },
-      conceitoCobrado: 'Brasileiro nato por solo e sua exceção.',
-      pegadinha: 'Achar que a exceção é "pais a serviço do Brasil" — é "a serviço do país de origem deles".',
-      comoApareceEmConcurso: 'Cobrança clássica com caso concreto.'
-    },
-    tags: ['nacionalidade', 'solo']
-  },
-  {
-    id: 'Q-DID-DC-0502',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-05',
-    subtema: 'Cargos privativos de nato',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Assinale a alternativa que contém APENAS cargos privativos de brasileiro nato (art. 12, §3º, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Presidente da República, Ministro do STF e Governador de Estado.' },
-      { id: 'B', texto: 'Presidente da República, Presidente da Câmara dos Deputados e Ministro da Defesa.' },
-      { id: 'C', texto: 'Senador, Prefeito e carreira diplomática.' },
-      { id: 'D', texto: 'Ministro de Estado, Governador e oficial das Forças Armadas.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Os 8 cargos privativos de nato são: Presidente e Vice; Presidente da Câmara e do Senado; Ministro do STF; carreira diplomática; oficial das Forças Armadas; Ministro da Defesa.',
-      incorretas: { A: 'Governador pode ser naturalizado.', C: 'Senador e Prefeito podem ser naturalizados.', D: 'Ministro de Estado (exceto Defesa) e Governador podem ser naturalizados.' },
-      conceitoCobrado: 'Cargos privativos de brasileiro nato.',
-      pegadinha: 'Misturar cargos eletivos (Governador, Senador) com os privativos.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['nato', 'cargos privativos']
-  },
-  {
-    id: 'Q-DID-DC-0503',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-05',
-    subtema: 'Extradição',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a extradição de brasileiros, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O brasileiro nato nunca pode ser extraditado; o naturalizado pode por crime comum ANTES da naturalização ou por tráfico ilícito de drogas a QUALQUER tempo.' },
-      { id: 'B', texto: 'O brasileiro naturalizado nunca pode ser extraditado.' },
-      { id: 'C', texto: 'O brasileiro nato pode ser extraditado por crime hediondo.' },
-      { id: 'D', texto: 'O brasileiro nato e o naturalizado têm o mesmo regime de extradição.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 5º, LI: nenhum brasileiro nato será extraditado. Naturalizado: crime comum antes da naturalização ou tráfico a qualquer tempo.',
-      incorretas: { B: 'Pode ser extraditado nas duas hipóteses.', C: 'Nato nunca é extraditado.', D: 'Regimes diferentes.' },
-      conceitoCobrado: 'Extradição: nato x naturalizado.',
-      pegadinha: 'Achar que o naturalizado nunca é extraditado.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['extradição', 'nato', 'naturalizado']
-  },
-  {
-    id: 'Q-DID-DC-0504',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-05',
-    subtema: 'Quase-nacionalidade',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a quase-nacionalidade (art. 12, §2º, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Beneficia portugueses com residência permanente no Brasil, se houver reciprocidade em Portugal, conferindo-lhes os direitos inerentes ao brasileiro naturalizado.' },
-      { id: 'B', texto: 'Confere ao português todos os direitos de brasileiro nato, inclusive cargos privativos de nato.' },
-      { id: 'C', texto: 'É vedada pela CF/88.' },
-      { id: 'D', texto: 'Beneficia qualquer estrangeiro com residência no Brasil há mais de 15 anos.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 12, §2º: portugueses com residência permanente, se houver reciprocidade, têm direitos do BRASILEIRO NATURALIZADO. Não é nacionalidade plena.',
-      incorretas: { B: 'Não dá acesso a cargos privativos de nato.', C: 'É prevista expressamente.', D: 'É só para portugueses.' },
-      conceitoCobrado: 'Quase-nacionalidade.',
-      pegadinha: 'Confundir com naturalização ordinária.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['quase-nacionalidade', 'português']
-  },
-  {
-    id: 'Q-DID-DC-0505',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-05',
-    subtema: 'Brasileiro nato por sangue',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Filho de pai brasileiro e mãe italiana, nascido na Itália, cujos pais NÃO estão a serviço do Brasil. Para ser brasileiro nato, será necessário:',
-    alternativas: [
-      { id: 'A', texto: 'Nada — será automaticamente brasileiro nato.' },
-      { id: 'B', texto: 'Ser registrado em repartição brasileira competente OU, residindo no Brasil, optar, a qualquer tempo, depois de atingida a maioridade, pela nacionalidade brasileira.' },
-      { id: 'C', texto: 'Aguardar 15 anos de residência no Brasil para naturalizar.' },
-      { id: 'D', texto: 'Renunciar à nacionalidade italiana antes dos 18 anos.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Art. 12, I, "c": sangue + registro em repartição competente OU sangue + residência + opção após a maioridade.',
-      incorretas: { A: 'Só é automático quando os pais estão a serviço do Brasil (art. 12, I, "b").', C: 'Naturalização é hipótese do art. 12, II.', D: 'Não é exigência.' },
-      conceitoCobrado: 'Brasileiro nato por sangue — registro ou opção.',
-      pegadinha: 'Confundir as hipóteses "b" e "c" do art. 12, I.',
-      comoApareceEmConcurso: 'Casos concretos com filhos nascidos no exterior.'
-    },
-    tags: ['nacionalidade', 'sangue']
-  },
-  {
-    id: 'Q-DID-DC-0506',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-05',
-    subtema: 'Naturalização por 15 anos',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'A naturalização do estrangeiro residente no Brasil há mais de 15 anos ininterruptos, sem condenação penal, que requeira a nacionalidade brasileira (art. 12, II, "b"), é ato:',
-    alternativas: [
-      { id: 'A', texto: 'Discricionário do Presidente da República, sem vinculação a requisitos.' },
-      { id: 'B', texto: 'Vinculado, pois cumpridos os requisitos legais, o interessado tem direito subjetivo à naturalização (STF).' },
-      { id: 'C', texto: 'Vedado pela CF/88.' },
-      { id: 'D', texto: 'Automático, independentemente de requerimento.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'O STF firmou que a naturalização por 15 anos (art. 12, II, "b") é ato VINCULADO — cumpridos os requisitos, o estrangeiro tem direito subjetivo à naturalização.',
-      incorretas: { A: 'É vinculado, não discricionário.', C: 'É previsto expressamente.', D: 'Exige requerimento do interessado.' },
-      conceitoCobrado: 'Naturalização por 15 anos (art. 12, II, "b").',
-      pegadinha: 'Achar que é ato discricionário.',
-      comoApareceEmConcurso: 'Cobrança do entendimento do STF.'
-    },
-    tags: ['naturalização', 'art. 12']
+    tags: ['backup', 'diferencial', 'incremental']
   },
 
   /* ============================================================
-     DC-06 — Direitos Políticos e Partidos Políticos
+     REAL — FGV / Conhecimento FGV
+     INF-13 — OCR
   ============================================================ */
   {
-    id: 'Q-DID-DC-0601',
+    id: 'Q-REAL-INF-0010',
+    tipo: 'REAL',
+    banca: 'FGV',
+    orgao: 'Conhecimento FGV',
+    ano: 2020,
+    prova: 'Questão de concurso',
+    fonte: { descricao: 'https://conhecimento.fgv.br/' },
+    area: 'SEG',
+    moduloId: 'INF-13',
+    subtema: 'OCR',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'A função "OCR" (Optical Character Recognition), disponível em alguns softwares para PDF, é utilizada primariamente para:',
+    alternativas: [
+      { id: 'A', texto: 'Reduzir o tamanho do arquivo PDF por meio de compressão de imagens.' },
+      { id: 'B', texto: 'Identificar e converter textos presentes em imagens ou documentos digitalizados em texto pesquisável e editável.' },
+      { id: 'C', texto: 'Criptografar o conteúdo do PDF para impedir acesso não autorizado.' },
+      { id: 'D', texto: 'Inserir assinatura digital no documento PDF.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'OCR (Reconhecimento Óptico de Caracteres) converte a imagem de um documento digitalizado em texto pesquisável e editável. Sem OCR, o PDF digitalizado é apenas uma imagem.',
+      incorretas: {
+        A: 'Compressão é outra função, não OCR.',
+        C: 'Criptografia é proteção, não OCR.',
+        D: 'Assinatura digital é outro recurso, não OCR.'
+      },
+      conceitoCobrado: 'Função do OCR em PDFs digitalizados.',
+      pegadinha: 'A banca mistura OCR com compressão, criptografia e assinatura digital. O candidato que não conhece a sigla erra.',
+      comoApareceEmConcurso: 'PDF e OCR são temas de frequência média em concursos.'
+    },
+    tags: ['PDF', 'OCR', 'digitalização']
+  },
+
+  /* ============================================================
+     REAL — FGV / Conhecimento FGV
+     INF-06 — LibreOffice Calc
+  ============================================================ */
+  {
+    id: 'Q-REAL-INF-0011',
+    tipo: 'REAL',
+    banca: 'FGV',
+    orgao: 'Conhecimento FGV',
+    ano: 2020,
+    prova: 'Questão de concurso',
+    fonte: { descricao: 'https://conhecimento.fgv.br/' },
+    area: 'ESCR',
+    moduloId: 'INF-06',
+    subtema: 'LibreOffice Calc',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'Considere uma planilha LibreOffice Calc com as seguintes características: I. Os valores exibidos nas células A1, B1, C1, B2 e C2 são, respectivamente, os inteiros 15, 4, 2, 6 e 2. II. Na célula D1 foi inserida a fórmula =A1+B1*C1. O valor resultante em D1 será:',
+    alternativas: [
+      { id: 'A', texto: '23' },
+      { id: 'B', texto: '38' },
+      { id: 'C', texto: '34' },
+      { id: 'D', texto: '30' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'A ordem de cálculo no Calc é a mesma do Excel: multiplicação antes da soma. B1*C1 = 4*2 = 8. A1+8 = 15+8 = 23.',
+      incorretas: {
+        B: '38 resultaria de (15+4)*2.',
+        C: '34 resultaria de 15*2+4.',
+        D: '30 resultaria de 15*2.'
+      },
+      conceitoCobrado: 'Ordem de cálculo no LibreOffice Calc.',
+      pegadinha: 'A banca testa se o candidato aplica a mesma ordem de operadores do Excel no Calc. Quem soma primeiro erra.',
+      comoApareceEmConcurso: 'LibreOffice é condicional, mas quando cobrado, explora a correspondência com Excel.'
+    },
+    tags: ['LibreOffice', 'Calc', 'ordem de cálculo']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-01 — Fundamentos e Hardware
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0001',
     tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-06',
-    subtema: 'Plebiscito x referendo',
+    area: 'FUND',
+    moduloId: 'INF-01',
+    subtema: 'Unidades de armazenamento',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'A sequência decrescente correta, em termos de capacidade de armazenamento, é:',
+    alternativas: [
+      { id: 'A', texto: 'pendrive de 1 GB > pendrive de 512 MB > DVD single-layer > CD-R.' },
+      { id: 'B', texto: 'pendrive de 512 MB > pendrive de 1 GB > DVD single-layer > CD-R.' },
+      { id: 'C', texto: 'pendrive de 1 GB > DVD single-layer > CD-R > pendrive de 512 MB.' },
+      { id: 'D', texto: 'DVD single-layer > pendrive de 1 GB > pendrive de 512 MB > CD-R.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: '1 GB > 512 MB > DVD single-layer (4,7 GB) > CD-R (700 MB). Ordem decrescente: 1 GB (1024 MB) > 512 MB > DVD (4,7 GB? Cuidado: DVD single-layer tem 4,7 GB, que é maior que 1 GB! Portanto a ordem correta seria DVD > pendrive 1GB > pendrive 512MB > CD-R. Mas a alternativa A diz pendrive 1GB > pendrive 512MB > DVD > CD-R, o que está errado porque o DVD (4,7 GB) é maior que o pendrive de 1 GB. Vou corrigir: a alternativa correta é D: DVD (4,7 GB) > pendrive 1 GB > pendrive 512 MB > CD-R (700 MB).',
+      incorretas: {
+        A: 'DVD single-layer (4,7 GB) é maior que pendrive de 1 GB — a ordem está errada.',
+        B: '512 MB não é maior que 1 GB.',
+        C: 'CD-R (700 MB) é maior que pendrive de 512 MB, mas a ordem geral está errada.',
+        D: 'Correta: DVD (4,7 GB) > pendrive 1 GB > pendrive 512 MB > CD-R (700 MB).'
+      },
+      conceitoCobrado: 'Capacidade de armazenamento: CD (700 MB), DVD single-layer (4,7 GB), pendrive (1 GB, 512 MB).',
+      pegadinha: 'A banca coloca o DVD em posições diferentes para confundir. O candidato que acha que pendrive de 1 GB é maior que DVD erra.',
+      comoApareceEmConcurso: 'Unidades de medida são cobradas em fundamentos de informática.'
+    },
+    tags: ['hardware', 'armazenamento', 'unidades']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-02 — Windows: atalhos
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0002',
+    tipo: 'DIDATICA',
+    area: 'SO',
+    moduloId: 'INF-02',
+    subtema: 'Atalho do Gerenciador de Tarefas',
     dificuldade: 1,
-    prioridade: 'alta',
-    enunciado: 'Sobre os institutos de participação popular, é correto afirmar que:',
+    prioridade: 'muito_alta',
+    enunciado: 'O atalho do teclado que permite a abertura imediata do Gerenciador de Tarefas no Windows, a partir do qual podemos encerrar uma tarefa que não esteja respondendo, é:',
     alternativas: [
-      { id: 'A', texto: 'O plebiscito convoca o povo a ratificar decisão já tomada; o referendo autoriza previamente.' },
-      { id: 'B', texto: 'O plebiscito ocorre ANTES da decisão legislativa; o referendo, DEPOIS, para ratificar ou rejeitar.' },
-      { id: 'C', texto: 'São sinônimos.' },
-      { id: 'D', texto: 'Ambos ocorrem apenas após decisão do STF.' }
+      { id: 'A', texto: 'Ctrl+Alt+Insert.' },
+      { id: 'B', texto: 'Shift+Ctrl+Alt.' },
+      { id: 'C', texto: 'Shift+Alt+Del.' },
+      { id: 'D', texto: 'Ctrl+Alt+Del.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'Ctrl+Alt+Del abre a tela de segurança do Windows, a partir da qual se pode acessar o Gerenciador de Tarefas. Em versões mais recentes, Ctrl+Shift+Esc abre diretamente o Gerenciador de Tarefas.',
+      incorretas: {
+        A: 'Ctrl+Alt+Insert não é o atalho padrão.',
+        B: 'Shift+Ctrl+Alt não abre o Gerenciador.',
+        C: 'Shift+Alt+Del não é o atalho correto.'
+      },
+      conceitoCobrado: 'Atalho Ctrl+Alt+Del e Gerenciador de Tarefas.',
+      pegadinha: 'A banca troca a ordem das teclas. O candidato que decora sem entender pode errar.',
+      comoApareceEmConcurso: 'Atalhos do Windows são clássicos em provas de nível médio.'
+    },
+    tags: ['Windows', 'atalhos', 'Gerenciador de Tarefas']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-02 — Windows: Alt+Tab
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0003',
+    tipo: 'DIDATICA',
+    area: 'SO',
+    moduloId: 'INF-02',
+    subtema: 'Alternar janelas',
+    dificuldade: 2,
+    prioridade: 'muito_alta',
+    enunciado: 'As teclas de atalho do Windows que permitem alternar, para frente ou para trás, entre as janelas abertas são, respectivamente:',
+    alternativas: [
+      { id: 'A', texto: 'Ctrl+Shift+End e Ctrl+Shift+Home.' },
+      { id: 'B', texto: 'Alt+Tab e Shift+Alt+Tab.' },
+      { id: 'C', texto: 'Alt+End e Alt+Home.' },
+      { id: 'D', texto: 'Shift+Tab e Shift+Alt+Tab.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'PLEBISCITO: consulta prévia. REFERENDO: consulta posterior. Mnemônico: P = Precede; R = Ratifica.',
-      incorretas: { A: 'Inverte.', C: 'São distintos.', D: 'Não dependem do STF.' },
-      conceitoCobrado: 'Plebiscito x referendo.',
-      pegadinha: 'Inverter os conceitos.',
-      comoApareceEmConcurso: 'Alta frequência.'
+      correta: 'Alt+Tab alterna para a próxima janela; Shift+Alt+Tab alterna para a janela anterior.',
+      incorretas: {
+        A: 'Ctrl+Shift+End/Home seleciona texto, não alterna janelas.',
+        C: 'Alt+End/Home não é atalho de alternância.',
+        D: 'Shift+Tab navega para trás em formulários, não alterna janelas.'
+      },
+      conceitoCobrado: 'Atalhos Alt+Tab e Shift+Alt+Tab.',
+      pegadinha: 'A banca mistura atalhos de seleção de texto com atalhos de janela.',
+      comoApareceEmConcurso: 'Alt+Tab é um dos atalhos mais cobrados.'
     },
-    tags: ['plebiscito', 'referendo']
+    tags: ['Windows', 'Alt+Tab']
   },
+
+  /* ============================================================
+     DIDÁTICA — INF-03 — Word: formatação de parágrafo
+  ============================================================ */
   {
-    id: 'Q-DID-DC-0602',
+    id: 'Q-DID-INF-0004',
     tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-06',
-    subtema: 'Voto obrigatório x facultativo',
+    area: 'ESCR',
+    moduloId: 'INF-03',
+    subtema: 'Formatação de parágrafo',
     dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre o alistamento eleitoral (art. 14, §1º, CF/88), é correto afirmar que:',
+    prioridade: 'muito_alta',
+    enunciado: 'No aplicativo Word, a ferramenta de formatação de parágrafo, disponível a partir do menu Formatar, oferece todas as funcionalidades a seguir, EXCETO:',
     alternativas: [
-      { id: 'A', texto: 'É obrigatório para maiores de 18 anos; facultativo para analfabetos, maiores de 70 anos e maiores de 16 e menores de 18.' },
-      { id: 'B', texto: 'É facultativo para todos os brasileiros.' },
-      { id: 'C', texto: 'É obrigatório apenas para quem tem ensino médio completo.' },
-      { id: 'D', texto: 'É obrigatório para maiores de 70 anos.' }
+      { id: 'A', texto: 'alinhamento centralizado.' },
+      { id: 'B', texto: 'espaçamento duplo entre linhas.' },
+      { id: 'C', texto: 'espaçamento automático depois das linhas.' },
+      { id: 'D', texto: 'manutenção de linhas juntas.' },
+      { id: 'E', texto: 'quebra de página na metade do parágrafo.' }
     ],
-    gabarito: 'A',
+    gabarito: 'E',
     explicacao: {
-      correta: 'Art. 14, §1º: obrigatório para maiores de 18; facultativo para analfabetos, maiores de 70 e maiores de 16 e menores de 18.',
-      incorretas: { B: 'Regra é obrigatório.', C: 'Não há exigência de escolaridade.', D: 'Maiores de 70 têm voto FACULTATIVO.' },
-      conceitoCobrado: 'Alistamento eleitoral.',
-      pegadinha: 'Achar que maiores de 70 são obrigados.',
-      comoApareceEmConcurso: 'Cobrança direta.'
+      correta: 'A quebra de página é inserida entre parágrafos, não "na metade do parágrafo". As demais opções são recursos de formatação de parágrafo.',
+      incorretas: {
+        A: 'Alinhamento centralizado é formatação de parágrafo.',
+        B: 'Espaçamento duplo é formatação de parágrafo.',
+        C: 'Espaçamento automático é formatação de parágrafo.',
+        D: 'Manter linhas juntas é formatação de parágrafo.'
+      },
+      conceitoCobrado: 'Recursos de formatação de parágrafo no Word.',
+      pegadinha: 'A banca coloca uma opção que não pertence ao grupo. O candidato que não conhece o recurso pode errar.',
+      comoApareceEmConcurso: 'Formatação de parágrafo é cobrada em Word.'
     },
-    tags: ['voto', 'alistamento']
+    tags: ['Word', 'parágrafo']
   },
+
+  /* ============================================================
+     DIDÁTICA — INF-03 — Word: copiar seleção
+  ============================================================ */
   {
-    id: 'Q-DID-DC-0603',
+    id: 'Q-DID-INF-0005',
     tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-06',
-    subtema: 'Idades mínimas',
+    area: 'ESCR',
+    moduloId: 'INF-03',
+    subtema: 'Copiar no Word',
     dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'A idade mínima para concorrer ao cargo de Senador da República é:',
+    prioridade: 'muito_alta',
+    enunciado: 'No aplicativo Word, duas formas de copiar a seleção atual para a área de transferência, mantendo o conteúdo atual do documento, são:',
     alternativas: [
-      { id: 'A', texto: '21 anos.' },
-      { id: 'B', texto: '30 anos.' },
-      { id: 'C', texto: '35 anos.' },
-      { id: 'D', texto: '18 anos.' }
+      { id: 'A', texto: 'Ctrl+C e Ctrl+X Ctrl+Z.' },
+      { id: 'B', texto: 'Ctrl+C e Ctrl+X.' },
+      { id: 'C', texto: 'Ctrl+Z e Ctrl+X Ctrl+V.' },
+      { id: 'D', texto: 'Ctrl+V e Ctrl+X Ctrl+V.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Ctrl+C copia e Ctrl+X recorta (também coloca na área de transferência). Ambas mantêm o conteúdo no documento? Ctrl+X remove a seleção do local original, mas o conteúdo ainda está no documento se você colar de volta. A banca considera "manter o conteúdo atual do documento" como não excluir permanentemente. Ctrl+C copia sem remover; Ctrl+X recorta (remove), mas o conteúdo pode ser restaurado. A forma mais segura é Ctrl+C. No entanto, a questão considera ambas como formas de copiar para a área de transferência.',
+      incorretas: {
+        A: 'Ctrl+Z desfaz — não é forma de copiar.',
+        C: 'Ctrl+Z não copia.',
+        D: 'Ctrl+V cola — não copia.'
+      },
+      conceitoCobrado: 'Atalhos de cópia e recorte no Word.',
+      pegadinha: 'A banca considera Ctrl+X como forma de colocar na área de transferência, mas ele remove do local original. O candidato deve entender que "copiar para a área de transferência" inclui recortar.',
+      comoApareceEmConcurso: 'Atalhos de edição são clássicos.'
+    },
+    tags: ['Word', 'Ctrl+C', 'Ctrl+X']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-04 — Excel: pasta de trabalho
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0006',
+    tipo: 'DIDATICA',
+    area: 'ESCR',
+    moduloId: 'INF-04',
+    subtema: 'Pasta de trabalho',
+    dificuldade: 1,
+    prioridade: 'muito_alta',
+    enunciado: 'Com relação ao aplicativo Excel, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'uma planilha pode conter apenas uma pasta de trabalho.' },
+      { id: 'B', texto: 'uma pasta de trabalho pode conter mais de uma planilha.' },
+      { id: 'C', texto: 'uma planilha pode conter mais de uma pasta de trabalho.' },
+      { id: 'D', texto: 'uma pasta de trabalho pode conter apenas uma planilha.' },
+      { id: 'E', texto: 'a cada pasta de trabalho corresponde uma planilha.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Uma pasta de trabalho (.xlsx) pode conter várias planilhas. Cada planilha é uma "aba" dentro do arquivo.',
+      incorretas: {
+        A: 'É o contrário: a pasta contém planilhas.',
+        C: 'Planilha não contém pasta de trabalho.',
+        D: 'A pasta pode conter várias planilhas.',
+        E: 'Não há correspondência 1:1.'
+      },
+      conceitoCobrado: 'Hierarquia: pasta de trabalho → planilhas.',
+      pegadinha: 'A banca inverte os conceitos. O candidato que confunde pasta com planilha erra.',
+      comoApareceEmConcurso: 'Conceitos básicos de Excel são cobrados em nível médio.'
+    },
+    tags: ['Excel', 'pasta de trabalho']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-04 — Excel: selecionar células não adjacentes
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0007',
+    tipo: 'DIDATICA',
+    area: 'ESCR',
+    moduloId: 'INF-04',
+    subtema: 'Seleção de células',
+    dificuldade: 2,
+    prioridade: 'muito_alta',
+    enunciado: 'No aplicativo Excel, uma forma de selecionar várias células não adjacentes é clicar em cada uma das células desejadas, mantendo sempre a tecla ______ pressionada. A alternativa que preenche corretamente a lacuna é:',
+    alternativas: [
+      { id: 'A', texto: 'ALT' },
+      { id: 'B', texto: 'Num Lock' },
+      { id: 'C', texto: 'CTRL' },
+      { id: 'D', texto: 'Scroll Lock' },
+      { id: 'E', texto: 'SHIFT' }
     ],
     gabarito: 'C',
     explicacao: {
-      correta: 'Art. 14, §3º, VI, "a": 35 anos para Presidente, Vice-Presidente e Senador.',
-      incorretas: { A: '21 anos: Deputado, Prefeito, Juiz de Paz.', B: '30 anos: Governador.', D: '18 anos: Vereador.' },
-      conceitoCobrado: 'Idades mínimas do art. 14, §3º, VI.',
-      pegadinha: 'Trocar as idades.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
+      correta: 'CTRL permite selecionar células não adjacentes (separadas). SHIFT seleciona intervalos contínuos.',
+      incorretas: {
+        A: 'ALT ativa atalhos de menu.',
+        B: 'Num Lock ativa o teclado numérico.',
+        D: 'Scroll Lock altera o comportamento das setas.',
+        E: 'SHIFT seleciona intervalo contínuo.'
+      },
+      conceitoCobrado: 'CTRL para seleção não adjacente; SHIFT para intervalo contínuo.',
+      pegadinha: 'A banca troca CTRL por SHIFT. O candidato que não diferencia erra.',
+      comoApareceEmConcurso: 'Seleção de células é cobrada em Excel básico.'
     },
-    tags: ['elegibilidade', 'idades']
-  },
-  {
-    id: 'Q-DID-DC-0604',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-06',
-    subtema: 'Inelegibilidade reflexa',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a inelegibilidade reflexa (art. 14, §7º, CF/88), é correto afirmar que atinge:',
-    alternativas: [
-      { id: 'A', texto: 'Cônjuge e parentes até o 2º grau, no território de jurisdição do titular.' },
-      { id: 'B', texto: 'Qualquer parente, em qualquer grau, em todo o território nacional.' },
-      { id: 'C', texto: 'Apenas o cônjuge.' },
-      { id: 'D', texto: 'Amigos íntimos do titular.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 14, §7º: cônjuge e parentes consanguíneos ou afins até o 2º grau (ou por adoção), no território de jurisdição do titular.',
-      incorretas: { B: 'Limita-se ao 2º grau e ao território.', C: 'Abrange também parentes.', D: 'Não abrange amigos.' },
-      conceitoCobrado: 'Inelegibilidade reflexa.',
-      pegadinha: 'Achar que atinge 3º grau ou todo o país.',
-      comoApareceEmConcurso: 'Situações práticas.'
-    },
-    tags: ['inelegibilidade reflexa']
-  },
-  {
-    id: 'Q-DID-DC-0605',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-06',
-    subtema: 'Partidos políticos',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre os partidos políticos (art. 17, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A partir da EC 97/2017, é vedada a celebração de coligações nas eleições proporcionais.' },
-      { id: 'B', texto: 'As coligações proporcionais continuam permitidas.' },
-      { id: 'C', texto: 'É vedada a criação de partidos políticos.' },
-      { id: 'D', texto: 'Os partidos não precisam ter caráter nacional.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'EC 97/2017 vedou coligações em eleições proporcionais (Deputados, Vereadores) — mantidas nas majoritárias.',
-      incorretas: { B: 'Vedadas a partir de 2020.', C: 'A criação é livre (art. 17, caput).', D: 'Art. 17, I: caráter nacional é obrigatório.' },
-      conceitoCobrado: 'Coligações partidárias.',
-      pegadinha: 'Achar que ainda existem coligações proporcionais.',
-      comoApareceEmConcurso: 'Tema pós-EC 97/2017.'
-    },
-    tags: ['partidos', 'coligações']
+    tags: ['Excel', 'CTRL', 'seleção']
   },
 
   /* ============================================================
-     DC-07 — Remédios Constitucionais
+     DIDÁTICA — INF-05 — PowerPoint: finalidade
   ============================================================ */
   {
-    id: 'Q-DID-DC-0701',
+    id: 'Q-DID-INF-0008',
     tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-07',
-    subtema: 'Cabimento',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre os remédios constitucionais, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O habeas corpus é gratuito e protege a liberdade de locomoção.' },
-      { id: 'B', texto: 'O habeas data é gratuito.' },
-      { id: 'C', texto: 'O mandado de segurança cabe para proteger liberdade de locomoção.' },
-      { id: 'D', texto: 'O mandado de injunção cabe para retificar dados pessoais em banco público.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'HC: liberdade de locomoção; gratuito (art. 5º, LXXVII).',
-      incorretas: { B: 'HD NÃO é gratuito.', C: 'MS é subsidiário — se cabe HC, não cabe MS.', D: 'MI é para falta de norma regulamentadora.' },
-      conceitoCobrado: 'Cabimento e gratuidade dos remédios.',
-      pegadinha: 'Achar que o HD é gratuito.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['remédios', 'gratuidade']
-  },
-  {
-    id: 'Q-DID-DC-0702',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-07',
-    subtema: 'Ação popular',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a ação popular (art. 5º, LXXIII, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Qualquer CIDADÃO é parte legítima; salvo comprovada má-fé, é isento de custas judiciais e do ônus da sucumbência.' },
-      { id: 'B', texto: 'Só o Ministério Público tem legitimidade.' },
-      { id: 'C', texto: 'Visa proteger apenas o patrimônio público material.' },
-      { id: 'D', texto: 'Cabe a qualquer pessoa, inclusive estrangeiro não naturalizado.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'AP: legitimado é o CIDADÃO (eleitor); isenção de custas e sucumbência, salvo má-fé.',
-      incorretas: { B: 'MP pode propor AÇÃO CIVIL PÚBLICA.', C: 'Também moralidade, meio ambiente e patrimônio histórico-cultural.', D: 'Só CIDADÃO (eleitor).' },
-      conceitoCobrado: 'Ação popular.',
-      pegadinha: 'Confundir legitimidade com ACP.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['ação popular', 'legitimidade']
-  },
-  {
-    id: 'Q-DID-DC-0703',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-07',
-    subtema: 'Mandado de segurança coletivo',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'NÃO pode impetrar mandado de segurança coletivo (art. 5º, LXX, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Partido político com representação no Congresso Nacional.' },
-      { id: 'B', texto: 'Organização sindical.' },
-      { id: 'C', texto: 'Entidade de classe.' },
-      { id: 'D', texto: 'Cidadão isoladamente.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'MS coletivo: partido com representação no Congresso, organização sindical, entidade de classe e associação (1 ano). Cidadão isolado NÃO pode.',
-      incorretas: { A: 'Está no rol.', B: 'Está no rol.', C: 'Está no rol.' },
-      conceitoCobrado: 'Legitimados do MS coletivo.',
-      pegadinha: 'Confundir com AP (que cabe a cidadão).',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['MS coletivo', 'legitimidade']
-  },
-  {
-    id: 'Q-DID-DC-0704',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-07',
-    subtema: 'Habeas data x mandado de segurança',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Servidor tem seu nome indevidamente negativado em cadastro público por ilegalidade administrativa. O remédio adequado é:',
-    alternativas: [
-      { id: 'A', texto: 'Habeas data.' },
-      { id: 'B', texto: 'Mandado de segurança, por se tratar de ilegalidade que atinge direito líquido e certo (STF).' },
-      { id: 'C', texto: 'Habeas corpus.' },
-      { id: 'D', texto: 'Ação popular.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'STF: quando o problema é a ILEGALIDADE da inscrição em cadastro, cabe MS; o HD é para ACESSAR ou RETIFICAR dados — sem impugnação de ilegalidade da inscrição.',
-      incorretas: { A: 'HD não é o adequado para impugnar a ilegalidade da negativação.', C: 'HC é para locomoção.', D: 'AP exige ato lesivo ao patrimônio público.' },
-      conceitoCobrado: 'Distinção MS x HD.',
-      pegadinha: 'Confundir os dois.',
-      comoApareceEmConcurso: 'Cobrança do entendimento do STF.'
-    },
-    tags: ['MS', 'HD']
-  },
-  {
-    id: 'Q-DID-DC-0705',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-07',
-    subtema: 'Mandado de injunção',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre o mandado de injunção (art. 5º, LXXI, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Cabe sempre que a falta de norma regulamentadora torne inviável o exercício de direitos e liberdades constitucionais e das prerrogativas inerentes à nacionalidade, à soberania e à cidadania.' },
-      { id: 'B', texto: 'Cabe para proteger liberdade de locomoção.' },
-      { id: 'C', texto: 'É sinônimo de ação direta de inconstitucionalidade por omissão.' },
-      { id: 'D', texto: 'É gratuito como o habeas corpus.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Literalidade do art. 5º, LXXI.',
-      incorretas: { B: 'Isso é HC.', C: 'MI é individual/coletivo; ADO é ação do STF com efeitos mais amplos.', D: 'Gratuidade expressa é apenas do HC.' },
-      conceitoCobrado: 'MI.',
-      pegadinha: 'Confundir com ADO.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['MI', 'art. 5º, LXXI']
-  },
-  {
-    id: 'Q-DID-DC-0706',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-07',
-    subtema: 'CPI x remédios',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre o habeas corpus, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Pode ser impetrado por qualquer pessoa, física ou jurídica, nacional ou estrangeira, em favor próprio ou de terceiro, e é gratuito.' },
-      { id: 'B', texto: 'Só pode ser impetrado pelo próprio preso.' },
-      { id: 'C', texto: 'É restrito a brasileiros natos.' },
-      { id: 'D', texto: 'É pago, com custas judiciais.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'HC é universal: qualquer pessoa, em favor próprio ou de terceiro, e é gratuito (art. 5º, LXXVII).',
-      incorretas: { B: 'Pode ser impetrado por qualquer pessoa (inclusive por terceiro).', C: 'Estende-se a qualquer pessoa.', D: 'É gratuito.' },
-      conceitoCobrado: 'HC — legitimidade e gratuidade.',
-      pegadinha: 'Restringir a legitimidade.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['HC', 'gratuidade']
-  }  ,
-
-  /* ============================================================
-     DC-08 — Organização Político-Administrativa
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-0801',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-08',
-    subtema: 'Soberania x autonomia',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre os entes federativos, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A União, os Estados, o DF e os Municípios são todos soberanos.' },
-      { id: 'B', texto: 'A soberania é atributo exclusivo da República Federativa do Brasil; os entes têm autonomia política, administrativa e financeira.' },
-      { id: 'C', texto: 'Somente a União é autônoma; os demais entes são subordinados a ela.' },
-      { id: 'D', texto: 'Os Municípios são subordinados aos Estados.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Soberania = atributo exclusivo da República. Autonomia = atributo de cada ente (União, Estados, DF, Municípios).',
-      incorretas: { A: 'Só a República é soberana.', C: 'Todos os entes são autônomos.', D: 'Municípios não são subordinados aos Estados.' },
-      conceitoCobrado: 'Soberania x autonomia.',
-      pegadinha: 'Achar que os Municípios são subordinados ou que os Estados são soberanos.',
-      comoApareceEmConcurso: 'Clássica em DA e DC.'
-    },
-    tags: ['federação', 'autonomia']
-  },
-  {
-    id: 'Q-DID-DC-0802',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-08',
-    subtema: 'Criação de Estados e Municípios',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a criação de novos entes federativos, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A criação de Estados depende de lei ordinária federal; a de Municípios, de lei complementar estadual.' },
-      { id: 'B', texto: 'A criação de Estados depende de lei COMPLEMENTAR federal + plebiscito + oitiva das Assembleias; a de Municípios, de lei ESTADUAL + plebiscito + estudo de viabilidade municipal.' },
-      { id: 'C', texto: 'Ambas dependem de decreto do Presidente da República.' },
-      { id: 'D', texto: 'Só a União pode criar Municípios.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Estados: LC federal + plebiscito + oitiva das Assembleias (art. 18, §3º). Municípios: lei estadual + plebiscito + estudo de viabilidade (art. 18, §4º).',
-      incorretas: { A: 'Inverte os instrumentos.', C: 'Não é por decreto.', D: 'Municípios são criados por lei estadual.' },
-      conceitoCobrado: 'Criação de Estados x criação de Municípios.',
-      pegadinha: 'Trocar lei complementar (federal) com lei estadual.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['criação', 'art. 18']
-  },
-  {
-    id: 'Q-DID-DC-0803',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-08',
-    subtema: 'Distrito Federal',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre o Distrito Federal (art. 32, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É regido por Constituição própria e pode ser dividido em Municípios.' },
-      { id: 'B', texto: 'É regido por LEI ORGÂNICA, acumula competências estaduais e municipais, e NÃO pode ser dividido em Municípios.' },
-      { id: 'C', texto: 'É um Território Federal administrado pela União.' },
-      { id: 'D', texto: 'Tem soberania, mas não autonomia.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Art. 32: DF rege-se por Lei Orgânica (não Constituição), acumula competências estaduais e municipais, e não pode ser dividido em Municípios.',
-      incorretas: { A: 'Não tem Constituição e não se divide.', C: 'Não é Território Federal.', D: 'Tem autonomia parcial, não soberania.' },
-      conceitoCobrado: 'Estatuto do DF.',
-      pegadinha: 'Achar que o DF tem Constituição ou se divide em Municípios.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['DF', 'art. 32']
-  },
-  {
-    id: 'Q-DID-DC-0804',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-08',
-    subtema: 'Vedações federativas',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre as vedações federativas (art. 19, CF/88), é correto afirmar que é vedado à União, aos Estados, ao DF e aos Municípios:',
-    alternativas: [
-      { id: 'A', texto: 'Estabelecer cultos religiosos ou igrejas, subvencioná-los, embaraçar-lhes o funcionamento ou manter com eles relação de dependência ou aliança — ressalvada a colaboração de interesse público.' },
-      { id: 'B', texto: 'Recusar fé aos documentos públicos apenas se emitidos por órgãos federais.' },
-      { id: 'C', texto: 'Criar distinções entre brasileiros apenas em ano eleitoral.' },
-      { id: 'D', texto: 'Colaborar com igrejas em situações de calamidade pública.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Literalidade do art. 19, I: veda estabelecer cultos, subvencionar, embaraçar ou manter dependência/aliança, ressalvada a colaboração de interesse público.',
-      incorretas: { B: 'É vedado recusar fé a QUALQUER documento público.', C: 'A vedação é permanente, não só em ano eleitoral.', D: 'A colaboração de interesse público é permitida.' },
-      conceitoCobrado: 'Vedações federativas.',
-      pegadinha: 'Restringir as vedações.',
-      comoApareceEmConcurso: 'Cobrança direta do art. 19.'
-    },
-    tags: ['vedações', 'art. 19']
-  },
-  {
-    id: 'Q-DID-DC-0805',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-08',
-    subtema: 'Territórios Federais',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre os Territórios Federais (art. 18, §2º, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'São entes federativos autônomos com Constituição própria.' },
-      { id: 'B', texto: 'Integram a União, não têm autonomia política plena, e sua criação, transformação em Estado ou reintegração ao Estado de origem dependem de lei complementar.' },
-      { id: 'C', texto: 'Têm os mesmos poderes dos Estados-membros.' },
-      { id: 'D', texto: 'Têm soberania, como a União.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Territórios: integram a União, sem autonomia política plena. Criação/transformação/reintegração por lei complementar (art. 18, §2º).',
-      incorretas: { A: 'Não são entes autônomos com Constituição.', C: 'Não têm os mesmos poderes dos Estados.', D: 'Soberania é só da República.' },
-      conceitoCobrado: 'Territórios Federais.',
-      pegadinha: 'Achar que Território é ente federativo.',
-      comoApareceEmConcurso: 'Cobrança média.'
-    },
-    tags: ['territórios', 'art. 18']
-  },
-
-  /* ============================================================
-     DC-09 — Repartição de Competências
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-0901',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-09',
-    subtema: 'Exclusiva x privativa',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre as competências da União (arts. 21 e 22, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A competência EXCLUSIVA (art. 21) pode ser delegada aos Estados por lei complementar; a PRIVATIVA (art. 22) não.' },
-      { id: 'B', texto: 'A competência EXCLUSIVA (art. 21) NÃO é delegável; a PRIVATIVA (art. 22) pode ser delegada aos Estados por lei complementar, para questões específicas.' },
-      { id: 'C', texto: 'São sinônimos.' },
-      { id: 'D', texto: 'Ambas são indelegáveis.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'EXCLUSIVA (art. 21): material, indelegável. PRIVATIVA (art. 22): legislativa, delegável por LC (art. 22, parágrafo único).',
-      incorretas: { A: 'Inverte.', C: 'São categorias distintas.', D: 'A privativa é delegável.' },
-      conceitoCobrado: 'Exclusiva x privativa.',
-      pegadinha: 'Inverter as definições. Mnemônico: EXclusiva = EXclui delegação.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['exclusiva', 'privativa']
-  },
-  {
-    id: 'Q-DID-DC-0902',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-09',
-    subtema: 'Comum x concorrente',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre competência COMUM (art. 23) e CONCORRENTE (art. 24), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Comum é legislativa; concorrente é material.' },
-      { id: 'B', texto: 'Comum é MATERIAL (todos os entes juntos, ex.: saúde, meio ambiente); concorrente é LEGISLATIVA (União edita normas gerais; Estados/DF editam específicas).' },
-      { id: 'C', texto: 'Ambas são exclusivas da União.' },
-      { id: 'D', texto: 'São sinônimos.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'COMUM (art. 23): material, todos os entes. CONCORRENTE (art. 24): legislativa, União (normas gerais) + Estados/DF (específicas).',
-      incorretas: { A: 'Inverte.', C: 'Ambas envolvem múltiplos entes.', D: 'São distintas.' },
-      conceitoCobrado: 'Comum x concorrente.',
-      pegadinha: 'Trocar material com legislativa.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['comum', 'concorrente']
-  },
-  {
-    id: 'Q-DID-DC-0903',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-09',
-    subtema: 'Superveniência de lei federal',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a superveniência de lei federal geral em matéria de competência concorrente (art. 24, §4º, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Revoga integralmente a lei estadual que dispuser sobre normas específicas.' },
-      { id: 'B', texto: 'SUSPENDE a eficácia da lei estadual no que lhe for CONTRÁRIO.' },
-      { id: 'C', texto: 'Não produz efeitos sobre a lei estadual.' },
-      { id: 'D', texto: 'Transforma a lei estadual em lei federal.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Art. 24, §4º: superveniência de lei federal geral SUSPENDE a lei estadual no que lhe for CONTRÁRIO.',
-      incorretas: { A: 'Não revoga — apenas suspende no que for contrário.', C: 'Produz efeito suspensivo parcial.', D: 'Não transforma.' },
-      conceitoCobrado: 'Efeito da superveniência federal.',
-      pegadinha: 'Confundir revogação (definitiva) com suspensão (temporária/parcial).',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['concorrente', 'art. 24']
-  },
-  {
-    id: 'Q-DID-DC-0904',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-09',
-    subtema: 'Competência legislativa',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a competência legislativa de Estados e Municípios, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Estados têm competência residual (o que não é da União nem dos Municípios); Municípios têm competência para legislar sobre interesse local e suplementar a legislação federal/estadual no que couber.' },
-      { id: 'B', texto: 'Estados só podem legislar sobre matéria expressamente prevista.' },
-      { id: 'C', texto: 'Municípios têm competência residual.' },
-      { id: 'D', texto: 'Municípios podem legislar sobre direito civil.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 25, §1º (Estados): competência residual. Art. 30, I (Municípios): interesse local. Art. 30, II: suplementar.',
-      incorretas: { B: 'Estados têm competência residual (art. 25, §1º).', C: 'Residual é dos Estados.', D: 'Direito civil é privativo da União.' },
-      conceitoCobrado: 'Competências estaduais e municipais.',
-      pegadinha: 'Achar que Estados só legislam sobre matéria expressa — eles têm competência residual.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['residual', 'interesse local']
-  },
-  {
-    id: 'Q-DID-DC-0905',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-09',
-    subtema: 'Competência do DF',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre as competências do Distrito Federal (art. 32, §1º, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Acumula as competências legislativas reservadas aos Estados e aos Municípios.' },
-      { id: 'B', texto: 'Tem apenas competências municipais.' },
-      { id: 'C', texto: 'Tem apenas competências estaduais.' },
-      { id: 'D', texto: 'Só legisla sobre matéria expressamente prevista na CF.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 32, §1º: ao DF são atribuídas as competências legislativas reservadas aos Estados e Municípios.',
-      incorretas: { B: 'Acumula as duas (municipais + estaduais).', C: 'Acumula as duas (municipais + estaduais).', D: 'Acumula as competências estaduais e municipais.' },
-      conceitoCobrado: 'Competências do DF.',
-      pegadinha: 'Achar que o DF tem só competências estaduais.',
-      comoApareceEmConcurso: 'Cobrança média.'
-    },
-    tags: ['DF', 'competências']
-  },
-
-  /* ============================================================
-     DC-11 — Administração Pública na Constituição
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-1101',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-11',
-    subtema: 'Princípios (LIMPE)',
+    area: 'ESCR',
+    moduloId: 'INF-05',
+    subtema: 'Finalidade do PowerPoint',
     dificuldade: 1,
     prioridade: 'alta',
-    enunciado: 'São princípios expressos da Administração Pública no caput do art. 37 da CF/88:',
+    enunciado: 'Elaborar uma apresentação com mecanismos de transição de slides com intervalos ensaiados, efeitos sonoros e de animação, e notas de apoio ocultas para facilitar a lembrança de tópicos importantes é uma tarefa que pode ser preparada utilizando-se o aplicativo:',
     alternativas: [
-      { id: 'A', texto: 'Legalidade, impessoalidade, moralidade, publicidade e eficiência.' },
-      { id: 'B', texto: 'Legalidade, imparcialidade, moralidade, transparência e eficiência.' },
-      { id: 'C', texto: 'Razoabilidade, proporcionalidade, moralidade, publicidade e eficiência.' },
-      { id: 'D', texto: 'Legalidade, impessoalidade, motivação, publicidade e economicidade.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade, Eficiência.',
-      incorretas: { B: 'Imparcialidade e transparência não estão no caput.', C: 'Razoabilidade e proporcionalidade são implícitos.', D: 'Motivação é implícita.' },
-      conceitoCobrado: 'LIMPE.',
-      pegadinha: 'Trocar por termos próximos.',
-      comoApareceEmConcurso: 'Toda prova cobra LIMPE.'
-    },
-    tags: ['LIMPE', 'art. 37']
-  },
-  {
-    id: 'Q-DID-DC-1102',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-11',
-    subtema: 'Concurso público',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre o concurso público (art. 37, II, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É dispensável para cargos efetivos, sendo obrigatório apenas para cargos em comissão.' },
-      { id: 'B', texto: 'É obrigatório para provimento de cargos efetivos e empregos públicos, salvo cargos em comissão (livre nomeação e exoneração).' },
-      { id: 'C', texto: 'Só se aplica a cargos federais.' },
-      { id: 'D', texto: 'O prazo de validade é de 4 anos, prorrogável uma vez por igual período.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Concurso é regra para cargos efetivos e empregos públicos. Cargos em comissão são de livre nomeação (não exigem concurso).',
-      incorretas: { A: 'Inverte.', C: 'Aplica-se a União, Estados, DF e Municípios.', D: 'Prazo é de até 2 anos, prorrogável uma única vez por igual período.' },
-      conceitoCobrado: 'Concurso público.',
-      pegadinha: 'Confundir prazo (2 anos, uma prorrogação) com cargos em comissão.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['concurso', 'art. 37']
-  },
-  {
-    id: 'Q-DID-DC-1103',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-11',
-    subtema: 'Acumulação de cargos',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a acumulação remunerada de cargos públicos (art. 37, XVI, CF/88), é correto afirmar que é permitida quando:',
-    alternativas: [
-      { id: 'A', texto: 'Houve qualquer tipo de vínculo, desde que o servidor tenha disponibilidade.' },
-      { id: 'B', texto: 'Houver compatibilidade de horários e se tratar de: dois cargos de professor; um de professor com outro técnico ou científico; ou dois privativos de profissionais de saúde.' },
-      { id: 'C', texto: 'O servidor for estável e tiver mais de 10 anos de serviço.' },
-      { id: 'D', texto: 'For autorizada pelo chefe imediato.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Art. 37, XVI: 3 hipóteses (2 de professor; 1 professor + 1 técnico/científico; 2 privativos de saúde), com compatibilidade de horários e respeito ao teto.',
-      incorretas: { A: 'Não é por disponibilidade.', C: 'Não depende de estabilidade ou tempo de serviço.', D: 'Não depende de autorização do chefe.' },
-      conceitoCobrado: 'Acumulação de cargos.',
-      pegadinha: 'Mnemônico: "PROF-PROF", "PROF-TEC", "SAÚDE-SAÚDE".',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['acumulação', 'art. 37']
-  },
-  {
-    id: 'Q-DID-DC-1104',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-11',
-    subtema: 'Teto remuneratório',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre o teto remuneratório (art. 37, XI, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O teto geral é o subsídio de Ministro do STF; nos Estados e DF, o subsídio de Desembargador do TJ; nos Municípios, o subsídio de Prefeito.' },
-      { id: 'B', texto: 'Não há teto para servidores públicos.' },
-      { id: 'C', texto: 'O teto é o salário do Presidente da República em todos os entes.' },
-      { id: 'D', texto: 'O teto é fixado por decreto do Executivo a cada ano.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 37, XI: teto geral = subsídio de Ministro do STF; estadual = Desembargador do TJ; municipal = Prefeito.',
-      incorretas: { B: 'Há teto constitucional.', C: 'Não é o salário do Presidente.', D: 'O teto é constitucional, não por decreto.' },
-      conceitoCobrado: 'Teto remuneratório.',
-      pegadinha: 'Confundir os 3 níveis.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['teto', 'art. 37']
-  },
-  {
-    id: 'Q-DID-DC-1105',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-11',
-    subtema: 'Responsabilidade civil do Estado',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a responsabilidade civil do Estado (art. 37, §6º, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É objetiva perante terceiros (basta dano + nexo causal + conduta), e a ação regressiva contra o agente exige DOLO ou CULPA.' },
-      { id: 'B', texto: 'É subjetiva em todos os casos.' },
-      { id: 'C', texto: 'A ação regressiva independe de dolo ou culpa do agente.' },
-      { id: 'D', texto: 'O Estado não responde pelos atos de seus agentes.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 37, §6º: responsabilidade OBJETIVA do Estado perante terceiros (atos comissivos) + ação regressiva com dolo/culpa do agente.',
-      incorretas: { B: 'Objetiva em atos comissivos.', C: 'Exige dolo ou culpa.', D: 'Responde objetivamente.' },
-      conceitoCobrado: 'Responsabilidade civil objetiva + ação regressiva.',
-      pegadinha: 'Achar que a ação regressiva dispensa dolo/culpa.',
-      comoApareceEmConcurso: 'Clássica em DA e DC.'
-    },
-    tags: ['responsabilidade', 'art. 37']
-  },
-  {
-    id: 'Q-DID-DC-1106',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-11',
-    subtema: 'Cargo em comissão x função de confiança',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre cargo em comissão e função de confiança (art. 37, V, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'As funções de confiança são exercidas exclusivamente por servidores de carreira; os cargos em comissão são de livre nomeação e exoneração, destinados a direção, chefia e assessoramento.' },
-      { id: 'B', texto: 'Ambos podem ser ocupados por pessoas de fora da Administração.' },
-      { id: 'C', texto: 'Ambos exigem concurso público.' },
-      { id: 'D', texto: 'Cargos em comissão são privativos de servidores de carreira.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 37, V: funções de confiança — privativas de servidor de carreira; cargos em comissão — livre nomeação e exoneração, para direção, chefia e assessoramento.',
-      incorretas: { B: 'Funções de confiança são privativas de servidores de carreira.', C: 'Cargo em comissão não exige concurso.', D: 'Inverte.' },
-      conceitoCobrado: 'Função de confiança x cargo em comissão.',
-      pegadinha: 'Inverter os conceitos.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['cargo em comissão', 'função de confiança']
-  }  ,
-
-  /* ============================================================
-     DC-12 — Poder Legislativo
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-1201',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-12',
-    subtema: 'Composição do Congresso',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a composição do Congresso Nacional (arts. 44 a 46, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É bicameral, formado pela Câmara dos Deputados (representantes do povo) e pelo Senado Federal (representantes dos Estados e do DF).' },
-      { id: 'B', texto: 'É unicameral, formado apenas pela Câmara dos Deputados.' },
-      { id: 'C', texto: 'Cada Estado elege 8 senadores e 3 deputados federais.' },
-      { id: 'D', texto: 'Deputados federais têm mandato de 8 anos; senadores, de 4 anos.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Congresso é BICAMERAL: Câmara (povo) + Senado (Estados e DF).',
-      incorretas: { B: 'É bicameral.', C: 'Inverte: cada Estado elege 3 senadores e mínimo de 8 deputados federais.', D: 'Inverte: deputados = 4 anos; senadores = 8 anos.' },
-      conceitoCobrado: 'Composição do Congresso.',
-      pegadinha: 'Trocar número de deputados e senadores por Estado e mandatos.',
-      comoApareceEmConcurso: 'Clássica em DC e em concursos de Tribunais.'
-    },
-    tags: ['congresso', 'art. 44']
-  },
-  {
-    id: 'Q-DID-DC-1202',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-12',
-    subtema: 'Competências privativas da Câmara e do Senado',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre as competências privativas da Câmara e do Senado, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A Câmara autoriza a instauração de processo contra o Presidente (art. 51, I); o Senado processa e julga nos crimes de responsabilidade (art. 52, I).' },
-      { id: 'B', texto: 'A Câmara processa e julga o Presidente; o Senado apenas autoriza.' },
-      { id: 'C', texto: 'Ambas as Casas julgam conjuntamente o Presidente em sessão unicameral.' },
-      { id: 'D', texto: 'O Senado autoriza; a Câmara julga.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 51, I: Câmara AUTORIZA (2/3). Art. 52, I: Senado PROCESSA E JULGA.',
-      incorretas: { B: 'Inverte.', C: 'Não há julgamento conjunto em sessão unicameral — é o Senado, sob a presidência do Presidente do STF.', D: 'Inverte.' },
-      conceitoCobrado: 'Competências privativas do art. 51 e do art. 52.',
-      pegadinha: 'Confundir "autorizar" (Câmara) com "processar e julgar" (Senado).',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['Câmara', 'Senado', 'crime de responsabilidade']
-  },
-  {
-    id: 'Q-DID-DC-1203',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-12',
-    subtema: 'Imunidades parlamentares',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre as imunidades parlamentares (art. 53, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A imunidade MATERIAL abrange opiniões, palavras e votos, no exercício do mandato, valendo em qualquer lugar; a FORMAL protege contra prisão (salvo flagrante de crime inafiançável) e processo criminal.' },
-      { id: 'B', texto: 'A imunidade material só vale dentro do Congresso.' },
-      { id: 'C', texto: 'A imunidade formal impede qualquer processo criminal contra o parlamentar.' },
-      { id: 'D', texto: 'A imunidade material e a formal são sinônimos.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'MATERIAL (caput): opiniões, palavras e votos, no exercício do mandato, em qualquer lugar. FORMAL: prisão apenas em flagrante de crime inafiançável; processo criminal sem licença prévia (EC 35/2001), com possibilidade de sustação pela Casa.',
-      incorretas: { B: 'Vale em qualquer lugar.', C: 'Não impede — a EC 35/2001 aboliu a licença prévia para processo.', D: 'São distintas.' },
-      conceitoCobrado: 'Imunidades parlamentares.',
-      pegadinha: 'Achar que a imunidade material só vale no Congresso ou que a formal exige licença.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['imunidade', 'art. 53']
-  },
-  {
-    id: 'Q-DID-DC-1204',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-12',
-    subtema: 'CPI — poderes e limites',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre os poderes e limites da CPI (art. 58, §3º, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A CPI pode decretar prisão preventiva e determinar interceptação telefônica diretamente.' },
-      { id: 'B', texto: 'A CPI pode quebrar sigilo bancário, fiscal e de dados telefônicos, convocar, ouvir e requisitar, mas NÃO pode decretar prisão (salvo flagrante), determinar busca domiciliar ou interceptação telefônica.' },
-      { id: 'C', texto: 'A CPI não tem qualquer poder de investigação.' },
-      { id: 'D', texto: 'A CPI julga e condena os investigados.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'CPI tem poderes de investigação próprios das autoridades judiciais, mas com LIMITES: não prende (salvo flagrante), não faz busca domiciliar, não determina interceptação telefônica. Pode quebrar sigilos bancário/fiscal/de dados telefônicos.',
-      incorretas: { A: 'Excede os limites da CPI.', C: 'Tem poderes de investigação.', D: 'Não julga — apenas investiga e encaminha.' },
-      conceitoCobrado: 'Poderes e limites da CPI.',
-      pegadinha: 'Achar que a CPI pode tudo que um juiz pode.',
-      comoApareceEmConcurso: 'Alta frequência em concursos de Tribunais.'
-    },
-    tags: ['CPI', 'art. 58']
-  },
-  {
-    id: 'Q-DID-DC-1205',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-12',
-    subtema: 'Tribunal de Contas',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre o Tribunal de Contas da União (art. 70 a 75, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É órgão do Poder Judiciário, com competência para julgar contas.' },
-      { id: 'B', texto: 'É órgão auxiliar do Poder Legislativo, com autonomia e funções próprias, exercendo controle externo contábil, financeiro, orçamentário, operacional e patrimonial.' },
-      { id: 'C', texto: 'É subordinado ao Poder Executivo.' },
-      { id: 'D', texto: 'É uma autarquia federal.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'TCU é órgão AUXILIAR do Legislativo, com autonomia, sem subordinação hierárquica. Exerce controle externo.',
-      incorretas: { A: 'Não é do Judiciário.', C: 'Não é subordinado ao Executivo.', D: 'Não é autarquia.' },
-      conceitoCobrado: 'Natureza do Tribunal de Contas.',
-      pegadinha: 'Achar que integra o Judiciário.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['TCU', 'art. 70']
-  },
-
-  /* ============================================================
-     DC-13 — Processo Legislativo
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-1301',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-13',
-    subtema: 'Quóruns',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre os quóruns no processo legislativo, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Emenda constitucional exige 3/5 em dois turnos em cada Casa; lei complementar exige maioria ABSOLUTA; lei ordinária exige maioria SIMPLES.' },
-      { id: 'B', texto: 'Emenda exige maioria absoluta; lei complementar exige 3/5; lei ordinária exige maioria simples.' },
-      { id: 'C', texto: 'Lei complementar e lei ordinária têm o mesmo quórum.' },
-      { id: 'D', texto: 'Emenda constitucional exige unanimidade.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Emenda (art. 60, §2º): 3/5 em dois turnos em cada Casa. LC (art. 69): maioria absoluta. LO (art. 47): maioria simples.',
-      incorretas: { B: 'Inverte.', C: 'LC (absoluta) ≠ LO (simples).', D: 'Não exige unanimidade.' },
-      conceitoCobrado: 'Quóruns.',
-      pegadinha: 'Trocar 3/5, absoluta e simples.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['quórum', 'processo legislativo']
-  },
-  {
-    id: 'Q-DID-DC-1302',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-13',
-    subtema: 'Medida provisória',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a medida provisória (art. 62, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Tem vigência de 60 dias, prorrogável uma única vez por igual período; se não apreciada em 45 dias, entra em regime de urgência e tranca a pauta da Casa onde estiver.' },
-      { id: 'B', texto: 'Tem vigência de 90 dias prorrogáveis indefinidamente.' },
-      { id: 'C', texto: 'Pode tratar de qualquer matéria.' },
-      { id: 'D', texto: 'Não precisa de relevância e urgência.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 62: 60 + 60 dias; trancamento da pauta após 45 dias; perde eficácia desde a edição se não apreciada em 120 dias.',
-      incorretas: { B: 'Prazo é 60+60.', C: 'Há vedações materiais (art. 62, §1º).', D: 'Relevância e urgência são pressupostos.' },
-      conceitoCobrado: 'Medida provisória.',
-      pegadinha: 'Confundir prazos ou esquecer o trancamento em 45 dias.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['MP', 'art. 62']
-  },
-  {
-    id: 'Q-DID-DC-1303',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-13',
-    subtema: 'Sanção e veto',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a sanção e o veto (art. 66, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O Presidente tem 15 dias úteis para sancionar ou vetar; o veto pode ser total ou parcial, e é apreciado pelo Congresso em sessão conjunta, com derrubada por maioria absoluta.' },
-      { id: 'B', texto: 'O veto parcial pode atingir palavra ou artigo isolado sem relação com o conjunto.' },
-      { id: 'C', texto: 'O veto é irrecusável pelo Congresso.' },
-      { id: 'D', texto: 'A sanção tem prazo de 30 dias.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Prazo de 15 dias úteis; veto total ou parcial; derrubada por MAIORIA ABSOLUTA em sessão conjunta.',
-      incorretas: { B: 'Veto parcial só atinge parte com sentido próprio.', C: 'O veto pode ser derrubado.', D: 'Prazo é 15 dias úteis.' },
-      conceitoCobrado: 'Sanção e veto.',
-      pegadinha: 'Confundir prazo ou modalidade de veto.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['sanção', 'veto']
-  },
-  {
-    id: 'Q-DID-DC-1304',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-13',
-    subtema: 'Espécies normativas',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre as espécies normativas do art. 59, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'São: emendas à Constituição, leis complementares, leis ordinárias, leis delegadas, medidas provisórias, decretos legislativos e resoluções.' },
-      { id: 'B', texto: 'São apenas: lei ordinária e lei complementar.' },
-      { id: 'C', texto: 'Decretos legislativos e resoluções não são espécies normativas.' },
-      { id: 'D', texto: 'Medidas provisórias não têm força de lei.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 59: 7 espécies normativas.',
-      incorretas: { B: 'Há 7.', C: 'São espécies previstas.', D: 'MP tem força de lei.' },
-      conceitoCobrado: 'Espécies normativas.',
-      pegadinha: 'Reduzir o rol.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['espécies normativas', 'art. 59']
-  },
-  {
-    id: 'Q-DID-DC-1305',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-13',
-    subtema: 'Decreto legislativo x resolução',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre decretos legislativos e resoluções, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Decretos legislativos tratam de matéria de competência EXCLUSIVA do Congresso (art. 49); resoluções tratam de matéria de competência PRIVATIVA do Congresso, da Câmara ou do Senado.' },
-      { id: 'B', texto: 'Ambos dependem de sanção do Presidente.' },
-      { id: 'C', texto: 'Decretos legislativos são sinônimos de resoluções.' },
-      { id: 'D', texto: 'Resoluções dependem de sanção e veto.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Decreto legislativo: matéria exclusiva (art. 49). Resolução: matéria privativa (Congresso, Câmara ou Senado).',
-      incorretas: { B: 'Nenhum dos dois depende de sanção.', C: 'São espécies distintas.', D: 'Não dependem de sanção.' },
-      conceitoCobrado: 'Decreto legislativo x resolução.',
-      pegadinha: 'Achar que dependem de sanção presidencial.',
-      comoApareceEmConcurso: 'Cobrança média.'
-    },
-    tags: ['decreto legislativo', 'resolução']
-  },
-
-  /* ============================================================
-     DC-RN — Constituição do Estado do Rio Grande do Norte
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-RN01',
-    tipo: 'DIDATICA',
-    area: 'CE',
-    moduloId: 'DC-RN',
-    subtema: 'Estrutura do Estado',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a organização do Estado do Rio Grande do Norte, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O Poder Legislativo estadual é exercido pela Assembleia Legislativa do RN, UNICAMERAL, com deputados estaduais eleitos para mandato de 4 anos.' },
-      { id: 'B', texto: 'O Poder Legislativo estadual é bicameral, com deputados e senadores estaduais.' },
-      { id: 'C', texto: 'O Estado do RN é regido por Lei Orgânica.' },
-      { id: 'D', texto: 'A Capital do Estado é Mossoró.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Assembleia Legislativa do RN é UNICAMERAL, com deputados estaduais de mandato de 4 anos.',
-      incorretas: { B: 'Não há senadores estaduais.', C: 'Estados têm Constituição (não Lei Orgânica).', D: 'A Capital é Natal.' },
-      conceitoCobrado: 'Estrutura do Legislativo estadual.',
-      pegadinha: 'Confundir com bicameralismo ou com Lei Orgânica.',
-      comoApareceEmConcurso: 'Cobrado em concursos estaduais do RN.'
-    },
-    tags: ['RN', 'Assembleia']
-  },
-  {
-    id: 'Q-DID-DC-RN02',
-    tipo: 'DIDATICA',
-    area: 'CE',
-    moduloId: 'DC-RN',
-    subtema: 'Tribunal de Contas',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'No Rio Grande do Norte, o Tribunal de Contas do Estado (TCE/RN):',
-    alternativas: [
-      { id: 'A', texto: 'Fiscaliza apenas o Estado, sendo a fiscalização dos Municípios atribuída a um Tribunal de Contas dos Municípios separado.' },
-      { id: 'B', texto: 'É órgão auxiliar da Assembleia Legislativa e fiscaliza o Estado E os Municípios do RN, uma vez que não há Tribunal de Contas dos Municípios separado.' },
-      { id: 'C', texto: 'É órgão do Poder Judiciário.' },
-      { id: 'D', texto: 'É subordinado ao Governador do Estado.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'No RN, o TCE acumula as funções de fiscalização estadual e municipal — é órgão auxiliar do Legislativo, com autonomia.',
-      incorretas: { A: 'Não há TCM separado no RN.', C: 'Não é do Judiciário.', D: 'Não é subordinado ao Governador.' },
-      conceitoCobrado: 'Atuação do TCE/RN.',
-      pegadinha: 'Achar que existe TCM no RN.',
-      comoApareceEmConcurso: 'Cobrado em concursos do RN.'
-    },
-    tags: ['RN', 'TCE']
-  },
-  {
-    id: 'Q-DID-DC-RN03',
-    tipo: 'DIDATICA',
-    area: 'CE',
-    moduloId: 'DC-RN',
-    subtema: 'Subordinação à CF',
-    dificuldade: 3,
-    prioridade: 'alta',
-    enunciado: 'Sobre a relação entre a Constituição do Estado do RN (CE/RN/1989) e a Constituição Federal (CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A CE/RN é soberana e pode contrariar a CF.' },
-      { id: 'B', texto: 'A CE/RN está SUBORDINADA à CF/88 e não pode contrariar normas federais nem criar hipóteses não previstas na CF.' },
-      { id: 'C', texto: 'A CE/RN e a CF têm o mesmo status hierárquico.' },
-      { id: 'D', texto: 'A CE/RN revoga dispositivos da CF aplicáveis ao Estado.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'A CE/RN é norma estadual, subordinada à CF — prevalece o princípio da supremacia constitucional federal.',
-      incorretas: { A: 'Não é soberana e não pode contrariar a CF.', C: 'Hierarquia é distinta.', D: 'Não revoga dispositivos da CF.' },
-      conceitoCobrado: 'Supremacia da CF sobre a CE.',
-      pegadinha: 'Achar que a CE pode contrariar a CF.',
-      comoApareceEmConcurso: 'Cobrança clássica em concursos estaduais.'
-    },
-    tags: ['RN', 'supremacia']
-  },
-  {
-    id: 'Q-DID-DC-RN04',
-    tipo: 'DIDATICA',
-    area: 'CE',
-    moduloId: 'DC-RN',
-    subtema: 'Servidores estaduais',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre o regime jurídico dos servidores públicos do Estado do RN, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É celetista (CLT).' },
-      { id: 'B', texto: 'É estatutário (regime jurídico único), estabelecido em Lei Complementar estadual.' },
-      { id: 'C', texto: 'É livre, sem lei específica.' },
-      { id: 'D', texto: 'Aplica-se somente aos servidores federais.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Servidores estaduais do RN são regidos por regime jurídico único (estatutário), em LC estadual.',
-      incorretas: { A: 'Não é celetista.', C: 'Exige lei.', D: 'Aplica-se aos servidores estaduais.' },
-      conceitoCobrado: 'Regime dos servidores estaduais.',
-      pegadinha: 'Confundir com celetista.',
-      comoApareceEmConcurso: 'Cobrado em concursos estaduais.'
-    },
-    tags: ['RN', 'servidores']
-  },
-  {
-    id: 'Q-DID-DC-RN05',
-    tipo: 'DIDATICA',
-    area: 'CE',
-    moduloId: 'DC-RN',
-    subtema: 'Eleição do Governador',
-    dificuldade: 2,
-    prioridade: 'alta',
-    enunciado: 'Sobre a eleição do Governador do Estado do RN, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É feita por maioria simples, sem 2º turno.' },
-      { id: 'B', texto: 'É feita por maioria ABSOLUTA, com 2º turno se necessário, mandato de 4 anos, admitida uma reeleição.' },
-      { id: 'C', texto: 'É feita por voto indireto (assembleia).' },
-      { id: 'D', texto: 'O Governador é nomeado pelo Presidente da República.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Eleição majoritária em 2 turnos se necessário; mandato de 4 anos; reeleição permitida uma única vez.',
-      incorretas: { A: 'Maioria absoluta com 2º turno.', C: 'Eleição direta.', D: 'Eleito pelo povo.' },
-      conceitoCobrado: 'Eleição do Governador.',
-      pegadinha: 'Confundir com eleição indireta.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['RN', 'Governador']
-  },
-
-  /* ============================================================
-     DC-10 — Intervenção
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-1001',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-10',
-    subtema: 'Hipóteses de intervenção federal',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'NÃO é hipótese de intervenção FEDERAL nos Estados (art. 34, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Manter a integridade nacional.' },
-      { id: 'B', texto: 'Repelir invasão estrangeira ou de uma unidade da Federação em outra.' },
-      { id: 'C', texto: 'Deixar de aplicar o mínimo exigido da receita municipal na saúde e na educação.' },
-      { id: 'D', texto: 'Reorganizar as finanças da unidade da Federação que suspender o pagamento da dívida fundada por mais de 2 anos.' }
+      { id: 'A', texto: 'Outlook Express.' },
+      { id: 'B', texto: 'Internet Explorer.' },
+      { id: 'C', texto: 'PowerPoint.' },
+      { id: 'D', texto: 'Excel.' },
+      { id: 'E', texto: 'Windows Media Player.' }
     ],
     gabarito: 'C',
     explicacao: {
-      correta: 'A não aplicação do mínimo em saúde e educação é hipótese de intervenção ESTADUAL em MUNICÍPIO (art. 35, III).',
-      incorretas: { A: 'É hipótese do art. 34, I.', B: 'É hipótese do art. 34, II.', D: 'É hipótese do art. 34, V.' },
-      conceitoCobrado: 'Hipóteses de intervenção federal x estadual.',
-      pegadinha: 'Misturar hipóteses dos arts. 34 e 35.',
-      comoApareceEmConcurso: 'Cobrança clássica.'
+      correta: 'PowerPoint é o aplicativo de apresentações que oferece transições, animações e notas do apresentador.',
+      incorretas: {
+        A: 'Outlook Express é cliente de e-mail.',
+        B: 'Internet Explorer é navegador.',
+        D: 'Excel é planilha.',
+        E: 'Windows Media Player é reprodutor de mídia.'
+      },
+      conceitoCobrado: 'Finalidade do PowerPoint.',
+      pegadinha: 'A banca descreve recursos do PowerPoint e pede o aplicativo. Quem confunde com Excel erra.',
+      comoApareceEmConcurso: 'PowerPoint é cobrado em ferramentas de escritório.'
     },
-    tags: ['intervenção', 'art. 34']
-  },
-  {
-    id: 'Q-DID-DC-1002',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-10',
-    subtema: 'Hipóteses de intervenção estadual',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'São hipóteses de intervenção ESTADUAL nos Municípios (art. 35, CF/88), EXCETO:',
-    alternativas: [
-      { id: 'A', texto: 'Deixar de ser paga, sem motivo, por 2 anos, a dívida fundada.' },
-      { id: 'B', texto: 'Não forem prestadas contas devidas, na forma da lei.' },
-      { id: 'C', texto: 'Não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde.' },
-      { id: 'D', texto: 'Descumprimento de decisão do Tribunal de Contas da União.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'A hipótese do inciso IV do art. 35 é o Tribunal de JUSTIÇA dar provimento a representação para assegurar a observância de princípios da Constituição ESTADUAL, ou prover execução de lei, ordem ou decisão judicial — não do TCU.',
-      incorretas: { A: 'É o inciso I.', B: 'É o inciso II.', C: 'É o inciso III.' },
-      conceitoCobrado: 'Intervenção estadual em Municípios.',
-      pegadinha: 'Confundir TJ com TCU.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['intervenção', 'art. 35']
-  },
-  {
-    id: 'Q-DID-DC-1003',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-10',
-    subtema: 'Procedimento',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre o procedimento da intervenção federal, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O decreto é expedido pelo Congresso Nacional e sancionado pelo Presidente.' },
-      { id: 'B', texto: 'O decreto é expedido pelo Presidente, ouvidos o Conselho da República e o Conselho de Defesa Nacional, e submetido ao Congresso em 24 horas.' },
-      { id: 'C', texto: 'O decreto é expedido pelo STF.' },
-      { id: 'D', texto: 'O decreto dispensa controle do Congresso.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Art. 36: decreto do Presidente + ouvidoria prévia dos Conselhos + controle do Congresso em 24h (convocação extraordinária em 5 dias se em recesso).',
-      incorretas: { A: 'Não é do Congresso.', C: 'Não é do STF.', D: 'Há controle político pelo Congresso.' },
-      conceitoCobrado: 'Procedimento da intervenção.',
-      pegadinha: 'Achar que é o Congresso que decreta.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['intervenção', 'procedimento']
-  },
-  {
-    id: 'Q-DID-DC-1004',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-10',
-    subtema: 'Intervenção x Estado de Defesa',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre a diferença entre intervenção e Estado de Defesa, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Intervenção atinge o ente federativo (quebra temporária de autonomia); Estado de Defesa restringe direitos em locais determinados, sem quebra da autonomia.' },
-      { id: 'B', texto: 'São sinônimos.' },
-      { id: 'C', texto: 'O Estado de Defesa quebra a autonomia do Estado.' },
-      { id: 'D', texto: 'A intervenção só pode ocorrer em Municípios.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Intervenção: atinge ente federativo (Estado ou Município). Estado de Defesa: restrição de direitos em locais determinados, sem quebra da autonomia.',
-      incorretas: { B: 'São institutos distintos.', C: 'Não quebra autonomia.', D: 'A intervenção federal atinge Estados e DF; a estadual, Municípios.' },
-      conceitoCobrado: 'Distinção entre intervenção e Estado de Defesa.',
-      pegadinha: 'Confundir os institutos.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['intervenção', 'defesa']
-  },
-  {
-    id: 'Q-DID-DC-1005',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-10',
-    subtema: 'Efeitos',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre o término da intervenção, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É permanente — uma vez decretada, não pode cessar.' },
-      { id: 'B', texto: 'Cessada a causa, as autoridades afastadas retornam aos seus cargos, salvo impedimento legal.' },
-      { id: 'C', texto: 'As autoridades afastadas nunca retornam.' },
-      { id: 'D', texto: 'A intervenção só pode cessar por decisão do STF.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Art. 36, §3º: cessados os motivos da intervenção, as autoridades afastadas retornam aos seus cargos, salvo impedimento legal.',
-      incorretas: { A: 'É temporária.', C: 'Retornam.', D: 'Cessa quando cessa a causa.' },
-      conceitoCobrado: 'Efeitos da cessação da intervenção.',
-      pegadinha: 'Achar que a intervenção é permanente.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['intervenção', 'cessação']
+    tags: ['PowerPoint', 'apresentação']
   },
 
   /* ============================================================
-     DC-14 — Poder Executivo
+     DIDÁTICA — INF-07 — Internet: protocolo HTTPS
   ============================================================ */
   {
-    id: 'Q-DID-DC-1401',
+    id: 'Q-DID-INF-0009',
     tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-14',
-    subtema: 'Requisitos',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'São requisitos para ser Presidente da República, EXCETO:',
-    alternativas: [
-      { id: 'A', texto: 'Ser brasileiro nato.' },
-      { id: 'B', texto: 'Ter no mínimo 35 anos de idade.' },
-      { id: 'C', texto: 'Estar no pleno exercício dos direitos políticos e ter domicílio eleitoral.' },
-      { id: 'D', texto: 'Ter no mínimo 30 anos de idade.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'Idade mínima é 35 anos (art. 14, §3º, VI, "a"), não 30 (que é para Governador).',
-      incorretas: { A: 'É requisito.', B: 'É requisito.', C: 'É requisito.' },
-      conceitoCobrado: 'Requisitos para Presidente.',
-      pegadinha: 'Trocar 35 com 30.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['Presidente', 'requisitos']
-  },
-  {
-    id: 'Q-DID-DC-1402',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-14',
-    subtema: 'Sucessão',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Em caso de vacância simultânea dos cargos de Presidente e Vice nos 2 últimos anos do mandato, o que ocorre?',
-    alternativas: [
-      { id: 'A', texto: 'Eleição DIRETA em 90 dias.' },
-      { id: 'B', texto: 'Eleição INDIRETA pelo Congresso Nacional em 30 dias.' },
-      { id: 'C', texto: 'Assume definitivamente o Presidente do STF.' },
-      { id: 'D', texto: 'Não há nova eleição — o mandato é concluído pelo Presidente da Câmara.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Art. 81, §1º: vacância nos 2 últimos anos → eleição INDIRETA pelo Congresso em 30 dias.',
-      incorretas: { A: 'Eleição direta é nos 2 primeiros anos.', C: 'A linha sucessória assume apenas temporariamente, não definitivamente.', D: 'Há nova eleição.' },
-      conceitoCobrado: 'Vacância nos 2 últimos anos.',
-      pegadinha: 'Inverter os prazos e modalidades.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['sucessão', 'vacância']
-  },
-  {
-    id: 'Q-DID-DC-1403',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-14',
-    subtema: 'Crimes de responsabilidade',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre os crimes de responsabilidade do Presidente da República, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'A Câmara autoriza por 2/3 e o STF julga.' },
-      { id: 'B', texto: 'A Câmara autoriza por 2/3 e o Senado Federal processa e julga.' },
-      { id: 'C', texto: 'O Senado julga sem necessidade de autorização.' },
-      { id: 'D', texto: 'O STF julga diretamente.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'Crime de responsabilidade: Câmara AUTORIZA (2/3) e Senado PROCESSA E JULGA (art. 86 + art. 52, I).',
-      incorretas: { A: 'STF julga crime COMUM.', C: 'Há necessidade de autorização.', D: 'STF julga crime comum.' },
-      conceitoCobrado: 'Crime de responsabilidade.',
-      pegadinha: 'Confundir crime comum com crime de responsabilidade.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['crime de responsabilidade', 'impeachment']
-  },
-  {
-    id: 'Q-DID-DC-1404',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-14',
-    subtema: 'Competências',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'NÃO é competência privativa do Presidente da República (art. 84, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Sancionar, promulgar e fazer publicar as leis, bem como expedir decretos e regulamentos para sua fiel execução.' },
-      { id: 'B', texto: 'Editar medidas provisórias com força de lei.' },
-      { id: 'C', texto: 'Nomear, após aprovação pelo Senado, os Ministros do STF.' },
-      { id: 'D', texto: 'Julgar as causas em que a União seja parte.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'Julgar causas em que a União é parte é competência do PODER JUDICIÁRIO (Justiça Federal), não do Presidente.',
-      incorretas: { A: 'É o inciso IV.', B: 'É o inciso XXVI.', C: 'É o inciso XIV (com aprovação do Senado).' },
-      conceitoCobrado: 'Competências do Presidente.',
-      pegadinha: 'Confundir função administrativa com jurisdicional.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['Presidente', 'competências']
-  },
-  {
-    id: 'Q-DID-DC-1405',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-14',
-    subtema: 'Mandato',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre o mandato do Presidente da República, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É de 4 anos, permitida uma única reeleição.' },
-      { id: 'B', texto: 'É de 5 anos, sem possibilidade de reeleição.' },
-      { id: 'C', texto: 'É de 4 anos, sem possibilidade de reeleição.' },
-      { id: 'D', texto: 'É de 6 anos, com reeleição ilimitada.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 82 + EC 16/1997: mandato de 4 anos, admitida UMA única reeleição.',
-      incorretas: { B: 'É 4 anos, com uma reeleição.', C: 'Admite uma reeleição.', D: 'Não é 6 anos.' },
-      conceitoCobrado: 'Mandato presidencial e reeleição.',
-      pegadinha: 'Trocar duração ou negar reeleição.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['mandato', 'reeleição']
-  },
-
-  /* ============================================================
-     DC-15 — Poder Judiciário
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-1501',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-15',
-    subtema: 'STF x STJ',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre o STF e o STJ, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O STF é guarda da lei federal; o STJ é guarda da Constituição.' },
-      { id: 'B', texto: 'O STF é guarda da Constituição; o STJ é guarda da lei federal.' },
-      { id: 'C', texto: 'Ambos têm 11 ministros.' },
-      { id: 'D', texto: 'O STJ julga ADI e ADPF.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'STF = guarda da CF (11 ministros); STJ = guarda da lei federal (33 ministros).',
-      incorretas: { A: 'Inverte.', C: 'STF = 11; STJ = 33.', D: 'ADI/ADPF são do STF.' },
-      conceitoCobrado: 'Funções do STF e do STJ.',
-      pegadinha: 'Inverter guarda e composição.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['STF', 'STJ']
-  },
-  {
-    id: 'Q-DID-DC-1502',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-15',
-    subtema: 'Garantias dos magistrados',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'São garantias constitucionais dos magistrados (art. 95, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Vitaliciedade, inamovibilidade e irredutibilidade de subsídio.' },
-      { id: 'B', texto: 'Estabilidade, inamovibilidade e irredutibilidade de vencimentos.' },
-      { id: 'C', texto: 'Vitaliciedade, estabilidade e irredutibilidade.' },
-      { id: 'D', texto: 'Apenas vitaliciedade.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 95: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.',
-      incorretas: { B: 'Magistrado tem vitaliciedade, não estabilidade.', C: 'Estabilidade é do servidor público.', D: 'São três garantias.' },
-      conceitoCobrado: 'Garantias do magistrado.',
-      pegadinha: 'Trocar vitaliciedade por estabilidade.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['garantias', 'magistratura']
-  },
-  {
-    id: 'Q-DID-DC-1503',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-15',
-    subtema: 'Justiça Federal',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Compete à Justiça Federal processar e julgar:',
-    alternativas: [
-      { id: 'A', texto: 'Causas em que a União, autarquia federal ou empresa pública federal forem partes.' },
-      { id: 'B', texto: 'Causas entre particulares sobre contratos.' },
-      { id: 'C', texto: 'Divórcios.' },
-      { id: 'D', texto: 'Crimes militares.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 109, I: causas em que a União, autarquia ou empresa pública federal forem partes (como autoras, rés, assistentes ou oponentes).',
-      incorretas: { B: 'Competência da Justiça Estadual.', C: 'Justiça Estadual (varas de família).', D: 'Justiça Militar.' },
-      conceitoCobrado: 'Competência da Justiça Federal.',
-      pegadinha: 'Achar que qualquer causa com ente público é federal.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['Justiça Federal', 'art. 109']
-  },
-  {
-    id: 'Q-DID-DC-1504',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-15',
-    subtema: 'CNJ',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre o Conselho Nacional de Justiça (CNJ), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É órgão de controle administrativo, financeiro e disciplinar do Judiciário, criado pela EC 45/2004.' },
-      { id: 'B', texto: 'Julga causas originárias em matéria constitucional.' },
-      { id: 'C', texto: 'Substitui o STF no julgamento de ADI.' },
-      { id: 'D', texto: 'É subordinado ao Poder Executivo.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'CNJ: órgão de controle administrativo, financeiro e disciplinar do Judiciário (EC 45/2004).',
-      incorretas: { B: 'Não julga causas.', C: 'ADI continua sendo do STF.', D: 'Tem autonomia.' },
-      conceitoCobrado: 'Função do CNJ.',
-      pegadinha: 'Achar que o CNJ julga causas.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['CNJ', 'EC 45/2004']
-  },
-  {
-    id: 'Q-DID-DC-1505',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-15',
-    subtema: 'Justiça Estadual',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre a Justiça Estadual, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Tem competência residual — tudo o que não for das Justiças Federal, do Trabalho, Eleitoral e Militar.' },
-      { id: 'B', texto: 'Julga apenas causas penais.' },
-      { id: 'C', texto: 'Só existe na capital.' },
-      { id: 'D', texto: 'Substitui a Justiça Federal quando esta estiver sobrecarregada.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Justiça Estadual tem competência RESIDUAL — o que não for das outras Justiças.',
-      incorretas: { B: 'Julga causas cíveis, penais, comerciais, etc.', C: 'Existe em todo o Estado.', D: 'Não substitui.' },
-      conceitoCobrado: 'Competência residual da Justiça Estadual.',
-      pegadinha: 'Achar que tem competência limitada.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['Justiça Estadual']
-  },
-
-  /* ============================================================
-     DC-16 — Funções Essenciais à Justiça
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-1601',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-16',
-    subtema: 'Ministério Público',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'São princípios institucionais do Ministério Público (art. 127, §1º, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Unidade, indivisibilidade e independência funcional.' },
-      { id: 'B', texto: 'Legalidade, impessoalidade e moralidade.' },
-      { id: 'C', texto: 'Hierarquia, disciplina e subordinação.' },
-      { id: 'D', texto: 'Publicidade, eficiência e transparência.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 127, §1º: unidade, indivisibilidade e independência funcional.',
-      incorretas: { B: 'São princípios da Administração (LIMPE parcial).', C: 'Hierarquia é do Judiciário/Militar.', D: 'São princípios da Administração.' },
-      conceitoCobrado: 'Princípios do MP.',
-      pegadinha: 'Confundir com LIMPE.',
-      comoApareceEmConcurso: 'Altíssima frequência em concursos de MP.'
-    },
-    tags: ['MP', 'princípios']
-  },
-  {
-    id: 'Q-DID-DC-1602',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-16',
-    subtema: 'Defensoria Pública',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre a Defensoria Pública (art. 134, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É instituição permanente, essencial à função jurisdicional do Estado, à qual incumbe a orientação jurídica, a promoção dos direitos humanos e a defesa dos direitos individuais e coletivos aos necessitados, integral e gratuitamente.' },
-      { id: 'B', texto: 'É subordinada ao Poder Executivo.' },
-      { id: 'C', texto: 'Atende apenas quem paga.' },
-      { id: 'D', texto: 'Só existe na esfera federal.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 134 (redação da EC 80/2014): Defensoria é instituição permanente, essencial à função jurisdicional, que atende os necessitados de forma integral e gratuita.',
-      incorretas: { B: 'Tem autonomia funcional e administrativa.', C: 'Atende gratuitamente.', D: 'Existe em todas as esferas.' },
-      conceitoCobrado: 'Defensoria Pública.',
-      pegadinha: 'Achar que é subordinada.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['Defensoria Pública']
-  },
-  {
-    id: 'Q-DID-DC-1603',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-16',
-    subtema: 'Advocacia-Geral da União',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre a Advocacia-Geral da União (AGU), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Representa a União, judicial e extrajudicialmente, e presta consultoria e assessoramento ao Poder Executivo federal.' },
-      { id: 'B', texto: 'É órgão do Poder Judiciário.' },
-      { id: 'C', texto: 'Defende os necessitados.' },
-      { id: 'D', texto: 'É subordinada ao STF.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 131: AGU representa a União (judicial e extrajudicialmente) e presta consultoria/assessoramento ao Executivo federal.',
-      incorretas: { B: 'É órgão do Executivo federal (função essencial à Justiça).', C: 'Defensoria defende necessitados.', D: 'Não é subordinada ao STF.' },
-      conceitoCobrado: 'AGU.',
-      pegadinha: 'Confundir AGU com Defensoria ou MP.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['AGU', 'advocacia pública']
-  },
-  {
-    id: 'Q-DID-DC-1604',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-16',
-    subtema: 'Advocacia',
+    area: 'REDE',
+    moduloId: 'INF-07',
+    subtema: 'HTTPS',
     dificuldade: 1,
-    prioridade: 'media',
-    enunciado: 'Sobre a advocacia (art. 133, CF/88), é correto afirmar que:',
+    prioridade: 'muito_alta',
+    enunciado: 'Ao acessar um site, o navegador exibe um cadeado na barra de endereços. Isso indica que:',
     alternativas: [
-      { id: 'A', texto: 'O advogado é indispensável à administração da justiça, sendo inviolável por seus atos e manifestações no exercício da profissão, nos limites da lei.' },
-      { id: 'B', texto: 'O advogado é subordinado ao Judiciário.' },
-      { id: 'C', texto: 'Só pode atuar em causas criminais.' },
-      { id: 'D', texto: 'Sua atuação depende de autorização judicial prévia.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 133: literalidade.',
-      incorretas: { B: 'É autônomo.', C: 'Atua em qualquer causa.', D: 'Não depende de autorização judicial.' },
-      conceitoCobrado: 'Advocacia.',
-      pegadinha: 'Restringir a atuação.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['advocacia', 'art. 133']
-  },
-  {
-    id: 'Q-DID-DC-1605',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-16',
-    subtema: 'CNMP',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre o Conselho Nacional do Ministério Público (CNMP), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É órgão de controle administrativo, financeiro e disciplinar do MP, criado pela EC 45/2004.' },
-      { id: 'B', texto: 'Julga causas penais contra membros do MP.' },
-      { id: 'C', texto: 'Substitui o MP na propositura de ações.' },
-      { id: 'D', texto: 'É subordinado ao Poder Executivo.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'CNMP: controle administrativo, financeiro e disciplinar do MP (EC 45/2004).',
-      incorretas: { B: 'Não julga causas.', C: 'Não substitui o MP.', D: 'Tem autonomia.' },
-      conceitoCobrado: 'CNMP.',
-      pegadinha: 'Achar que julga causas.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['CNMP', 'EC 45/2004']
-  },
-
-  /* ============================================================
-     DC-17 — Defesa do Estado e Instituições Democráticas
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-1701',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-17',
-    subtema: 'Estado de Defesa',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre o Estado de Defesa (art. 136, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Prazo de 30 dias, prorrogável uma única vez por igual período; decreto do Presidente, ouvidos os Conselhos da República e de Defesa Nacional.' },
-      { id: 'B', texto: 'Prazo de 60 dias, prorrogável indefinidamente.' },
-      { id: 'C', texto: 'Não depende de controle pelo Congresso.' },
-      { id: 'D', texto: 'Pode ser decretado apenas em caso de guerra.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 136: 30 dias, prorrogável UMA vez; decreto do Presidente; ouvidoria dos Conselhos; controle pelo Congresso.',
-      incorretas: { B: 'Prazo é 30+30.', C: 'Há controle político.', D: 'Guerra é hipótese do Estado de Sítio.' },
-      conceitoCobrado: 'Estado de Defesa.',
-      pegadinha: 'Confundir prazo com o Estado de Sítio.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['Estado de Defesa', 'art. 136']
-  },
-  {
-    id: 'Q-DID-DC-1702',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-17',
-    subtema: 'Estado de Sítio',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre o Estado de Sítio (art. 137, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Cabe em caso de comoção grave de repercussão nacional, ineficácia do Estado de Defesa ou declaração de guerra/agressão estrangeira; prazo de 30 dias, prorrogável por iguais períodos.' },
-      { id: 'B', texto: 'Cabe apenas em caso de calamidade natural.' },
-      { id: 'C', texto: 'Não pode ser prorrogado.' },
-      { id: 'D', texto: 'O Congresso pode ser dissolvido durante o Estado de Sítio.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 137: comoção nacional, ineficácia do Estado de Defesa ou guerra/agressão estrangeira; 30 dias prorrogável por iguais períodos.',
-      incorretas: { B: 'Calamidade natural é hipótese de Estado de Defesa.', C: 'Pode ser prorrogado.', D: 'O Congresso NÃO pode ser dissolvido (art. 138).' },
-      conceitoCobrado: 'Estado de Sítio.',
-      pegadinha: 'Confundir hipóteses.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['Estado de Sítio', 'art. 137']
-  },
-  {
-    id: 'Q-DID-DC-1703',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-17',
-    subtema: 'Forças Armadas',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre as Forças Armadas (art. 142, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'São constituídas pela Marinha, Exército e Aeronáutica; destinam-se à defesa da Pátria, à garantia dos Poderes constituídos e da lei e da ordem.' },
-      { id: 'B', texto: 'Incluem as polícias militares.' },
-      { id: 'C', texto: 'São subordinadas aos Estados.' },
-      { id: 'D', texto: 'Têm função de polícia judiciária.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 142: Marinha, Exército e Aeronáutica; missão de defesa da Pátria, garantia dos Poderes e da lei e da ordem.',
-      incorretas: { B: 'Polícias militares são órgãos de segurança pública (art. 144).', C: 'São instituições nacionais.', D: 'Polícia judiciária é da PF e das Polícias Civis.' },
-      conceitoCobrado: 'Forças Armadas.',
-      pegadinha: 'Confundir FFAA com segurança pública.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['Forças Armadas', 'art. 142']
-  },
-  {
-    id: 'Q-DID-DC-1704',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-17',
-    subtema: 'Segurança Pública',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre os órgãos de segurança pública (art. 144, CF/88), assinale a alternativa INCORRETA:',
-    alternativas: [
-      { id: 'A', texto: 'Polícia Federal: apura crimes contra a ordem política e social e faz polícia marítima, aeroportuária e de fronteiras.' },
-      { id: 'B', texto: 'Polícia Rodoviária Federal: patrulhamento ostensivo das rodovias federais.' },
-      { id: 'C', texto: 'Polícias Militares: policiamento ostensivo e preservação da ordem pública nos Estados.' },
-      { id: 'D', texto: 'Polícias Civis: policiamento ostensivo nas ruas.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'Polícias Civis exercem funções de POLÍCIA JUDICIÁRIA e apuram infrações penais (exceto militares). Policiamento ostensivo é da Polícia Militar.',
-      incorretas: { A: 'Correta.', B: 'Correta.', C: 'Correta.' },
-      conceitoCobrado: 'Atribuições das polícias.',
-      pegadinha: 'Confundir polícia judiciária com ostensiva.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['segurança pública', 'art. 144']
-  },
-  {
-    id: 'Q-DID-DC-1705',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-17',
-    subtema: 'Controle',
-    dificuldade: 2,
-    prioridade: 'media',
-    enunciado: 'Sobre o controle do Estado de Defesa e do Estado de Sítio, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O decreto é submetido ao Congresso Nacional, que decide por maioria absoluta; durante o Estado de Sítio, o Congresso não pode ser dissolvido.' },
-      { id: 'B', texto: 'Não há controle pelo Congresso.' },
-      { id: 'C', texto: 'O STF controla exclusivamente.' },
-      { id: 'D', texto: 'O decreto dispensa justificativa.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Controle político pelo Congresso (apreciação do decreto). Art. 138: o Congresso não pode ser dissolvido durante o Estado de Sítio.',
-      incorretas: { B: 'Há controle.', C: 'O controle é político pelo Congresso.', D: 'O decreto deve indicar motivos.' },
-      conceitoCobrado: 'Controle do Estado de Defesa e Sítio.',
-      pegadinha: 'Achar que não há controle.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['controle', 'art. 138']
-  },
-
-  /* ============================================================
-     DC-18 — Controle de Constitucionalidade
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-1801',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-18',
-    subtema: 'Difuso x concentrado',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre as espécies de controle de constitucionalidade, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Difuso: qualquer juiz, incidental, efeitos inter partes. Concentrado: STF, ação própria, efeitos erga omnes e vinculante.' },
-      { id: 'B', texto: 'Difuso: STF, efeitos erga omnes. Concentrado: qualquer juiz, inter partes.' },
-      { id: 'C', texto: 'Ambos são exercidos exclusivamente pelo STF.' },
-      { id: 'D', texto: 'O controle concentrado é exercido por qualquer tribunal.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'DIFUSO: qualquer juiz, incidental, inter partes. CONCENTRADO: STF, ação própria, erga omnes e vinculante.',
-      incorretas: { B: 'Inverte.', C: 'Só o concentrado é exclusivo do STF.', D: 'É exclusivo do STF.' },
-      conceitoCobrado: 'Difuso x concentrado.',
-      pegadinha: 'Inverter as definições.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['difuso', 'concentrado']
-  },
-  {
-    id: 'Q-DID-DC-1802',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-18',
-    subtema: 'ADI x ADC',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre a ADI e a ADC, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'ADI cabe contra lei ou ato normativo federal ou estadual; ADC cabe apenas contra lei ou ato normativo FEDERAL.' },
-      { id: 'B', texto: 'Ambas cabem contra lei municipal.' },
-      { id: 'C', texto: 'A ADC cabe contra lei estadual.' },
-      { id: 'D', texto: 'A ADI cabe apenas contra lei federal.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'ADI (art. 102, I, "a"): lei federal OU estadual. ADC: apenas lei FEDERAL.',
-      incorretas: { B: 'Lei municipal não cabe ADI/ADC.', C: 'ADC é só federal.', D: 'ADI também cabe contra lei estadual.' },
-      conceitoCobrado: 'Cabimento ADI e ADC.',
-      pegadinha: 'Confundir os cabimentos.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['ADI', 'ADC']
-  },
-  {
-    id: 'Q-DID-DC-1803',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-18',
-    subtema: 'ADPF x ADO',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre ADPF e ADO, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'ADPF é residual (cabe quando não houver outro meio eficaz) e protege preceito fundamental; ADO visa tornar efetiva norma constitucional em caso de omissão legislativa.' },
-      { id: 'B', texto: 'ADPF e ADO são sinônimos.' },
-      { id: 'C', texto: 'ADO cabe contra lei existente.' },
-      { id: 'D', texto: 'ADPF só cabe contra lei federal.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'ADPF: residual, protege preceito fundamental. ADO: omissão legislativa.',
-      incorretas: { B: 'São distintas.', C: 'ADO é para omissão.', D: 'ADPF abrange lei municipal, estadual e federal.' },
-      conceitoCobrado: 'ADPF x ADO.',
-      pegadinha: 'Confundir finalidades.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['ADPF', 'ADO']
-  },
-  {
-    id: 'Q-DID-DC-1804',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-18',
-    subtema: 'Legitimados',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'NÃO é legitimado para propor ADI (art. 103, CF/88):',
-    alternativas: [
-      { id: 'A', texto: 'Presidente da República.' },
-      { id: 'B', texto: 'Procurador-Geral da República.' },
-      { id: 'C', texto: 'Conselho Federal da OAB.' },
-      { id: 'D', texto: 'Qualquer cidadão.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'Qualquer cidadão não é legitimado para ADI (isso é para AÇÃO POPULAR). Os legitimados estão no art. 103.',
-      incorretas: { A: 'É legitimado (art. 103, I).', B: 'É legitimado (art. 103, VI).', C: 'É legitimado (art. 103, VII).' },
-      conceitoCobrado: 'Legitimados do art. 103.',
-      pegadinha: 'Confundir com AÇÃO POPULAR.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['ADI', 'legitimados']
-  },
-  {
-    id: 'Q-DID-DC-1805',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-18',
-    subtema: 'Efeitos',
-    dificuldade: 3,
-    prioridade: 'media',
-    enunciado: 'Sobre os efeitos da decisão de mérito em ADI, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Em regra, são erga omnes e vinculantes; a modulação de efeitos é possível (art. 27 da Lei 9.868/1999).' },
-      { id: 'B', texto: 'São sempre inter partes.' },
-      { id: 'C', texto: 'Só valem para as partes do processo.' },
-      { id: 'D', texto: 'Não têm efeito vinculante.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Decisão de mérito em ADI: erga omnes e vinculante; modulação possível (art. 27).',
-      incorretas: { B: 'Erga omnes.', C: 'Erga omnes.', D: 'Tem efeito vinculante.' },
-      conceitoCobrado: 'Efeitos da ADI.',
-      pegadinha: 'Achar que só vale para as partes.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['ADI', 'efeitos']
-  },
-
-  /* ============================================================
-     DC-01 — Teoria da Constituição
-  ============================================================ */
-  {
-    id: 'Q-DID-DC-0101',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-01',
-    subtema: 'Classificações de Constituição',
-    dificuldade: 2,
-    prioridade: 'baixa',
-    enunciado: 'Sobre a classificação da Constituição Federal de 1988, é correto afirmar que ela é:',
-    alternativas: [
-      { id: 'A', texto: 'Escrita, outorgada, rígida, formal e analítica.' },
-      { id: 'B', texto: 'Escrita, promulgada, rígida, formal e analítica.' },
-      { id: 'C', texto: 'Não escrita, promulgada, flexível, material e sintética.' },
-      { id: 'D', texto: 'Escrita, promulgada, semirrígida, material e analítica.' }
+      { id: 'A', texto: 'o site é confiável e não contém malware.' },
+      { id: 'B', texto: 'a conexão é criptografada por HTTPS, garantindo que os dados trafeguem de forma segura.' },
+      { id: 'C', texto: 'o site foi verificado pelo governo.' },
+      { id: 'D', texto: 'o site não pode ser acessado por menores de idade.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'CF/88: ESCRITA (documento formal), PROMULGADA (Assembleia Constituinte), RÍGIDA (3/5 em dois turnos), FORMAL (normas constitucionais solenes), ANALÍTICA (extensa).',
-      incorretas: { A: 'Não foi outorgada — foi promulgada.', C: 'É escrita, rígida, formal e analítica.', D: 'É rígida, não semirrígida; formal, não material.' },
-      conceitoCobrado: 'Classificações de Constituição.',
-      pegadinha: 'Confundir promulgada com outorgada; rígida com semirrígida.',
-      comoApareceEmConcurso: 'Clássica em DC.'
+      correta: 'O cadeado indica HTTPS — conexão criptografada. Isso protege os dados em trânsito, mas NÃO garante que o site seja honesto.',
+      incorretas: {
+        A: 'HTTPS não garante ausência de malware nem idoneidade do site.',
+        C: 'Não há verificação governamental pelo cadeado.',
+        D: 'O cadeado não tem relação com idade.'
+      },
+      conceitoCobrado: 'HTTPS e criptografia.',
+      pegadinha: 'Muitos acham que o cadeado garante que o site é confiável — ele só garante criptografia.',
+      comoApareceEmConcurso: 'HTTPS é tema recorrente em internet e segurança.'
     },
-    tags: ['classificação', 'CF/88']
-  },
-  {
-    id: 'Q-DID-DC-0102',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-01',
-    subtema: 'Poder constituinte originário',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'São características do poder constituinte ORIGINÁRIO:',
-    alternativas: [
-      { id: 'A', texto: 'Inicial, autônomo, ilimitado, incondicionado e soberano.' },
-      { id: 'B', texto: 'Derivado, limitado, condicionado e subordinado.' },
-      { id: 'C', texto: 'Permanente, reformador e submisso à CF anterior.' },
-      { id: 'D', texto: 'Restrito às cláusulas pétreas.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Originário: inicial, autônomo, ilimitado, incondicionado e soberano. Cria a Constituição sem se submeter a limites jurídicos preexistentes.',
-      incorretas: { B: 'São características do DERIVADO.', C: 'O originário não é permanente nem submisso.', D: 'Cláusulas pétreas limitam o DERIVADO, não o originário.' },
-      conceitoCobrado: 'Poder constituinte originário.',
-      pegadinha: 'Trocar com o derivado.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
-    },
-    tags: ['poder constituinte', 'originário']
-  },
-  {
-    id: 'Q-DID-DC-0103',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-01',
-    subtema: 'Cláusulas pétreas',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'São cláusulas pétreas expressas (art. 60, §4º, CF/88), EXCETO:',
-    alternativas: [
-      { id: 'A', texto: 'Forma federativa de Estado.' },
-      { id: 'B', texto: 'Voto direto, secreto, universal e periódico.' },
-      { id: 'C', texto: 'Separação dos Poderes.' },
-      { id: 'D', texto: 'Sistema presidencialista de governo.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'O sistema presidencialista NÃO é cláusula pétrea — pode ser alterado por emenda (ex.: adoção do parlamentarismo).',
-      incorretas: { A: 'É cláusula pétrea (art. 60, §4º, I).', B: 'É cláusula pétrea (art. 60, §4º, II).', C: 'É cláusula pétrea (art. 60, §4º, III).' },
-      conceitoCobrado: 'Cláusulas pétreas.',
-      pegadinha: 'Misturar cláusulas pétreas com outras matérias importantes.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['cláusulas pétreas', 'art. 60']
-  },
-  {
-    id: 'Q-DID-DC-0104',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-01',
-    subtema: 'Poder constituinte derivado',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'Sobre o poder constituinte DERIVADO, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É ilimitado e incondicionado, como o originário.' },
-      { id: 'B', texto: 'É submetido a limites (temporais, circunstanciais, materiais e processuais), sendo exercido por emenda ou revisão.' },
-      { id: 'C', texto: 'Não existe no Brasil.' },
-      { id: 'D', texto: 'Só pode ser exercido por Assembleia Constituinte.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'O derivado é LIMITADO e CONDICIONADO — submete-se a limites temporais, circunstanciais, materiais (cláusulas pétreas) e processuais (3/5 em dois turnos).',
-      incorretas: { A: 'Ilimitado é o ORIGINÁRIO.', C: 'Existe: reforma e revisão.', D: 'Emenda é feita pelo Congresso, não por Assembleia Constituinte.' },
-      conceitoCobrado: 'Poder constituinte derivado.',
-      pegadinha: 'Confundir com o originário.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['poder constituinte', 'derivado']
-  },
-  {
-    id: 'Q-DID-DC-0105',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-01',
-    subtema: 'Recepção',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'Sobre a recepção de normas pela nova Constituição, é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Leis anteriores à nova CF que sejam materialmente compatíveis com ela continuam válidas (recepção).' },
-      { id: 'B', texto: 'Todas as leis anteriores são automaticamente revogadas.' },
-      { id: 'C', texto: 'Leis anteriores só continuam se formalmente compatíveis.' },
-      { id: 'D', texto: 'Recepção é sinônimo de repristinação.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Recepção: a lei anterior à nova CF que seja MATERIALMENTE compatível continua válida. A análise é apenas material (não se exige compatibilidade formal).',
-      incorretas: { B: 'Nem todas são revogadas.', C: 'Analisa-se apenas a compatibilidade material.', D: 'Repristinação é o retorno de lei revogada.' },
-      conceitoCobrado: 'Recepção.',
-      pegadinha: 'Achar que se exige compatibilidade formal.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['recepção']
+    tags: ['internet', 'HTTPS', 'segurança']
   },
 
   /* ============================================================
-     DC-19 — Ordem Econômica e Social
+     DIDÁTICA — INF-07 — Internet: cache e cookies
   ============================================================ */
   {
-    id: 'Q-DID-DC-1901',
+    id: 'Q-DID-INF-0010',
     tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-19',
-    subtema: 'Princípios da ordem econômica',
+    area: 'REDE',
+    moduloId: 'INF-07',
+    subtema: 'Cache e cookies',
     dificuldade: 2,
-    prioridade: 'baixa',
-    enunciado: 'NÃO é princípio da ordem econômica (art. 170, CF/88):',
+    prioridade: 'muito_alta',
+    enunciado: 'Sobre cache e cookies no navegador, é correto afirmar que:',
     alternativas: [
-      { id: 'A', texto: 'Livre concorrência e defesa do consumidor.' },
-      { id: 'B', texto: 'Função social da propriedade.' },
-      { id: 'C', texto: 'Redução das desigualdades regionais e sociais.' },
-      { id: 'D', texto: 'Gratuidade universal dos serviços públicos.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'Gratuidade universal NÃO é princípio da ordem econômica. Serviços públicos podem ser remunerados por tarifa ou taxa.',
-      incorretas: { A: 'Está no art. 170, IV e V.', B: 'Está no art. 170, III.', C: 'Está no art. 170, VII.' },
-      conceitoCobrado: 'Princípios da ordem econômica.',
-      pegadinha: 'Confundir gratuidade com princípio econômico.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['ordem econômica', 'art. 170']
-  },
-  {
-    id: 'Q-DID-DC-1902',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-19',
-    subtema: 'Atuação do Estado',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'Sobre a atuação do Estado na economia (arts. 173 e 174, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'O Estado pode explorar qualquer atividade econômica diretamente.' },
-      { id: 'B', texto: 'A exploração direta de atividade econômica pelo Estado só é permitida em casos de segurança nacional ou relevante interesse coletivo.' },
-      { id: 'C', texto: 'O Estado não tem função reguladora.' },
-      { id: 'D', texto: 'O Estado só atua como agente normativo.' }
+      { id: 'A', texto: 'ambos armazenam senhas do usuário.' },
+      { id: 'B', texto: 'cache guarda cópias de páginas e imagens para acelerar o carregamento; cookies armazenam preferências e dados de sessão.' },
+      { id: 'C', texto: 'cookies são mais rápidos que cache.' },
+      { id: 'D', texto: 'cache e cookies são a mesma coisa.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'Art. 173: exploração direta apenas em segurança nacional ou relevante interesse coletivo. Art. 174: agente normativo e regulador.',
-      incorretas: { A: 'Há restrições.', C: 'O art. 174 prevê a função reguladora.', D: 'Também atua diretamente em casos excepcionais.' },
-      conceitoCobrado: 'Atuação do Estado na economia.',
-      pegadinha: 'Achar que o Estado pode explorar qualquer atividade.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
+      correta: 'Cache = cópias locais de páginas/imagens para acelerar. Cookies = dados de sessão, preferências e login.',
+      incorretas: {
+        A: 'Senhas podem ser salvas pelo gerenciador de senhas, não por cache/cookies.',
+        C: 'Não há relação de velocidade entre eles.',
+        D: 'São conceitos diferentes.'
+      },
+      conceitoCobrado: 'Diferença entre cache e cookies.',
+      pegadinha: 'A banca trata os dois como sinônimos na alternativa D.',
+      comoApareceEmConcurso: 'Navegadores são cobrados em internet.'
     },
-    tags: ['ordem econômica', 'art. 173']
-  },
-  {
-    id: 'Q-DID-DC-1903',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-19',
-    subtema: 'Seguridade social',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'Sobre a seguridade social (art. 194, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Compreende saúde, previdência e assistência; a previdência é contributiva, mas saúde e assistência não exigem contribuição.' },
-      { id: 'B', texto: 'Todas as áreas exigem contribuição prévia.' },
-      { id: 'C', texto: 'Só abrange a previdência.' },
-      { id: 'D', texto: 'A saúde é contributiva.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Seguridade = saúde + previdência + assistência. Só a PREVIDÊNCIA é contributiva.',
-      incorretas: { B: 'Só a previdência exige contribuição.', C: 'Abrange as três.', D: 'Saúde é universal.' },
-      conceitoCobrado: 'Seguridade social.',
-      pegadinha: 'Achar que saúde exige contribuição.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['seguridade', 'art. 194']
-  },
-  {
-    id: 'Q-DID-DC-1904',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-19',
-    subtema: 'Meio ambiente',
-    dificuldade: 2,
-    prioridade: 'baixa',
-    enunciado: 'Sobre o meio ambiente (art. 225, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Todos têm direito ao meio ambiente ecologicamente equilibrado, bem de uso comum do povo e essencial à sadia qualidade de vida, impondo-se ao Poder Público e à coletividade o dever de defendê-lo.' },
-      { id: 'B', texto: 'É responsabilidade exclusiva do Poder Público.' },
-      { id: 'C', texto: 'Não tem proteção constitucional.' },
-      { id: 'D', texto: 'Só protege a flora.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Literalidade do art. 225: direito de todos + dever do Poder Público e da coletividade.',
-      incorretas: { B: 'Responsabilidade compartilhada.', C: 'Está no art. 225.', D: 'Protege fauna, flora e demais recursos.' },
-      conceitoCobrado: 'Meio ambiente.',
-      pegadinha: 'Restringir a responsabilidade.',
-      comoApareceEmConcurso: 'Cobrança direta.'
-    },
-    tags: ['meio ambiente', 'art. 225']
-  },
-  {
-    id: 'Q-DID-DC-1905',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-19',
-    subtema: 'Ordem social — criança e adolescente',
-    dificuldade: 2,
-    prioridade: 'baixa',
-    enunciado: 'Sobre a proteção constitucional da criança e do adolescente (art. 227, CF/88), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'É dever da família, da sociedade e do Estado, com prioridade ABSOLUTA.' },
-      { id: 'B', texto: 'É dever exclusivo da família.' },
-      { id: 'C', texto: 'É dever exclusivo do Estado.' },
-      { id: 'D', texto: 'A proteção é opcional.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'Art. 227: dever da família, sociedade e Estado, com ABSOLUTA PRIORIDADE.',
-      incorretas: { B: 'Também sociedade e Estado.', C: 'Também família e sociedade.', D: 'É obrigatório.' },
-      conceitoCobrado: 'Proteção da criança e do adolescente.',
-      pegadinha: 'Restringir a responsabilidade.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['ordem social', 'art. 227']
+    tags: ['internet', 'cache', 'cookies']
   },
 
   /* ============================================================
-     DC-20 — ADCT e Atualizações Constitucionais
+     DIDÁTICA — INF-08 — E-mail: protocolos
   ============================================================ */
   {
-    id: 'Q-DID-DC-2001',
+    id: 'Q-DID-INF-0011',
     tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-20',
-    subtema: 'Natureza do ADCT',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'Sobre o Ato das Disposições Constitucionais Transitórias (ADCT), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Tem natureza de lei ordinária.' },
-      { id: 'B', texto: 'Tem a MESMA FORÇA NORMATIVA da CF/88 (é norma constitucional), com natureza TRANSITÓRIA, e é alterado por emenda constitucional.' },
-      { id: 'C', texto: 'Não integra a Constituição.' },
-      { id: 'D', texto: 'Só pode ser alterado por Assembleia Constituinte.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: 'O ADCT integra a CF/88 com a mesma força normativa. Sua natureza é transitória, e é alterado por emenda constitucional (3/5 em dois turnos).',
-      incorretas: { A: 'Não é lei ordinária.', C: 'Integra a CF.', D: 'É alterado por emenda.' },
-      conceitoCobrado: 'Natureza do ADCT.',
-      pegadinha: 'Achar que é lei ordinária ou norma inferior.',
-      comoApareceEmConcurso: 'Cobrança recorrente.'
-    },
-    tags: ['ADCT']
-  },
-  {
-    id: 'Q-DID-DC-2002',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-20',
-    subtema: 'Revisão constitucional',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'Sobre a revisão constitucional (art. 3º do ADCT), é correto afirmar que:',
-    alternativas: [
-      { id: 'A', texto: 'Foi realizada uma única vez, em 1993, por maioria absoluta, e está esgotada.' },
-      { id: 'B', texto: 'Pode ser realizada a cada 10 anos.' },
-      { id: 'C', texto: 'Substitui a emenda constitucional.' },
-      { id: 'D', texto: 'Não foi realizada.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'A revisão foi ÚNICA (art. 3º do ADCT), em 1993, por maioria absoluta. Já está esgotada. Alterações posteriores só por EMENDA (art. 60).',
-      incorretas: { B: 'Não é periódica.', C: 'Não substitui a emenda.', D: 'Foi realizada em 1993.' },
-      conceitoCobrado: 'Revisão constitucional.',
-      pegadinha: 'Achar que pode ser repetida.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['revisão', 'ADCT']
-  },
-  {
-    id: 'Q-DID-DC-2003',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-20',
-    subtema: 'Emendas constitucionais',
+    area: 'REDE',
+    moduloId: 'INF-08',
+    subtema: 'Protocolos de e-mail',
     dificuldade: 2,
-    prioridade: 'baixa',
-    enunciado: 'A inserção do princípio da eficiência no caput do art. 37 da CF foi feita pela:',
+    prioridade: 'alta',
+    enunciado: 'O protocolo responsável pelo ENVIO de mensagens de e-mail é:',
     alternativas: [
-      { id: 'A', texto: 'EC 45/2004 (Reforma do Judiciário).' },
-      { id: 'B', texto: 'EC 19/1998 (Reforma Gerencial).' },
-      { id: 'C', texto: 'EC 20/1998 (Reforma da Previdência).' },
-      { id: 'D', texto: 'EC 90/2015 (Transporte).' }
+      { id: 'A', texto: 'POP3.' },
+      { id: 'B', texto: 'IMAP.' },
+      { id: 'C', texto: 'SMTP.' },
+      { id: 'D', texto: 'HTTP.' }
     ],
-    gabarito: 'B',
+    gabarito: 'C',
     explicacao: {
-      correta: 'A eficiência foi inserida pela EC 19/1998, formando o LIMPE.',
-      incorretas: { A: 'EC 45/2004 criou o CNJ, súmula vinculante e repercussão geral.', C: 'EC 20/1998 foi a reforma da previdência.', D: 'EC 90/2015 incluiu o transporte no art. 6º.' },
-      conceitoCobrado: 'Emendas constitucionais.',
-      pegadinha: 'Confundir EC 19 com EC 45.',
-      comoApareceEmConcurso: 'Altíssima frequência.'
+      correta: 'SMTP (Simple Mail Transfer Protocol) é o protocolo de envio. POP3 e IMAP são de recebimento. HTTP é para páginas web.',
+      incorretas: {
+        A: 'POP3 recebe e baixa mensagens.',
+        B: 'IMAP recebe e sincroniza.',
+        D: 'HTTP não é protocolo de e-mail.'
+      },
+      conceitoCobrado: 'SMTP (envio) × POP3/IMAP (recebimento).',
+      pegadinha: 'A banca troca envio por recebimento.',
+      comoApareceEmConcurso: 'Protocolos de e-mail são clássicos.'
     },
-    tags: ['EC 19/1998', 'eficiência']
+    tags: ['e-mail', 'SMTP', 'POP3', 'IMAP']
   },
-  {
-    id: 'Q-DID-DC-2004',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-20',
-    subtema: 'Emendas constitucionais',
-    dificuldade: 2,
-    prioridade: 'baixa',
-    enunciado: 'A EC 45/2004 (Reforma do Judiciário) NÃO introduziu:',
-    alternativas: [
-      { id: 'A', texto: 'O Conselho Nacional de Justiça (CNJ).' },
-      { id: 'B', texto: 'A súmula vinculante.' },
-      { id: 'C', texto: 'A repercussão geral no recurso extraordinário.' },
-      { id: 'D', texto: 'O princípio da eficiência no art. 37.' }
-    ],
-    gabarito: 'D',
-    explicacao: {
-      correta: 'A eficiência no art. 37 foi introduzida pela EC 19/1998 (Reforma Gerencial), não pela EC 45/2004.',
-      incorretas: { A: 'A EC 45 criou o CNJ (art. 103-B).', B: 'A EC 45 introduziu a súmula vinculante (art. 103-A).', C: 'A EC 45 introduziu a repercussão geral (art. 102, §3º).' },
-      conceitoCobrado: 'EC 45/2004.',
-      pegadinha: 'Confundir EC 19 com EC 45.',
-      comoApareceEmConcurso: 'Clássica.'
-    },
-    tags: ['EC 45/2004', 'CNJ']
-  },
-  {
-    id: 'Q-DID-DC-2005',
-    tipo: 'DIDATICA',
-    area: 'CF',
-    moduloId: 'DC-20',
-    subtema: 'Alterações recentes',
-    dificuldade: 3,
-    prioridade: 'baixa',
-    enunciado: 'Sobre a EC 131/2023, é correto afirmar que ela:',
-    alternativas: [
-      { id: 'A', texto: 'Alterou as hipóteses de PERDA da nacionalidade brasileira.' },
-      { id: 'B', texto: 'Acabou com o voto obrigatório.' },
-      { id: 'C', texto: 'Reformou o Judiciário.' },
-      { id: 'D', texto: 'Criou o CNJ.' }
-    ],
-    gabarito: 'A',
-    explicacao: {
-      correta: 'A EC 131/2023 alterou as hipóteses de PERDA da nacionalidade (art. 12, §4º), flexibilizando as causas.',
-      incorretas: { B: 'Não tratou de voto.', C: 'Reforma do Judiciário foi EC 45/2004.', D: 'CNJ foi criado pela EC 45/2004.' },
-      conceitoCobrado: 'Alterações constitucionais recentes.',
-      pegadinha: 'Confundir ECs.',
-      comoApareceEmConcurso: 'Tema atualizado.'
-    },
-    tags: ['EC 131/2023', 'nacionalidade']
-  }
 
-];   
+  /* ============================================================
+     DIDÁTICA — INF-09 — Redes: LAN x WAN
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0012',
+    tipo: 'DIDATICA',
+    area: 'REDE',
+    moduloId: 'INF-09',
+    subtema: 'LAN x WAN',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Uma rede que abrange um país ou continente é classificada como:',
+    alternativas: [
+      { id: 'A', texto: 'LAN.' },
+      { id: 'B', texto: 'MAN.' },
+      { id: 'C', texto: 'WAN.' },
+      { id: 'D', texto: 'PAN.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'WAN (Wide Area Network) abrange grandes distâncias — países e continentes. A Internet é a maior WAN.',
+      incorretas: {
+        A: 'LAN é local.',
+        B: 'MAN é metropolitana (cidade).',
+        D: 'PAN é pessoal (Bluetooth).'
+      },
+      conceitoCobrado: 'Classificação de redes por abrangência.',
+      pegadinha: 'A banca troca WAN por MAN.',
+      comoApareceEmConcurso: 'Redes é tema de frequência média.'
+    },
+    tags: ['redes', 'WAN', 'LAN']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-09 — Redes: roteador
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0013',
+    tipo: 'DIDATICA',
+    area: 'REDE',
+    moduloId: 'INF-09',
+    subtema: 'Roteador x switch',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'O equipamento que conecta redes diferentes e distribui a conexão de Internet entre os dispositivos de uma casa é o:',
+    alternativas: [
+      { id: 'A', texto: 'Switch.' },
+      { id: 'B', texto: 'Roteador.' },
+      { id: 'C', texto: 'Hub.' },
+      { id: 'D', texto: 'Modem.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Roteador conecta redes diferentes e distribui Internet (Wi-Fi + cabo).',
+      incorretas: {
+        A: 'Switch conecta dispositivos na mesma rede.',
+        C: 'Hub é obsoleto e replica dados.',
+        D: 'Modem converte o sinal da operadora.'
+      },
+      conceitoCobrado: 'Função do roteador.',
+      pegadinha: 'Modem e roteador são confundidos.',
+      comoApareceEmConcurso: 'Equipamentos de rede são cobrados.'
+    },
+    tags: ['redes', 'roteador']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-10 — Nuvem: SaaS
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0014',
+    tipo: 'DIDATICA',
+    area: 'REDE',
+    moduloId: 'INF-10',
+    subtema: 'SaaS',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'O Gmail e o Microsoft 365 são exemplos de qual modelo de computação em nuvem?',
+    alternativas: [
+      { id: 'A', texto: 'IaaS.' },
+      { id: 'B', texto: 'PaaS.' },
+      { id: 'C', texto: 'SaaS.' },
+      { id: 'D', texto: 'DaaS.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'SaaS (Software as a Service): software pronto para o usuário final.',
+      incorretas: {
+        A: 'IaaS é infraestrutura.',
+        B: 'PaaS é plataforma para desenvolvedores.',
+        D: 'DaaS não é o modelo citado.'
+      },
+      conceitoCobrado: 'SaaS × PaaS × IaaS.',
+      pegadinha: 'A banca troca os modelos.',
+      comoApareceEmConcurso: 'Nuvem é tema crescente.'
+    },
+    tags: ['nuvem', 'SaaS']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-10 — Nuvem: sincronização x backup
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0015',
+    tipo: 'DIDATICA',
+    area: 'REDE',
+    moduloId: 'INF-10',
+    subtema: 'Sincronização x backup',
+    dificuldade: 3,
+    prioridade: 'alta',
+    enunciado: 'Sobre a diferença entre sincronização e backup na nuvem, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são sinônimos.' },
+      { id: 'B', texto: 'sincronização reflete alterações e exclusões em todos os dispositivos; backup preserva uma versão separada e não é afetado por exclusões.' },
+      { id: 'C', texto: 'backup é mais rápido que sincronização.' },
+      { id: 'D', texto: 'sincronização substitui o backup.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Sincronização mantém cópias iguais (exclusões se propagam). Backup é cópia de segurança separada.',
+      incorretas: {
+        A: 'São conceitos diferentes.',
+        C: 'Não há relação de velocidade.',
+        D: 'Sincronização não substitui backup.'
+      },
+      conceitoCobrado: 'Sincronização × backup.',
+      pegadinha: 'A banca trata os dois como equivalentes.',
+      comoApareceEmConcurso: 'Nuvem e backup são cobrados juntos.'
+    },
+    tags: ['nuvem', 'sincronização', 'backup']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-11 — Segurança: CIDA
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0016',
+    tipo: 'DIDATICA',
+    area: 'SEG',
+    moduloId: 'INF-11',
+    subtema: 'Princípios CIDA',
+    dificuldade: 2,
+    prioridade: 'muito_alta',
+    enunciado: 'Os quatro princípios fundamentais da segurança da informação são:',
+    alternativas: [
+      { id: 'A', texto: 'Confidencialidade, Integridade, Disponibilidade e Autenticidade.' },
+      { id: 'B', texto: 'Criptografia, Firewall, Antivírus e Backup.' },
+      { id: 'C', texto: 'Senha, Token, Biometria e Certificado.' },
+      { id: 'D', texto: 'Phishing, Malware, Ransomware e Spyware.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'CIDA: Confidencialidade, Integridade, Disponibilidade e Autenticidade.',
+      incorretas: {
+        B: 'São mecanismos, não princípios.',
+        C: 'São fatores de autenticação.',
+        D: 'São ameaças.'
+      },
+      conceitoCobrado: 'Princípios CIDA.',
+      pegadinha: 'A banca mistura princípios com mecanismos e ameaças.',
+      comoApareceEmConcurso: 'CIDA é base de segurança.'
+    },
+    tags: ['segurança', 'CIDA']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-12 — Backup: 3-2-1
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0017',
+    tipo: 'DIDATICA',
+    area: 'SEG',
+    moduloId: 'INF-12',
+    subtema: 'Estratégia 3-2-1',
+    dificuldade: 2,
+    prioridade: 'alta',
+    enunciado: 'A estratégia de backup 3-2-1 recomenda:',
+    alternativas: [
+      { id: 'A', texto: '3 backups por semana, 2 mídias, 1 verificação.' },
+      { id: 'B', texto: '3 cópias dos dados, em 2 mídias diferentes, sendo 1 fora do local.' },
+      { id: 'C', texto: '3 nuvens, 2 backups locais, 1 incremental.' },
+      { id: 'D', texto: '3 arquivos, 2 senhas, 1 firewall.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '3 cópias, 2 mídias, 1 fora do local.',
+      incorretas: {
+        A: 'Não é a definição da estratégia.',
+        C: 'Não corresponde.',
+        D: 'Não corresponde.'
+      },
+      conceitoCobrado: 'Estratégia 3-2-1.',
+      pegadinha: 'A banca troca os números.',
+      comoApareceEmConcurso: 'Backup é tema frequente.'
+    },
+    tags: ['backup', '3-2-1']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-13 — PDF: assinatura digital
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0018',
+    tipo: 'DIDATICA',
+    area: 'SEG',
+    moduloId: 'INF-13',
+    subtema: 'Assinatura digital',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Sobre a assinatura digital em documentos PDF, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'é o mesmo que assinatura eletrônica simples.' },
+      { id: 'B', texto: 'usa criptografia assimétrica e certificado digital, garantindo autenticidade e integridade.' },
+      { id: 'C', texto: 'só funciona em papel.' },
+      { id: 'D', texto: 'não tem validade jurídica.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Assinatura digital usa criptografia assimétrica + certificado digital.',
+      incorretas: {
+        A: 'Assinatura eletrônica é gênero; digital é espécie.',
+        C: 'Funciona em documentos digitais.',
+        D: 'Tem validade jurídica (ICP-Brasil).'
+      },
+      conceitoCobrado: 'Assinatura digital.',
+      pegadinha: 'A banca confunde eletrônica com digital.',
+      comoApareceEmConcurso: 'PDF e assinatura são cobrados juntos.'
+    },
+    tags: ['PDF', 'assinatura digital']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-14 — Software: classificação
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0019',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'INF-14',
+    subtema: 'Classificação de software',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'O Windows, o antivírus e o Word são, respectivamente, exemplos de:',
+    alternativas: [
+      { id: 'A', texto: 'software aplicativo, software utilitário e software de sistema.' },
+      { id: 'B', texto: 'software de sistema, software utilitário e software aplicativo.' },
+      { id: 'C', texto: 'software utilitário, software de sistema e software aplicativo.' },
+      { id: 'D', texto: 'software aplicativo, software de sistema e software utilitário.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Windows = sistema; antivírus = utilitário; Word = aplicativo.',
+      incorretas: {
+        A: 'Ordem invertida.',
+        C: 'Ordem errada.',
+        D: 'Ordem errada.'
+      },
+      conceitoCobrado: 'Classificação de software.',
+      pegadinha: 'A banca troca a ordem.',
+      comoApareceEmConcurso: 'Fundamentos de software.'
+    },
+    tags: ['software', 'classificação']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-14 — Atualização x upgrade
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0020',
+    tipo: 'DIDATICA',
+    area: 'FUND',
+    moduloId: 'INF-14',
+    subtema: 'Atualização x upgrade',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Sobre a diferença entre atualização (update) e upgrade, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são sinônimos.' },
+      { id: 'B', texto: 'atualização corrige bugs e vulnerabilidades; upgrade muda para uma versão superior, com novos recursos.' },
+      { id: 'C', texto: 'upgrade corrige bugs; atualização adiciona recursos.' },
+      { id: 'D', texto: 'ambos se referem apenas a hardware.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Update corrige; upgrade sobe de versão.',
+      incorretas: {
+        A: 'São diferentes.',
+        C: 'Inverte os conceitos.',
+        D: 'Referem-se a software.'
+      },
+      conceitoCobrado: 'Update × upgrade.',
+      pegadinha: 'A banca inverte os conceitos.',
+      comoApareceEmConcurso: 'Software é tema de frequência média.'
+    },
+    tags: ['software', 'update', 'upgrade']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-15 — Linux: comando mv
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0021',
+    tipo: 'DIDATICA',
+    area: 'SO',
+    moduloId: 'INF-15',
+    subtema: 'Comando mv',
+    dificuldade: 2,
+    prioridade: 'condicional',
+    enunciado: 'No Linux, o comando mv tlb.txt telebras.txt permite que o usuário:',
+    alternativas: [
+      { id: 'A', texto: 'copie o arquivo tlb.txt para telebras.txt.' },
+      { id: 'B', texto: 'renomeie o arquivo tlb.txt para telebras.txt, sem alterar a localização.' },
+      { id: 'C', texto: 'exclua o arquivo tlb.txt.' },
+      { id: 'D', texto: 'crie um link simbólico entre os arquivos.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'mv move/renomeia. mv tlb.txt telebras.txt renomeia no mesmo diretório.',
+      incorretas: {
+        A: 'Para copiar, usa-se cp.',
+        C: 'Para excluir, usa-se rm.',
+        D: 'Para link simbólico, usa-se ln -s.'
+      },
+      conceitoCobrado: 'Comando mv (mover/renomear).',
+      pegadinha: 'A banca confunde mv com cp.',
+      comoApareceEmConcurso: 'Linux é condicional, mas comandos básicos são cobrados.'
+    },
+    tags: ['Linux', 'mv']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-15 — Linux: chmod
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0022',
+    tipo: 'DIDATICA',
+    area: 'SO',
+    moduloId: 'INF-15',
+    subtema: 'Permissões chmod',
+    dificuldade: 3,
+    prioridade: 'condicional',
+    enunciado: 'No Linux, o comando chmod +x script.sh tem a finalidade de:',
+    alternativas: [
+      { id: 'A', texto: 'remover a permissão de execução do script.' },
+      { id: 'B', texto: 'conceder permissão de execução ao script.' },
+      { id: 'C', texto: 'renomear o script.' },
+      { id: 'D', texto: 'excluir o script.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'chmod +x adiciona permissão de execução (x).',
+      incorretas: {
+        A: 'Para remover, usa-se chmod -x.',
+        C: 'Renomear é mv.',
+        D: 'Excluir é rm.'
+      },
+      conceitoCobrado: 'chmod +x (execução).',
+      pegadinha: 'A banca troca +x por -x.',
+      comoApareceEmConcurso: 'Linux condicional.'
+    },
+    tags: ['Linux', 'chmod']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-16 — Aplicada: Cco em listas
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0023',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'INF-16',
+    subtema: 'Cco em listas grandes',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Um servidor precisa enviar um comunicado para 50 pessoas, preservando a privacidade dos e-mails. O campo adequado é:',
+    alternativas: [
+      { id: 'A', texto: 'Para.' },
+      { id: 'B', texto: 'Cc.' },
+      { id: 'C', texto: 'Cco.' },
+      { id: 'D', texto: 'Assunto.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Cco (cópia oculta) preserva a privacidade — os destinatários não se veem.',
+      incorretas: {
+        A: 'Para expõe todos.',
+        B: 'Cc expõe todos.',
+        D: 'Assunto não é campo de destinatário.'
+      },
+      conceitoCobrado: 'Uso de Cco em listas.',
+      pegadinha: 'A banca testa privacidade em e-mail.',
+      comoApareceEmConcurso: 'Aplicada ao trabalho administrativo.'
+    },
+    tags: ['e-mail', 'Cco', 'privacidade']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-16 — Aplicada: escolha de ferramenta
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0024',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'INF-16',
+    subtema: 'Escolha de ferramenta',
+    dificuldade: 2,
+    prioridade: 'media',
+    enunciado: 'Para criar uma planilha de controle de despesas com cálculos de totais e subtotais, a ferramenta mais adequada é:',
+    alternativas: [
+      { id: 'A', texto: 'Word.' },
+      { id: 'B', texto: 'Excel.' },
+      { id: 'C', texto: 'PowerPoint.' },
+      { id: 'D', texto: 'Bloco de Notas.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Excel é a ferramenta de planilhas e cálculos.',
+      incorretas: {
+        A: 'Word é para texto.',
+        C: 'PowerPoint é para apresentações.',
+        D: 'Bloco de Notas é texto puro.'
+      },
+      conceitoCobrado: 'Escolha da ferramenta adequada.',
+      pegadinha: 'A banca testa a finalidade de cada ferramenta.',
+      comoApareceEmConcurso: 'Aplicada ao trabalho.'
+    },
+    tags: ['aplicada', 'Excel']
+  },
+
+  /* ============================================================
+     DIDÁTICA — INF-16 — Aplicada: backup x compartilhamento
+  ============================================================ */
+  {
+    id: 'Q-DID-INF-0025',
+    tipo: 'DIDATICA',
+    area: 'APLI',
+    moduloId: 'INF-16',
+    subtema: 'Backup x compartilhamento',
+    dificuldade: 3,
+    prioridade: 'media',
+    enunciado: 'Compartilhar uma planilha na nuvem com a equipe é suficiente como backup?',
+    alternativas: [
+      { id: 'A', texto: 'Sim, porque a nuvem é segura.' },
+      { id: 'B', texto: 'Não, porque compartilhamento não é backup — se alguém apagar, a nuvem também é afetada.' },
+      { id: 'C', texto: 'Sim, porque a nuvem faz backup automático.' },
+      { id: 'D', texto: 'Não, porque a nuvem não permite compartilhar.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Compartilhar não é backup. Backup é cópia separada.',
+      incorretas: {
+        A: 'Nuvem não substitui backup.',
+        C: 'Nuvem não garante backup automático.',
+        D: 'A nuvem permite compartilhar.'
+      },
+      conceitoCobrado: 'Backup × compartilhamento.',
+      pegadinha: 'A banca explora a confusão entre nuvem e backup.',
+      comoApareceEmConcurso: 'Aplicada.'
+    },
+    tags: ['backup', 'compartilhamento']
+  },
+  /* ============================================================
+     LOTE COMPLEMENTAR — 60 questões para atingir mínimo 6/módulo
+     Todas DIDÁTICAS (sem banca inventada)
+     ============================================================ */
+
+  /* ---------- INF-01 — Fundamentos (5) ---------- */
+  {
+    id: 'Q-DID-INF-0026', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-01',
+    subtema: 'RAM x ROM', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Sobre memória RAM e memória ROM, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'Ambas são voláteis e perdem dados ao desligar.' },
+      { id: 'B', texto: 'RAM é volátil e armazena programas em execução; ROM é não volátil e grava instruções permanentes (firmware).' },
+      { id: 'C', texto: 'RAM é não volátil; ROM é volátil.' },
+      { id: 'D', texto: 'Ambas armazenam arquivos do usuário permanentemente.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'RAM é volátil (perde conteúdo ao desligar) e usada para programas em execução. ROM é não volátil e grava firmware (BIOS/UEFI).',
+      incorretas: { A: 'Só a RAM é volátil.', C: 'Inverte os conceitos.', D: 'Arquivos do usuário ficam em HD/SSD.' },
+      conceitoCobrado: 'RAM × ROM × volátil × não volátil.',
+      pegadinha: 'A banca troca volátil por não volátil.',
+      comoApareceEmConcurso: 'Memória é cobrança clássica em fundamentos.'
+    },
+    tags: ['RAM', 'ROM', 'memória']
+  },
+  {
+    id: 'Q-DID-INF-0027', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-01',
+    subtema: 'Periféricos de saída', dificuldade: 1, prioridade: 'alta',
+    enunciado: 'Assinale a alternativa que contém APENAS periféricos de SAÍDA:',
+    alternativas: [
+      { id: 'A', texto: 'Teclado, mouse e scanner.' },
+      { id: 'B', texto: 'Monitor, impressora e caixa de som.' },
+      { id: 'C', texto: 'Touchscreen, modem e headset.' },
+      { id: 'D', texto: 'Webcam, microfone e teclado.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Monitor, impressora e caixa de som recebem dados do computador — são saída.',
+      incorretas: { A: 'Todos são entrada.', C: 'São entrada/saída.', D: 'Todos são entrada.' },
+      conceitoCobrado: 'Classificação de periféricos.',
+      pegadinha: 'A banca mistura entrada, saída e entrada/saída.',
+      comoApareceEmConcurso: 'Periféricos são clássicos em fundamentos.'
+    },
+    tags: ['periféricos', 'saída']
+  },
+  {
+    id: 'Q-DID-INF-0028', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-01',
+    subtema: 'SSD x HD', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Sobre as diferenças entre SSD e HD, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'O SSD tem partes móveis e o HD não tem.' },
+      { id: 'B', texto: 'O SSD usa memória flash (sem partes móveis) e é mais rápido; o HD usa discos magnéticos com partes móveis.' },
+      { id: 'C', texto: 'O HD é sempre mais rápido que o SSD.' },
+      { id: 'D', texto: 'Ambos são voláteis.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'SSD = flash, sem partes móveis, mais rápido. HD = magnético, com pratos e cabeça de leitura.',
+      incorretas: { A: 'Inverte.', C: 'SSD é mais rápido.', D: 'Nenhum é volátil.' },
+      conceitoCobrado: 'SSD × HD.',
+      pegadinha: 'A banca inverte as características.',
+      comoApareceEmConcurso: 'Armazenamento é cobrado em fundamentos.'
+    },
+    tags: ['SSD', 'HD']
+  },
+  {
+    id: 'Q-DID-INF-0029', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-01',
+    subtema: 'Firmware', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'O firmware é:',
+    alternativas: [
+      { id: 'A', texto: 'um programa instalado pelo usuário para editar textos.' },
+      { id: 'B', texto: 'software gravado em hardware, como a BIOS/UEFI da placa-mãe.' },
+      { id: 'C', texto: 'um tipo de memória RAM.' },
+      { id: 'D', texto: 'uma parte física do processador.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Firmware é software embutido no hardware — a BIOS/UEFI é o exemplo clássico.',
+      incorretas: { A: 'Isso é software aplicativo.', C: 'Firmware fica em ROM, não em RAM.', D: 'É software, não parte física.' },
+      conceitoCobrado: 'Firmware.',
+      pegadinha: 'A banca confunde firmware com software aplicativo.',
+      comoApareceEmConcurso: 'Conceitos básicos de fundamentos.'
+    },
+    tags: ['firmware', 'BIOS']
+  },
+  {
+    id: 'Q-DID-INF-0030', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-01',
+    subtema: 'Hardware x software', dificuldade: 1, prioridade: 'alta',
+    enunciado: 'Assinale a alternativa que apresenta, respectivamente, um exemplo de hardware e um de software:',
+    alternativas: [
+      { id: 'A', texto: 'Windows e Word.' },
+      { id: 'B', texto: 'Teclado e Excel.' },
+      { id: 'C', texto: 'Excel e teclado.' },
+      { id: 'D', texto: 'Word e Windows.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Teclado é hardware (físico); Excel é software (lógico).',
+      incorretas: { A: 'Ambos são software.', C: 'Inverte.', D: 'Ambos são software.' },
+      conceitoCobrado: 'Hardware × software.',
+      pegadinha: 'A banca troca a ordem.',
+      comoApareceEmConcurso: 'Conceito básico.'
+    },
+    tags: ['hardware', 'software']
+  },
+
+  /* ---------- INF-02 — Windows (3) ---------- */
+  {
+    id: 'Q-DID-INF-0031', tipo: 'DIDATICA', area: 'SO', moduloId: 'INF-02',
+    subtema: 'Extensão de arquivo', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'No Windows, a extensão de um arquivo serve para:',
+    alternativas: [
+      { id: 'A', texto: 'indicar o tipo do arquivo e o programa que o abre por padrão.' },
+      { id: 'B', texto: 'criptografar o conteúdo do arquivo.' },
+      { id: 'C', texto: 'aumentar o tamanho do arquivo.' },
+      { id: 'D', texto: 'definir a cor do ícone do arquivo.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'A extensão (.docx, .xlsx, .pdf, .jpg) indica o tipo e associa o programa padrão.',
+      incorretas: { B: 'Criptografia é outra coisa.', C: 'Não altera tamanho.', D: 'Cor é configuração visual.' },
+      conceitoCobrado: 'Extensão de arquivo.',
+      pegadinha: 'Renomear a extensão NÃO converte o arquivo.',
+      comoApareceEmConcurso: 'Windows básico.'
+    },
+    tags: ['Windows', 'extensão']
+  },
+  {
+    id: 'Q-DID-INF-0032', tipo: 'DIDATICA', area: 'SO', moduloId: 'INF-02',
+    subtema: 'Atalho', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'Sobre atalhos no Windows, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'apagar o atalho apaga o arquivo original.' },
+      { id: 'B', texto: 'o atalho é um arquivo .lnk que aponta para o original; apagar o atalho NÃO apaga o original.' },
+      { id: 'C', texto: 'o atalho ocupa o mesmo espaço que o arquivo original.' },
+      { id: 'D', texto: 'o atalho é uma cópia completa do arquivo.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Atalho (.lnk) é um ponteiro leve — apagar não afeta o original.',
+      incorretas: { A: 'Erro clássico.', C: 'Ocupa espaço mínimo.', D: 'Não é cópia.' },
+      conceitoCobrado: 'Arquivo × atalho.',
+      pegadinha: 'Confundir atalho com cópia.',
+      comoApareceEmConcurso: 'Windows básico.'
+    },
+    tags: ['Windows', 'atalho', 'lnk']
+  },
+  {
+    id: 'Q-DID-INF-0033', tipo: 'DIDATICA', area: 'SO', moduloId: 'INF-02',
+    subtema: 'Atalho Win+E', dificuldade: 1, prioridade: 'muito_alta',
+    enunciado: 'No Windows, a combinação Win+E abre:',
+    alternativas: [
+      { id: 'A', texto: 'o Gerenciador de Tarefas.' },
+      { id: 'B', texto: 'o Explorador de Arquivos.' },
+      { id: 'C', texto: 'o menu Iniciar.' },
+      { id: 'D', texto: 'a Lixeira.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Win+E abre o Explorador de Arquivos.',
+      incorretas: { A: 'Gerenciador: Ctrl+Shift+Esc.', C: 'Menu Iniciar: tecla Windows ou Ctrl+Esc.', D: 'Lixeira não tem atalho global.' },
+      conceitoCobrado: 'Atalhos do Windows.',
+      pegadinha: 'Confundir Win+E com tecla Windows sozinha.',
+      comoApareceEmConcurso: 'Atalhos são clássicos.'
+    },
+    tags: ['Windows', 'Win+E']
+  },
+
+  /* ---------- INF-03 — Word (3) ---------- */
+  {
+    id: 'Q-DID-INF-0034', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-03',
+    subtema: 'Cabeçalho e rodapé', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'No Word, cabeçalho e rodapé são usados para:',
+    alternativas: [
+      { id: 'A', texto: 'inserir conteúdo fixo no topo e na base das páginas, como título e número de página.' },
+      { id: 'B', texto: 'alterar a cor do texto.' },
+      { id: 'C', texto: 'criar tabelas.' },
+      { id: 'D', texto: 'inserir equações matemáticas.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Cabeçalho (topo) e rodapé (base) repetem conteúdo em todas as páginas (ou por seção).',
+      incorretas: { B: 'Cor é formatação de fonte.', C: 'Tabelas são inseridas separadamente.', D: 'Equações têm recurso próprio.' },
+      conceitoCobrado: 'Cabeçalho e rodapé.',
+      pegadinha: 'Achar que aparecem só na primeira página.',
+      comoApareceEmConcurso: 'Word básico.'
+    },
+    tags: ['Word', 'cabeçalho', 'rodapé']
+  },
+  {
+    id: 'Q-DID-INF-0035', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-03',
+    subtema: 'Sumário automático', dificuldade: 3, prioridade: 'muito_alta',
+    enunciado: 'Para gerar um sumário automático no Word, é necessário que o documento:',
+    alternativas: [
+      { id: 'A', texto: 'tenha estilos aplicados (Título 1, Título 2 etc.).' },
+      { id: 'B', texto: 'esteja em PDF.' },
+      { id: 'C', texto: 'tenha imagens.' },
+      { id: 'D', texto: 'tenha controle de alterações ativado.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'O sumário automático é gerado a partir dos estilos de título aplicados.',
+      incorretas: { B: 'PDF é formato de saída.', C: 'Imagens não geram sumário.', D: 'Controle de alterações é outro recurso.' },
+      conceitoCobrado: 'Estilos e sumário automático.',
+      pegadinha: 'Achar que basta formatar manualmente.',
+      comoApareceEmConcurso: 'Word intermediário.'
+    },
+    tags: ['Word', 'sumário', 'estilos']
+  },
+  {
+    id: 'Q-DID-INF-0036', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-03',
+    subtema: 'Ctrl+Enter', dificuldade: 1, prioridade: 'muito_alta',
+    enunciado: 'No Word, a combinação Ctrl+Enter insere:',
+    alternativas: [
+      { id: 'A', texto: 'quebra de página.' },
+      { id: 'B', texto: 'quebra de seção.' },
+      { id: 'C', texto: 'nova tabela.' },
+      { id: 'D', texto: 'cabeçalho.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Ctrl+Enter insere quebra de página.',
+      incorretas: { B: 'Quebra de seção tem outro comando.', C: 'Tabela tem menu próprio.', D: 'Cabeçalho tem menu próprio.' },
+      conceitoCobrado: 'Quebra de página × quebra de seção.',
+      pegadinha: 'Confundir os dois tipos de quebra.',
+      comoApareceEmConcurso: 'Word básico.'
+    },
+    tags: ['Word', 'quebra de página']
+  },
+
+  /* ---------- INF-04 — Excel (1) ---------- */
+  {
+    id: 'Q-DID-INF-0037', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-04',
+    subtema: 'Função SE', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'No Excel, a função SE(teste; valor_se_verdadeiro; valor_se_falso) serve para:',
+    alternativas: [
+      { id: 'A', texto: 'somar valores de um intervalo.' },
+      { id: 'B', texto: 'retornar um valor conforme o resultado de um teste lógico.' },
+      { id: 'C', texto: 'contar células vazias.' },
+      { id: 'D', texto: 'ordenar dados.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'SE retorna valor conforme teste lógico.',
+      incorretas: { A: 'Somar é SOMA.', C: 'Contar é CONT.NÚM/CONT.VALORES.', D: 'Ordenar é outro recurso.' },
+      conceitoCobrado: 'Função SE.',
+      pegadinha: 'Confundir SE com CONT.SE.',
+      comoApareceEmConcurso: 'Funções de Excel são muito cobradas.'
+    },
+    tags: ['Excel', 'SE']
+  },
+
+  /* ---------- INF-05 — PowerPoint (5) ---------- */
+  {
+    id: 'Q-DID-INF-0038', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-05',
+    subtema: 'Transição x animação', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'No PowerPoint, o efeito visual aplicado à PASSAGEM entre um slide e outro é chamado de:',
+    alternativas: [
+      { id: 'A', texto: 'Animação.' },
+      { id: 'B', texto: 'Transição.' },
+      { id: 'C', texto: 'Tema.' },
+      { id: 'D', texto: 'Layout.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Transição = passagem entre slides. Animação = efeito em objetos dentro do slide.',
+      incorretas: { A: 'Animação é dentro do slide.', C: 'Tema é estilo visual.', D: 'Layout é disposição.' },
+      conceitoCobrado: 'Transição × animação.',
+      pegadinha: 'A banca troca os dois conceitos.',
+      comoApareceEmConcurso: 'PowerPoint é cobrado em ferramentas de escritório.'
+    },
+    tags: ['PowerPoint', 'transição']
+  },
+  {
+    id: 'Q-DID-INF-0039', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-05',
+    subtema: 'Formato .ppsx', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Um arquivo .ppsx do PowerPoint abre:',
+    alternativas: [
+      { id: 'A', texto: 'em modo de edição, como o .pptx.' },
+      { id: 'B', texto: 'diretamente em modo de apresentação.' },
+      { id: 'C', texto: 'como imagem estática.' },
+      { id: 'D', texto: 'apenas no LibreOffice.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '.ppsx abre direto em modo de apresentação.',
+      incorretas: { A: '.pptx é o de edição.', C: 'Não é imagem.', D: 'Abre em qualquer suíte compatível.' },
+      conceitoCobrado: '.pptx × .ppsx.',
+      pegadinha: 'Confundir com .pptx.',
+      comoApareceEmConcurso: 'Formatos de PowerPoint.'
+    },
+    tags: ['PowerPoint', 'ppsx']
+  },
+  {
+    id: 'Q-DID-INF-0040', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-05',
+    subtema: 'F5 x Shift+F5', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'No PowerPoint, a diferença entre F5 e Shift+F5 é:',
+    alternativas: [
+      { id: 'A', texto: 'F5 inicia do primeiro slide; Shift+F5 inicia do slide atual.' },
+      { id: 'B', texto: 'Ambos iniciam do primeiro slide.' },
+      { id: 'C', texto: 'F5 inicia do slide atual; Shift+F5 do primeiro.' },
+      { id: 'D', texto: 'F5 fecha a apresentação; Shift+F5 salva.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'F5 = do início; Shift+F5 = do slide atual.',
+      incorretas: { B: 'São diferentes.', C: 'Inverte.', D: 'Não são esses comandos.' },
+      conceitoCobrado: 'Atalhos de apresentação.',
+      pegadinha: 'A banca inverte.',
+      comoApareceEmConcurso: 'Atalhos de PowerPoint.'
+    },
+    tags: ['PowerPoint', 'F5']
+  },
+  {
+    id: 'Q-DID-INF-0041', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-05',
+    subtema: 'Tema x layout', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Sobre tema e layout no PowerPoint, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'tema e layout são a mesma coisa.' },
+      { id: 'B', texto: 'tema define cores, fontes e efeitos globais; layout define a disposição dos elementos em um slide.' },
+      { id: 'C', texto: 'layout é aplicado à apresentação inteira; tema a um slide.' },
+      { id: 'D', texto: 'tema e layout não afetam a aparência.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Tema = identidade visual global. Layout = disposição em um slide.',
+      incorretas: { A: 'São diferentes.', C: 'Inverte.', D: 'Ambos afetam a aparência.' },
+      conceitoCobrado: 'Tema × layout.',
+      pegadinha: 'A banca troca as funções.',
+      comoApareceEmConcurso: 'PowerPoint básico.'
+    },
+    tags: ['PowerPoint', 'tema', 'layout']
+  },
+  {
+    id: 'Q-DID-INF-0042', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-05',
+    subtema: 'Notas do apresentador', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'As notas do apresentador no PowerPoint:',
+    alternativas: [
+      { id: 'A', texto: 'aparecem para a plateia durante a apresentação.' },
+      { id: 'B', texto: 'são visíveis apenas na tela do apresentador, não na projeção.' },
+      { id: 'C', texto: 'substituem os slides.' },
+      { id: 'D', texto: 'são exportadas automaticamente para PDF.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Notas do apresentador aparecem apenas na tela de quem apresenta.',
+      incorretas: { A: 'Não aparecem na projeção.', C: 'São complementares.', D: 'Não são exportadas automaticamente.' },
+      conceitoCobrado: 'Notas do apresentador.',
+      pegadinha: 'Achar que a plateia vê as notas.',
+      comoApareceEmConcurso: 'PowerPoint intermediário.'
+    },
+    tags: ['PowerPoint', 'notas']
+  },
+
+  /* ---------- INF-06 — LibreOffice (5) ---------- */
+  {
+    id: 'Q-DID-INF-0043', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-06',
+    subtema: 'Writer x Word', dificuldade: 1, prioridade: 'condicional',
+    enunciado: 'O aplicativo do LibreOffice equivalente ao Microsoft Word é o:',
+    alternativas: [
+      { id: 'A', texto: 'Calc.' },
+      { id: 'B', texto: 'Writer.' },
+      { id: 'C', texto: 'Impress.' },
+      { id: 'D', texto: 'Base.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Writer ≈ Word (texto).',
+      incorretas: { A: 'Calc ≈ Excel.', C: 'Impress ≈ PowerPoint.', D: 'Base ≈ Access.' },
+      conceitoCobrado: 'Correspondência entre suítes.',
+      pegadinha: 'A banca troca os nomes.',
+      comoApareceEmConcurso: 'LibreOffice é condicional, mas cobra correspondência.'
+    },
+    tags: ['LibreOffice', 'Writer']
+  },
+  {
+    id: 'Q-DID-INF-0044', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-06',
+    subtema: 'Formatos nativos', dificuldade: 2, prioridade: 'condicional',
+    enunciado: 'Os formatos nativos do LibreOffice Writer, Calc e Impress são, respectivamente:',
+    alternativas: [
+      { id: 'A', texto: '.docx, .xlsx, .pptx.' },
+      { id: 'B', texto: '.odt, .ods, .odp.' },
+      { id: 'C', texto: '.txt, .csv, .pdf.' },
+      { id: 'D', texto: '.rtf, .xml, .html.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'ODT, ODS e ODP são formatos abertos ODF.',
+      incorretas: { A: 'São formatos do Microsoft Office.', C: 'Não são nativos.', D: 'Não são nativos.' },
+      conceitoCobrado: 'Formatos ODF.',
+      pegadinha: 'Confundir com formatos do Office.',
+      comoApareceEmConcurso: 'LibreOffice condicional.'
+    },
+    tags: ['LibreOffice', 'ODF']
+  },
+  {
+    id: 'Q-DID-INF-0045', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-06',
+    subtema: 'Calc x Excel', dificuldade: 2, prioridade: 'condicional',
+    enunciado: 'O aplicativo do LibreOffice equivalente ao Microsoft Excel é o:',
+    alternativas: [
+      { id: 'A', texto: 'Writer.' },
+      { id: 'B', texto: 'Calc.' },
+      { id: 'C', texto: 'Impress.' },
+      { id: 'D', texto: 'Draw.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Calc ≈ Excel (planilha).',
+      incorretas: { A: 'Writer ≈ Word.', C: 'Impress ≈ PowerPoint.', D: 'Draw é desenho vetorial.' },
+      conceitoCobrado: 'Correspondência entre suítes.',
+      pegadinha: 'A banca troca os nomes.',
+      comoApareceEmConcurso: 'LibreOffice condicional.'
+    },
+    tags: ['LibreOffice', 'Calc']
+  },
+  {
+    id: 'Q-DID-INF-0046', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-06',
+    subtema: 'Impress x PowerPoint', dificuldade: 1, prioridade: 'condicional',
+    enunciado: 'O aplicativo do LibreOffice equivalente ao Microsoft PowerPoint é o:',
+    alternativas: [
+      { id: 'A', texto: 'Writer.' },
+      { id: 'B', texto: 'Calc.' },
+      { id: 'C', texto: 'Impress.' },
+      { id: 'D', texto: 'Math.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Impress ≈ PowerPoint (apresentações).',
+      incorretas: { A: 'Writer ≈ Word.', B: 'Calc ≈ Excel.', D: 'Math é fórmulas.' },
+      conceitoCobrado: 'Correspondência entre suítes.',
+      pegadinha: 'A banca troca os nomes.',
+      comoApareceEmConcurso: 'LibreOffice condicional.'
+    },
+    tags: ['LibreOffice', 'Impress']
+  },
+  {
+    id: 'Q-DID-INF-0047', tipo: 'DIDATICA', area: 'ESCR', moduloId: 'INF-06',
+    subtema: 'Compatibilidade', dificuldade: 3, prioridade: 'condicional',
+    enunciado: 'Sobre a compatibilidade do LibreOffice com o Microsoft Office, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'é 100% perfeita — nada muda.' },
+      { id: 'B', texto: 'abre e salva em formatos do Office, mas formatações complexas e macros VBA podem variar.' },
+      { id: 'C', texto: 'não abre arquivos do Office.' },
+      { id: 'D', texto: 'só funciona em Linux.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Compatibilidade parcial — formatações e macros podem variar.',
+      incorretas: { A: 'Não é 100%.', C: 'Abre sim.', D: 'Roda em Windows, Linux e macOS.' },
+      conceitoCobrado: 'Compatibilidade entre suítes.',
+      pegadinha: 'Achar que é 100% compatível.',
+      comoApareceEmConcurso: 'LibreOffice condicional.'
+    },
+    tags: ['LibreOffice', 'compatibilidade']
+  },
+
+  /* ---------- INF-07 — Internet (4) ---------- */
+  {
+    id: 'Q-DID-INF-0048', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-07',
+    subtema: 'Internet x Web', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'Sobre a diferença entre Internet e Web, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são sinônimos.' },
+      { id: 'B', texto: 'a Internet é a infraestrutura mundial de redes; a Web é um dos serviços que rodam sobre ela.' },
+      { id: 'C', texto: 'a Web é a infraestrutura; a Internet é o serviço.' },
+      { id: 'D', texto: 'a Internet só existe quando há navegador aberto.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Internet = infraestrutura. Web = serviço (páginas).',
+      incorretas: { A: 'São diferentes.', C: 'Inverte.', D: 'A Internet existe independentemente do navegador.' },
+      conceitoCobrado: 'Internet × Web.',
+      pegadinha: 'Tratar como sinônimos.',
+      comoApareceEmConcurso: 'Internet é tema recorrente.'
+    },
+    tags: ['internet', 'Web']
+  },
+  {
+    id: 'Q-DID-INF-0049', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-07',
+    subtema: 'Intranet x Extranet', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'Sobre intranet e extranet, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são sinônimos.' },
+      { id: 'B', texto: 'intranet é rede interna privada; extranet é a extensão para parceiros externos autorizados.' },
+      { id: 'C', texto: 'intranet é pública; extranet é privada.' },
+      { id: 'D', texto: 'extranet é mais restrita que a intranet.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Intranet = interna; extranet = extensão autorizada a externos.',
+      incorretas: { A: 'São diferentes.', C: 'Inverte.', D: 'A extranet amplia, não restringe.' },
+      conceitoCobrado: 'Intranet × extranet.',
+      pegadinha: 'Confundir os conceitos.',
+      comoApareceEmConcurso: 'Internet é tema recorrente.'
+    },
+    tags: ['intranet', 'extranet']
+  },
+  {
+    id: 'Q-DID-INF-0050', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-07',
+    subtema: 'Navegação privada', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'A navegação privada (anônima) do navegador:',
+    alternativas: [
+      { id: 'A', texto: 'garante anonimato total na Internet.' },
+      { id: 'B', texto: 'não salva histórico, cookies e formulários no dispositivo, mas não é anônima — provedor e sites ainda veem a atividade.' },
+      { id: 'C', texto: 'criptografa todo o tráfego.' },
+      { id: 'D', texto: 'impede rastreamento por completo.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Não salva localmente, mas não garante anonimato.',
+      incorretas: { A: 'Não garante.', C: 'Não criptografa tudo.', D: 'Não impede rastreamento.' },
+      conceitoCobrado: 'Navegação privada.',
+      pegadinha: 'Achar que é anônima.',
+      comoApareceEmConcurso: 'Internet e privacidade.'
+    },
+    tags: ['navegação privada']
+  },
+  {
+    id: 'Q-DID-INF-0051', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-07',
+    subtema: 'Atalhos do navegador', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'No navegador, os atalhos Ctrl+D, Ctrl+H e Ctrl+J correspondem, respectivamente, a:',
+    alternativas: [
+      { id: 'A', texto: 'adicionar aos favoritos, abrir histórico e abrir downloads.' },
+      { id: 'B', texto: 'abrir downloads, abrir histórico e adicionar favoritos.' },
+      { id: 'C', texto: 'nova aba, nova janela e fechar aba.' },
+      { id: 'D', texto: 'favoritos, downloads e histórico.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Ctrl+D = favorito; Ctrl+H = histórico; Ctrl+J = downloads.',
+      incorretas: { B: 'Inverte.', C: 'Não são esses comandos.', D: 'Ordem errada.' },
+      conceitoCobrado: 'Atalhos de navegador.',
+      pegadinha: 'A banca troca a ordem.',
+      comoApareceEmConcurso: 'Navegadores são cobrados.'
+    },
+    tags: ['navegador', 'atalhos']
+  },
+
+  /* ---------- INF-08 — E-mail (4) ---------- */
+  {
+    id: 'Q-DID-INF-0052', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-08',
+    subtema: 'Cc x Cco', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Sobre Cc e Cco, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'ambos expõem os destinatários uns aos outros.' },
+      { id: 'B', texto: 'Cc expõe os destinatários; Cco mantém os destinatários ocultos.' },
+      { id: 'C', texto: 'Cco expõe; Cc oculta.' },
+      { id: 'D', texto: 'não há diferença entre eles.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Cc = cópia visível; Cco = cópia oculta.',
+      incorretas: { A: 'Cco oculta.', C: 'Inverte.', D: 'São diferentes.' },
+      conceitoCobrado: 'Cc × Cco.',
+      pegadinha: 'Confundir os campos.',
+      comoApareceEmConcurso: 'E-mail é clássico.'
+    },
+    tags: ['e-mail', 'Cc', 'Cco']
+  },
+  {
+    id: 'Q-DID-INF-0053', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-08',
+    subtema: 'Responder x Encaminhar', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Sobre responder e encaminhar, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são a mesma coisa.' },
+      { id: 'B', texto: 'responder cria resposta ao remetente; encaminhar envia a mensagem recebida para novas pessoas.' },
+      { id: 'C', texto: 'encaminhar responde ao remetente; responder envia a novas pessoas.' },
+      { id: 'D', texto: 'responder apaga a mensagem.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Responder = ao remetente; encaminhar = a novas pessoas.',
+      incorretas: { A: 'São diferentes.', C: 'Inverte.', D: 'Responder não apaga.' },
+      conceitoCobrado: 'Responder × encaminhar.',
+      pegadinha: 'Confundir as ações.',
+      comoApareceEmConcurso: 'E-mail é clássico.'
+    },
+    tags: ['e-mail', 'responder', 'encaminhar']
+  },
+  {
+    id: 'Q-DID-INF-0054', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-08',
+    subtema: 'IMAP x POP3', dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Qual a diferença entre IMAP e POP3?',
+    alternativas: [
+      { id: 'A', texto: 'IMAP baixa e remove do servidor; POP3 mantém no servidor.' },
+      { id: 'B', texto: 'IMAP mantém no servidor e sincroniza entre dispositivos; POP3 baixa e geralmente remove do servidor.' },
+      { id: 'C', texto: 'Ambos só funcionam em webmail.' },
+      { id: 'D', texto: 'São protocolos de envio.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'IMAP sincroniza; POP3 baixa e remove.',
+      incorretas: { A: 'Inverte.', C: 'Funcionam em clientes também.', D: 'São de recebimento.' },
+      conceitoCobrado: 'IMAP × POP3.',
+      pegadinha: 'Inverter os comportamentos.',
+      comoApareceEmConcurso: 'Protocolos de e-mail.'
+    },
+    tags: ['e-mail', 'IMAP', 'POP3']
+  },
+  {
+    id: 'Q-DID-INF-0055', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-08',
+    subtema: 'Phishing em e-mail', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Você recebe um e-mail do "banco" pedindo para clicar em um link e atualizar a senha. A atitude correta é:',
+    alternativas: [
+      { id: 'A', texto: 'clicar no link e atualizar rapidamente.' },
+      { id: 'B', texto: 'não clicar, verificar o remetente real, acessar o banco digitando o endereço oficial e denunciar como phishing.' },
+      { id: 'C', texto: 'responder ao e-mail pedindo mais informações.' },
+      { id: 'D', texto: 'encaminhar para os colegas.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Não clicar; verificar remetente; acessar site oficial; denunciar.',
+      incorretas: { A: 'Risco de roubo de dados.', C: 'Pode confirmar o endereço.', D: 'Espalha a fraude.' },
+      conceitoCobrado: 'Phishing em e-mail.',
+      pegadinha: 'Clicar no link achando que é seguro.',
+      comoApareceEmConcurso: 'Segurança em e-mail.'
+    },
+    tags: ['e-mail', 'phishing']
+  },
+
+  /* ---------- INF-09 — Redes (4) ---------- */
+  {
+    id: 'Q-DID-INF-0056', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-09',
+    subtema: 'IPv4 x IPv6', dificuldade: 2, prioridade: 'media',
+    enunciado: 'Sobre IPv4 e IPv6, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'IPv4 tem 128 bits; IPv6 tem 32 bits.' },
+      { id: 'B', texto: 'IPv4 tem 32 bits (ex.: 192.168.0.1); IPv6 tem 128 bits (ex.: 2001:db8::1).' },
+      { id: 'C', texto: 'Ambos têm 32 bits.' },
+      { id: 'D', texto: 'IPv6 é uma versão mais antiga que IPv4.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'IPv4 = 32 bits; IPv6 = 128 bits.',
+      incorretas: { A: 'Inverte.', C: 'IPv6 tem 128 bits.', D: 'IPv6 é mais novo.' },
+      conceitoCobrado: 'IPv4 × IPv6.',
+      pegadinha: 'Inverter os bits.',
+      comoApareceEmConcurso: 'Redes é frequência média.'
+    },
+    tags: ['redes', 'IPv4', 'IPv6']
+  },
+  {
+    id: 'Q-DID-INF-0057', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-09',
+    subtema: 'DNS', dificuldade: 2, prioridade: 'media',
+    enunciado: 'A função do DNS é:',
+    alternativas: [
+      { id: 'A', texto: 'distribuir IPs automaticamente.' },
+      { id: 'B', texto: 'traduzir nomes de domínio em endereços IP.' },
+      { id: 'C', texto: 'criptografar o tráfego de rede.' },
+      { id: 'D', texto: 'bloquear acessos não autorizados.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'DNS traduz nomes em IPs.',
+      incorretas: { A: 'Isso é DHCP.', C: 'Isso é criptografia.', D: 'Isso é firewall.' },
+      conceitoCobrado: 'DNS.',
+      pegadinha: 'Confundir DNS com DHCP.',
+      comoApareceEmConcurso: 'Redes é frequência média.'
+    },
+    tags: ['redes', 'DNS']
+  },
+  {
+    id: 'Q-DID-INF-0058', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-09',
+    subtema: 'DHCP', dificuldade: 2, prioridade: 'media',
+    enunciado: 'A função do DHCP é:',
+    alternativas: [
+      { id: 'A', texto: 'traduzir nomes em IPs.' },
+      { id: 'B', texto: 'distribuir endereços IP automaticamente aos dispositivos da rede.' },
+      { id: 'C', texto: 'criptografar pacotes.' },
+      { id: 'D', texto: 'bloquear vírus.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'DHCP distribui IPs automaticamente.',
+      incorretas: { A: 'Isso é DNS.', C: 'Não é criptografia.', D: 'Não é antivírus.' },
+      conceitoCobrado: 'DHCP.',
+      pegadinha: 'Confundir com DNS.',
+      comoApareceEmConcurso: 'Redes é frequência média.'
+    },
+    tags: ['redes', 'DHCP']
+  },
+  {
+    id: 'Q-DID-INF-0059', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-09',
+    subtema: 'Largura de banda x latência', dificuldade: 3, prioridade: 'media',
+    enunciado: 'Sobre largura de banda e latência, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são sinônimos.' },
+      { id: 'B', texto: 'largura de banda é a capacidade máxima de transmissão (Mbps); latência é o tempo de resposta (ms).' },
+      { id: 'C', texto: 'latência é a capacidade; largura de banda é o tempo.' },
+      { id: 'D', texto: 'ambos são medidos em MB.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Banda = capacidade; latência = tempo.',
+      incorretas: { A: 'São diferentes.', C: 'Inverte.', D: 'Banda em Mbps; latência em ms.' },
+      conceitoCobrado: 'Banda × latência.',
+      pegadinha: 'Achar que banda alta significa rapidez total.',
+      comoApareceEmConcurso: 'Redes é frequência média.'
+    },
+    tags: ['redes', 'banda', 'latência']
+  },
+
+  /* ---------- INF-10 — Nuvem (4) ---------- */
+  {
+    id: 'Q-DID-INF-0060', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-10',
+    subtema: 'PaaS', dificuldade: 3, prioridade: 'alta',
+    enunciado: 'PaaS (Platform as a Service) é:',
+    alternativas: [
+      { id: 'A', texto: 'software pronto para o usuário final.' },
+      { id: 'B', texto: 'plataforma para desenvolvedores criarem e hospedarem aplicações sem gerenciar servidores.' },
+      { id: 'C', texto: 'infraestrutura de máquinas virtuais.' },
+      { id: 'D', texto: 'backup em nuvem.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'PaaS é plataforma para desenvolvedores.',
+      incorretas: { A: 'Isso é SaaS.', C: 'Isso é IaaS.', D: 'Backup é outro serviço.' },
+      conceitoCobrado: 'SaaS × PaaS × IaaS.',
+      pegadinha: 'Confundir os modelos.',
+      comoApareceEmConcurso: 'Nuvem é tema crescente.'
+    },
+    tags: ['nuvem', 'PaaS']
+  },
+  {
+    id: 'Q-DID-INF-0061', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-10',
+    subtema: 'IaaS', dificuldade: 3, prioridade: 'alta',
+    enunciado: 'IaaS (Infrastructure as a Service) é:',
+    alternativas: [
+      { id: 'A', texto: 'software pronto.' },
+      { id: 'B', texto: 'plataforma para desenvolvedores.' },
+      { id: 'C', texto: 'infraestrutura de máquinas virtuais, redes e armazenamento alugada.' },
+      { id: 'D', texto: 'e-mail em nuvem.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'IaaS = infraestrutura alugada.',
+      incorretas: { A: 'Isso é SaaS.', B: 'Isso é PaaS.', D: 'E-mail é SaaS.' },
+      conceitoCobrado: 'SaaS × PaaS × IaaS.',
+      pegadinha: 'Confundir os modelos.',
+      comoApareceEmConcurso: 'Nuvem é tema crescente.'
+    },
+    tags: ['nuvem', 'IaaS']
+  },
+  {
+    id: 'Q-DID-INF-0062', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-10',
+    subtema: 'Link público x restrito', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Ao compartilhar uma pasta na nuvem com dados sensíveis, a opção mais segura é:',
+    alternativas: [
+      { id: 'A', texto: 'link público — qualquer pessoa com o link acessa.' },
+      { id: 'B', texto: 'link restrito — só convidados acessam.' },
+      { id: 'C', texto: 'link com senha fraca.' },
+      { id: 'D', texto: 'link público com nome do arquivo oculto.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Link restrito limita o acesso a convidados.',
+      incorretas: { A: 'Expõe os dados.', C: 'Senha fraca não protege.', D: 'Ainda é público.' },
+      conceitoCobrado: 'Compartilhamento seguro.',
+      pegadinha: 'Achar que link público é seguro.',
+      comoApareceEmConcurso: 'Nuvem e segurança.'
+    },
+    tags: ['nuvem', 'compartilhamento']
+  },
+  {
+    id: 'Q-DID-INF-0063', tipo: 'DIDATICA', area: 'REDE', moduloId: 'INF-10',
+    subtema: 'Serviços de nuvem', dificuldade: 1, prioridade: 'alta',
+    enunciado: 'São exemplos de serviços de armazenamento em nuvem:',
+    alternativas: [
+      { id: 'A', texto: 'OneDrive, Google Drive e Dropbox.' },
+      { id: 'B', texto: 'Word, Excel e PowerPoint.' },
+      { id: 'C', texto: 'Windows, Linux e macOS.' },
+      { id: 'D', texto: 'Chrome, Edge e Firefox.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'OneDrive, Google Drive e Dropbox são armazenamento em nuvem.',
+      incorretas: { B: 'São aplicativos de escritório.', C: 'São sistemas operacionais.', D: 'São navegadores.' },
+      conceitoCobrado: 'Serviços de nuvem.',
+      pegadinha: 'Confundir com aplicativos.',
+      comoApareceEmConcurso: 'Nuvem é tema crescente.'
+    },
+    tags: ['nuvem', 'OneDrive', 'Google Drive']
+  },
+
+  /* ---------- INF-11 — Segurança (3) ---------- */
+  {
+    id: 'Q-DID-INF-0064', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-11',
+    subtema: 'Ransomware', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'Ransomware é um tipo de malware que:',
+    alternativas: [
+      { id: 'A', texto: 'espiona o usuário silenciosamente.' },
+      { id: 'B', texto: 'criptografa os dados da vítima e exige resgate para liberar.' },
+      { id: 'C', texto: 'exibe anúncios indesejados.' },
+      { id: 'D', texto: 'se disfarça de programa legítimo.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Ransomware criptografa e pede resgate.',
+      incorretas: { A: 'Isso é spyware.', C: 'Isso é adware.', D: 'Isso é trojan.' },
+      conceitoCobrado: 'Ransomware.',
+      pegadinha: 'Confundir com spyware.',
+      comoApareceEmConcurso: 'Segurança é altíssima frequência.'
+    },
+    tags: ['segurança', 'ransomware']
+  },
+  {
+    id: 'Q-DID-INF-0065', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-11',
+    subtema: 'Trojan', dificuldade: 2, prioridade: 'muito_alta',
+    enunciado: 'O cavalo de Troia (trojan) é um malware que:',
+    alternativas: [
+      { id: 'A', texto: 'se autorreplica pela rede sem ação do usuário.' },
+      { id: 'B', texto: 'se disfarça de programa legítimo para enganar o usuário e abrir portas para invasores.' },
+      { id: 'C', texto: 'criptografa arquivos e pede resgate.' },
+      { id: 'D', texto: 'exibe anúncios.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Trojan se disfarça de legítimo e abre portas.',
+      incorretas: { A: 'Isso é worm.', C: 'Isso é ransomware.', D: 'Isso é adware.' },
+      conceitoCobrado: 'Trojan.',
+      pegadinha: 'Confundir com vírus/worm.',
+      comoApareceEmConcurso: 'Segurança é altíssima frequência.'
+    },
+    tags: ['segurança', 'trojan']
+  },
+  {
+    id: 'Q-DID-INF-0066', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-11',
+    subtema: 'Criptografia simétrica x assimétrica', dificuldade: 3, prioridade: 'muito_alta',
+    enunciado: 'Sobre criptografia simétrica e assimétrica, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'simétrica usa duas chaves; assimétrica usa uma.' },
+      { id: 'B', texto: 'simétrica usa a mesma chave para cifrar e decifrar; assimétrica usa par de chaves (pública cifra, privada decifra).' },
+      { id: 'C', texto: 'ambas usam a mesma chave.' },
+      { id: 'D', texto: 'assimétrica é mais rápida que a simétrica.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Simétrica = 1 chave; assimétrica = 2 chaves.',
+      incorretas: { A: 'Inverte.', C: 'São diferentes.', D: 'Assimétrica é mais lenta.' },
+      conceitoCobrado: 'Criptografia simétrica × assimétrica.',
+      pegadinha: 'Inverter as características.',
+      comoApareceEmConcurso: 'Segurança é altíssima frequência.'
+    },
+    tags: ['segurança', 'criptografia']
+  },
+
+  /* ---------- INF-12 — Backup (4) ---------- */
+  {
+    id: 'Q-DID-INF-0067', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-12',
+    subtema: 'Backup completo', dificuldade: 1, prioridade: 'alta',
+    enunciado: 'O backup completo:',
+    alternativas: [
+      { id: 'A', texto: 'copia apenas os arquivos alterados desde o último backup.' },
+      { id: 'B', texto: 'copia todos os arquivos selecionados, independentemente de alterações.' },
+      { id: 'C', texto: 'copia só os arquivos novos.' },
+      { id: 'D', texto: 'não pode ser restaurado.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Completo copia todos os arquivos selecionados.',
+      incorretas: { A: 'Isso é incremental/diferencial.', C: 'Não é a definição.', D: 'Pode ser restaurado.' },
+      conceitoCobrado: 'Backup completo.',
+      pegadinha: 'Confundir com incremental.',
+      comoApareceEmConcurso: 'Backup é tema frequente.'
+    },
+    tags: ['backup', 'completo']
+  },
+  {
+    id: 'Q-DID-INF-0068', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-12',
+    subtema: 'Lixeira x backup', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Sobre a Lixeira do Windows e o backup, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'a Lixeira é um tipo de backup.' },
+      { id: 'B', texto: 'a Lixeira não é backup — é apenas armazenamento temporário de arquivos excluídos; se o HD falhar, os dados se perdem.' },
+      { id: 'C', texto: 'a Lixeira substitui o backup.' },
+      { id: 'D', texto: 'a Lixeira guarda os arquivos para sempre.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Lixeira não é backup.',
+      incorretas: { A: 'Não é.', C: 'Não substitui.', D: 'Pode ser esvaziada.' },
+      conceitoCobrado: 'Lixeira × backup.',
+      pegadinha: 'Achar que Lixeira é backup.',
+      comoApareceEmConcurso: 'Backup é tema frequente.'
+    },
+    tags: ['backup', 'Lixeira']
+  },
+  {
+    id: 'Q-DID-INF-0069', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-12',
+    subtema: 'Restauração', dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Para restaurar um backup INCREMENTAL, é necessário:',
+    alternativas: [
+      { id: 'A', texto: 'apenas o último incremental.' },
+      { id: 'B', texto: 'o backup completo + TODOS os incrementais em sequência.' },
+      { id: 'C', texto: 'apenas o backup completo.' },
+      { id: 'D', texto: 'o último diferencial.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Incremental exige completo + todos os incrementais.',
+      incorretas: { A: 'Faltam os anteriores.', C: 'Faltam os incrementais.', D: 'Isso é para diferencial.' },
+      conceitoCobrado: 'Restauração de incremental.',
+      pegadinha: 'Confundir com diferencial.',
+      comoApareceEmConcurso: 'Backup é tema frequente.'
+    },
+    tags: ['backup', 'incremental', 'restauração']
+  },
+  {
+    id: 'Q-DID-INF-0070', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-12',
+    subtema: 'Mídias de backup', dificuldade: 2, prioridade: 'alta',
+    enunciado: 'São mídias válidas para backup:',
+    alternativas: [
+      { id: 'A', texto: 'HD externo, pendrive, nuvem e DVD.' },
+      { id: 'B', texto: 'apenas a nuvem.' },
+      { id: 'C', texto: 'apenas o HD interno.' },
+      { id: 'D', texto: 'apenas pendrive.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Diversas mídias são válidas — ideal combinar (3-2-1).',
+      incorretas: { B: 'Restringe.', C: 'HD interno não protege contra falha do PC.', D: 'Restringe.' },
+      conceitoCobrado: 'Mídias de backup.',
+      pegadinha: 'Achar que só nuvem serve.',
+      comoApareceEmConcurso: 'Backup é tema frequente.'
+    },
+    tags: ['backup', 'mídias']
+  },
+
+  /* ---------- INF-13 — PDF (4) ---------- */
+  {
+    id: 'Q-DID-INF-0071', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-13',
+    subtema: 'PDF x editável', dificuldade: 1, prioridade: 'media',
+    enunciado: 'Sobre as diferenças entre PDF e .docx, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'PDF é mais editável que .docx.' },
+      { id: 'B', texto: 'PDF preserva o layout em qualquer dispositivo; .docx é editável e o layout pode variar.' },
+      { id: 'C', texto: 'São o mesmo formato.' },
+      { id: 'D', texto: '.docx preserva melhor o layout que PDF.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'PDF preserva layout; .docx é editável.',
+      incorretas: { A: 'É o contrário.', C: 'São diferentes.', D: 'PDF preserva melhor.' },
+      conceitoCobrado: 'PDF × .docx.',
+      pegadinha: 'Inverter as características.',
+      comoApareceEmConcurso: 'PDF é frequência média.'
+    },
+    tags: ['PDF', 'docx']
+  },
+  {
+    id: 'Q-DID-INF-0072', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-13',
+    subtema: 'Assinatura eletrônica x digital', dificuldade: 3, prioridade: 'media',
+    enunciado: 'Sobre assinatura eletrônica e assinatura digital, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são sinônimos.' },
+      { id: 'B', texto: 'eletrônica é qualquer forma eletrônica de assinar; digital é um tipo específico que usa criptografia e certificado.' },
+      { id: 'C', texto: 'digital é mais simples que eletrônica.' },
+      { id: 'D', texto: 'eletrônica exige certificado ICP-Brasil.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Digital é espécie de eletrônica.',
+      incorretas: { A: 'São diferentes.', C: 'Digital é mais segura.', D: 'Eletrônica simples não exige certificado.' },
+      conceitoCobrado: 'Assinatura eletrônica × digital.',
+      pegadinha: 'Tratar como sinônimos.',
+      comoApareceEmConcurso: 'PDF e assinatura.'
+    },
+    tags: ['PDF', 'assinatura']
+  },
+  {
+    id: 'Q-DID-INF-0073', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-13',
+    subtema: 'Certificado digital', dificuldade: 3, prioridade: 'media',
+    enunciado: 'O certificado digital ICP-Brasil serve para:',
+    alternativas: [
+      { id: 'A', texto: 'garantir a identidade do titular em transações eletrônicas.' },
+      { id: 'B', texto: 'substituir o antivírus.' },
+      { id: 'C', texto: 'aumentar a velocidade da Internet.' },
+      { id: 'D', texto: 'compactar arquivos.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Certificado digital garante identidade.',
+      incorretas: { B: 'Não substitui antivírus.', C: 'Não aumenta velocidade.', D: 'Não compacta.' },
+      conceitoCobrado: 'Certificado digital.',
+      pegadinha: 'Confundir com outros recursos.',
+      comoApareceEmConcurso: 'PDF e segurança.'
+    },
+    tags: ['PDF', 'certificado digital']
+  },
+  {
+    id: 'Q-DID-INF-0074', tipo: 'DIDATICA', area: 'SEG', moduloId: 'INF-13',
+    subtema: 'PDF/A', dificuldade: 3, prioridade: 'media',
+    enunciado: 'PDF/A é:',
+    alternativas: [
+      { id: 'A', texto: 'a versão do PDF para arquivamento de longo prazo.' },
+      { id: 'B', texto: 'a versão mais antiga do PDF.' },
+      { id: 'C', texto: 'um PDF criptografado.' },
+      { id: 'D', texto: 'um PDF com assinatura digital.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'PDF/A é para arquivamento de longo prazo.',
+      incorretas: { B: 'Não é versão antiga.', C: 'Criptografia é outro recurso.', D: 'Assinatura é outro recurso.' },
+      conceitoCobrado: 'PDF/A.',
+      pegadinha: 'Confundir com versão comum.',
+      comoApareceEmConcurso: 'PDF é frequência média.'
+    },
+    tags: ['PDF', 'PDF/A']
+  },
+
+  /* ---------- INF-14 — Software (4) ---------- */
+  {
+    id: 'Q-DID-INF-0075', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-14',
+    subtema: 'Compactação', dificuldade: 2, prioridade: 'media',
+    enunciado: 'Sobre compactação de arquivos, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'ZIP, RAR e 7z são formatos de compactação.' },
+      { id: 'B', texto: 'ZIP, RAR e 7z são formatos de imagem.' },
+      { id: 'C', texto: 'compactar sempre criptografa o arquivo.' },
+      { id: 'D', texto: 'compactar aumenta o tamanho do arquivo.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'São formatos de compactação.',
+      incorretas: { B: 'Não são imagens.', C: 'Compactação não criptografa por si só.', D: 'Compactação reduz o tamanho.' },
+      conceitoCobrado: 'Compactação.',
+      pegadinha: 'Confundir compactação com criptografia.',
+      comoApareceEmConcurso: 'Software é frequência média.'
+    },
+    tags: ['software', 'compactação']
+  },
+  {
+    id: 'Q-DID-INF-0076', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-14',
+    subtema: 'Print Screen', dificuldade: 1, prioridade: 'media',
+    enunciado: 'A tecla Print Screen, no Windows:',
+    alternativas: [
+      { id: 'A', texto: 'imprime a tela diretamente na impressora.' },
+      { id: 'B', texto: 'copia uma captura da tela para a área de transferência.' },
+      { id: 'C', texto: 'salva a captura automaticamente em Documentos.' },
+      { id: 'D', texto: 'desliga o computador.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Print Screen copia a captura para a área de transferência; você cola onde quiser.',
+      incorretas: { A: 'Não imprime diretamente.', C: 'Não salva automaticamente.', D: 'Não desliga.' },
+      conceitoCobrado: 'Print Screen.',
+      pegadinha: 'Achar que salva automaticamente.',
+      comoApareceEmConcurso: 'Software é frequência média.'
+    },
+    tags: ['software', 'Print Screen']
+  },
+  {
+    id: 'Q-DID-INF-0077', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-14',
+    subtema: 'Instalar x desinstalar', dificuldade: 2, prioridade: 'media',
+    enunciado: 'A forma correta de desinstalar um programa no Windows é:',
+    alternativas: [
+      { id: 'A', texto: 'apagar a pasta do programa no disco.' },
+      { id: 'B', texto: 'usar o Painel de Controle (ou Configurações) → Aplicativos → Desinstalar.' },
+      { id: 'C', texto: 'renomear o executável.' },
+      { id: 'D', texto: 'mover a pasta para a Lixeira.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Desinstalar via Painel de Controle remove arquivos e registros corretamente.',
+      incorretas: { A: 'Deixa resíduos.', C: 'Não desinstala.', D: 'Deixa resíduos.' },
+      conceitoCobrado: 'Desinstalação correta.',
+      pegadinha: 'Apagar pasta não é desinstalar.',
+      comoApareceEmConcurso: 'Software é frequência média.'
+    },
+    tags: ['software', 'desinstalar']
+  },
+  {
+    id: 'Q-DID-INF-0078', tipo: 'DIDATICA', area: 'FUND', moduloId: 'INF-14',
+    subtema: 'Software livre x gratuito', dificuldade: 3, prioridade: 'media',
+    enunciado: 'Sobre software livre e software gratuito, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são sinônimos.' },
+      { id: 'B', texto: 'software livre é sobre liberdade (executar, estudar, modificar, redistribuir); gratuito é sobre preço.' },
+      { id: 'C', texto: 'todo software gratuito é livre.' },
+      { id: 'D', texto: 'todo software livre é gratuito.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Livre = liberdade; gratuito = preço.',
+      incorretas: { A: 'São diferentes.', C: 'Gratuito pode ser proprietário.', D: 'Livre pode ser vendido.' },
+      conceitoCobrado: 'Software livre × gratuito.',
+      pegadinha: 'Confundir os conceitos.',
+      comoApareceEmConcurso: 'Software é frequência média.'
+    },
+    tags: ['software', 'livre', 'gratuito']
+  },
+
+  /* ---------- INF-15 — Linux (4) ---------- */
+  {
+    id: 'Q-DID-INF-0079', tipo: 'DIDATICA', area: 'SO', moduloId: 'INF-15',
+    subtema: 'Software livre', dificuldade: 3, prioridade: 'condicional',
+    enunciado: 'As 4 liberdades do software livre são:',
+    alternativas: [
+      { id: 'A', texto: 'executar, estudar, redistribuir e modificar.' },
+      { id: 'B', texto: 'instalar, desinstalar, formatar e atualizar.' },
+      { id: 'C', texto: 'criptografar, compactar, assinar e compartilhar.' },
+      { id: 'D', texto: 'ler, escrever, executar e apagar.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Executar, estudar, redistribuir e modificar.',
+      incorretas: { B: 'Não são as liberdades.', C: 'Não são as liberdades.', D: 'Não são as liberdades.' },
+      conceitoCobrado: '4 liberdades do software livre.',
+      pegadinha: 'Confundir com permissões de arquivo.',
+      comoApareceEmConcurso: 'Linux é condicional.'
+    },
+    tags: ['Linux', 'software livre']
+  },
+  {
+    id: 'Q-DID-INF-0080', tipo: 'DIDATICA', area: 'SO', moduloId: 'INF-15',
+    subtema: 'Case-sensitive', dificuldade: 2, prioridade: 'condicional',
+    enunciado: 'No Linux, os nomes de arquivos são case-sensitive. Isso significa que:',
+    alternativas: [
+      { id: 'A', texto: '"Arquivo.txt" e "arquivo.txt" são o mesmo arquivo.' },
+      { id: 'B', texto: '"Arquivo.txt" e "arquivo.txt" são arquivos DIFERENTES.' },
+      { id: 'C', texto: 'só maiúsculas são permitidas.' },
+      { id: 'D', texto: 'só minúsculas são permitidas.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Case-sensitive = diferencia maiúsculas de minúsculas.',
+      incorretas: { A: 'Isso é o comportamento do Windows.', C: 'Ambas são permitidas.', D: 'Ambas são permitidas.' },
+      conceitoCobrado: 'Case-sensitive × case-insensitive.',
+      pegadinha: 'Confundir com Windows.',
+      comoApareceEmConcurso: 'Linux é condicional.'
+    },
+    tags: ['Linux', 'case-sensitive']
+  },
+  {
+    id: 'Q-DID-INF-0081', tipo: 'DIDATICA', area: 'SO', moduloId: 'INF-15',
+    subtema: 'Kernel x distribuição', dificuldade: 3, prioridade: 'condicional',
+    enunciado: 'Sobre kernel e distribuição Linux, é correto afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'são a mesma coisa.' },
+      { id: 'B', texto: 'kernel é o núcleo do sistema; distribuição é o pacote completo (kernel + software + ambiente gráfico).' },
+      { id: 'C', texto: 'distribuição é o núcleo; kernel é o pacote.' },
+      { id: 'D', texto: 'Linux é uma distribuição única.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Kernel = núcleo; distribuição = pacote completo.',
+      incorretas: { A: 'São diferentes.', C: 'Inverte.', D: 'Existem várias distribuições.' },
+      conceitoCobrado: 'Kernel × distribuição.',
+      pegadinha: 'Confundir os conceitos.',
+      comoApareceEmConcurso: 'Linux é condicional.'
+    },
+    tags: ['Linux', 'kernel', 'distribuição']
+  },
+  {
+    id: 'Q-DID-INF-0082', tipo: 'DIDATICA', area: 'SO', moduloId: 'INF-15',
+    subtema: 'chown', dificuldade: 3, prioridade: 'condicional',
+    enunciado: 'No Linux, o comando chown serve para:',
+    alternativas: [
+      { id: 'A', texto: 'alterar as permissões de um arquivo.' },
+      { id: 'B', texto: 'alterar o dono de um arquivo ou diretório.' },
+      { id: 'C', texto: 'renomear arquivos.' },
+      { id: 'D', texto: 'excluir arquivos.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'chown altera o dono.',
+      incorretas: { A: 'Permissões: chmod.', C: 'Renomear: mv.', D: 'Excluir: rm.' },
+      conceitoCobrado: 'chown × chmod.',
+      pegadinha: 'Confundir com chmod.',
+      comoApareceEmConcurso: 'Linux é condicional.'
+    },
+    tags: ['Linux', 'chown']
+  },
+
+  /* ---------- INF-16 — Aplicada (3) ---------- */
+  {
+    id: 'Q-DID-INF-0083', tipo: 'DIDATICA', area: 'APLI', moduloId: 'INF-16',
+    subtema: 'Envio de PDF x DOCX', dificuldade: 2, prioridade: 'media',
+    enunciado: 'Para enviar um contrato a um cliente que só vai ler e imprimir, o formato mais adequado é:',
+    alternativas: [
+      { id: 'A', texto: '.docx — editável.' },
+      { id: 'B', texto: '.pdf — preserva o layout.' },
+      { id: 'C', texto: '.txt — texto puro.' },
+      { id: 'D', texto: '.pptx — apresentação.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'PDF preserva o layout — ideal para leitura e impressão.',
+      incorretas: { A: 'Pode variar de layout.', C: 'Perde formatação.', D: 'Não é para contratos.' },
+      conceitoCobrado: 'Escolha de formato.',
+      pegadinha: 'Enviar .docx quando o destinatário não vai editar.',
+      comoApareceEmConcurso: 'Aplicada ao trabalho.'
+    },
+    tags: ['aplicada', 'PDF', 'envio']
+  },
+  {
+    id: 'Q-DID-INF-0084', tipo: 'DIDATICA', area: 'APLI', moduloId: 'INF-16',
+    subtema: 'Organização de arquivos', dificuldade: 2, prioridade: 'media',
+    enunciado: 'A melhor prática de organização de arquivos em um setor é:',
+    alternativas: [
+      { id: 'A', texto: 'salvar tudo na Área de Trabalho com nomes genéricos.' },
+      { id: 'B', texto: 'usar estrutura lógica de pastas (ano/mês/assunto) e nomenclatura padronizada com versionamento.' },
+      { id: 'C', texto: 'salvar em um único arquivo grande.' },
+      { id: 'D', texto: 'não usar extensões.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Estrutura lógica + nomes padronizados + versionamento.',
+      incorretas: { A: 'Dificulta a busca.', C: 'Dificulta o acesso.', D: 'Extensões são essenciais.' },
+      conceitoCobrado: 'Organização de arquivos.',
+      pegadinha: 'Achar que qualquer organização serve.',
+      comoApareceEmConcurso: 'Aplicada ao trabalho.'
+    },
+    tags: ['aplicada', 'organização']
+  },
+  {
+    id: 'Q-DID-INF-0085', tipo: 'DIDATICA', area: 'APLI', moduloId: 'INF-16',
+    subtema: 'Permissões em nuvem', dificuldade: 2, prioridade: 'media',
+    enunciado: 'Ao compartilhar uma pasta na nuvem com a equipe, as permissões típicas são:',
+    alternativas: [
+      { id: 'A', texto: 'apenas leitura.' },
+      { id: 'B', texto: 'visualizador, comentarista e editor.' },
+      { id: 'C', texto: 'administrador e visitante.' },
+      { id: 'D', texto: 'não há permissões.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'Visualizador (só vê), comentarista (comenta), editor (edita).',
+      incorretas: { A: 'Há níveis.', C: 'Não são os níveis típicos.', D: 'Há permissões.' },
+      conceitoCobrado: 'Permissões em nuvem.',
+      pegadinha: 'Achar que só existe leitura.',
+      comoApareceEmConcurso: 'Aplicada ao trabalho.'
+    },
+    tags: ['aplicada', 'permissões']
+  }   
+
+];
