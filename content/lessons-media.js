@@ -1,685 +1,325 @@
 /* ============================================================
    AULAS — Módulos de prioridade MÉDIA
-   Preenchidos neste lote: DC-10, DC-14, DC-15
-   Próximo lote: DC-16, DC-17, DC-18
+   Preenchidos: INF-09, INF-13, INF-14, INF-16
+   Próximo lote: INF-06, INF-15 (condicional)
    ============================================================ */
 
 window.LESSONS_MEDIA = {
 
   /* ============================================================
-     DC-10 — Intervenção
+     INF-09 — Redes de Computadores
   ============================================================ */
-  'DC-10': {
-    id: 'L-DC-10',
-    moduloId: 'DC-10',
-    objetivo: 'Dominar o instituto da intervenção (arts. 34 a 36 da CF/88): hipóteses de intervenção federal, estadual e em Municípios, procedimento, decreto, controle pelo Congresso e relação com a autonomia federativa.',
-    prerequisitos: ['DC-08'],
+  'INF-09': {
+    id: 'L-INF-09',
+    moduloId: 'INF-09',
+    objetivo: 'Compreender os conceitos fundamentais de redes de computadores: cliente, servidor e compartilhamento; classificação por abrangência (LAN, MAN, WAN); equipamentos (modem, roteador, switch, ponto de acesso); endereços IP (IPv4 e IPv6); DNS e DHCP; velocidade, largura de banda e latência; compartilhamento de arquivos e impressoras.',
+    prerequisitos: ['INF-07'],
 
-    introducao: 'A intervenção é medida excepcional: o ente federativo quebra temporariamente a autonomia de outro, para restabelecer a normalidade constitucional. É o oposto do princípio federativo — por isso, é taxativa, temporária e sujeita a controle.',
+    introducao: 'Redes é um módulo de frequência média em concursos. Não exige profundidade técnica, mas cobra conceitos: diferença entre LAN, MAN e WAN; função de cada equipamento (modem, roteador, switch); o que é IP, DNS e DHCP; e o significado de largura de banda e latência. É um módulo muito interpretativo e que dialoga com Internet (INF-07) e Segurança (INF-11).',
 
-    explicacaoSimples: 'Pense na Federação como um condomínio. Se um morador descumpre regras gravíssimas, o síndico (União ou Estado) pode, temporariamente, assumir o controle do apartamento dele — mas só nas hipóteses previstas no regimento e depois de seguir o procedimento. Isso é intervenção.',
+    explicacaoSimples: 'Rede é um conjunto de computadores conectados que trocam informações. Dependendo do tamanho, chama-se LAN (rede local — uma casa, um escritório), MAN (rede metropolitana — uma cidade) ou WAN (rede ampla — países, continentes; a Internet é a maior WAN). Cada dispositivo tem um endereço (IP). O DNS traduz nomes em IPs. O DHCP distribui IPs automaticamente. O roteador conecta redes diferentes; o switch conecta dispositivos na mesma rede; o modem converte o sinal da operadora.',
 
-    explicacaoTecnica: 'Art. 34: hipóteses de intervenção FEDERAL nos Estados e no DF — (I) manter a integridade nacional; (II) repelir invasão estrangeira ou de uma unidade da Federação em outra; (III) pôr termo a grave comprometimento da ordem pública; (IV) garantir o livre exercício de qualquer dos Poderes nas unidades da Federação; (V) reorganizar as finanças da unidade (que suspender pagamento da dívida fundada por mais de 2 anos, ou deixar de entregar receitas); (VI) prover a execução de lei federal, ordem ou decisão judicial; (VII) assegurar a observância dos princípios constitucionais sensíveis (forma republicana, sistema representativo, regime democrático, direitos da pessoa humana, autonomia municipal, prestação de contas da Administração Pública direta e indireta). Art. 35: hipóteses de intervenção ESTADUAL nos Municípios — (I) deixar de ser paga, sem motivo, por 2 anos, a dívida fundada; (II) não forem prestadas contas devidas; (III) não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde; (IV) o Tribunal de Justiça der provimento a representação para assegurar a observância de princípios indicados na Constituição Estadual ou para prover a execução de lei, de ordem ou de decisão judicial. Art. 36: procedimento — decreto do Presidente (intervenção federal espontânea) ou requisição (nos casos do art. 34, IV, VI e VII); ouvidoria prévia do Conselho da República e do Conselho de Defesa; controle político pelo Congresso (aprovação por maioria simples em 24h, se em recesso convocação extraordinária); decreto especifica amplitude, prazo e condições. §1º: nomeação de interventor. §2º: cessação da intervenção — retorno à normalidade. §3º: se cessada a causa, as autoridades afastadas retornam aos cargos.',
+    explicacaoTecnica: 'REDE: conjunto de dispositivos conectados que compartilham recursos. CLIENTE: solicita serviços (navegador, celular). SERVIDOR: fornece serviços (hospeda sites, arquivos, e-mail). CLASSIFICAÇÃO POR ABRANGÊNCIA: LAN (Local Area Network) — rede local de curta distância (casa, escritório, escola). MAN (Metropolitan Area Network) — abrange uma cidade. WAN (Wide Area Network) — abrange países e continentes (a Internet é a maior WAN). PAN (Personal Area Network) — rede pessoal (Bluetooth, por exemplo). EQUIPAMENTOS: MODEM — modula/demodula o sinal da operadora (converte sinal analógico em digital e vice-versa). ROTEADOR — conecta redes diferentes (sua rede doméstica à Internet), distribui IPs, faz NAT e firewall básico. SWITCH — conecta dispositivos DENTRO da mesma rede (LAN), encaminha dados por endereço MAC. HUB — equipamento antigo, replica dados para todos os dispositivos (obsoleto). PONTO DE ACESSO (Access Point) — fornece Wi-Fi, conecta dispositivos sem fio à rede cabeada. CABO: Ethernet (par trançado — CAT5e, CAT6), fibra óptica. WI-FI: padrão IEEE 802.11 (a/b/g/n/ac/ax). ENDEREÇO IP: identificação única de cada dispositivo na rede. IPv4 — formato 192.168.0.1 (32 bits, cerca de 4,3 bilhões de endereços — já esgotados). IPv6 — formato 2001:0db8:85a3::8a2e:0370:7334 (128 bits, praticamente ilimitado). IP público × IP privado. DNS (Domain Name System): traduz nomes de domínio (www.exemplo.com) em endereços IP (192.168.0.1). DHCP (Dynamic Host Configuration Protocol): distribui IPs automaticamente na rede. LARGURA DE BANDA: capacidade máxima de transmissão (Mbps — megabits por segundo). LATÊNCIA: tempo de resposta (atraso) — medida em milissegundos (ms). VELOCIDADE: combinação de banda + latência. PROTOCOLOS: TCP/IP (base da Internet). TCP — orientado a conexão, confiável. UDP — sem conexão, rápido (streaming, jogos). HTTP/HTTPS, FTP, SMTP, POP3, IMAP, DNS, DHCP. MODELO OSI: 7 camadas (física, enlace, rede, transporte, sessão, apresentação, aplicação). MODELO TCP/IP: 4 camadas (acesso à rede, Internet, transporte, aplicação). COMPARTILHAMENTO: arquivos, impressoras, pastas em rede.',
 
     exemplos: [
-      'Intervenção federal para garantir ordem pública: grave crise de segurança em Estado.',
-      'Intervenção federal para garantir execução de decisão judicial: descumprimento de ordem federal.',
-      'Intervenção federal para assegurar princípios sensíveis: descumprimento da autonomia municipal.',
-      'Intervenção estadual em Município: não aplicação do mínimo na educação ou saúde.',
-      'Intervenção estadual por não pagamento de dívida fundada por 2 anos.',
-      'Reorganização de finanças: Estado que não paga dívida fundada por mais de 2 anos.'
+      'LAN: rede da sua casa — computador, celular, impressora conectados ao mesmo roteador.',
+      'MAN: rede que interliga repartições públicas de uma cidade.',
+      'WAN: Internet — conecta o mundo inteiro.',
+      'PAN: fone Bluetooth conectado ao celular.',
+      'Modem: converte o sinal da operadora (fibra, cabo, telefone) em sinal digital.',
+      'Roteador: distribui Internet para todos os dispositivos da casa (Wi-Fi + cabo).',
+      'Switch: conecta vários computadores via cabo no mesmo escritório.',
+      'IP: 192.168.0.1 (IPv4) ou 2001:db8::1 (IPv6).',
+      'DNS: converte "www.google.com" em "142.250.79.46".',
+      'DHCP: quando você conecta no Wi-Fi, ele te entrega um IP automaticamente.',
+      'Largura de banda: 100 Mbps. Latência: 20 ms.'
     ],
 
     comparacoes: [
-      { termoA: 'Intervenção federal', termoB: 'Intervenção estadual', diferenca: 'FEDERAL: decreto do Presidente da República; atinge Estados e DF; hipóteses do art. 34. ESTADUAL: decreto do Governador; atinge Municípios; hipóteses do art. 35. São institutos paralelos, mas com titulares e destinatários diferentes.' },
-      { termoA: 'Intervenção espontânea', termoB: 'Intervenção provocada', diferenca: 'ESPONTÂNEA: decreto do Presidente, sem provocação de outro Poder (hipóteses dos incisos I, II, III e V do art. 34). PROVOCADA: depende de requisição do STF (inciso VI), do STJ (inciso VI, lei federal) ou do TSE (inciso VII, princípios sensíveis), ou de solicitação do Poder coacto (inciso IV).' },
-      { termoA: 'Intervenção federal', termoB: 'Estado de Sítio', diferenca: 'INTERVENÇÃO: medida excepcional para restabelecer a ordem federativa — atinge o ente, não os direitos fundamentais diretamente. ESTADO DE SÍTIO: medida excepcional para restabelecer a ordem constitucional em caso de comoção grave ou guerra — atinge diretamente os direitos fundamentais, suspendendo garantias.' },
-      { termoA: 'Controle político', termoB: 'Controle judicial', diferenca: 'POLÍTICO: feito pelo Congresso Nacional — aprovação do decreto de intervenção em 24h. JUDICIAL: feito pelo STF, STJ ou TSE — conforme a hipótese, o Tribunal competente pode requisitar a intervenção.' }
+      { termoA: 'LAN', termoB: 'WAN', diferenca: 'LAN (Local Area Network): rede LOCAL de curta distância — casa, escritório, escola. Alta velocidade, baixa latência, geralmente cabeada ou Wi-Fi. WAN (Wide Area Network): rede AMPLA — abrange países e continentes. A Internet é a maior WAN. Velocidade menor (por distância), latência maior, usa links das operadoras. Entre as duas: MAN (rede metropolitana — cidade).' },
+      { termoA: 'Modem', termoB: 'Roteador', diferenca: 'MODEM: modula/demodula o sinal da operadora — converte o sinal da fibra/cabo/telefone em sinal digital interpretável pelo computador. Sem ele, não há conexão. ROTEADOR: conecta redes diferentes — distribui a Internet entre os dispositivos da casa (Wi-Fi + cabo), atribui IPs, faz NAT. É comum o aparelho das operadoras ser "modem + roteador" combinados (roteador wireless).' },
+      { termoA: 'Switch', termoB: 'Roteador', diferenca: 'SWITCH: conecta dispositivos DENTRO da mesma rede (LAN) — encaminha dados via endereço MAC. Não distribui Internet entre redes diferentes. ROTEADOR: conecta REDES DIFERENTES (sua LAN à Internet), distribui IPs e faz o tráfego entre redes. Em casa: um roteador basta. Em escritório: um roteador + um switch para conectar muitos computadores.' },
+      { termoA: 'IPv4', termoB: 'IPv6', diferenca: 'IPv4: 32 bits — formato 192.168.0.1 — cerca de 4,3 bilhões de endereços (esgotados em 2011). IPv6: 128 bits — formato 2001:db8::1 — praticamente ilimitado (3,4 × 10³⁸ endereços). O IPv6 foi criado para resolver o esgotamento do IPv4.' },
+      { termoA: 'DNS', termoB: 'DHCP', diferenca: 'DNS (Domain Name System): traduz NOMES em IPs. Ex.: "www.google.com" → "142.250.79.46". É a "agenda telefônica" da Internet. DHCP (Dynamic Host Configuration Protocol): DISTRIBUI IPs automaticamente aos dispositivos que se conectam à rede. É o "balcão de cadastro" que te dá um crachá (IP) ao entrar.' },
+      { termoA: 'Largura de banda', termoB: 'Latência', diferenca: 'LARGURA DE BANDA: capacidade MÁXIMA de transmissão — quanto dado cabe por segundo (Mbps). É a "largura da estrada". LATÊNCIA: TEMPO DE RESPOSTA — quanto tempo o dado leva para ir e voltar (ms). É o "tempo de viagem". Estrada larga (banda alta) com muito trânsito (latência alta) não resolve — precisa das duas coisas.' },
+      { termoA: 'TCP', termoB: 'UDP', diferenca: 'TCP: orientado a CONEXÃO — confiável, garante entrega e ordem dos pacotes. Usado em navegação, e-mail, download. UDP: sem conexão — rápido, mas sem garantia de entrega. Usado em streaming, jogos on-line, VoIP. Se um pacote UDP se perde, ele não é reenviado — prioriza-se velocidade.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança das hipóteses de intervenção federal (art. 34) x estadual (art. 35), do procedimento (decreto, ouvidoria dos Conselhos, controle pelo Congresso em 24h) e das regras específicas (prazo, nomeação de interventor, retorno das autoridades). Questões costumam misturar as hipóteses dos dois artigos.',
+    aplicacaoEmConcurso: 'Redes aparece com frequência média. As bancas cobram: diferença LAN × MAN × WAN, função de modem / roteador / switch, IPv4 × IPv6, DNS × DHCP, largura de banda × latência, TCP × UDP. Também cobram compartilhamento de arquivos e impressoras em rede. Interpretação de conceitos.',
 
     pegadinhas: [
-      'Confundir intervenção federal (arts. 34) com estadual (arts. 35).',
-      'Achar que o decreto de intervenção é do Congresso. É do Presidente (federal) ou do Governador (estadual).',
-      'Dizer que a intervenção depende de autorização prévia do Congresso. O decreto é expedido e depois submetido ao Congresso em 24h.',
-      'Esquecer a ouvidoria prévia do Conselho da República e do Conselho de Defesa (intervenção federal).',
-      'Confundir intervenção com estado de sítio ou estado de defesa.',
-      'Achar que a intervenção é permanente. É temporária — cessada a causa, as autoridades retornam.'
+      'Achar que modem e roteador são a mesma coisa — são equipamentos diferentes (embora possam vir combinados).',
+      'Achar que switch distribui Internet — quem distribui entre redes é o roteador.',
+      'Confundir DNS (traduz nomes) com DHCP (distribui IPs).',
+      'Achar que IPv6 é só uma versão nova do IPv4 — é um formato completamente diferente, com 128 bits.',
+      'Confundir largura de banda (capacidade) com latência (tempo).',
+      'Achar que Internet é uma WAN — a Internet é A maior WAN (mas WAN é o conceito, não o nome).',
+      'Achar que LAN é sempre sem fio — pode ser cabeada, Wi-Fi ou mista.',
+      'Achar que switch é mais moderno que roteador — são funções diferentes, um não substitui o outro.'
     ],
 
     errosComuns: [
-      'Decorar hipóteses sem associar ao titular do decreto.',
-      'Ignorar que a intervenção em Município (art. 35, I a IV) pode ser decreto do Governador, mas a hipótese do inciso IV depende de provimento pelo TJ.',
-      'Não distinguir intervenção espontânea de provocada.'
+      'Decorar siglas sem entender a função de cada equipamento.',
+      'Confundir modem com roteador.',
+      'Não saber diferenciar DNS de DHCP.',
+      'Achar que "mais Mbps" sempre significa "mais rápido" — depende da latência.'
     ],
 
     resumo: [
-      'Intervenção é medida excepcional e temporária.',
-      'Art. 34: hipóteses de intervenção FEDERAL nos Estados e DF.',
-      'Art. 35: hipóteses de intervenção ESTADUAL nos Municípios.',
-      'Decreto: Presidente (federal) ou Governador (estadual).',
-      'Controle: Congresso aprova o decreto em 24h.',
-      'Ouvidoria prévia do Conselho da República e Conselho de Defesa (federal).',
-      'Decreto especifica amplitude, prazo e condições.',
-      'Cessada a causa, retornam as autoridades afastadas.'
+      'LAN (local), MAN (metropolitana), WAN (ampla).',
+      'Modem: converte sinal. Roteador: distribui e conecta redes. Switch: conecta dispositivos na mesma rede. Access Point: fornece Wi-Fi.',
+      'IPv4: 32 bits (192.168.0.1). IPv6: 128 bits (2001:db8::1).',
+      'DNS: nome → IP. DHCP: IP automático.',
+      'Largura de banda: capacidade. Latência: tempo.',
+      'TCP: confiável. UDP: rápido, sem garantia.',
+      'Wi-Fi: IEEE 802.11 (a/b/g/n/ac/ax).',
+      'Compartilhamento em rede: arquivos, pastas, impressoras.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'Intervenção é como o "juiz" do condomínio assumindo temporariamente o apartamento de um morador que quebrou regras gravíssimas — só nas hipóteses do regimento, por prazo determinado, com o condomínio aprovando depois.',
-      outroExemplo: 'Se um Estado deixa de pagar precatórios por mais de 2 anos, cabe intervenção federal por reorganização de finanças (art. 34, V). Se um Município não aplica o mínimo em saúde, cabe intervenção estadual (art. 35, III).',
-      compararConceitos: 'Federal (Presidente, atinge Estados) x Estadual (Governador, atinge Municípios). Espontânea (sem provocação) x Provocada (requisição ou solicitação). Intervenção x Estado de Sítio: uma atinge o ente, o outro atinge direitos.',
-      mostrarPegadinha: 'Cuidado: "A intervenção federal só pode ser decretada pelo Congresso Nacional". ERRADO. O DECRETO é do Presidente; o Congresso apenas APROVA depois, em 24 horas.',
-      comoApareceEmConcurso: 'Cobrança das hipóteses (arts. 34 e 35) e do procedimento (decreto + controle do Congresso).',
+      explicarMaisSimples: 'Rede é o conjunto de computadores conectados. Se é pequena (casa, escritório), é LAN. Se é ampla (países), é WAN. Cada equipamento tem uma função: modem converte sinal; roteador distribui Internet; switch conecta dispositivos. Cada dispositivo tem um IP; o DNS traduz nomes em IPs; o DHCP entrega IPs automaticamente.',
+      outroExemplo: 'Você chega em casa, liga o celular, conecta no Wi-Fi. O roteador entrega um IP via DHCP. Você abre o navegador e digita "www.google.com" — o DNS converte o nome em IP. O TCP/IP cuida da transmissão. A latência é o "tempo de resposta" — quanto menor, mais ágil a navegação.',
+      compararConceitos: 'LAN × MAN × WAN. Modem × Roteador × Switch. IPv4 × IPv6. DNS × DHCP. Banda × Latência. TCP × UDP.',
+      mostrarPegadinha: 'Cuidado: "quanto mais Mbps, mais rápida a navegação" — NÃO necessariamente. Velocidade percebida depende de banda E latência. Banda alta + latência alta = navegação travada. É como uma estrada larga com trânsito intenso.',
+      comoApareceEmConcurso: 'Interpretação de conceitos e situações. Frequência média.',
       fazerPergunta: {
-        pergunta: 'Um Estado deixa de aplicar o mínimo constitucional em educação. Cabe intervenção federal?',
-        resposta: 'NÃO — a não aplicação do mínimo em educação é hipótese de intervenção ESTADUAL em MUNICÍPIO (art. 35, III). Em relação ao Estado, a não aplicação do mínimo não é hipótese de intervenção federal, e sim de responsabilização política (crime de responsabilidade do Governador) e rejeição de contas.'
+        pergunta: 'Qual a diferença entre DNS e DHCP?',
+        resposta: 'DNS traduz NOMES em IPs ("www.google.com" → "142.250.79.46") — é a "agenda telefônica" da Internet. DHCP DISTRIBUI IPs automaticamente aos dispositivos que entram na rede — é o "balcão de cadastro". São funções diferentes: DNS resolve nomes; DHCP atribui endereços.'
       }
     }
   },
 
   /* ============================================================
-     DC-14 — Poder Executivo
+     INF-13 — PDF, Digitalização e Documentos Digitais
   ============================================================ */
-  'DC-14': {
-    id: 'L-DC-14',
-    moduloId: 'DC-14',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Executivo federal (arts. 76 a 91 da CF/88): Presidente, Vice, eleição, mandato, requisitos, sucessão, substituição, competências, ministros, responsabilidade e crimes de responsabilidade.',
-    prerequisitos: ['DC-12'],
+  'INF-13': {
+    id: 'L-INF-13',
+    moduloId: 'INF-13',
+    objetivo: 'Compreender a diferença entre documentos editáveis e PDF; dominar criação, conversão, impressão e organização de PDFs; entender digitalização, OCR e reconhecimento de texto; diferenciar assinatura eletrônica de assinatura digital; compreender certificados digitais; adotar boas práticas de segurança no compartilhamento de documentos sensíveis.',
+    prerequisitos: ['INF-03'],
 
-    introducao: 'O Poder Executivo exerce a função típica de administrar o Estado. Na esfera federal, é chefiado pelo Presidente da República, auxiliado pelos Ministros de Estado. As bancas cobram as regras de eleição, as hipóteses de sucessão/substituição e os crimes de responsabilidade.',
+    introducao: 'PDF é um tema de frequência média em concursos, mas aparece com regularidade em provas que cobram documentos eletrônicos e assinatura digital. As bancas cobram: diferença entre editável e PDF, o que é OCR, diferença entre assinatura eletrônica e assinatura digital, o que é certificado digital, e cuidados com documentos sensíveis.',
 
-    explicacaoSimples: 'O Presidente é o "chefe" do Executivo federal: administra o país, representa o Brasil no exterior, sanciona e veta leis, edita medidas provisórias. Se ele sai do cargo por algum motivo, há regras específicas sobre quem assume — o Vice, o Presidente da Câmara, o do Senado ou o do STF.',
+    explicacaoSimples: 'PDF é um formato "travado" — o layout fica fixo em qualquer dispositivo. Um arquivo do Word (.docx) pode abrir diferente em cada computador, mas o PDF preserva o visual. Digitalizar é transformar papel em imagem digital. OCR é o recurso que transforma essa imagem em texto editável. Assinatura eletrônica é qualquer forma eletrônica de assinar (até uma foto da assinatura); assinatura digital usa criptografia e certificado — é a versão mais segura.',
 
-    explicacaoTecnica: 'Art. 76: o Poder Executivo é exercido pelo Presidente da República, auxiliado pelos Ministros de Estado. Art. 77: eleição pelo sufrágio universal e voto direto e secreto, maioria absoluta; 2º turno se necessário; posse em 1º de janeiro do ano seguinte; mandato de 4 anos. Art. 14, §3º, VI, "a": idade mínima de 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento eleitoral, domicílio eleitoral e filiação partidária. Art. 78: posse em sessão conjunta do Congresso. Art. 79: o Vice substitui o Presidente em caso de impedimento e sucede em caso de vaga. Art. 80: em caso de impedimento do Presidente e do Vice, ou vacância dos cargos, assumem sucessivamente: Presidente da Câmara, do Senado e do STF. Art. 81: se a vacância ocorrer nos 2 primeiros anos, eleição direta em 90 dias; se nos 2 últimos, eleição indireta pelo Congresso em 30 dias. Art. 82: mandato de 4 anos. Art. 83: 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento, domicílio, filiação. Art. 84: competências privativas do Presidente (sancionar, vetar, editar MP, nomear Ministros do STF, etc.). Art. 85: crimes de responsabilidade — atos que atentem contra a CF e especialmente contra: existência da União, livre exercício dos Poderes, exercício dos direitos políticos, segurança interna, probidade na Administração, lei orçamentária, guarda e uso do dinheiro público. Art. 86: imunidade formal — o Presidente não pode ser responsabilizado por atos estranhos ao exercício de suas funções. Art. 87: Ministros de Estado auxiliam o Presidente. Art. 88: lei disporá sobre criação e extinção de Ministérios. Art. 89: Conselho da República. Art. 90: Conselho de Defesa Nacional. Art. 91: regras sobre esses Conselhos.',
+    explicacaoTecnica: 'PDF (Portable Document Format): formato criado pela Adobe que preserva o layout original independentemente de sistema operacional, fonte ou dispositivo. Vantagens: fidelidade visual, portabilidade, segurança. Recursos: senha de abertura, restrição de edição/impressão, assinatura digital, marca d\'água. Diferença: DOCX é editável; PDF é predominantemente para distribuição. PDF/A é a versão para arquivamento de longo prazo. DIGITALIZAÇÃO: transformar documento físico em imagem digital via scanner ou celular. OCR (Optical Character Recognition — Reconhecimento Óptico de Caracteres): converte a IMAGEM em TEXTO EDITÁVEL/PESQUISÁVEL — sem OCR, o PDF digitalizado é apenas imagem. ASSINATURA ELETRÔNICA: qualquer forma eletrônica de manifestar concordância — inclui desde um simples "clique aqui" ou "aceito" até assinatura digitalizada. ASSINATURA DIGITAL: tipo ESPECÍFICO de assinatura eletrônica que usa CRIPTOGRAFIA ASSIMÉTRICA + CERTIFICADO DIGITAL — garante autenticidade, integridade e não repúdio. Toda assinatura digital é eletrônica, mas nem toda eletrônica é digital. CERTIFICADO DIGITAL: documento eletrônico que vincula uma identidade a uma chave pública — emitido por Autoridade Certificadora (AC). ICP-Brasil é a infraestrutura oficial brasileira. Usado em: assinatura digital, HTTPS, e-mails seguros, autenticação em serviços oficiais (gov.br). CUIDADOS: compartilhar PDFs sensíveis com senha; verificar destinatário; não enviar documentos pessoais por canais inseguros.',
 
     exemplos: [
-      'Eleição: 1º turno no primeiro domingo de outubro; 2º turno no último domingo de outubro.',
-      'Posse: 1º de janeiro do ano seguinte.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Sucessão: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.',
-      'Ministro do STF: nomeação pelo Presidente, após aprovação por maioria absoluta do Senado.',
-      'Crimes de responsabilidade: atos contra a existência da União, livre exercício dos Poderes, probidade na Administração etc.'
+      'PDF: preserva layout em qualquer dispositivo.',
+      'DOCX: editável no Word. PDF: majoritariamente para distribuição.',
+      'PDF com senha: pede senha para abrir.',
+      'PDF com restrição: permite abrir, mas não editar nem imprimir.',
+      'OCR: transforma imagem digitalizada em texto pesquisável.',
+      'Digitalização sem OCR: você vê a imagem, mas não consegue copiar o texto.',
+      'Assinatura eletrônica simples: "Li e aceito" em um site.',
+      'Assinatura digital: usa certificado ICP-Brasil e criptografia.',
+      'Certificado digital: e-CPF, e-CNPJ — emitidos por AC credenciada.',
+      'gov.br: usa autenticação com níveis (bronze, prata, ouro — ouro exige certificado ou biometria).'
     ],
 
     comparacoes: [
-      { termoA: 'Sucessão', termoB: 'Substituição', diferenca: 'SUBSTITUIÇÃO: assume temporariamente, em caso de IMPEDIMENTO (doença, viagem). SUCESSÃO: assume definitivamente, em caso de VAGA (morte, renúncia, cassação). A ordem é: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.' },
-      { termoA: 'Vacância nos 2 primeiros anos', termoB: 'Vacância nos 2 últimos anos', diferenca: 'PRIMEIROS 2 ANOS: eleição DIRETA em 90 dias (o povo vota). ÚLTIMOS 2 ANOS: eleição INDIRETA pelo Congresso em 30 dias (o Congresso vota).' },
-      { termoA: 'Crime comum', termoB: 'Crime de responsabilidade', diferenca: 'CRIME COMUM: julgado pelo STF (Presidente) após autorização da Câmara por 2/3. CRIME DE RESPONSABILIDADE: julgado pelo SENADO (Presidente) após autorização da Câmara por 2/3. A Câmara AUTORIZA; o Senado JULGA.' },
-      { termoA: 'Imunidade formal do Presidente', termoB: 'Imunidade do parlamentar', diferenca: 'PRESIDENTE (art. 86): não pode ser responsabilizado por atos estranhos ao exercício da função; durante o mandato, não pode ser preso por crime comum sem sentença condenatória. PARLAMENTAR (art. 53): imunidade material (opiniões, palavras, votos) e formal (prisão só em flagrante de crime inafiançável; processo criminal sem licença prévia após EC 35/2001).' }
+      { termoA: 'Documento editável (.docx)', termoB: 'PDF', diferenca: 'EDITÁVEL (.docx): pode ser modificado no Word ou programa compatível. O layout pode variar entre dispositivos/fontes. PDF: layout FIXO, preservado em qualquer dispositivo. Difícil de editar (embora existam ferramentas). Ideal para distribuição, impressão e documentos oficiais. Ao enviar um documento que precisa manter o visual original, use PDF.' },
+      { termoA: 'Digitalização', termoB: 'OCR', diferenca: 'DIGITALIZAÇÃO: transformar documento físico em IMAGEM digital (via scanner ou celular). Resultado: imagem do documento — não é texto editável. OCR (Reconhecimento Óptico de Caracteres): converte a IMAGEM em TEXTO editável e pesquisável. Sem OCR, o PDF digitalizado é só imagem. Com OCR, você pode selecionar, copiar e buscar o texto.' },
+      { termoA: 'Assinatura eletrônica', termoB: 'Assinatura digital', diferenca: 'ELETRÔNICA: qualquer forma eletrônica de manifestar concordância — inclui "clique aqui", aceite on-line, assinatura digitalizada. Não necessariamente usa criptografia. DIGITAL: tipo específico de assinatura eletrônica que usa CRIPTOGRAFIA ASSIMÉTRICA + CERTIFICADO DIGITAL. Garante autenticidade, integridade e não repúdio. Toda assinatura digital é eletrônica; nem toda eletrônica é digital.' },
+      { termoA: 'PDF comum', termoB: 'PDF/A', diferenca: 'PDF comum: formato padrão — preserva layout. PDF/A: versão específica para ARQUIVAMENTO de longo prazo — inclui todas as informações necessárias para reproduzir o documento no futuro (fontes embutidas, sem dependência externa). Usado em arquivos públicos e documentos que precisam durar décadas.' },
+      { termoA: 'e-CPF / e-CNPJ', termoB: 'Certificado de servidor', diferenca: 'e-CPF / e-CNPJ: certificado digital de PESSOA FÍSICA ou JURÍDICA — usado para assinar documentos, acessar sistemas, emitir notas. Certificado de servidor (SSL/TLS): usado por sites para HTTPS — garante que o site é quem diz ser. São certificados diferentes, com finalidades diferentes.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança de arts. 77 a 84 (eleição, mandato, requisitos, competências), das hipóteses de sucessão/substituição, e da distinção entre crime comum e de responsabilidade. Alta frequência em concursos federais e de Tribunais.',
+    aplicacaoEmConcurso: 'PDF aparece com frequência média. As bancas cobram: diferença entre editável e PDF, função do OCR, diferença entre assinatura eletrônica e digital, o que é certificado digital, cuidados com documentos sensíveis. Interpretação de conceitos e situações práticas.',
 
     pegadinhas: [
-      'Confundir sucessão com substituição.',
-      'Trocar os prazos de eleição direta (90 dias, 2 primeiros anos) com eleição indireta (30 dias, 2 últimos anos).',
-      'Dizer que o Senado processa e julga o Presidente por crime COMUM. É o STF. O Senado julga CRIME DE RESPONSABILIDADE.',
-      'Achar que o Vice é sempre o substituto. Se ambos os cargos estiverem vagos, assume o Presidente da Câmara.',
-      'Dizer que o Presidente pode ser preso por crime comum durante o mandato sem sentença condenatória (não pode).',
-      'Confundir os Conselhos (Conselho da República x Conselho de Defesa Nacional).'
+      'Achar que digitalização automaticamente cria texto editável — só com OCR.',
+      'Achar que assinatura eletrônica e assinatura digital são sinônimos — digital é um TIPO de eletrônica.',
+      'Achar que PDF não pode ser editado — pode, com ferramentas específicas (mas não é o padrão).',
+      'Achar que renomear um .docx para .pdf converte o arquivo — não converte, apenas muda a extensão.',
+      'Achar que certificado digital e senha comum são a mesma coisa — certificado usa criptografia.',
+      'Achar que qualquer PDF é seguro — depende de senha, restrições e assinatura.'
     ],
 
     errosComuns: [
-      'Decorar a linha sucessória sem entender as hipóteses.',
-      'Confundir crimes de responsabilidade do Presidente (Senado) com os de Governador (Tribunal Especial).',
-      'Ignorar que o Vice pode exercer funções por delegação do Presidente.'
+      'Confundir digitalização com OCR.',
+      'Confundir assinatura eletrônica com digital.',
+      'Achar que PDF é sempre imutável.',
+      'Não conhecer o papel do certificado digital.'
     ],
 
     resumo: [
-      'Presidente: eleição direta por maioria absoluta; mandato de 4 anos; posse em 1º de janeiro.',
-      'Requisitos: brasileiro nato, 35 anos, pleno exercício dos direitos políticos, alistamento, domicílio, filiação.',
-      'Linha sucessória: Vice → Pres. Câmara → Pres. Senado → Pres. STF.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Crime comum: julgado pelo STF. Crime de responsabilidade: julgado pelo Senado.',
-      'A Câmara AUTORIZA (2/3) nos dois casos.',
-      'Conselho da República: opina em situações graves.',
-      'Conselho de Defesa Nacional: opina em temas de segurança nacional.'
+      'PDF: layout fixo, portátil, ideal para distribuição e impressão.',
+      '.docx é editável; PDF preserva layout.',
+      'Digitalização: papel → imagem. OCR: imagem → texto editável.',
+      'Assinatura eletrônica: qualquer forma eletrônica (inclui clique, aceite).',
+      'Assinatura digital: usa criptografia + certificado — mais segura.',
+      'Certificado digital: e-CPF, e-CNPJ (ICP-Brasil).',
+      'PDF/A: arquivamento de longo prazo.',
+      'Cuidados: senha, restrições, assinatura digital para documentos sensíveis.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'O Presidente é o chefe do Executivo federal. Se ele sai do cargo, assume o Vice; se o Vice também sair, assume o Presidente da Câmara, depois o do Senado e, por último, o do STF. Dependendo de quando ocorre a vacância, o povo vota (primeiros 2 anos) ou o Congresso vota (últimos 2).',
-      outroExemplo: 'Se o Presidente renunciar no segundo mês do mandato, há eleição DIRETA em 90 dias. Se renunciar faltando 6 meses, há eleição INDIRETA pelo Congresso em 30 dias.',
-      compararConceitos: 'Sucessão = definitiva (vaga). Substituição = temporária (impedimento). Crime comum = STF. Crime de responsabilidade = Senado. Primeiros 2 anos = direta. Últimos 2 anos = indireta.',
-      mostrarPegadinha: 'Cuidado: "O Vice-Presidente é sempre o substituto do Presidente". Em caso de VAGA do Presidente, ele SUCEDE (definitivo). Em caso de IMPEDIMENTO, ele SUBSTITUI (temporário).',
-      comoApareceEmConcurso: 'Cobrança de arts. 77 a 84 e das hipóteses de sucessão.',
+      explicarMaisSimples: 'PDF é um "documento travado" — o layout fica igual em qualquer lugar. Digitalizar é fotografar o papel; OCR é transformar a foto em texto editável. Assinatura eletrônica é qualquer assinatura por meio eletrônico; assinatura digital usa criptografia e certificado — é a versão mais segura.',
+      outroExemplo: 'Você escaneia um contrato em papel. O resultado é uma imagem — se alguém tentar copiar o texto, não consegue (é imagem). Se você aplicar OCR, o texto passa a ser selecionável e pesquisável. Se você assinar com certificado digital, qualquer alteração invalida a assinatura — garantia de integridade.',
+      compararConceitos: 'Editável × PDF. Digitalização × OCR. Eletrônica × Digital. PDF × PDF/A. e-CPF × Certificado de servidor.',
+      mostrarPegadinha: 'Cuidado: "digitalizei o documento, então o texto já é pesquisável" — FALSO. Sem OCR, a digitalização gera apenas IMAGEM. O OCR é o recurso que transforma imagem em texto editável.',
+      comoApareceEmConcurso: 'Interpretação de conceitos e situações. Frequência média.',
       fazerPergunta: {
-        pergunta: 'Um Presidente é acusado de crime comum durante o mandato. Quem processa e julga?',
-        resposta: 'A Câmara dos Deputados AUTORIZA (2/3) e o SUPREMO TRIBUNAL FEDERAL julga (crime comum). Se fosse CRIME DE RESPONSABILIDADE, a Câmara autorizaria e o SENADO FEDERAL julgaria.'
+        pergunta: 'Qual a diferença entre assinatura eletrônica e assinatura digital?',
+        resposta: 'ASSINATURA ELETRÔNICA: qualquer forma eletrônica de manifestar concordância — desde um "clique aqui" ou aceite on-line até uma assinatura digitalizada. NÃO exige criptografia. ASSINATURA DIGITAL: tipo específico de assinatura eletrônica que usa CRIPTOGRAFIA ASSIMÉTRICA + CERTIFICADO DIGITAL — garante autenticidade, integridade e não repúdio. Toda assinatura digital é eletrônica, mas nem toda eletrônica é digital.'
       }
     }
   },
 
   /* ============================================================
-     DC-15 — Poder Judiciário
+     INF-14 — Software, Aplicativos e Ferramentas de Produtividade
   ============================================================ */
-  'DC-15': {
-    id: 'L-DC-15',
-    moduloId: 'DC-15',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Judiciário brasileiro (arts. 92 a 126 da CF/88): órgãos, STF, STJ, Justiça Federal, Estadual, do Trabalho, Eleitoral, Militar, CNJ, competências, garantias dos magistrados e organização.',
-    prerequisitos: ['DC-12'],
+  'INF-14': {
+    id: 'L-INF-14',
+    moduloId: 'INF-14',
+    objetivo: 'Compreender a classificação de softwares (sistema, aplicativo, utilitário); processos de instalação, atualização, configuração e desinstalação; compatibilidade e formatos de arquivo; compactação e descompactação (ZIP, RAR, 7z); captura de tela, impressão e compartilhamento; ferramentas de colaboração; recursos de acessibilidade.',
+    prerequisitos: ['INF-01'],
 
-    introducao: 'O Poder Judiciário é o responsável pela função jurisdicional — dizer o direito no caso concreto. A CF organiza os órgãos, distribui competências e garante aos magistrados as condições para julgar com independência.',
+    introducao: 'Software e ferramentas de produtividade é um módulo de frequência média em concursos. As bancas cobram a classificação dos softwares, o que faz cada tipo de programa, formatos de compactação, atalhos de captura de tela, e a diferença entre instalar, atualizar e desinstalar. Também cobram conceitos de acessibilidade.',
 
-    explicacaoSimples: 'Pense na Justiça como uma grande estrutura com vários níveis. No topo está o STF (guarda da Constituição) e, logo abaixo, o STJ (guarda da lei federal). Depois vêm a Justiça Federal, Estadual, do Trabalho, Eleitoral e Militar. Cada uma tem sua área. Há ainda o CNJ, que cuida da administração do Judiciário.',
+    explicacaoSimples: 'Software é a parte lógica do computador. Existem três grandes grupos: SOFTWARE DE SISTEMA (faz o PC funcionar — Windows, Linux, drivers); SOFTWARE APLICATIVO (faz o que você quer — Word, Excel, navegador); UTILITÁRIO (ferramentas de manutenção — antivírus, compactador, limpeza de disco). Compactar é reduzir o tamanho de arquivos para economizar espaço e facilitar o envio por e-mail.',
 
-    explicacaoTecnica: 'Art. 92: são órgãos do Poder Judiciário — STF, CNJ, STJ, TST, TREs, Tribunais de Justiça dos Estados e DF, TRFs, TRTs, Tribunais Militares e juízes dos respectivos órgãos. Art. 93: Estatuto da Magistratura (LC). Art. 94: regras de ingresso (quinto constitucional). Art. 95: garantias dos magistrados — vitaliciedade, inamovibilidade e irredutibilidade de subsídio. Art. 96: competências dos tribunais. Art. 97: reserva de plenário (cláusula de reserva de plenário — somente pelo voto da maioria absoluta dos membros do Tribunal ou do órgão especial). Art. 98: Justiça de Paz. Art. 99: autonomia administrativa e financeira do Judiciário. Art. 100: precatórios. Art. 101 a 103: STF — composição (11 ministros, brasileiros natos, 35 a 65 anos, nomeados pelo Presidente após aprovação por maioria absoluta do Senado), competências, ADI/ADC/ADPF/ADO. Art. 104 a 105: STJ — 33 ministros, 35 a 65 anos, competências. Art. 106 a 110: Justiça Federal — TRFs (mínimo 7 juízes). Art. 111 a 117: Justiça do Trabalho. Art. 118 a 121: Justiça Eleitoral. Art. 122 a 124: Justiça Militar. Art. 125 a 126: Justiça Estadual. Art. 127 a 130: funções essenciais à Justiça (MP, Advocacia Pública, Advocacia, Defensoria). Art. 92, §1º: o STF tem 11 ministros. Art. 103-B: CNJ — 15 membros, presidido pelo Presidente do STF.',
+    explicacaoTecnica: 'CLASSIFICAÇÃO DE SOFTWARE: SOFTWARE DE SISTEMA — gerencia o hardware e fornece base para os aplicativos (sistemas operacionais, drivers, firmware). SOFTWARE APLICATIVO — realiza tarefas do usuário (Word, Excel, navegador, jogos). SOFTWARE UTILITÁRIO — ferramentas de manutenção e suporte (antivírus, desfragmentador, compactadores, backup). Alguns autores tratam "utilitário" como subcategoria de aplicativo. INSTALAÇÃO: copiar arquivos e configurar o programa no sistema (.exe, .msi). UPDATE (ATUALIZAÇÃO): corrige bugs e vulnerabilidades — importante para segurança. UPGRADE: nova versão com novos recursos (pode ser paga). DESINSTALAÇÃO: remover o programa — sempre use o painel de controle/desinstalador, não apague a pasta. COMPATIBILIDADE: um programa pode exigir versão mínima do SO. COMPACTAÇÃO: reduz o tamanho de arquivos. Formatos: ZIP (padrão universal, nativo do Windows), RAR (WinRAR — proprietário), 7z (7-Zip — código aberto, alta compressão), TAR.GZ (Linux). Compactar NÃO criptografa por si só — alguns formatos permitem senha. CAPTURA DE TELA: Print Screen (tela toda), Alt+Print Screen (janela ativa), Win+Shift+S (recorte no Windows 10/11), Snipping Tool (ferramenta nativa). IMPRESSÃO: Ctrl+P — impressora física, PDF, XPS. Compartilhamento: rede, e-mail, nuvem. FERRAMENTAS DE COLABORAÇÃO: Microsoft Teams, Zoom, Google Meet, Slack. ACESSIBILIDADE: Lupa (Win + "+"), Narrador, Alto Contraste, Teclado Virtual, Legendas Ocultas, Reconhecimento de Fala.',
 
     exemplos: [
-      'STF: guarda da CF; julga ADI, ADPF, HC de autoridades específicas, extradição.',
-      'STJ: guarda da lei federal; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade for desembargador.',
-      'Justiça Federal: causas em que a União, autarquias federais ou empresas públicas federais forem partes.',
-      'Justiça do Trabalho: conflitos entre empregado e empregador.',
-      'Justiça Eleitoral: eleições, partidos políticos, registro de candidatos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: causas residuais — o que não for das outras.',
-      'CNJ: controle administrativo, financeiro e disciplinar do Judiciário.'
+      'Software de sistema: Windows 11, Linux, drivers.',
+      'Software aplicativo: Word, Excel, Chrome, WhatsApp.',
+      'Software utilitário: antivírus, WinRAR, 7-Zip, CCleaner.',
+      'Instalação: "setup.exe", "instalar.msi".',
+      'Atualização: Windows Update — corrige falhas e vulnerabilidades.',
+      'Desinstalação: Painel de Controle → Programas → Desinstalar.',
+      'Compactação: .zip (padrão), .rar (WinRAR), .7z (7-Zip).',
+      'Print Screen: captura toda a tela. Alt+Print Screen: janela ativa. Win+Shift+S: recorte.',
+      'Ctrl+P: imprimir (ou salvar como PDF).',
+      'Lupa: Win + "+". Narrador: Win + Ctrl + Enter.',
+      'Colaboração: Teams, Zoom, Meet, Slack.'
     ],
 
     comparacoes: [
-      { termoA: 'STF', termoB: 'STJ', diferenca: 'STF: guarda da CONSTITUIÇÃO; 11 ministros; julga ADI, ADPF, ADO, ADC, extradição, HC de autoridades. STJ: guarda da LEI FEDERAL; 33 ministros; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade é desembargador.' },
-      { termoA: 'Vitaliciedade', termoB: 'Inamovibilidade', diferenca: 'VITALICIEDADE: o juiz não perde o cargo (após 2 anos de exercício no 1º grau; imediata nos tribunais superiores), salvo por sentença judicial transitada em julgado. INAMOVIBILIDADE: o juiz não pode ser removido de sua comarca ou seção sem sua vontade, salvo por interesse público (voto de 2/3 do tribunal).' },
-      { termoA: 'Justiça Federal', termoB: 'Justiça Estadual', diferenca: 'FEDERAL: julga causas em que a União, autarquias federais ou empresas públicas federais forem partes; crimes políticos; crimes contra bens da União; estrangeiros. ESTADUAL: residual — o que não for das outras Justiças.' },
-      { termoA: 'CNJ', termoB: 'STF', diferenca: 'CNJ: órgão de CONTROLE administrativo, financeiro e disciplinar do Judiciário — não julga causas. STF: órgão de CÚPULA do Judiciário, com competência para julgar ADI, HC, extradição e outras causas constitucionais.' }
+      { termoA: 'Software de sistema', termoB: 'Software aplicativo', diferenca: 'SISTEMA: gerencia hardware e serve de BASE para os demais — Windows, Linux, drivers, firmware. Sem ele, o computador não funciona. APLICATIVO: realiza tarefas do usuário — Word, Excel, navegador, jogos. Precisa do sistema operacional para rodar. O sistema é a "fundação"; o aplicativo é o "morador".' },
+      { termoA: 'Atualização (update)', termoB: 'Upgrade', diferenca: 'ATUALIZAÇÃO (update): corrige bugs e VULNERABILIDADES da versão atual — geralmente gratuita e recomendada por segurança. UPGRADE: nova VERSÃO com recursos adicionais — pode ser gratuita ou paga (ex.: Windows 10 → Windows 11). Atualização mantém a versão; upgrade muda a versão.' },
+      { termoA: 'Instalar', termoB: 'Desinstalar', diferenca: 'INSTALAR: copiar arquivos e registrar o programa no sistema — geralmente via setup.exe ou .msi. DESINSTALAR: remover o programa corretamente via Painel de Controle (ou desinstalador do próprio programa) — apaga arquivos e limpa registros. NUNCA apague a pasta do programa manualmente — deixa resíduos no sistema.' },
+      { termoA: 'ZIP', termoB: 'RAR', diferenca: 'ZIP: formato universal, nativo do Windows e Mac — abre sem instalar nada. RAR: formato do WinRAR — geralmente compacta mais, mas exige o programa para extrair (ou ferramentas compatíveis). Ambos podem ter senha. 7z é outra alternativa (código aberto, alta compressão).' },
+      { termoA: 'Print Screen', termoB: 'Alt+Print Screen', diferenca: 'PRINT SCREEN: captura a TELA TODA. ALT+PRINT SCREEN: captura apenas a JANELA ATIVA. WIN+SHIFT+S (Windows 10/11): abre a ferramenta de recorte — permite selecionar uma área específica. Todos copiam para a área de transferência; depois você cola (Ctrl+V) em um editor de imagem ou documento.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança de arts. 92 a 105 (órgãos, composição, competências), das garantias dos magistrados (vitaliciedade, inamovibilidade, irredutibilidade) e da distinção entre STF e STJ. Comum em concursos de Tribunais.',
+    aplicacaoEmConcurso: 'Software é tema de frequência média. As bancas cobram: classificação (sistema, aplicativo, utilitário), diferença instalar × atualizar × upgrade, formatos de compactação (ZIP, RAR, 7z), atalhos de captura de tela, ferramentas de acessibilidade do Windows. Interpretação de conceitos.',
 
     pegadinhas: [
-      'Confundir STF (Constituição) com STJ (lei federal).',
-      'Trocar o número de ministros do STF (11) com o do STJ (33).',
-      'Achar que o CNJ julga causas. O CNJ faz controle administrativo, financeiro e disciplinar.',
-      'Dizer que o juiz pode ser removido sem processo. A inamovibilidade garante proteção, salvo por interesse público e voto de 2/3 do tribunal.',
-      'Confundir as garantias: vitaliciedade (não perde o cargo), inamovibilidade (não é removido), irredutibilidade (não tem subsídio reduzido).',
-      'Dizer que o STF pode julgar qualquer causa. Tem competência taxativa na CF.'
+      'Achar que antivírus é software aplicativo — é utilitário.',
+      'Achar que atualização e upgrade são sinônimos — são conceitos diferentes.',
+      'Achar que compactar é criptografar — compactação reduz tamanho; criptografia protege conteúdo.',
+      'Achar que ZIP e RAR são sinônimos — são formatos diferentes.',
+      'Achar que apagar a pasta do programa é desinstalar — não é.',
+      'Achar que Print Screen captura só a janela ativa — só Alt+Print Screen faz isso.',
+      'Achar que "software livre" é sempre gratuito — livre refere-se à liberdade, não ao preço.'
     ],
 
     errosComuns: [
-      'Decorar os órgãos sem entender a lógica (STF = Constituição; STJ = lei federal; Justiça Federal = causas federais; Justiça Estadual = residual).',
-      'Confundir as composições dos tribunais superiores.',
-      'Ignorar a EC 45/2004, que criou o CNJ.'
+      'Confundir as três categorias de software.',
+      'Não saber a diferença entre atualização e upgrade.',
+      'Não conhecer formatos de compactação.',
+      'Não saber atalhos de acessibilidade.'
     ],
 
     resumo: [
-      'Órgãos: STF, CNJ, STJ, TST, TREs, TJs, TRFs, TRTs, Tribunais Militares e juízes.',
-      'STF: 11 ministros; guarda da Constituição; julga ADI, ADPF, ADO, ADC, extradição.',
-      'STJ: 33 ministros; guarda da lei federal; julga recurso especial.',
-      'Justiça Federal: causas com a União/autarquias/empresas públicas federais.',
-      'Justiça do Trabalho: relações de trabalho.',
-      'Justiça Eleitoral: eleições e partidos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: residual.',
-      'CNJ: controle administrativo, financeiro e disciplinar (EC 45/2004).',
-      'Garantias do magistrado: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
+      'Software: sistema (Windows, Linux), aplicativo (Word, Chrome), utilitário (antivírus, compactador).',
+      'Instalar: setup.exe/.msi. Atualizar: corrigir bugs. Upgrade: nova versão. Desinstalar: via Painel de Controle.',
+      'Compactação: ZIP (nativo), RAR (WinRAR), 7z (7-Zip), TAR.GZ (Linux).',
+      'Print Screen: tela toda. Alt+Print Screen: janela ativa. Win+Shift+S: recorte.',
+      'Ctrl+P: imprimir. PDF como saída é possível.',
+      'Acessibilidade: Lupa (Win + "+"), Narrador, Alto Contraste.',
+      'Colaboração: Teams, Zoom, Meet, Slack.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'O Judiciário é uma escada: no topo o STF (Constituição), depois o STJ (lei federal), depois as Justiças especializadas (Federal, Trabalho, Eleitoral, Militar) e a Estadual (residual). Cada uma cuida de uma área.',
-      outroExemplo: 'Uma causa sobre FGTS entre empregado e empresa vai para a Justiça do Trabalho. Uma causa em que a União é ré vai para a Justiça Federal. Uma causa entre dois particulares sobre contrato vai para a Justiça Estadual (residual).',
-      compararConceitos: 'STF = Constituição. STJ = lei federal. Justiça Federal = causas federais. Justiça Estadual = residual. CNJ = administração. Vitaliciedade ≠ inamovibilidade ≠ irredutibilidade.',
-      mostrarPegadinha: 'Cuidado: "O CNJ julga causas judiciais". ERRADO. O CNJ faz controle ADMINISTRATIVO, FINANCEIRO e DISCIPLINAR do Judiciário — não julga causas.',
-      comoApareceEmConcurso: 'Cobrança de competências e composições.',
+      explicarMaisSimples: 'Software é a parte lógica do PC. Três tipos: SISTEMA (faz o PC funcionar — Windows), APLICATIVO (faz o que você quer — Word, Chrome), UTILITÁRIO (manutenção — antivírus, compactador). Atualização corrige falhas; upgrade muda a versão. Compactação reduz tamanho (ZIP, RAR, 7z).',
+      outroExemplo: 'Você baixa uma pasta de fotos de 100 MB. Compacta em ZIP → vira 80 MB. Envia por e-mail (agora cabe no limite). Quem recebe descompacta e vê as fotos intactas. Se colocar senha no ZIP, fica protegido — mas isso é proteção, não compactação.',
+      compararConceitos: 'Sistema × Aplicativo × Utilitário. Instalar × Atualizar × Upgrade × Desinstalar. ZIP × RAR × 7z. Print Screen × Alt+Print Screen × Win+Shift+S.',
+      mostrarPegadinha: 'Cuidado: "atualização e upgrade são a mesma coisa" — FALSO. Atualização (update) corrige bugs e falhas de segurança da versão atual. Upgrade muda para uma versão superior (ex.: Windows 10 → 11). A banca cobra essa diferença.',
+      comoApareceEmConcurso: 'Interpretação de conceitos. Frequência média.',
       fazerPergunta: {
-        pergunta: 'Um Governador de Estado é acusado de crime comum. Quem julga?',
-        resposta: 'O SUPERIOR TRIBUNAL DE JUSTIÇA (STJ) — art. 105, I, "a". Se fosse crime de responsabilidade, o julgamento seria pelo Tribunal Especial (composto por desembargadores do TJ + deputados estaduais), conforme a Constituição Estadual.'
-      }
-    }
-  }
-
-  /* ============================================================
-     Próximo lote — adicionar em edição futura:
-     'DC-16': { ... }
-     'DC-17': { ... }
-     'DC-18': { ... }
-  ============================================================ */
-
-};/* ============================================================
-   AULAS — Módulos de prioridade MÉDIA
-   Preenchidos neste lote: DC-10, DC-14, DC-15
-   Próximo lote: DC-16, DC-17, DC-18
-   ============================================================ */
-
-window.LESSONS_MEDIA = {
-
-  /* ============================================================
-     DC-10 — Intervenção
-  ============================================================ */
-  'DC-10': {
-    id: 'L-DC-10',
-    moduloId: 'DC-10',
-    objetivo: 'Dominar o instituto da intervenção (arts. 34 a 36 da CF/88): hipóteses de intervenção federal, estadual e em Municípios, procedimento, decreto, controle pelo Congresso e relação com a autonomia federativa.',
-    prerequisitos: ['DC-08'],
-
-    introducao: 'A intervenção é medida excepcional: o ente federativo quebra temporariamente a autonomia de outro, para restabelecer a normalidade constitucional. É o oposto do princípio federativo — por isso, é taxativa, temporária e sujeita a controle.',
-
-    explicacaoSimples: 'Pense na Federação como um condomínio. Se um morador descumpre regras gravíssimas, o síndico (União ou Estado) pode, temporariamente, assumir o controle do apartamento dele — mas só nas hipóteses previstas no regimento e depois de seguir o procedimento. Isso é intervenção.',
-
-    explicacaoTecnica: 'Art. 34: hipóteses de intervenção FEDERAL nos Estados e no DF — (I) manter a integridade nacional; (II) repelir invasão estrangeira ou de uma unidade da Federação em outra; (III) pôr termo a grave comprometimento da ordem pública; (IV) garantir o livre exercício de qualquer dos Poderes nas unidades da Federação; (V) reorganizar as finanças da unidade (que suspender pagamento da dívida fundada por mais de 2 anos, ou deixar de entregar receitas); (VI) prover a execução de lei federal, ordem ou decisão judicial; (VII) assegurar a observância dos princípios constitucionais sensíveis (forma republicana, sistema representativo, regime democrático, direitos da pessoa humana, autonomia municipal, prestação de contas da Administração Pública direta e indireta). Art. 35: hipóteses de intervenção ESTADUAL nos Municípios — (I) deixar de ser paga, sem motivo, por 2 anos, a dívida fundada; (II) não forem prestadas contas devidas; (III) não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde; (IV) o Tribunal de Justiça der provimento a representação para assegurar a observância de princípios indicados na Constituição Estadual ou para prover a execução de lei, de ordem ou de decisão judicial. Art. 36: procedimento — decreto do Presidente (intervenção federal espontânea) ou requisição (nos casos do art. 34, IV, VI e VII); ouvidoria prévia do Conselho da República e do Conselho de Defesa; controle político pelo Congresso (aprovação por maioria simples em 24h, se em recesso convocação extraordinária); decreto especifica amplitude, prazo e condições. §1º: nomeação de interventor. §2º: cessação da intervenção — retorno à normalidade. §3º: se cessada a causa, as autoridades afastadas retornam aos cargos.',
-
-    exemplos: [
-      'Intervenção federal para garantir ordem pública: grave crise de segurança em Estado.',
-      'Intervenção federal para garantir execução de decisão judicial: descumprimento de ordem federal.',
-      'Intervenção federal para assegurar princípios sensíveis: descumprimento da autonomia municipal.',
-      'Intervenção estadual em Município: não aplicação do mínimo na educação ou saúde.',
-      'Intervenção estadual por não pagamento de dívida fundada por 2 anos.',
-      'Reorganização de finanças: Estado que não paga dívida fundada por mais de 2 anos.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Intervenção federal', termoB: 'Intervenção estadual', diferenca: 'FEDERAL: decreto do Presidente da República; atinge Estados e DF; hipóteses do art. 34. ESTADUAL: decreto do Governador; atinge Municípios; hipóteses do art. 35. São institutos paralelos, mas com titulares e destinatários diferentes.' },
-      { termoA: 'Intervenção espontânea', termoB: 'Intervenção provocada', diferenca: 'ESPONTÂNEA: decreto do Presidente, sem provocação de outro Poder (hipóteses dos incisos I, II, III e V do art. 34). PROVOCADA: depende de requisição do STF (inciso VI), do STJ (inciso VI, lei federal) ou do TSE (inciso VII, princípios sensíveis), ou de solicitação do Poder coacto (inciso IV).' },
-      { termoA: 'Intervenção federal', termoB: 'Estado de Sítio', diferenca: 'INTERVENÇÃO: medida excepcional para restabelecer a ordem federativa — atinge o ente, não os direitos fundamentais diretamente. ESTADO DE SÍTIO: medida excepcional para restabelecer a ordem constitucional em caso de comoção grave ou guerra — atinge diretamente os direitos fundamentais, suspendendo garantias.' },
-      { termoA: 'Controle político', termoB: 'Controle judicial', diferenca: 'POLÍTICO: feito pelo Congresso Nacional — aprovação do decreto de intervenção em 24h. JUDICIAL: feito pelo STF, STJ ou TSE — conforme a hipótese, o Tribunal competente pode requisitar a intervenção.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança das hipóteses de intervenção federal (art. 34) x estadual (art. 35), do procedimento (decreto, ouvidoria dos Conselhos, controle pelo Congresso em 24h) e das regras específicas (prazo, nomeação de interventor, retorno das autoridades). Questões costumam misturar as hipóteses dos dois artigos.',
-
-    pegadinhas: [
-      'Confundir intervenção federal (arts. 34) com estadual (arts. 35).',
-      'Achar que o decreto de intervenção é do Congresso. É do Presidente (federal) ou do Governador (estadual).',
-      'Dizer que a intervenção depende de autorização prévia do Congresso. O decreto é expedido e depois submetido ao Congresso em 24h.',
-      'Esquecer a ouvidoria prévia do Conselho da República e do Conselho de Defesa (intervenção federal).',
-      'Confundir intervenção com estado de sítio ou estado de defesa.',
-      'Achar que a intervenção é permanente. É temporária — cessada a causa, as autoridades retornam.'
-    ],
-
-    errosComuns: [
-      'Decorar hipóteses sem associar ao titular do decreto.',
-      'Ignorar que a intervenção em Município (art. 35, I a IV) pode ser decreto do Governador, mas a hipótese do inciso IV depende de provimento pelo TJ.',
-      'Não distinguir intervenção espontânea de provocada.'
-    ],
-
-    resumo: [
-      'Intervenção é medida excepcional e temporária.',
-      'Art. 34: hipóteses de intervenção FEDERAL nos Estados e DF.',
-      'Art. 35: hipóteses de intervenção ESTADUAL nos Municípios.',
-      'Decreto: Presidente (federal) ou Governador (estadual).',
-      'Controle: Congresso aprova o decreto em 24h.',
-      'Ouvidoria prévia do Conselho da República e Conselho de Defesa (federal).',
-      'Decreto especifica amplitude, prazo e condições.',
-      'Cessada a causa, retornam as autoridades afastadas.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Intervenção é como o "juiz" do condomínio assumindo temporariamente o apartamento de um morador que quebrou regras gravíssimas — só nas hipóteses do regimento, por prazo determinado, com o condomínio aprovando depois.',
-      outroExemplo: 'Se um Estado deixa de pagar precatórios por mais de 2 anos, cabe intervenção federal por reorganização de finanças (art. 34, V). Se um Município não aplica o mínimo em saúde, cabe intervenção estadual (art. 35, III).',
-      compararConceitos: 'Federal (Presidente, atinge Estados) x Estadual (Governador, atinge Municípios). Espontânea (sem provocação) x Provocada (requisição ou solicitação). Intervenção x Estado de Sítio: uma atinge o ente, o outro atinge direitos.',
-      mostrarPegadinha: 'Cuidado: "A intervenção federal só pode ser decretada pelo Congresso Nacional". ERRADO. O DECRETO é do Presidente; o Congresso apenas APROVA depois, em 24 horas.',
-      comoApareceEmConcurso: 'Cobrança das hipóteses (arts. 34 e 35) e do procedimento (decreto + controle do Congresso).',
-      fazerPergunta: {
-        pergunta: 'Um Estado deixa de aplicar o mínimo constitucional em educação. Cabe intervenção federal?',
-        resposta: 'NÃO — a não aplicação do mínimo em educação é hipótese de intervenção ESTADUAL em MUNICÍPIO (art. 35, III). Em relação ao Estado, a não aplicação do mínimo não é hipótese de intervenção federal, e sim de responsabilização política (crime de responsabilidade do Governador) e rejeição de contas.'
+        pergunta: 'Qual a diferença entre atualização e upgrade?',
+        resposta: 'ATUALIZAÇÃO (update): corrige bugs e vulnerabilidades da versão atual — mantém a mesma versão, geralmente gratuita e recomendada. UPGRADE: muda para uma versão superior (ex.: Windows 10 → Windows 11) — pode trazer recursos novos e pode ser paga. Atualização = "consertar"; upgrade = "subir de nível".'
       }
     }
   },
 
   /* ============================================================
-     DC-14 — Poder Executivo
+     INF-16 — Informática Aplicada ao Trabalho Administrativo
   ============================================================ */
-  'DC-14': {
-    id: 'L-DC-14',
-    moduloId: 'DC-14',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Executivo federal (arts. 76 a 91 da CF/88): Presidente, Vice, eleição, mandato, requisitos, sucessão, substituição, competências, ministros, responsabilidade e crimes de responsabilidade.',
-    prerequisitos: ['DC-12'],
+  'INF-16': {
+    id: 'L-INF-16',
+    moduloId: 'INF-16',
+    objetivo: 'Aplicar os conhecimentos de Informática em situações reais do trabalho administrativo: produção e formatação de documentos, planilhas para controle e cálculo, organização de arquivos e pastas, envio seguro de documentos, compartilhamento com permissões, escolha da ferramenta adequada e resolução de questões integradas que simulam o cotidiano de escritório.',
+    prerequisitos: ['INF-02', 'INF-03', 'INF-04', 'INF-07', 'INF-11'],
 
-    introducao: 'O Poder Executivo exerce a função típica de administrar o Estado. Na esfera federal, é chefiado pelo Presidente da República, auxiliado pelos Ministros de Estado. As bancas cobram as regras de eleição, as hipóteses de sucessão/substituição e os crimes de responsabilidade.',
+    introducao: 'Informática Aplicada é o módulo-síntese — ele reúne tudo o que você aprendeu em Windows, Word, Excel, Internet e Segurança. É o tipo de conteúdo que as bancas modernas cobram com questões contextualizadas ("o servidor precisa enviar um relatório por e-mail... qual o procedimento correto?"). Aqui não basta saber o conceito — é preciso ESCOLHER a ferramenta adequada e entender o RESULTADO de cada ação.',
 
-    explicacaoSimples: 'O Presidente é o "chefe" do Executivo federal: administra o país, representa o Brasil no exterior, sanciona e veta leis, edita medidas provisórias. Se ele sai do cargo por algum motivo, há regras específicas sobre quem assume — o Vice, o Presidente da Câmara, o do Senado ou o do STF.',
+    explicacaoSimples: 'Pense no trabalho administrativo como uma rotina: você recebe uma demanda, escolhe a ferramenta certa, executa, compartilha com segurança e organiza. Cada tarefa exige uma ferramenta específica: fazer texto → Word; fazer conta/planilha → Excel; apresentar → PowerPoint; enviar → e-mail; armazenar/compartilhar → nuvem; proteger → backup + senha + MFA. A banca cobra justamente a escolha certa e o procedimento correto.',
 
-    explicacaoTecnica: 'Art. 76: o Poder Executivo é exercido pelo Presidente da República, auxiliado pelos Ministros de Estado. Art. 77: eleição pelo sufrágio universal e voto direto e secreto, maioria absoluta; 2º turno se necessário; posse em 1º de janeiro do ano seguinte; mandato de 4 anos. Art. 14, §3º, VI, "a": idade mínima de 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento eleitoral, domicílio eleitoral e filiação partidária. Art. 78: posse em sessão conjunta do Congresso. Art. 79: o Vice substitui o Presidente em caso de impedimento e sucede em caso de vaga. Art. 80: em caso de impedimento do Presidente e do Vice, ou vacância dos cargos, assumem sucessivamente: Presidente da Câmara, do Senado e do STF. Art. 81: se a vacância ocorrer nos 2 primeiros anos, eleição direta em 90 dias; se nos 2 últimos, eleição indireta pelo Congresso em 30 dias. Art. 82: mandato de 4 anos. Art. 83: 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento, domicílio, filiação. Art. 84: competências privativas do Presidente (sancionar, vetar, editar MP, nomear Ministros do STF, etc.). Art. 85: crimes de responsabilidade — atos que atentem contra a CF e especialmente contra: existência da União, livre exercício dos Poderes, exercício dos direitos políticos, segurança interna, probidade na Administração, lei orçamentária, guarda e uso do dinheiro público. Art. 86: imunidade formal — o Presidente não pode ser responsabilizado por atos estranhos ao exercício de suas funções. Art. 87: Ministros de Estado auxiliam o Presidente. Art. 88: lei disporá sobre criação e extinção de Ministérios. Art. 89: Conselho da República. Art. 90: Conselho de Defesa Nacional. Art. 91: regras sobre esses Conselhos.',
+    explicacaoTecnica: 'PRODUÇÃO DE DOCUMENTOS: usar estilos (Título 1, Título 2) para gerar sumário automático; cabeçalho/rodapé com numeração de página; exportar para PDF antes de enviar; salvar .docx para continuar editando. PLANILHAS: usar fórmulas com referências corretas (relativa × absoluta); funções SE e CONT.SE para cálculos condicionais; validar dados para evitar erros; tabelas dinâmicas para resumos; formatação condicional para destacar. ORGANIZAÇÃO DE ARQUIVOS: estrutura lógica (Ano → Mês → Assunto); nomenclatura padronizada ("relatorio_2025_01_v1.docx"); versionamento (_v1, _v2); evitar "Documento1.docx". ENVIO SEGURO: anexar PDF em vez de .docx editável; usar senha em documentos sensíveis; verificar destinatário antes de enviar; evitar "responder a todos" desnecessariamente; usar Cco em listas grandes. COMPARTILHAMENTO: preferir links restritos (só convidados) a links públicos; revisar permissões periodicamente; separar pastas de leitura × edição. ESCOLHA DA FERRAMENTA: texto longo → Word; tabela com cálculo → Excel; apresentação → PowerPoint; envio formal → e-mail/ofício; colaboração simultânea → Google Docs / Microsoft 365; armazenamento/backup → nuvem + HD externo. QUESTÕES INTEGRADAS: combinam interpretação + ferramenta + procedimento + segurança — exigem leitura atenta do cenário.',
 
     exemplos: [
-      'Eleição: 1º turno no primeiro domingo de outubro; 2º turno no último domingo de outubro.',
-      'Posse: 1º de janeiro do ano seguinte.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Sucessão: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.',
-      'Ministro do STF: nomeação pelo Presidente, após aprovação por maioria absoluta do Senado.',
-      'Crimes de responsabilidade: atos contra a existência da União, livre exercício dos Poderes, probidade na Administração etc.'
+      'Tarefa: relatório mensal com sumário. Word com estilos + sumário automático + exportar PDF.',
+      'Tarefa: planilha de despesas com total por categoria. Excel com SOMA, CONT.SE e tabela dinâmica.',
+      'Tarefa: apresentar projeto para a chefia. PowerPoint com tema consistente + exportar para PDF.',
+      'Tarefa: enviar contrato assinado. Digitalizar + assinatura digital (ICP-Brasil) + PDF com senha + e-mail com Cco.',
+      'Tarefa: compartilhar planilha com equipe. OneDrive/Google Drive com permissão "editor" para a equipe, "visualizador" para os demais.',
+      'Tarefa: guardar cópia de segurança. Estratégia 3-2-1 (3 cópias, 2 mídias, 1 fora do local).',
+      'Cenário de prova: "O servidor precisa enviar 200 e-mails personalizados" → use Cco para preservar a privacidade.',
+      'Cenário: "documento precisa chegar idêntico ao original" → exporte para PDF antes de enviar.'
     ],
 
     comparacoes: [
-      { termoA: 'Sucessão', termoB: 'Substituição', diferenca: 'SUBSTITUIÇÃO: assume temporariamente, em caso de IMPEDIMENTO (doença, viagem). SUCESSÃO: assume definitivamente, em caso de VAGA (morte, renúncia, cassação). A ordem é: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.' },
-      { termoA: 'Vacância nos 2 primeiros anos', termoB: 'Vacância nos 2 últimos anos', diferenca: 'PRIMEIROS 2 ANOS: eleição DIRETA em 90 dias (o povo vota). ÚLTIMOS 2 ANOS: eleição INDIRETA pelo Congresso em 30 dias (o Congresso vota).' },
-      { termoA: 'Crime comum', termoB: 'Crime de responsabilidade', diferenca: 'CRIME COMUM: julgado pelo STF (Presidente) após autorização da Câmara por 2/3. CRIME DE RESPONSABILIDADE: julgado pelo SENADO (Presidente) após autorização da Câmara por 2/3. A Câmara AUTORIZA; o Senado JULGA.' },
-      { termoA: 'Imunidade formal do Presidente', termoB: 'Imunidade do parlamentar', diferenca: 'PRESIDENTE (art. 86): não pode ser responsabilizado por atos estranhos ao exercício da função; durante o mandato, não pode ser preso por crime comum sem sentença condenatória. PARLAMENTAR (art. 53): imunidade material (opiniões, palavras, votos) e formal (prisão só em flagrante de crime inafiançável; processo criminal sem licença prévia após EC 35/2001).' }
+      { termoA: 'Word para texto', termoB: 'Excel para planilha', diferenca: 'WORD: ideal para documentos textuais — cartas, relatórios, ofícios, contratos. Recursos: estilos, sumário, cabeçalho, revisão, exportação para PDF. EXCEL: ideal para cálculos, tabelas, controles, listas. Recursos: fórmulas, funções (SE, CONT.SE), tabelas dinâmicas, gráficos. Regra prática: se envolve MUITO TEXTO → Word; se envolve NÚMEROS e CÁLCULO → Excel.' },
+      { termoA: 'Enviar .docx', termoB: 'Enviar .pdf', diferenca: '.DOCX: mantém editabilidade, mas o layout pode variar entre dispositivos — ideal quando o destinatário vai editar. .PDF: layout fixo em qualquer dispositivo — ideal para envio, impressão, contratos e documentos formais. Recomendação: envie .pdf para quem só vai ler/imprimir; envie .docx para quem precisa editar.' },
+      { termoA: 'Compartilhar link público', termoB: 'Compartilhar link restrito', diferenca: 'PÚBLICO: qualquer pessoa com o link acessa — risco de vazamento. RESTRITO: só convidados acessam — mais seguro. No trabalho administrativo, PREFIRA sempre "restrito" para documentos sensíveis (dados pessoais, contratos, informações internas). Use público somente para materiais abertos (folders, avisos).' },
+      { termoA: 'Backup', termoB: 'Compartilhamento', diferenca: 'BACKUP: cópia de segurança separada — protege contra perda. COMPARTILHAMENTO: dar acesso a outras pessoas — é conveniência, não proteção. Compartilhar na nuvem NÃO é backup — se você apagar localmente, apaga na nuvem também. Faça backup separado (HD externo, outra nuvem).' },
+      { termoA: 'Ferramenta correta', termoB: 'Ferramenta favorita', diferenca: 'CORRETA: a que resolve a tarefa com eficiência e segurança — planilha para cálculo, PDF para envio formal, senha para dados sensíveis. FAVORITA: a que você gosta de usar — pode não ser a mais adequada. A banca cobra a ESCOLHA CORRETA — não o gosto pessoal.' }
     ],
 
-    aplicacaoEmConcurso: 'Cobrança de arts. 77 a 84 (eleição, mandato, requisitos, competências), das hipóteses de sucessão/substituição, e da distinção entre crime comum e de responsabilidade. Alta frequência em concursos federais e de Tribunais.',
+    aplicacaoEmConcurso: 'Informática Aplicada é um módulo moderno, muito cobrado em provas contextualizadas. As bancas apresentam um CENÁRIO do trabalho administrativo e pedem a melhor solução — qual ferramenta usar, qual formato de arquivo enviar, como compartilhar com segurança, como organizar arquivos, como fazer backup. Exige integração com todos os módulos anteriores.',
 
     pegadinhas: [
-      'Confundir sucessão com substituição.',
-      'Trocar os prazos de eleição direta (90 dias, 2 primeiros anos) com eleição indireta (30 dias, 2 últimos anos).',
-      'Dizer que o Senado processa e julga o Presidente por crime COMUM. É o STF. O Senado julga CRIME DE RESPONSABILIDADE.',
-      'Achar que o Vice é sempre o substituto. Se ambos os cargos estiverem vagos, assume o Presidente da Câmara.',
-      'Dizer que o Presidente pode ser preso por crime comum durante o mandato sem sentença condenatória (não pode).',
-      'Confundir os Conselhos (Conselho da República x Conselho de Defesa Nacional).'
+      'Achar que enviar .docx é sempre melhor — depende do destinatário. Para leitura → PDF.',
+      'Achar que compartilhar na nuvem é backup — não é.',
+      'Achar que link público é sempre seguro — pode vazar.',
+      'Usar "responder a todos" em listas grandes — expõe e-mails desnecessariamente.',
+      'Achar que "salvar na nuvem" já é backup — sincronização não é backup.',
+      'Não padronizar nomes de arquivos — dificulta busca e organização.',
+      'Escolher ferramenta errada para a tarefa — usar Word para tabela com cálculo, por exemplo.',
+      'Enviar documentos sensíveis sem senha e por canais inseguros.'
     ],
 
     errosComuns: [
-      'Decorar a linha sucessória sem entender as hipóteses.',
-      'Confundir crimes de responsabilidade do Presidente (Senado) com os de Governador (Tribunal Especial).',
-      'Ignorar que o Vice pode exercer funções por delegação do Presidente.'
+      'Não integrar conhecimentos de módulos diferentes.',
+      'Não considerar a segurança em cada decisão.',
+      'Ignorar boas práticas de organização e nomenclatura.',
+      'Não entender o papel do PDF no envio formal.'
     ],
 
     resumo: [
-      'Presidente: eleição direta por maioria absoluta; mandato de 4 anos; posse em 1º de janeiro.',
-      'Requisitos: brasileiro nato, 35 anos, pleno exercício dos direitos políticos, alistamento, domicílio, filiação.',
-      'Linha sucessória: Vice → Pres. Câmara → Pres. Senado → Pres. STF.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Crime comum: julgado pelo STF. Crime de responsabilidade: julgado pelo Senado.',
-      'A Câmara AUTORIZA (2/3) nos dois casos.',
-      'Conselho da República: opina em situações graves.',
-      'Conselho de Defesa Nacional: opina em temas de segurança nacional.'
+      'Cada tarefa exige a ferramenta certa: Word, Excel, PowerPoint, e-mail, nuvem.',
+      'Envio formal → PDF. Edição → .docx.',
+      'Compartilhamento: prefira restrito; revise permissões.',
+      'Backup 3-2-1 — separado do compartilhamento.',
+      'Cco em listas grandes — preserva privacidade.',
+      'Organização: estrutura lógica + nomes padronizados + versionamento.',
+      'Segurança em tudo: senha, MFA, backup, links restritos.',
+      'Questões integradas cobram a MELHOR solução para o cenário.'
     ],
 
     modoProfessor: {
-      explicarMaisSimples: 'O Presidente é o chefe do Executivo federal. Se ele sai do cargo, assume o Vice; se o Vice também sair, assume o Presidente da Câmara, depois o do Senado e, por último, o do STF. Dependendo de quando ocorre a vacância, o povo vota (primeiros 2 anos) ou o Congresso vota (últimos 2).',
-      outroExemplo: 'Se o Presidente renunciar no segundo mês do mandato, há eleição DIRETA em 90 dias. Se renunciar faltando 6 meses, há eleição INDIRETA pelo Congresso em 30 dias.',
-      compararConceitos: 'Sucessão = definitiva (vaga). Substituição = temporária (impedimento). Crime comum = STF. Crime de responsabilidade = Senado. Primeiros 2 anos = direta. Últimos 2 anos = indireta.',
-      mostrarPegadinha: 'Cuidado: "O Vice-Presidente é sempre o substituto do Presidente". Em caso de VAGA do Presidente, ele SUCEDE (definitivo). Em caso de IMPEDIMENTO, ele SUBSTITUI (temporário).',
-      comoApareceEmConcurso: 'Cobrança de arts. 77 a 84 e das hipóteses de sucessão.',
+      explicarMaisSimples: 'Trabalho administrativo é rotina: você recebe uma tarefa, escolhe a ferramenta certa e executa com segurança. Texto → Word. Planilha → Excel. Apresentação → PowerPoint. Envio → e-mail. Guardar → nuvem + backup. Proteger → senha + MFA + links restritos. A banca cobra a ESCOLHA CORRETA em cada cenário.',
+      outroExemplo: 'Você precisa enviar um contrato assinado para o cliente. Procedimento correto: (1) digitalizar o contrato; (2) assinar digitalmente (ICP-Brasil); (3) exportar para PDF; (4) proteger com senha; (5) enviar por e-mail, verificando o destinatário; (6) guardar cópia em backup (HD + nuvem). Esse é o raciocínio que a banca cobra.',
+      compararConceitos: 'Word × Excel. .docx × .pdf. Público × Restrito. Backup × Compartilhamento. Ferramenta correta × favorita.',
+      mostrarPegadinha: 'Cuidado: em questões contextualizadas, o "mais confortável" nem sempre é o "correto". Por exemplo: "o servidor enviou por WhatsApp porque é mais rápido" — pode ser inadequado para documentos oficiais. A banca cobra a MELHOR prática, não a mais prática.',
+      comoApareceEmConcurso: 'Questões contextualizadas, modernas. Frequência média-alta.',
       fazerPergunta: {
-        pergunta: 'Um Presidente é acusado de crime comum durante o mandato. Quem processa e julga?',
-        resposta: 'A Câmara dos Deputados AUTORIZA (2/3) e o SUPREMO TRIBUNAL FEDERAL julga (crime comum). Se fosse CRIME DE RESPONSABILIDADE, a Câmara autorizaria e o SENADO FEDERAL julgaria.'
-      }
-    }
-  },
-
-  /* ============================================================
-     DC-15 — Poder Judiciário
-  ============================================================ */
-  'DC-15': {
-    id: 'L-DC-15',
-    moduloId: 'DC-15',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Judiciário brasileiro (arts. 92 a 126 da CF/88): órgãos, STF, STJ, Justiça Federal, Estadual, do Trabalho, Eleitoral, Militar, CNJ, competências, garantias dos magistrados e organização.',
-    prerequisitos: ['DC-12'],
-
-    introducao: 'O Poder Judiciário é o responsável pela função jurisdicional — dizer o direito no caso concreto. A CF organiza os órgãos, distribui competências e garante aos magistrados as condições para julgar com independência.',
-
-    explicacaoSimples: 'Pense na Justiça como uma grande estrutura com vários níveis. No topo está o STF (guarda da Constituição) e, logo abaixo, o STJ (guarda da lei federal). Depois vêm a Justiça Federal, Estadual, do Trabalho, Eleitoral e Militar. Cada uma tem sua área. Há ainda o CNJ, que cuida da administração do Judiciário.',
-
-    explicacaoTecnica: 'Art. 92: são órgãos do Poder Judiciário — STF, CNJ, STJ, TST, TREs, Tribunais de Justiça dos Estados e DF, TRFs, TRTs, Tribunais Militares e juízes dos respectivos órgãos. Art. 93: Estatuto da Magistratura (LC). Art. 94: regras de ingresso (quinto constitucional). Art. 95: garantias dos magistrados — vitaliciedade, inamovibilidade e irredutibilidade de subsídio. Art. 96: competências dos tribunais. Art. 97: reserva de plenário (cláusula de reserva de plenário — somente pelo voto da maioria absoluta dos membros do Tribunal ou do órgão especial). Art. 98: Justiça de Paz. Art. 99: autonomia administrativa e financeira do Judiciário. Art. 100: precatórios. Art. 101 a 103: STF — composição (11 ministros, brasileiros natos, 35 a 65 anos, nomeados pelo Presidente após aprovação por maioria absoluta do Senado), competências, ADI/ADC/ADPF/ADO. Art. 104 a 105: STJ — 33 ministros, 35 a 65 anos, competências. Art. 106 a 110: Justiça Federal — TRFs (mínimo 7 juízes). Art. 111 a 117: Justiça do Trabalho. Art. 118 a 121: Justiça Eleitoral. Art. 122 a 124: Justiça Militar. Art. 125 a 126: Justiça Estadual. Art. 127 a 130: funções essenciais à Justiça (MP, Advocacia Pública, Advocacia, Defensoria). Art. 92, §1º: o STF tem 11 ministros. Art. 103-B: CNJ — 15 membros, presidido pelo Presidente do STF.',
-
-    exemplos: [
-      'STF: guarda da CF; julga ADI, ADPF, HC de autoridades específicas, extradição.',
-      'STJ: guarda da lei federal; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade for desembargador.',
-      'Justiça Federal: causas em que a União, autarquias federais ou empresas públicas federais forem partes.',
-      'Justiça do Trabalho: conflitos entre empregado e empregador.',
-      'Justiça Eleitoral: eleições, partidos políticos, registro de candidatos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: causas residuais — o que não for das outras.',
-      'CNJ: controle administrativo, financeiro e disciplinar do Judiciário.'
-    ],
-
-    comparacoes: [
-      { termoA: 'STF', termoB: 'STJ', diferenca: 'STF: guarda da CONSTITUIÇÃO; 11 ministros; julga ADI, ADPF, ADO, ADC, extradição, HC de autoridades. STJ: guarda da LEI FEDERAL; 33 ministros; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade é desembargador.' },
-      { termoA: 'Vitaliciedade', termoB: 'Inamovibilidade', diferenca: 'VITALICIEDADE: o juiz não perde o cargo (após 2 anos de exercício no 1º grau; imediata nos tribunais superiores), salvo por sentença judicial transitada em julgado. INAMOVIBILIDADE: o juiz não pode ser removido de sua comarca ou seção sem sua vontade, salvo por interesse público (voto de 2/3 do tribunal).' },
-      { termoA: 'Justiça Federal', termoB: 'Justiça Estadual', diferenca: 'FEDERAL: julga causas em que a União, autarquias federais ou empresas públicas federais forem partes; crimes políticos; crimes contra bens da União; estrangeiros. ESTADUAL: residual — o que não for das outras Justiças.' },
-      { termoA: 'CNJ', termoB: 'STF', diferenca: 'CNJ: órgão de CONTROLE administrativo, financeiro e disciplinar do Judiciário — não julga causas. STF: órgão de CÚPULA do Judiciário, com competência para julgar ADI, HC, extradição e outras causas constitucionais.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança de arts. 92 a 105 (órgãos, composição, competências), das garantias dos magistrados (vitaliciedade, inamovibilidade, irredutibilidade) e da distinção entre STF e STJ. Comum em concursos de Tribunais.',
-
-    pegadinhas: [
-      'Confundir STF (Constituição) com STJ (lei federal).',
-      'Trocar o número de ministros do STF (11) com o do STJ (33).',
-      'Achar que o CNJ julga causas. O CNJ faz controle administrativo, financeiro e disciplinar.',
-      'Dizer que o juiz pode ser removido sem processo. A inamovibilidade garante proteção, salvo por interesse público e voto de 2/3 do tribunal.',
-      'Confundir as garantias: vitaliciedade (não perde o cargo), inamovibilidade (não é removido), irredutibilidade (não tem subsídio reduzido).',
-      'Dizer que o STF pode julgar qualquer causa. Tem competência taxativa na CF.'
-    ],
-
-    errosComuns: [
-      'Decorar os órgãos sem entender a lógica (STF = Constituição; STJ = lei federal; Justiça Federal = causas federais; Justiça Estadual = residual).',
-      'Confundir as composições dos tribunais superiores.',
-      'Ignorar a EC 45/2004, que criou o CNJ.'
-    ],
-
-    resumo: [
-      'Órgãos: STF, CNJ, STJ, TST, TREs, TJs, TRFs, TRTs, Tribunais Militares e juízes.',
-      'STF: 11 ministros; guarda da Constituição; julga ADI, ADPF, ADO, ADC, extradição.',
-      'STJ: 33 ministros; guarda da lei federal; julga recurso especial.',
-      'Justiça Federal: causas com a União/autarquias/empresas públicas federais.',
-      'Justiça do Trabalho: relações de trabalho.',
-      'Justiça Eleitoral: eleições e partidos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: residual.',
-      'CNJ: controle administrativo, financeiro e disciplinar (EC 45/2004).',
-      'Garantias do magistrado: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'O Judiciário é uma escada: no topo o STF (Constituição), depois o STJ (lei federal), depois as Justiças especializadas (Federal, Trabalho, Eleitoral, Militar) e a Estadual (residual). Cada uma cuida de uma área.',
-      outroExemplo: 'Uma causa sobre FGTS entre empregado e empresa vai para a Justiça do Trabalho. Uma causa em que a União é ré vai para a Justiça Federal. Uma causa entre dois particulares sobre contrato vai para a Justiça Estadual (residual).',
-      compararConceitos: 'STF = Constituição. STJ = lei federal. Justiça Federal = causas federais. Justiça Estadual = residual. CNJ = administração. Vitaliciedade ≠ inamovibilidade ≠ irredutibilidade.',
-      mostrarPegadinha: 'Cuidado: "O CNJ julga causas judiciais". ERRADO. O CNJ faz controle ADMINISTRATIVO, FINANCEIRO e DISCIPLINAR do Judiciário — não julga causas.',
-      comoApareceEmConcurso: 'Cobrança de competências e composições.',
-      fazerPergunta: {
-        pergunta: 'Um Governador de Estado é acusado de crime comum. Quem julga?',
-        resposta: 'O SUPERIOR TRIBUNAL DE JUSTIÇA (STJ) — art. 105, I, "a". Se fosse crime de responsabilidade, o julgamento seria pelo Tribunal Especial (composto por desembargadores do TJ + deputados estaduais), conforme a Constituição Estadual.'
-      }
-    }
-  }  ,
-
-  /* ============================================================
-     DC-16 — Funções Essenciais à Justiça
-  ============================================================ */
-  'DC-16': {
-    id: 'L-DC-16',
-    moduloId: 'DC-16',
-    objetivo: 'Dominar as funções essenciais à Justiça (arts. 127 a 135 da CF/88): Ministério Público, Advocacia Pública, Advocacia e Defensoria Pública — funções, princípios, autonomia, garantias e organização constitucional. Foco especial no MP e na Defensoria.',
-    prerequisitos: ['DC-15'],
-
-    introducao: 'As funções essenciais à Justiça não integram nenhum dos três Poderes — são instituições autônomas que servem ao Estado e à sociedade. Cada uma tem missão própria: o MP fiscaliza a lei; a Advocacia Pública defende o Estado; a Advocacia defende o cidadão; a Defensoria defende os necessitados.',
-
-    explicacaoSimples: 'Pense numa partida de futebol: o juiz é o Judiciário, mas há também o fiscal (MP, que cuida do cumprimento das regras), o advogado do time (Advocacia), o advogado do Estado (Advocacia Pública) e o advogado gratuito para quem não pode pagar (Defensoria). Todos essenciais ao jogo.',
-
-    explicacaoTecnica: 'Art. 127: o Ministério Público é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis. Princípios: unidade, indivisibilidade e independência funcional. Art. 128: MP abrange MP da União (MPF, MP do Trabalho, MP Militar, MP do DF e Territórios) e MPs dos Estados. Art. 129: funções institucionais (promover ação penal pública, inquérito civil, ação civil pública, defesa do patrimônio público, etc.). Art. 130: legitimidade para interpor recursos. Art. 130-A: Conselho Nacional do Ministério Público (CNMP). Art. 131: Advocacia-Geral da União (AGU) — representa a União, judicial e extrajudicialmente, e presta consultoria e assessoramento ao Executivo. Art. 132: Procuradores dos Estados e do DF — representação judicial e consultoria. Art. 133: o advogado é indispensável à administração da justiça, sendo inviolável por seus atos e manifestações no exercício da profissão. Art. 134: Defensoria Pública — instituição permanente, essencial à função jurisdicional, incumbindo-lhe a orientação jurídica, promoção dos direitos humanos e defesa dos direitos individuais e coletivos, de forma integral e gratuita, aos necessitados. Art. 135: princípios e garantias dos servidores das carreiras.',
-
-    exemplos: [
-      'MP: promotor de justiça que atua em ação penal e em ação civil pública.',
-      'MPF: atua em causas federais, ambientais e de direitos humanos.',
-      'AGU: defende a União em juízo e presta consultoria ao Executivo federal.',
-      'Advocacia: advogado particular que defende o cidadão em juízo.',
-      'Defensoria Pública: defensor que atende gratuitamente quem não pode pagar advogado.',
-      'CNMP: controle externo do MP.',
-      'Garantias do MP: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Ministério Público', termoB: 'Defensoria Pública', diferenca: 'MP: defende a ORDEM JURÍDICA, o REGIME DEMOCRÁTICO e os INTERESSES SOCIAIS E INDIVIDUAIS INDISPONÍVEIS. Defensoria: orienta e defende os NECESSITADOS, de forma integral e gratuita, sem representar o Estado.' },
-      { termoA: 'Advocacia Pública (AGU/PGE)', termoB: 'Advocacia privada', diferenca: 'ADVOCACIA PÚBLICA: representa o ESTADO (União, Estados, DF) judicial e extrajudicialmente; presta consultoria ao Executivo. ADVOCACIA PRIVADA: representa o CIDADÃO; atividade essencial à administração da justiça.' },
-      { termoA: 'MP', termoB: 'Judiciário', diferenca: 'MP: NÃO julga — atua como parte (fiscal da lei), promovendo ação penal, ação civil pública, inquérito civil. JUDICIÁRIO: julga as causas.' },
-      { termoA: 'Garantias do MP', termoB: 'Garantias dos magistrados', diferenca: 'MP: vitaliciedade, inamovibilidade e irredutibilidade de subsídio. MAGISTRADOS: vitaliciedade, inamovibilidade e irredutibilidade de subsídio. São iguais em nome, mas aplicáveis a carreiras distintas.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança de arts. 127 a 135: natureza do MP (instituição permanente e essencial), princípios do MP (unidade, indivisibilidade, independência funcional), funções do MP, Advocacia-Geral da União, Defensoria Pública e a garantia do advogado. Alta frequência em concursos de MP, Defensoria e Tribunais.',
-
-    pegadinhas: [
-      'Dizer que o MP integra o Judiciário. NÃO — é instituição AUTÔNOMA, fora dos três Poderes.',
-      'Confundir os princípios do MP (unidade, indivisibilidade, independência funcional) com os princípios da Administração (LIMPE).',
-      'Achar que a Defensoria Pública é subordinada ao Executivo. Tem autonomia funcional e administrativa.',
-      'Dizer que o advogado é obrigatório em qualquer causa. A CF diz que é indispensável à administração da justiça, mas há exceções (habeas corpus, por exemplo).',
-      'Confundir AGU (representa a União) com PGE (representa os Estados) e PGM (representa os Municípios).',
-      'Achar que o CNMP julga causas. Faz controle administrativo, financeiro e disciplinar.'
-    ],
-
-    errosComuns: [
-      'Decorar órgãos sem entender a natureza de cada um.',
-      'Confundir MP com Defensoria — funções são distintas.',
-      'Ignorar que a Defensoria Pública foi reconhecida como expressão do regime democrático (EC 80/2014).'
-    ],
-
-    resumo: [
-      'MP: instituição permanente e essencial; defende ordem jurídica, regime democrático e interesses indisponíveis.',
-      'Princípios do MP: unidade, indivisibilidade e independência funcional.',
-      'MP da União: MPF, MPT, MPM, MPDFT. MPs estaduais: organizados por lei estadual.',
-      'AGU: representa a União e presta consultoria ao Executivo federal.',
-      'PGE: representa os Estados. PGM: representa os Municípios.',
-      'Advocacia: indispensável à administração da justiça.',
-      'Defensoria Pública: atende necessitados, gratuita e integralmente, com autonomia.',
-      'Garantias do MP e dos magistrados: vitaliciedade, inamovibilidade e irredutibilidade.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Cada instituição tem seu papel: MP fiscaliza a lei; AGU defende o Estado; advogado defende o cidadão; Defensoria defende quem não pode pagar advogado. Todas são essenciais à Justiça.',
-      outroExemplo: 'Em uma ação civil pública sobre danos ambientais, quem ajuíza é o MP (art. 129, III). Em uma ação penal, quem denuncia é o MP. Em uma causa em que o cidadão não pode pagar advogado, atua a Defensoria Pública.',
-      compararConceitos: 'MP = fiscal da lei. AGU/PGE/PGM = defensor do Estado. Advogado = defensor do cidadão. Defensoria = defensor do necessitado. Todos com garantias próprias.',
-      mostrarPegadinha: 'Cuidado: "O MP é subordinado ao Poder Judiciário". ERRADO. O MP é instituição AUTÔNOMA, sem subordinação a nenhum dos três Poderes.',
-      comoApareceEmConcurso: 'Cobrança de arts. 127 a 135 e das garantias.',
-      fazerPergunta: {
-        pergunta: 'Quem representa a União judicialmente em uma ação em que ela é ré?',
-        resposta: 'A ADVOCACIA-GERAL DA UNIÃO (AGU) — art. 131, CF/88. A AGU representa a União, judicial e extrajudicialmente, e presta consultoria e assessoramento ao Poder Executivo federal.'
-      }
-    }
-  },
-
-  /* ============================================================
-     DC-17 — Defesa do Estado e Instituições Democráticas
-  ============================================================ */
-  'DC-17': {
-    id: 'L-DC-17',
-    moduloId: 'DC-17',
-    objetivo: 'Dominar os institutos de defesa do Estado e das instituições democráticas (arts. 136 a 144 da CF/88): Estado de Defesa, Estado de Sítio, Forças Armadas e Segurança Pública — hipóteses, procedimento, limites e diferenças.',
-    prerequisitos: ['DC-10'],
-
-    introducao: 'Em situações extremas (grave instabilidade institucional, calamidade, guerra), a CF prevê mecanismos excepcionais para preservar o Estado Democrático de Direito: o Estado de Defesa e o Estado de Sítio. Ambos suspendem temporariamente garantias fundamentais, sob rígido controle.',
-
-    explicacaoSimples: 'Pense no Estado como uma casa com alarme. Normalmente, o alarme está desligado. Em situações de perigo (invasão iminente ou incêndio), o alarme dispara — é o Estado de Defesa. Em situações gravíssimas (guerra, comoção nacional), o alarme soa com mais força — é o Estado de Sítio. Em ambos os casos, é medida temporária.',
-
-    explicacaoTecnica: 'Art. 136: ESTADO DE DEFESA — decreto do Presidente, ouvidos o Conselho da República e o Conselho de Defesa Nacional, para preservar ou prontamente restabelecer, em locais restritos e determinados, a ordem pública ou a paz social ameaçadas por grave e iminente instabilidade institucional ou atingidas por calamidades de grandes proporções na natureza. Prazo: 30 dias, prorrogável uma única vez por igual período. Medidas coercitivas: restrições a reunião, sigilo de correspondência, sigilo de comunicação telegráfica e telefônica, ocupação temporária de bens. Controle: o decreto é submetido ao Congresso em 24h; se em recesso, convocação extraordinária em 5 dias. Art. 137: ESTADO DE SÍTIO — decreto do Presidente, ouvidos os Conselhos, para comoção grave de repercussão nacional, fatos que comprovem a ineficácia de medida tomada durante o Estado de Defesa, ou declaração de estado de guerra ou resposta a agressão armada estrangeira. Prazo: 30 dias, prorrogável por iguais períodos (sem limite). Medidas: obrigação de permanência em localidade determinada, detenção em edifício não destinado a acusados de crimes comuns, restrições a correspondência, liberdade de imprensa, radiodifusão, reunião, etc. Art. 138: durante o Estado de Sítio, o Congresso NÃO pode ser dissolvido. Art. 139: restrições específicas. Art. 140: comissão do Congresso para acompanhar. Art. 141: cessado o Estado de Defesa ou Sítio, cessam os efeitos. Art. 142: Forças Armadas — defesa da Pátria, garantia dos Poderes constituídos e da lei e da ordem. Art. 143: serviço militar obrigatório. Art. 144: segurança pública — órgãos: polícia federal, polícia rodoviária federal, polícia ferroviária federal, polícias civis, polícias militares e corpos de bombeiros militares. Municípios podem constituir guardas municipais.',
-
-    exemplos: [
-      'Estado de Defesa: calamidade natural de grandes proporções em região específica.',
-      'Estado de Defesa: grave e iminente instabilidade institucional em local restrito.',
-      'Estado de Sítio: comoção grave de repercussão nacional.',
-      'Estado de Sítio: declaração de estado de guerra ou resposta a agressão armada estrangeira.',
-      'Polícia Federal: apura crimes contra a ordem política e social, faz polícia marítima, aeroportuária e de fronteiras.',
-      'Polícia Militar: policiamento ostensivo e preservação da ordem pública.',
-      'Guarda Municipal: proteção de bens, serviços e instalações do Município.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Estado de Defesa', termoB: 'Estado de Sítio', diferenca: 'DEFESA (art. 136): situações mais brandas — instabilidade institucional grave e iminente ou calamidades naturais em locais restritos. Prazo de 30 dias prorrogável uma vez. SÍTIO (art. 137): situações mais graves — comoção nacional, ineficácia do Estado de Defesa ou guerra/agressão estrangeira. Prazo de 30 dias prorrogável por iguais períodos sem limite.' },
-      { termoA: 'Estado de Defesa', termoB: 'Intervenção', diferenca: 'ESTADO DE DEFESA: medida excepcional que suspende direitos fundamentais em locais restritos, sem quebra da autonomia federativa. INTERVENÇÃO: quebra temporária da autonomia de um ente federativo (Estado ou Município). São institutos distintos.' },
-      { termoA: 'Forças Armadas', termoB: 'Segurança Pública', diferenca: 'FFAA (art. 142): Marinha, Exército e Aeronáutica — defesa da Pátria, garantia dos Poderes e da lei e da ordem. SEGURANÇA PÚBLICA (art. 144): dever do Estado, direito e responsabilidade de todos — exercida por polícias federal, rodoviária, ferroviária, civis, militares e bombeiros.' },
-      { termoA: 'Polícia Federal', termoB: 'Polícia Civil', diferenca: 'PF: polícia judiciária da UNIÃO — apura crimes contra a ordem política, faz polícia marítima/aeroportuária/de fronteiras, exerce polícia judiciária da União. PC: polícia judiciária dos ESTADOS — apura crimes comuns, exceto militares.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança das hipóteses e prazos do Estado de Defesa e do Estado de Sítio, das atribuições das Forças Armadas e dos órgãos de segurança pública. Alta frequência em concursos de Polícia, Tribunais e área militar.',
-
-    pegadinhas: [
-      'Confundir hipóteses do Estado de Defesa com as do Estado de Sítio.',
-      'Achar que o Estado de Defesa pode ser decretado sem ouvir os Conselhos. Os dois Conselhos devem ser ouvidos.',
-      'Dizer que o Congresso pode ser dissolvido durante o Estado de Sítio (não pode — art. 138).',
-      'Trocar os prazos: Defesa = 30 dias prorrogável UMA vez; Sítio = 30 dias prorrogável por iguais períodos.',
-      'Confundir as atribuições da Polícia Federal com as da Polícia Civil.',
-      'Achar que a Guarda Municipal tem as mesmas atribuições da Polícia Militar.'
-    ],
-
-    errosComuns: [
-      'Decorar hipóteses sem diferenciar Defesa x Sítio.',
-      'Confundir Forças Armadas com órgãos de segurança pública.',
-      'Ignorar que o Congresso deve acompanhar as medidas por comissão.'
-    ],
-
-    resumo: [
-      'Estado de Defesa (art. 136): instabilidade institucional ou calamidade em locais restritos; prazo de 30 dias prorrogável uma vez.',
-      'Estado de Sítio (art. 137): comoção nacional, ineficácia do Defesa ou guerra; prazo de 30 dias prorrogável.',
-      'Ambos: decreto do Presidente + ouvidoria dos Conselhos da República e de Defesa + controle pelo Congresso.',
-      'Durante o Estado de Sítio, o Congresso NÃO pode ser dissolvido.',
-      'Forças Armadas (art. 142): Marinha, Exército e Aeronáutica.',
-      'Segurança Pública (art. 144): PF, PRF, PFF, polícias civis, militares e bombeiros; guardas municipais.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Estado de Defesa é o alarme para perigos em locais restritos. Estado de Sítio é o alarme para perigos gravíssimos em todo o país. Nos dois casos, o Presidente decreta, ouve os Conselhos e submete ao Congresso.',
-      outroExemplo: 'Uma calamidade natural de grandes proporções em um Estado pode justificar Estado de Defesa (art. 136, caput). Uma comoção grave de repercussão nacional ou uma guerra justifica Estado de Sítio (art. 137).',
-      compararConceitos: 'Defesa = brando. Sítio = grave. Defesa = 30 dias prorrogável uma vez. Sítio = 30 dias prorrogável sem limite. FFAA = defesa da Pátria. Segurança Pública = dever do Estado.',
-      mostrarPegadinha: 'Cuidado: "Durante o Estado de Sítio, o Congresso pode ser dissolvido". ERRADO. Art. 138: o Congresso NÃO pode ser dissolvido durante o Estado de Sítio.',
-      comoApareceEmConcurso: 'Cobrança de arts. 136 a 144.',
-      fazerPergunta: {
-        pergunta: 'Uma calamidade natural de grandes proporções em uma região específica pode justificar qual medida?',
-        resposta: 'ESTADO DE DEFESA (art. 136) — desde que a medida seja restrita e determinada, com prazo de 30 dias prorrogável uma vez. Se o problema for nacional e gravíssimo, aí sim caberia Estado de Sítio.'
-      }
-    }
-  },
-
-  /* ============================================================
-     DC-18 — Controle de Constitucionalidade
-  ============================================================ */
-  'DC-18': {
-    id: 'L-DC-18',
-    moduloId: 'DC-18',
-    objetivo: 'Compreender o sistema de controle de constitucionalidade brasileiro: controle preventivo e repressivo, difuso e concentrado, político e judicial; ADI, ADC, ADPF, ADO; efeitos das decisões e conceitos fundamentais.',
-    prerequisitos: ['DC-15'],
-
-    introducao: 'O controle de constitucionalidade é o mecanismo que garante a supremacia da Constituição: leis e atos normativos que contrariem a CF são declarados inconstitucionais. O Brasil adota um sistema MISTO — combina controle difuso (via incidental) e concentrado (via ação direta).',
-
-    explicacaoSimples: 'A Constituição é a lei maior. Se uma lei comum a contraria, ela é inconstitucional. Existem dois jeitos de verificar isso: quando um juiz, ao julgar um caso concreto, percebe a inconstitucionalidade (controle difuso) — ou quando o STF é provocado diretamente a analisar a lei (controle concentrado).',
-
-    explicacaoTecnica: 'CONTROLE PREVENTIVO: antes de a lei entrar em vigor — feito pelo Legislativo (Comissão de Constituição e Justiça) e pelo Executivo (veto jurídico). CONTROLE REPRESSIVO: depois de a lei entrar em vigor — pode ser DIFUSO (incidental, por qualquer juiz, no caso concreto) ou CONCENTRADO (via ADI, ADC, ADPF, ADO, no STF). CONTROLE POLÍTICO: feito por órgãos não judiciais. CONTROLE JUDICIAL: feito pelo Judiciário. DIFUSO: qualquer juiz ou tribunal, ao julgar caso concreto; efeitos INTER PARTES. CONCENTRADO: STF, em ação própria; efeitos ERGA OMNES. ADI (ação direta de inconstitucionalidade): declara a inconstitucionalidade de lei ou ato normativo federal ou estadual. ADC (ação declaratória de constitucionalidade): declara a constitucionalidade de lei ou ato normativo federal. ADPF (arguição de descumprimento de preceito fundamental): cabe quando não houver outro meio eficaz; evita o descumprimento de preceito fundamental. ADO (ação direta de inconstitucionalidade por omissão): cabe para tornar efetiva norma constitucional em caso de omissão legislativa. Legitimados (art. 103): Presidente, Mesa do Senado, Mesa da Câmara, Mesa de Assembleia Legislativa, Governador, Procurador-Geral da República, Conselho Federal da OAB, partido político com representação no Congresso, confederação sindical ou entidade de classe de âmbito nacional. Efeitos: em regra, ERGA OMNES e VINCULANTE; a ADI pode ter efeito EX TUNC (retroativo) ou EX NUNC (não retroativo), conforme modulação de efeitos (art. 27 da Lei 9.868/1999).',
-
-    exemplos: [
-      'Controle preventivo: CCJ da Câmara rejeita projeto por inconstitucionalidade.',
-      'Controle preventivo: Presidente veta projeto por inconstitucionalidade (veto jurídico).',
-      'Controle difuso: juiz de primeira instância afasta lei inconstitucional no caso concreto.',
-      'Controle concentrado: STF julga ADI sobre lei estadual.',
-      'ADC: STF declara a constitucionalidade de lei federal.',
-      'ADPF: cabe quando não há outro meio eficaz.',
-      'ADO: STF reconhece omissão legislativa.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Controle difuso', termoB: 'Controle concentrado', diferenca: 'DIFUSO (incidental): qualquer juiz ou tribunal, em caso concreto; efeitos INTER PARTES; a decisão vale para as partes. CONCENTRADO (abstrato): só o STF, em ação própria; efeitos ERGA OMNES e VINCULANTE.' },
-      { termoA: 'ADI', termoB: 'ADC', diferenca: 'ADI: declara a INCONSTITUCIONALIDADE de lei ou ato normativo. ADC: declara a CONSTITUCIONALIDADE de lei ou ato normativo FEDERAL. Ambas têm efeito vinculante e erga omnes.' },
-      { termoA: 'ADI', termoB: 'ADPF', diferenca: 'ADI: cabe contra lei ou ato normativo federal ou estadual, independentemente de haver outro meio. ADPF: cabe quando NÃO houver outro meio eficaz; protege PRECEITOS FUNDAMENTAIS (não apenas a lei).' },
-      { termoA: 'ADI', termoB: 'ADO', diferenca: 'ADI: cabe contra ato COMISSIVO (lei inconstitucional). ADO: cabe contra ato OMISSIVO (falta de lei que regulamente norma constitucional).' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança das modalidades (preventivo/repressivo, difuso/concentrado), dos legitimados (art. 103), do cabimento de cada ação (ADI, ADC, ADPF, ADO) e dos efeitos das decisões. Frequente em concursos de Tribunais, MP e área jurídica.',
-
-    pegadinhas: [
-      'Confundir controle difuso (incidental, qualquer juiz) com concentrado (STF, ação própria).',
-      'Achar que a ADI cabe apenas contra lei federal (cabe também contra lei estadual).',
-      'Dizer que a ADC cabe contra lei estadual (só lei ou ato normativo FEDERAL).',
-      'Confundir ADPF com ADI (ADPF é residual — só quando não houver outro meio eficaz).',
-      'Achar que a ADO cabe contra lei existente (é para omissão).',
-      'Dizer que a decisão em ADI é sempre EX TUNC. Pode ser modulada (art. 27 da Lei 9.868/1999).',
-      'Esquecer que a decisão de mérito em ADI e ADC tem efeito VINCULANTE.'
-    ],
-
-    errosComuns: [
-      'Decorar ações sem entender o cabimento de cada uma.',
-      'Confundir efeitos da decisão em controle difuso (inter partes) com concentrado (erga omnes).',
-      'Achar que todo legitimado do art. 103 tem pertinência temática (nem todos).'
-    ],
-
-    resumo: [
-      'Controle preventivo: Legislativo (CCJ) e Executivo (veto jurídico).',
-      'Controle repressivo: difuso (qualquer juiz, incidental, inter partes) ou concentrado (STF, ação própria, erga omnes).',
-      'ADI: declara inconstitucionalidade de lei federal ou estadual.',
-      'ADC: declara constitucionalidade de lei federal.',
-      'ADPF: preceito fundamental, quando não houver outro meio eficaz.',
-      'ADO: omissão legislativa.',
-      'Legitimados (art. 103): Presidente, Mesas, Governador, PGR, OAB, partido, confederação, entidade de classe.',
-      'Efeitos: erga omnes e vinculante (concentrado); inter partes (difuso).',
-      'Modulação de efeitos: art. 27 da Lei 9.868/1999.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Há dois jeitos de verificar se uma lei contraria a Constituição: um juiz qualquer, ao julgar um caso, percebe a inconstitucionalidade (difuso); ou o STF é provocado diretamente a analisar a lei (concentrado). Cada caminho tem ferramentas próprias.',
-      outroExemplo: 'Se o STF declara inconstitucional uma lei em ADI, a decisão vale para TODOS (erga omnes). Se um juiz de 1ª instância afasta uma lei no caso concreto, a decisão vale só para aquele processo (inter partes) — até que o STF se pronuncie.',
-      compararConceitos: 'ADI = inconstitucionalidade. ADC = constitucionalidade. ADPF = preceito fundamental, residual. ADO = omissão. Difuso = inter partes. Concentrado = erga omnes.',
-      mostrarPegadinha: 'Cuidado: "A ADI cabe apenas contra lei federal". ERRADO. A ADI cabe contra lei ou ato normativo FEDERAL ou ESTADUAL. Quem só admite lei federal é a ADC.',
-      comoApareceEmConcurso: 'Cobrança de arts. 102 e 103, do cabimento das ações e dos efeitos.',
-      fazerPergunta: {
-        pergunta: 'Cabe ADPF para questionar lei municipal?',
-        resposta: 'SIM. A ADPF (art. 102, §1º) cabe quando não houver outro meio eficaz de sanar lesão a preceito fundamental — abrange lei ou ato normativo municipal, estadual ou federal. É residual.'
+        pergunta: 'O servidor precisa enviar um relatório em PDF para 50 pessoas de setores diferentes. Qual o procedimento correto?',
+        resposta: 'PROCEDIMENTO CORRETO: (1) exportar o relatório para PDF (preserva layout); (2) se contiver dados sensíveis, proteger com senha; (3) enviar por e-mail; (4) colocar os destinatários em Cco (para não expor os e-mails uns dos outros); (5) usar assunto claro ("Relatório mensal — janeiro/2025"); (6) verificar se os destinatários corretos foram incluídos; (7) guardar cópia no backup. NUNCA usar "Para" ou "Cc" com listas grandes, pois expõe os endereços.'
       }
     }
   }
